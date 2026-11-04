@@ -1,10 +1,9 @@
 """New SI-coordinate video-inspired box. Does not import the old dieline."""
 from pathlib import Path
-import sys,json,hashlib,copy,xml.etree.ElementTree as ET
+import sys,json,copy,xml.etree.ElementTree as ET
 import mujoco
 import numpy as np
 from shapely.geometry import Polygon,box
-from shapely.affinity import rotate
 from shapely import constrained_delaunay_triangles,get_parts
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from robot_model import add_robot,fmt
@@ -92,29 +91,6 @@ def main():
             xy=np.array(tri.exterior.coords)[:3]-o[:2];x,y=xy.T;tm=tri.area*sig;moment+=tm*np.array([(x@x+x.sum()**2)/12,(y@y+y.sum()**2)/12,(x@y+x.sum()*y.sum())/12])
         xx,yy,xy=moment-mass*np.array([cx*cx,cy*cy,cx*cy]);zz=mass*t*t/12
         panel_mass=mass;COM=np.array([cx,cy,0.]);I=np.array([[yy+zz,-xy,0],[-xy,xx+zz,0],[0,0,xx+yy]]);feature_mass=0.
-        gf=c.get('grasp_features',{})
-        if gf.get('enabled') and name not in ['base','locking_tongue']:
-            direction=np.array([0.,1.,0.]);flat=None
-            if name in ['body_front','body_back']:
-                sign=-1 if name=='body_front' else 1;dist=gf['wall_front_distance_m'] if sign<0 else gf['wall_back_distance_m'];flat=np.array([gf.get('wall_front_lateral_m',0) if sign<0 else 0.,sign*(d+dist)])
-            elif name in ['side_left','side_right']:
-                sign=1 if name=='side_right' else -1;flat=np.array([sign*(w+gf['side_distance_m']),0.]);direction=np.array([1.,0.,0.])
-            elif 'corner' in name:
-                sign=1 if name.endswith('right') else -1;ys=-1 if name.startswith('front') else 1;flat=np.array([sign*(w-inset+gf['corner_distance_m']),ys*(d+gf['corner_parent_height_m'])]);direction=np.array([1.,0.,0.])
-            elif name.startswith('lid_side_'):
-                sign=1 if name.endswith('right') else -1;flat=np.array([sign*(lw+c['lid_side_flap_width_m']/2),(ly+lfy)/2]);direction=np.array([1.,0.,0.])
-            elif name=='lid':flat=np.array([0.,lfy-gf['lid_free_edge_inset_m']])
-            elif name=='lid_front':flat=np.array([gf.get('lid_front_lateral_m',0),lfy+gf['lid_front_distance_m']])
-            direction=np.abs(q['axis']);feature_height=gf.get('panel_heights_m',{}).get(name,gf['height_m'])
-            dims=np.array([gf['thickness_m'],gf['width_m'],feature_height]) if direction[0] else np.array([gf['width_m'],gf['thickness_m'],feature_height])
-            yaw=np.deg2rad(gf.get('yaw_deg',0));Q=np.array([[np.cos(yaw),-np.sin(yaw),0],[np.sin(yaw),np.cos(yaw),0],[0,0,1.]])
-            footprint=rotate(box(flat[0]-dims[0]/2,flat[1]-dims[1]/2,flat[0]+dims[0]/2,flat[1]+dims[1]/2),gf.get('yaw_deg',0),origin=flat)
-            if footprint.difference(poly).area>1e-10:raise ValueError('Grip aid footprint outside material: '+name)
-            fc=np.r_[flat-o[:2],t/2+dims[2]/2];feature_mass=float(np.prod(dims)*gf['density_kg_m3']);FI=np.diag(feature_mass/12*np.array([dims[1]**2+dims[2]**2,dims[0]**2+dims[2]**2,dims[0]**2+dims[1]**2]));FI=Q@FI@Q.T;newCOM=(mass*COM+feature_mass*fc)/(mass+feature_mass)
-            shift=lambda x:np.dot(x,x)*np.eye(3)-np.outer(x,x)
-            I=I+mass*shift(COM-newCOM)+FI+feature_mass*shift(fc-newCOM);mass+=feature_mass;COM=newCOM
-            cp=p['contacts']['cardboard_cardboard'];ET.SubElement(body,'geom',name='card_'+name+'_grip_aid',type='box',pos=fmt(fc),quat=fmt([np.cos(yaw/2),0,0,np.sin(yaw/2)]),size=fmt(dims/2),mass='0',rgba='.06 .45 .95 1',priority='1',condim=str(cp['condim']),friction=fmt([cp['sliding_mu'],cp['torsional_m'],cp['rolling_m']]),solref=fmt(cp['solref']),solimp=fmt(cp['solimp']),margin=str(cp['margin_m']))
-            features.append({'panel':name,'center_body_m':fc.tolist(),'halfsize_m':(dims/2).tolist(),'mass_kg':feature_mass,'grasp_point_body_m':np.r_[flat-o[:2],t/2+dims[2]-.003].tolist(),'closing_axis_body':(Q@direction).tolist(),'approach_axis_body':[0.,0.,-1.]})
         ET.SubElement(body,'inertial',pos=fmt(COM),mass=str(mass),fullinertia=fmt([I[0,0],I[1,1],I[2,2],I[0,1],I[0,2],I[1,2]]));massrows.append({'body':'box_'+name,'area_m2':poly.area,'panel_mass_kg':panel_mass,'grasp_feature_mass_kg':feature_mass,'mass_kg':mass})
         for k,part in enumerate(parts(poly)):
             v=np.c_[np.array(part.exterior.coords)[:-1]-o[:2],np.zeros(len(part.exterior.coords)-1)];vs=np.vstack([v+[0,0,-t/2],v+[0,0,t/2]]);mn='newbox_'+name+'_'+str(k)
@@ -130,5 +106,5 @@ def main():
     geo={'coordinate_system':'SI meters, flat-blank local XY; no PDF coordinate claims','design':'video_rebuild','panels':rows,'flex_regions':[],'base_position_m':c['root_position_m'],'material_layout':c,'masses':massrows,'grasp_features':features,'slots_flat_m':[list(map(list,slot.exterior.coords))],'source':'local reference video; geometry inferred/engineered, not traced from a manufacturer template'}
     (ROOT/'geometry/panels.json').write_text(json.dumps(geo,indent=2));(ROOT/'material_layout.json').write_text(json.dumps(c,indent=2))
     print('NEW VIDEO BOX:',len(rows),'panels',len(cards),'collision prisms',sum(x['mass_kg'] for x in massrows),'kg')
-    (ROOT/'video_rebuild/provenance.json').write_text(json.dumps({'video':str(ROOT.parent/'2b3a9cc52088540b8d5fb29466b82659.mp4'),'sha256':hashlib.sha256((ROOT.parent/'2b3a9cc52088540b8d5fb29466b82659.mp4').read_bytes()).hexdigest(),'config':c,'reconstruction_limits':'See VIDEO_NOTES.md; no exact dimensions/material/topology proven by video.'},indent=2))
+
 if __name__=='__main__':main()

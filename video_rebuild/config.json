@@ -22,29 +22,5 @@
   ],
   "auto_table_height": true,
   "table_clearance_m": 0.0002,
-  "initial_angles_deg": {},
-  "grasp_features": {
-    "enabled": false,
-    "width_m": 0.03,
-    "height_m": 0.03,
-    "thickness_m": 0.009,
-    "density_kg_m3": 100.0,
-    "wall_front_distance_m": 0.07,
-    "wall_back_distance_m": 0.075,
-    "side_distance_m": 0.025,
-    "corner_distance_m": 0.045,
-    "corner_parent_height_m": 0.03,
-    "lid_free_edge_inset_m": 0.1,
-    "lid_front_distance_m": 0.035,
-    "note": "Visible rigid low-density grip aids, engineering simplification; no robot attachment or latching.",
-    "panel_heights_m": {
-      "front_corner_right": 0.06,
-      "front_corner_left": 0.06,
-      "back_corner_right": 0.06,
-      "back_corner_left": 0.06
-    },
-    "wall_front_lateral_m": 0.04,
-    "lid_front_lateral_m": -0.04,
-    "yaw_deg": 45
-  }
+  "initial_angles_deg": {}
 }

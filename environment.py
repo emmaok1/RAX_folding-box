@@ -50,13 +50,13 @@ class FoldingBoxEnv(Env):
             home=np.array(self.cfg['home_'+s+'_rad']);self.data.qpos[a['qad']]=home;a['qcmd']=home.copy()
             g=self.grippers[s];self.data.qpos[g['qad']]=.288;g['qcmd']=.288;g['command']=.3;g['effort_scale']=1.
         if self.placement not in ['centered','flat']:
-            raise ValueError('Current video rebuild supports centered (precreased) or flat reset only.')
+            raise ValueError('Current video rebuild supports centered or flat reset only.')
         if self.placement=='centered':
             for n,angle in self.geometry['material_layout']['initial_angles_deg'].items():
                 self.data.joint('crease_'+n).qpos[0]=np.deg2rad(angle)
         mujoco.mj_forward(self.model,self.data)
         self.targets={s:self.tcp_pose(s) for s in self.arms};self.ik_errors={s:{'position_m':0.,'orientation_rad':0.} for s in self.arms}
-        self.env_step=0;self.debug_used=False;self._release_since=None
+        self.env_step=0;self._release_since=None
         return self._compute_observation(),{'succeed':False,'robot':'Dexmate Vega 1 U','placement':self.placement}
 
     def inverse_kinematics(self,side,target,iterations=24,seed=None):
@@ -161,15 +161,8 @@ class FoldingBoxEnv(Env):
             if self._release_since is None:self._release_since=self.data.time
         else:self._release_since=None
         persisted=bool(self._release_since is not None and self.data.time-self._release_since>=self.cfg['release_seconds'])
-        return {'design':'video_rebuild','stabilized':bool(counts['table'] and speed<.03),'body_walls_and_corners':open_geom,'stable_open_box_geometry':bool(open_geom and slow and penetration<.0001),'closed_geometry':closed,'tab_slot_relationships':tabs,'locking_geometry_candidate':capture,'released_persistence':persisted,'required_release_seconds':self.cfg['release_seconds'],'hand_panel_contacts':int(counts['hand']),'robot_panel_contacts':int(counts['robot']),'table_panel_contacts':int(counts['table']),'max_box_hinge_speed_rad_s':hinge_speed,'max_box_penetration_m':penetration,'physical_locking_verified':False,'succeed':False,'debug_pose':self.debug_used,'note':'Video-inspired reconstruction. Reset precrease is curriculum setup; debug geometry and closure alone never earn physical assembly success.'}
+        return {'design':'video_rebuild','stabilized':bool(counts['table'] and speed<.03),'body_walls_and_corners':open_geom,'stable_open_box_geometry':bool(open_geom and slow and penetration<.0001),'closed_geometry':closed,'tab_slot_relationships':tabs,'locking_geometry_candidate':capture,'released_persistence':persisted,'required_release_seconds':self.cfg['release_seconds'],'hand_panel_contacts':int(counts['hand']),'robot_panel_contacts':int(counts['robot']),'table_panel_contacts':int(counts['table']),'max_box_hinge_speed_rad_s':hinge_speed,'max_box_penetration_m':penetration,'physical_locking_verified':False,'succeed':False,'note':'Video-inspired rigid-panel approximation. Geometric closure alone does not establish physical locking.'}
     def _compute_success_metrics(self):return self.progress()['succeed']
     def _compute_success(self):return self._compute_success_metrics()
-    def debug_pose(self,closed=False):
-        for p in self.geometry['panels']:
-            n=p['panel']
-            if n=='base':continue
-            self.data.joint('crease_'+n).qpos[0]=p['target_rad'] if closed or not n.startswith(('lid','locking')) else 0
-        self.data.joint('box_free').qpos[2]=self.geometry['base_position_m'][2]+.010
-        self.data.qvel[:]=0;self.debug_used=True;mujoco.mj_forward(self.model,self.data)
     def close(self):
         if self._renderer is not None:self._renderer.close();self._renderer=None

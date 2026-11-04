@@ -1,9 +1,11 @@
-# 当前设计来源
+# Physical model
 
-当前纸盒由 `video_rebuild/build_scene.py` 独立构建，入口为根目录 `build.py`。所有面板使用SI平面坐标，质量由扣除开槽后的净面积乘定量，惯量为均匀有限厚度棱柱积分。底板自由关节；13个被动折痕；两个等式约束仅用于原夹爪同步关系。
+`build.py` calls `video_rebuild/build_scene.py`. Geometry inputs are `video_rebuild/config.json`, `physics.json`, `robot_config.json`, the local Dexmate URDF/assets and `models/arena.xml`. Building uses local files only. The video is a historical design reference, not a build dependency. Its recorded checksum and selected frames remain in `video_rebuild/`.
 
-原视频及校验和见 `video_rebuild/provenance.json`。观察、推断和工程选择见 `video_rebuild/VIDEO_NOTES.md`，当前面板和关节规格见 `geometry/panel_joint_table.md`。根目录的旧SM1溯源文件只属于历史版本，不能用于描述本版。
+The video-inspired connected-lid box has 14 rigid panels and 13 passive hinge creases. Dimensions are engineered: 300 × 220 mm base, 90 mm walls, 4 mm thickness and 400 g/m² effective basis weight. Net polygon areas determine mass (107.4308 g total); uniform finite-thickness prism integrals determine inertia. Convex collision pieces preserve the front-wall slot. The base has a free joint. Gravity and contact determine motion; there are no box actuators, welds, snapping or grasp aids. The only equality constraints synchronize the robot's coupled jaws.
 
-有限厚度采用表面折轴；负向弯曲的插舌使用相反表面。前后壁、角片、侧壁、盖侧片逐层错开1.5mm，避免通过禁用碰撞掩盖厚度干涉。前壁是真实54×7mm开槽，插舌50×10mm，分解碰撞几何不填补开口。物理插入/拉脱仍须验证；几何对齐不等于物理锁定。
+Creases use length-scaled passive springs, damping and dry friction, with a stiffer reverse bend. Surface-offset hinge axes and layer clearances approximate finite-thickness folding. Dynamics use MuJoCo `implicitfast` at 0.25 ms; the robot's torque-limited controller runs every 20 ms. Reset initializes a flat blank above the table. The legacy `centered` placement name is retained for callers; it currently has the same flat configuration because `initial_angles_deg` is empty.
 
-默认前壁和两侧壁预折30°以露出抓边。后壁保持平放，避免连盖重力通过后壁压痕放大；这是明确的较易任务初态。完全展开模式另可运行。压痕干摩擦刚度设置用于减少数值蠕变，不能当作实测滞回模型。
+This is a rigid-panel approximation, not a deformable or calibrated cardboard model. Panel buckling, tearing, crease plasticity and measured hysteresis are absent. The video does not determine dimensions, material parameters, contact coefficients or robot calibration. Tongue/slot geometric checks do not prove locking or retention, so `physical_locking_verified` and task success remain false. Baseline validation establishes selected numerical and mechanical properties only.
+
+Robot kinematics, inertias and effort limits derive from the pinned URDF; mount, cameras, jaw pads and controller settings include documented engineering assumptions in `robot_config.json`. Asset provenance and licenses remain beside the assets. RAX is kept byte-for-byte upstream and has no custom-box backend.
