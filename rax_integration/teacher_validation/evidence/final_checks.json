@@ -1,0 +1,9 @@
+{
+  "tests_run": 49,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "cloud_inference_requests": 0,
+  "note": "State tests load full scene without steps; memory/launcher tests use synthetic fixtures and mocked processes."
+}

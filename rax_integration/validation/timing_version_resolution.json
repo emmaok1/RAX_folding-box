@@ -1,0 +1,37 @@
+{
+  "historical": {
+    "episode_id": "dexmate_b93b4bfa6c3749f3a5159fcb1445cd6f",
+    "execution_run": "rax_integration/runs/smoke_20261102T130008_804d9a",
+    "scene_sha256": "a215a60d9999ac9f8fcff3f49808e06654307a1c284adf66a5eb1e761f67ae4b",
+    "robot_config_sha256": "8fb3b9775a5292cce63e2904bf87e9ee08a948b87391a9271e77925981c678d7",
+    "compiled_model_path": "rax_integration/runs/smoke_20261102T130008_804d9a/native/episodes/dexmate_b93b4bfa6c3749f3a5159fcb1445cd6f/loaded_model.mjb",
+    "compiled_model_sha256": "f3763f4255dfb1e51eed5af192089cdbd9ad306bc20df1d27bcbe6052ec0c063",
+    "loaded_model_mjb_timestep_s": 0.0005,
+    "snapshot_config_physics_dt_s": 0.0005,
+    "snapshot_control_dt_s": 0.02,
+    "substeps_from_loaded_mjb_and_snapshot_control": 40,
+    "scope": "historical regression, not current B273_final",
+    "recorded_runtime_timing": {
+      "control_dt_s": 0.02,
+      "physics_dt_s": 0.0005,
+      "substeps_per_row": 40,
+      "control_frequency_hz": 50.0,
+      "both_arms_staged_before_physics": true
+    }
+  },
+  "current_fresh_runtime": {
+    "revision": "B273_final",
+    "scene_sha256": "350920f7cc458df883e2bb6a6dc071d17df430e0ed0c25174926aa5d4c0348c8",
+    "disk_config_physics_dt_s": 0.00025,
+    "disk_config_control_dt_s": 0.02,
+    "xml_timestep_s": 0.00025,
+    "fresh_runtime_env_model_timestep_s": 0.00025,
+    "fresh_runtime_control_dt_s": 0.02,
+    "fresh_runtime_n_substeps": 80,
+    "simulation_time_s": 0.0,
+    "env_step": 0
+  },
+  "protected_hashes_unchanged": true,
+  "simulation_steps": 0,
+  "api_calls": 0
+}

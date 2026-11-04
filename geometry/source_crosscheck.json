@@ -1,0 +1,81 @@
+{
+  "idml_page_trim_mm": [
+    437.0,
+    460.0
+  ],
+  "paths": {
+    "CUT": {
+      "anchor_count": 89,
+      "geometry_paths": 18,
+      "transforms": [
+        {
+          "tag": "Polygon",
+          "matrix": "1 0 0 1 0 0"
+        },
+        {
+          "tag": "Group",
+          "matrix": "1 0 0 1 -618.5771988157242 -651.8052495970474"
+        },
+        {
+          "tag": "Spread",
+          "matrix": "1 0 0 1 0 0"
+        }
+      ],
+      "pdf_translation_pt": [
+        21.7928466796875,
+        21.1661376953125
+      ],
+      "max_idml_anchor_to_pdf_endpoint_error_pt": 0.0005214846035960407
+    },
+    "CREASE": {
+      "anchor_count": 38,
+      "geometry_paths": 18,
+      "transforms": [
+        {
+          "tag": "Polygon",
+          "matrix": "1 0 0 1 0 0"
+        },
+        {
+          "tag": "Group",
+          "matrix": "1 0 0 1 -618.5771988157242 -651.8052495970474"
+        },
+        {
+          "tag": "Spread",
+          "matrix": "1 0 0 1 0 0"
+        }
+      ],
+      "pdf_translation_pt": [
+        21.79290771484375,
+        21.16607666015625
+      ],
+      "max_idml_anchor_to_pdf_endpoint_error_pt": 0.000152587890625
+    }
+  },
+  "scale_decision": "All item/group linear transforms are identity. Native point units retained (25.4/72 mm/pt); no inferred screenshot or page-only scaling. Nominal assembled dimensions do not match all principal crease spacings exactly.",
+  "physical_cut_extents_mm": [
+    435.2924999999999,
+    458.0466666666667
+  ],
+  "principal_panel_bounds_mm": {
+    "base": [
+      214.3125,
+      153.14083333333338
+    ],
+    "body_back": [
+      211.1022222222222,
+      51.576111111111125
+    ],
+    "body_front": [
+      207.96249999999998,
+      50.8
+    ],
+    "lid": [
+      201.61249999999998,
+      153.17611111111108
+    ],
+    "side_left_roll": [
+      4.762499999999999,
+      153.14083333333338
+    ]
+  }
+}

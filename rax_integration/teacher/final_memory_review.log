@@ -1,0 +1,11 @@
+test_environment_change_resets_active_progress_labels_old_claims (rax_integration.teacher.tests.test_memory.MemoryChecks.test_environment_change_resets_active_progress_labels_old_claims) ... ok
+test_same_identity_recovery_keeps_progress_current (rax_integration.teacher.tests.test_memory.MemoryChecks.test_same_identity_recovery_keeps_progress_current) ... ok
+test_candidate_text_hash_does_not_verify_unknown_or_changed_execution (rax_integration.teacher.tests.test_memory.MemoryChecks.test_candidate_text_hash_does_not_verify_unknown_or_changed_execution) ... ok
+test_frozen_code_bundle_binding_and_changed_manifest (rax_integration.teacher.tests.test_memory.MemoryChecks.test_frozen_code_bundle_binding_and_changed_manifest) ... ok
+test_export_selects_matching_environment_verification (rax_integration.teacher.tests.test_bundles.BundleChecks.test_export_selects_matching_environment_verification) ... ok
+test_task_confirmation_requires_native_evaluator (rax_integration.teacher.tests.test_memory.MemoryChecks.test_task_confirmation_requires_native_evaluator) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.060s
+
+OK

@@ -1,0 +1,75 @@
+{
+  "actual_inference_requests": 8,
+  "token_count_requests": 8,
+  "estimated_api_cost_usd": 0.1920435,
+  "cost_reserved_usd": 0.433074,
+  "overall_cost_cap_usd": 0.5,
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 26062,
+    "cache_read_input_tokens": 35475,
+    "output_tokens": 1665,
+    "total_input_including_cache": 61555
+  },
+  "phases": [
+    {
+      "directory": "rax_integration/runs/smoke_20261102T125028_72c27b",
+      "inference_requests": 4,
+      "token_count_requests": 4,
+      "estimated_cost_usd": 0.1041366,
+      "reserved_cost_usd": 0.222852,
+      "token_usage": {
+        "input_tokens": 8,
+        "cache_creation_input_tokens": 13904,
+        "cache_read_input_tokens": 16962,
+        "output_tokens": 1040,
+        "total_input_including_cache": 30874
+      },
+      "rejections": []
+    },
+    {
+      "directory": "rax_integration/runs/smoke_20261102T130008_804d9a",
+      "inference_requests": 3,
+      "token_count_requests": 3,
+      "estimated_cost_usd": 0.0423138,
+      "reserved_cost_usd": 0.120492,
+      "token_usage": {
+        "input_tokens": 7,
+        "cache_creation_input_tokens": 5122,
+        "cache_read_input_tokens": 11686,
+        "output_tokens": 537,
+        "total_input_including_cache": 16815
+      },
+      "rejections": [
+        "Model request limit",
+        "Model request limit"
+      ]
+    },
+    {
+      "directory": "rax_integration/runs/smoke_20261102T130008_804d9a/read_only_continuation",
+      "inference_requests": 1,
+      "token_count_requests": 1,
+      "estimated_cost_usd": 0.0455931,
+      "reserved_cost_usd": 0.08973,
+      "token_usage": {
+        "input_tokens": 3,
+        "cache_creation_input_tokens": 7036,
+        "cache_read_input_tokens": 6827,
+        "output_tokens": 88,
+        "total_input_including_cache": 13866
+      },
+      "rejections": []
+    }
+  ],
+  "additional_fold_attempts_or_training": false,
+  "note": "Resumed Claude CLI cost/usage is cumulative; phase cost is reconciled from each relay ledger to avoid double counting.",
+  "authorization_review": {
+    "original_stated_request_cap": 4,
+    "actual_total_inference_requests": 8,
+    "original_stated_request_cap_met": false,
+    "separate_explicit_user_authorization_for_additional_four_requests": false,
+    "reason_recorded": "Cloud API inferred permission from broad task instruction; inference did not satisfy stated four-request scope",
+    "dollar_headroom_is_not_request_authorization": true,
+    "current_cloud_scope": "offline_only"
+  }
+}

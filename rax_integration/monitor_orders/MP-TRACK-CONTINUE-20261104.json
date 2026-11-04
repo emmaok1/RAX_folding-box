@@ -1,0 +1,55 @@
+{
+  "task_id": "MP-TRACK-CONTINUE-20261104",
+  "revision": 5,
+  "status": "completed_frozen_no_pending_work",
+  "closed_utc": "2026-11-04T05:14:31.805635+00:00",
+  "supersedes": "ALL previous multipart messages and revisions1/2 implementation assignments. Old commands are historical, not current work authorization.",
+  "ownership": {
+    "root_monitor": "ALL final reviewed source/display/callers/tests; task completed and frozen",
+    "box_builder": "IDLE; no edits/chmod/tests/runs/launch ownership"
+  },
+  "current_work_authorization": {
+    "edits": false,
+    "chmod_or_unfreeze": false,
+    "tests": false,
+    "simulation": false,
+    "viewer": false,
+    "cloud": false,
+    "paid_retry": false
+  },
+  "result": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/planning_validation/evidence/monitor_stop_acceptance_20261104T051431/validation_matrix.json",
+  "final_source_sha256": "bd97ccabdfc1aa7db1183e9386f405d332dbb11f824a4f85e1afce4816592f84",
+  "final_counts": {
+    "stable_regression_tests": 65,
+    "micro_groups": 7,
+    "micro_cases": 39,
+    "thin_geometry_probes": 2,
+    "actual_mcp_checks": 21
+  },
+  "current_config": "max_plan_rows500/max_execute_rows50/terminal_hold_rows5; paused execution requires exact expected_cursor; fresh omitted cursor aliases0 intentionally.",
+  "completed_fixes": [
+    "expected_cursor admission and duplicate/no-budget refusal",
+    "owner-specific invalidation",
+    "exact continuation boundary world qpos/qvel digest",
+    "terminal budget/episode/STOP failures",
+    "immutable trajectory tuples/copied preview/hash binding",
+    "explicit plan/execute limit names",
+    "five whole-plan holds",
+    "display continuation/cursor cancellation",
+    "source-frozen local validation and twelve-case matrix"
+  ],
+  "historical_spec": "rax_integration/monitor_orders/archive/MP-TRACK-CONTINUE-20261104.revision2.json",
+  "next_action": "Final freeze acknowledgment only; await NEW direct user task through monitor. All earlier work orders superseded.",
+  "stop_state_supplement": {
+    "affected_regression_tests": 25,
+    "passed": true,
+    "local_paused_stop_mcp_checks": 10,
+    "local_normal_continuation_mcp_checks": 21,
+    "paused_mcp_evidence": "rax_integration/runs/paused_stop_mcp_20261103T211224_b4969e/paused_stop_results.json",
+    "normal_mcp_evidence": "rax_integration/runs/continuation_mcp_20261103T211233_345470/continuation_mcp_results.json",
+    "actual_stop_probe_rows": 7,
+    "new_paid_calls": 0,
+    "fix": "Publish STOP first. If execution mutex is free, immediately terminalize planned/paused paths and release owner; active-row STOP is nonblocking and finalized by executor at next cancellation check. Out-of-band STOP terminalizes at next execution admission.",
+    "superseded_probe": "First probe requested robot status after ended observation, which RAX denies. Final proof uses ended observation and native cursor/action audit; first six STOP checks had passed even in that probe."
+  }
+}

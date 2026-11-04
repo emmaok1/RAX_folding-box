@@ -1,0 +1,9 @@
+{
+  "tests_run": 58,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "source_unchanged_during_check": true,
+  "cloud_inference_requests": 0,
+  "thinking_policy_wire_test": "scripted local transport, not a provider call"
+}

@@ -1,0 +1,73 @@
+{
+  "reason": "Prevent delayed peer assignments overwriting delivered implementation",
+  "files": {
+    "memory_api.py": {
+      "sha256": "26ced5b21d4220258b43bbcd6d8be259b7b88ed20b0eefbcf62fda6c55904626",
+      "previous_mode": "0o664"
+    },
+    "prepare.py": {
+      "sha256": "a4d06d03ebc5aa31e20cd30788548bc8d80539137dcc8b583ad9ae099253db26",
+      "previous_mode": "0o664"
+    },
+    "settings.example.json": {
+      "sha256": "fb7e1f154902c36a5d6f7ef26bda69db51b35811d7b70109d5dc9e71864ac35f",
+      "previous_mode": "0o664"
+    },
+    "instructions.py": {
+      "sha256": "8d825c50c8fcd255829a8419eb2c9325393bf00833fa3794bc81d35b01f290cb",
+      "previous_mode": "0o664"
+    },
+    "state.py": {
+      "sha256": "0f43676fb6aa72668cae419568610cc17adc278f3afdb8a0991e11cc4b295644",
+      "previous_mode": "0o664"
+    },
+    "world.py": {
+      "sha256": "640fc5f6086e422c7fc2a687b78449421a9d4ac9ec3fe1ddafbfa6ae2cc7af50",
+      "previous_mode": "0o664"
+    },
+    "__init__.py": {
+      "sha256": "cf0fea7e1da8bff4c27c86802b1dfa7f2320999bfe916fc690b0e8db5b236a70",
+      "previous_mode": "0o664"
+    },
+    "README.md": {
+      "sha256": "b416c0fdb7de89c52729a4f5a61637825fb8c79ab2e857459bc4048028efcb87",
+      "previous_mode": "0o664"
+    },
+    "memory.py": {
+      "sha256": "bf0d2a41cf0cfa76401ad8c52fc5c779aed2280f5bc094f07b04fa4810dcdb65",
+      "previous_mode": "0o664"
+    },
+    "CONTRACT.md": {
+      "sha256": "f9c3f7a2c1cecb8be16d0fc59842a4a2038c1842ee2236a15a1d149bd1f16867",
+      "previous_mode": "0o664"
+    },
+    "bundles.py": {
+      "sha256": "69c9d61a33cc7e21d53975cec635c031db46076c982c43ff06a61bc80dd1bff4",
+      "previous_mode": "0o664"
+    },
+    "identity.py": {
+      "sha256": "43af5150a6165d072498cffbb59b260f5ec115c81c79909ff81b65a2ec6c1075",
+      "previous_mode": "0o664"
+    },
+    "run.py": {
+      "sha256": "a5d9350f1d20c2ee592d04742e12ab1d550ffb7a385b8b948c536ed7c554ad5a",
+      "previous_mode": "0o664"
+    },
+    "tests/test_prepare.py": {
+      "sha256": "ca4b6b8c9a84aeec4624dc7f1623315d817d4641a80a1b195c6f32755fecaba2",
+      "previous_mode": "0o664"
+    },
+    "tests/__init__.py": {
+      "sha256": "80619fcacc8fd950ed7bd19c91b47744299c36c4350ce4204c45a3af0a44c6f7",
+      "previous_mode": "0o664"
+    },
+    "tests/test_memory.py": {
+      "sha256": "18d4129354e277650fff26db5cad5fda47466617a375e40c856a067571933ed0",
+      "previous_mode": "0o664"
+    },
+    "tests/test_bundles.py": {
+      "sha256": "d5caa3d0d4874fcb590a4c0e61f6431f6aaa3d402e2e8375cb3c9c4cf50a8bab",
+      "previous_mode": "0o664"
+    }
+  }
+}

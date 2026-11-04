@@ -1,0 +1,3 @@
+# Additional package for the task-local official RAX workspace generator.
+# Install with the existing task interpreter; requirements.txt remains the base environment.
+Jinja2==3.1.6

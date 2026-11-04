@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-11-04T04:42:19.735656+00:00",
+  "reason": "Source changed concurrently during independent tests; freeze delivery for valid source-scoped review",
+  "files": {
+    "rax_integration/motion_planning/service.py": {
+      "previous_mode": "0o664",
+      "sha256": "d21901698a906beecf5a17fab2bd6b7309d4dd1a41e5a399686fb2d1f61c6af9",
+      "mtime": 1793767302.697354
+    },
+    "rax_integration/upstream/services/dexmate_box/tools.py": {
+      "previous_mode": "0o664",
+      "sha256": "3076ca2f02a60da72ca42b91a45f3453d336642f5f54a7bc352a29543fa2a8af",
+      "mtime": 1793766830.1722708
+    },
+    "rax_integration/upstream/services/dexmate_box/backend.py": {
+      "previous_mode": "0o664",
+      "sha256": "bd7ea2182d63c278cae5ab2f113f69c38037e6b2ff4c90281e9b013b09a84e7f",
+      "mtime": 1793767302.698354
+    },
+    "rax_integration/planning_validation/continuation_checks.py": {
+      "previous_mode": "0o664",
+      "sha256": "b2d709a7edff8dc467f83b58f331829c324aaf10c10ac73054091ea935b2ed48",
+      "mtime": 1793766830.1722708
+    },
+    "rax_integration/planning_validation/adapter_checks.py": {
+      "previous_mode": "0o664",
+      "sha256": "4b970a50d67eb12a4310f23d5ec86b06fef2ebcb8ae2a1910ed3e1d08f837bc4",
+      "mtime": 1793766830.1722708
+    },
+    "rax_integration/planning_validation/continuation_mcp_check.py": {
+      "previous_mode": "0o664",
+      "sha256": "a50aa41b4dce1fb97137a92a429e601ac8c45b2f0197a367cc8c9f5b203faa4d",
+      "mtime": 1793766858.1741078
+    },
+    "rax_integration/planning_validation/commission_free_space.py": {
+      "previous_mode": "0o664",
+      "sha256": "af20b0d19022e0484c6f486f6b21765701db8e8255f7ffcca4e12f814df96c0c",
+      "mtime": 1793767250.920617
+    },
+    "rax_integration/planning_validation/commission_tracking.py": {
+      "previous_mode": "0o664",
+      "sha256": "f948ff2e3d42b6a6093307f51422c331d54d4c7f082d9b7535126d5a777d0a59",
+      "mtime": 1793767255.5447578
+    },
+    "rax_integration/motion_planning/telemetry.py": {
+      "previous_mode": "0o664",
+      "sha256": "0323f7a217cdb6aaeeca7a5e55bdef7e080febfe4e2049c3ad2fd73eb5b452f4",
+      "mtime": 1793765464.693143
+    },
+    "rax_integration/motion_planning/worker.py": {
+      "previous_mode": "0o664",
+      "sha256": "880d9babb0b3a06e9ff768cf42820bef79cb4e9a486820f2211b85121c45b483",
+      "mtime": 1793767210.8036497
+    },
+    "rax_integration/motion_planning/trajectory.py": {
+      "previous_mode": "0o664",
+      "sha256": "aae867159149699f0e0fdb7804b0d3c0536e34d0d853cc539694bdf47b50f99f",
+      "mtime": 1793767210.8026497
+    },
+    "rax_integration/motion_planning/collision.py": {
+      "previous_mode": "0o664",
+      "sha256": "51c51ff254033a847d573b57e228c9d60c0ae7b0eaa0d2b006140b84f0851c52",
+      "mtime": 1793766219.6527207
+    },
+    "rax_integration/motion_planning/config.json": {
+      "previous_mode": "0o664",
+      "sha256": "72e4c79e36dc8349c67c32487c03d98719da5c59ae7649149c83ffddb94c4620",
+      "mtime": 1793767210.8026497
+    },
+    "rax_integration/motion_planning/model.py": {
+      "previous_mode": "0o664",
+      "sha256": "577469a1a7644114378a8c4fbbff76e6b61ee3f084e570dd4a5f087839d5ddaa",
+      "mtime": 1793766472.8811574
+    },
+    "rax_integration/planning_validation/plot_tracking.py": {
+      "previous_mode": "0o664",
+      "sha256": "76a4368457f59be40cedd8767de3973b996cdcd469f8cc33edbb4d7e335fb6b3",
+      "mtime": 1793766667.1598663
+    },
+    "rax_integration/planning_validation/TRACKING.md": {
+      "previous_mode": "0o664",
+      "sha256": "086c93a4b0e4e55212e8b04403b766469b18e1ede0bf22379c6aab13f5e244ab",
+      "mtime": 1793767030.2282307
+    },
+    "rax_integration/planning_validation/full_scene_live.py": {
+      "previous_mode": "0o664",
+      "sha256": "55181d98d8c3612a05b72c68f07b4b9234c6ee9bccbbb519e6eb39995b716042",
+      "mtime": 1793766793.1884434
+    },
+    "rax_integration/planning_validation/display_execution.py": {
+      "previous_mode": "0o664",
+      "sha256": "03a5e09423e7099cbdf54d294a9d113eb8d351fd76d32de1f545da4e4056e697",
+      "mtime": 1793767030.2282307
+    },
+    "rax_integration/planning_validation/display_continuation_checks.py": {
+      "previous_mode": "0o664",
+      "sha256": "1ee5cfb065dfa5500c4ec1f2673b8659d50a63382357cf40c16f7efbb7fd1669",
+      "mtime": 1793767048.7368202
+    },
+    "rax_integration/motion_planning/limits.py": {
+      "previous_mode": "0o664",
+      "sha256": "71211f2146c84d572fd11b3f6a55be8bdc36710e52ac95fbf55018719ae10cb9",
+      "mtime": 1793767210.8026497
+    },
+    "rax_integration/motion_planning/__init__.py": {
+      "previous_mode": "0o664",
+      "sha256": "a4af613bfe18a4cde152139d7d1492ce5f085931aa62d885cecc34ea97fe8b08",
+      "mtime": 1793689476.4458022
+    },
+    "rax_integration/motion_planning/operator_stop.py": {
+      "previous_mode": "0o664",
+      "sha256": "82305951d31f1b934ca19224d143aa466c19c9a3fe93d194419e1224f3e83607",
+      "mtime": 1793689574.7206235
+    },
+    "rax_integration/motion_planning/ompl_engine.py": {
+      "previous_mode": "0o664",
+      "sha256": "798acb12d62b952bed9aca29e4829d2e304915827362ca6c6263e0d2e4cc6819",
+      "mtime": 1793689993.9179163
+    }
+  }
+}

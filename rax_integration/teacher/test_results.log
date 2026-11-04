@@ -1,0 +1,23 @@
+test_changed_environment_preserves_history_invalidates_verification (rax_integration.teacher.tests.test_memory.MemoryChecks.test_changed_environment_preserves_history_invalidates_verification) ... ok
+test_changed_skill_invalidates_verification (rax_integration.teacher.tests.test_memory.MemoryChecks.test_changed_skill_invalidates_verification) ... ok
+test_claims_do_not_promote_skills (rax_integration.teacher.tests.test_memory.MemoryChecks.test_claims_do_not_promote_skills) ... ok
+test_committed_corruption_is_not_silently_repaired (rax_integration.teacher.tests.test_memory.MemoryChecks.test_committed_corruption_is_not_silently_repaired) ... ok
+test_concurrent_sessions_do_not_lose_events (rax_integration.teacher.tests.test_memory.MemoryChecks.test_concurrent_sessions_do_not_lose_events) ... ok
+test_crash_after_journal_commit_before_snapshot_recovers (rax_integration.teacher.tests.test_memory.MemoryChecks.test_crash_after_journal_commit_before_snapshot_recovers) ... ok
+test_debug_replay_attachment_and_actuation_cannot_verify (rax_integration.teacher.tests.test_memory.MemoryChecks.test_debug_replay_attachment_and_actuation_cannot_verify) ... ok
+test_evidence_traversal_and_symlinks_refused (rax_integration.teacher.tests.test_memory.MemoryChecks.test_evidence_traversal_and_symlinks_refused) ... ok
+test_identity_is_order_independent_and_source_sensitive (rax_integration.teacher.tests.test_memory.MemoryChecks.test_identity_is_order_independent_and_source_sensitive) ... ok
+test_incomplete_tail_is_preserved_and_repaired (rax_integration.teacher.tests.test_memory.MemoryChecks.test_incomplete_tail_is_preserved_and_repaired) ... ok
+test_persist_resume_idempotency_and_progress (rax_integration.teacher.tests.test_memory.MemoryChecks.test_persist_resume_idempotency_and_progress) ... ok
+test_refutation_preserves_prior_verification (rax_integration.teacher.tests.test_memory.MemoryChecks.test_refutation_preserves_prior_verification) ... ok
+test_task_confirmation_requires_native_evaluator (rax_integration.teacher.tests.test_memory.MemoryChecks.test_task_confirmation_requires_native_evaluator) ... ok
+test_verified_scope_and_modified_evidence (rax_integration.teacher.tests.test_memory.MemoryChecks.test_verified_scope_and_modified_evidence) ... ok
+test_bundle_resume_carries_notes_evidence_and_journal (rax_integration.teacher.tests.test_bundles.BundleChecks.test_bundle_resume_carries_notes_evidence_and_journal) ... ok
+test_bundle_changed_evidence_is_rejected_before_restore (rax_integration.teacher.tests.test_bundles.BundleChecks.test_bundle_changed_evidence_is_rejected_before_restore) ... ok
+test_incomplete_bundle_not_registered_and_restore_never_merges (rax_integration.teacher.tests.test_bundles.BundleChecks.test_incomplete_bundle_not_registered_and_restore_never_merges) ... ok
+test_export_selects_matching_environment_verification (rax_integration.teacher.tests.test_bundles.BundleChecks.test_export_selects_matching_environment_verification) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.188s
+
+OK

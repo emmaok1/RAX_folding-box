@@ -1,0 +1,7 @@
+{
+  "task_id": "MP-TRACK-CONTINUE-20261104",
+  "result": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/planning_validation/evidence/monitor_stop_acceptance_20261104T051431/validation_matrix.json",
+  "all_defined_checks_passed": true,
+  "source_sha256": "bd97ccabdfc1aa7db1183e9386f405d332dbb11f824a4f85e1afce4816592f84",
+  "baseline_result": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/planning_validation/evidence/monitor_acceptance_20261104T050028/validation_matrix.json"
+}

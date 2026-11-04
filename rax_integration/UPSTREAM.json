@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/robot-agent-exploration/rax",
+  "branch": "dexjoco/native",
+  "commit": "4b577aa2ba0039ad01707ede236be9913274180e",
+  "verified_branches_url": "https://api.github.com/repos/robot-agent-exploration/rax/branches?per_page=100",
+  "snapshot_created_utc": "2026-11-02T20:43:38.556741+00:00",
+  "license": "Apache-2.0; upstream LICENSE and NOTICE retained",
+  "original_files": 304,
+  "unchanged_original_files": 302,
+  "modified_upstream_files": {
+    "services/benchmarks.py": {
+      "upstream_sha256": "3d1b7168065b87a08de94c1928dcac4324185cfe4c94a7baf153ca4faee70409",
+      "current_sha256": "9d20d6678f0910e6ce37b967aa41725ce55aaf00b60b55e662e9ef4342bcb01d"
+    },
+    "services/controller/config.py": {
+      "upstream_sha256": "b643ec081d4f429c0b2d0fe27c494d86fc340687400dd6d6a96b87370747ad37",
+      "current_sha256": "cfcd4bc83241af3dc32d323b23cc9a2254d5665edd6e0ab05f4cdb27f2b42135"
+    }
+  },
+  "added_extension_files": {
+    "services/dexmate_box/tools.py": "859705f01ff2f9a7b462dc37a0482cb725d8407a0a1e548fc5a3780f6beb599b",
+    "services/dexmate_box/__init__.py": "3189c35cb7d0e9f112436408f199fd2a602725ccedb6b18849ba134756f54300",
+    "services/dexmate_box/backend.py": "9f9489342033fb53a3ab9f8718e75ad76d78b66c3cc2e5dd80e9c3baffc89970",
+    "services/dexmate_box/registry.py": "32eea344bef87c65442114536af876da5087623a0f471b004d796609006ec93b",
+    "services/dexmate_box/benchmark.py": "ab423f1343763251e105f63c0259be48defdd990d9de00811ee932f89a712d9d",
+    "agent_skills/perception/rgb-only-dexmate_box/object-localization/SKILL.md": "c9a3c6efcab885ce1c4b37539665fa7244cfb13ebfb1a56ba5d8968f7ac49d02",
+    "agent_skills/control/dexmate_box/robot-interface/SKILL.md": "a4ffd51b983d5779a89315c5f7de98cda19d553c76a2919203381876e38ab4f4"
+  },
+  "runtime_symlink": "runtime -> ../runs (generated, ignored)",
+  "shared_checkouts_modified": false,
+  "task_kind": "custom task integrated with RAX, not an official DexJoCo benchmark",
+  "claude_code_version": "2.1.316 (Claude Code)"
+}

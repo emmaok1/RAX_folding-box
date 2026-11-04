@@ -1,0 +1,10 @@
+{
+  "finding": "Earlier directory-list assertion was insufficient to establish readable credentials or sandbox failure.",
+  "evidence_limit": "List contents were not retained; an empty masked directory may still be listable. Probe exited before independent write/network checks.",
+  "credential_contents_read": false,
+  "credential_leak_established": false,
+  "native_bash_sandbox_verdict": "inconclusive",
+  "current_mode": "Restricted Read/Write/Edit; Python through RAX BundleSandbox",
+  "current_mode_validation": "restricted_probe_20261103T153119 passed13 independent checks",
+  "paid_run_started": false
+}

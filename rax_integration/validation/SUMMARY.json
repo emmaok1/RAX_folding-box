@@ -1,0 +1,158 @@
+{
+  "upstream_commit": "4b577aa2ba0039ad01707ede236be9913274180e",
+  "integration_checks_passed": 46,
+  "all_checks_passed": true,
+  "claude_code_offline_fixture_loop_complete": true,
+  "actual_model_inference_requests": 8,
+  "actual_api_cost_usd": null,
+  "scripted_fixture_wire_requests": 3,
+  "fixture_updated_images_sent_at_steps": [
+    {
+      "file": "001.request.json",
+      "contains_image": false,
+      "contains_tool_result": false,
+      "observations_sent_to_api": []
+    },
+    {
+      "file": "002.request.json",
+      "contains_image": true,
+      "contains_tool_result": true,
+      "observations_sent_to_api": [
+        {
+          "step_id": 0,
+          "images": 4
+        }
+      ]
+    },
+    {
+      "file": "003.request.json",
+      "contains_image": true,
+      "contains_tool_result": true,
+      "observations_sent_to_api": [
+        {
+          "step_id": 0,
+          "images": 4
+        },
+        {
+          "step_id": 25,
+          "images": 4
+        }
+      ]
+    }
+  ],
+  "fixture_measured_tcp_delta_m": {
+    "right": [
+      -3.2158047415659086e-06,
+      -1.464402373263507e-05,
+      0.0021622524328097636
+    ],
+    "left": [
+      -3.20712718977767e-06,
+      1.4469146875806249e-05,
+      0.002164419436408327
+    ]
+  },
+  "native_episode_sim_seconds": 0.5,
+  "complete_folding_with_physical_locking": false,
+  "environment_sources_unchanged": true,
+  "credential_value_scan_matches": 0,
+  "upstream_patch_reconstructs_exactly": true,
+  "full_local_check_run": "rax_integration/runs/check_20261102T125732_90ac36/validation.json",
+  "full_claude_fixture_run": "rax_integration/runs/fixture_20261102T124306_8ea2e3/smoke_result.json",
+  "real_claude_inference_status": "completed; original smoke passed and current-metadata regression completed with one read-only continuation",
+  "local_setup_verified": true,
+  "legacy_reset_verified": true,
+  "task_kind": "custom task integrated with RAX, not an official DexJoCo benchmark",
+  "unbudgeted_inference_rejected_before_launch": true,
+  "historical_robocasa_budget_applies_to_claude_box_task": false,
+  "budget_scope_confirmed_by": "simulation-engineer: specific completed DeepSeek/RoboCasa attempt only",
+  "estimated_api_cost_usd": 0.1920435,
+  "real_claude_smoke_loop_complete": true,
+  "live_smoke_run": "rax_integration/runs/smoke_20261102T125028_72c27b/smoke_result.json",
+  "live_smoke_elapsed_seconds": 39.180729155001245,
+  "live_smoke_token_usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 26062,
+    "cache_read_input_tokens": 35475,
+    "output_tokens": 1665,
+    "total_input_including_cache": 61555
+  },
+  "live_smoke_measured_tcp_delta_m": {
+    "right": [
+      -6.635413138403323e-06,
+      -1.183416817540639e-05,
+      0.002165694796574469
+    ],
+    "left": [
+      -5.154215673250362e-06,
+      1.4023662981421658e-05,
+      0.002167960027349647
+    ]
+  },
+  "live_smoke_action_provenance_verified": true,
+  "live_smoke_video_decoded_frames": 6,
+  "no_autonomous_folding_attempt_or_training_run": true,
+  "live_run_environment_sources_unchanged_during_run": true,
+  "post_live_environment_rebuild_detected": true,
+  "post_live_changed_files": [
+    "geometry/panels.json",
+    "models/scene.xml"
+  ],
+  "additional_zero_opening_gripper_check_passed": true,
+  "total_cost_reserved_usd": 0.433074,
+  "latest_live_regression_report": "rax_integration/validation/claude_live_regression.json",
+  "latest_live_loaded_physics_dt_s": 0.0005,
+  "latest_live_substeps_per_row": 40,
+  "latest_live_measured_tcp_delta_m": {
+    "right": [
+      -6.635413138403323e-06,
+      -1.183416817540639e-05,
+      0.002165694796574469
+    ],
+    "left": [
+      -5.154215673250362e-06,
+      1.4023662981421658e-05,
+      0.002167960027349647
+    ]
+  },
+  "compiled_loaded_model_preserved": true,
+  "current_scene_local_checks_passed_after_metadata_fix": false,
+  "continuation_verified_no_tool_calls": true,
+  "final_budget_audit": "rax_integration/validation/api_usage_audit.json",
+  "current_task_revision": "video_rebuild/source_snapshot.json: 14 panels / 13 hinge observations",
+  "current_frozen_hashes_match": null,
+  "current_physics_dt_s": null,
+  "current_substeps_per_row": null,
+  "B273_model_smoke_run": false,
+  "B273_simulation_rerun_by_cloud_api": false,
+  "previous_integration_checks_revision": "earlier 0.5 ms revision",
+  "B273_handoff_report": "rax_integration/validation/B273_handoff.json",
+  "current_scope": "offline_only",
+  "current_api_authorization": false,
+  "historical_smokes_are_not_renewed_authorization": true,
+  "authorization_review": {
+    "original_stated_request_cap": 4,
+    "actual_total_inference_requests": 8,
+    "original_stated_request_cap_met": false,
+    "separate_explicit_user_authorization_for_additional_four_requests": false,
+    "reason_recorded": "Cloud API inferred permission from broad task instruction; inference did not satisfy stated four-request scope",
+    "dollar_headroom_is_not_request_authorization": true,
+    "current_cloud_scope": "offline_only"
+  },
+  "historical_0_5ms_suite_checks_passed": 46,
+  "B273_fresh_runtime_timing_verified_without_stepping": true,
+  "timing_version_resolution": "rax_integration/validation/timing_version_resolution.json",
+  "integration_checks_on_hold": true,
+  "B273_final_is_historical": true,
+  "previous_box_design_basis_cancelled": true,
+  "current_revision_independently_validated": false,
+  "current_hinge_observation_dimension": 13,
+  "fresh_handoff": "rax_integration/validation/video_rebuild_handoff.json",
+  "redesign_handoff_received": true,
+  "current_report": "video_rebuild/REPORT.md",
+  "current_robot_action_dimension": 16,
+  "reported_current_physics_dt_s": 0.00025,
+  "reported_current_control_dt_s": 0.02,
+  "current_timing_source": "box-builder handoff; not independently verified",
+  "execution_state": "offline_idle"
+}

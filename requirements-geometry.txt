@@ -1,0 +1,5 @@
+numpy
+scipy
+matplotlib
+PyMuPDF
+shapely>=2.1

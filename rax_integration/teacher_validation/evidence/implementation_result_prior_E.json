@@ -1,0 +1,58 @@
+{
+  "task_id": "TEACHER-MEM-20261103-A",
+  "ready_root": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/runs/teacher_ready_20261103E",
+  "prepared_only": true,
+  "teacher_cloud_requests": 0,
+  "teacher_task_physical_steps": 0,
+  "teacher_learned_grasp_or_fold": false,
+  "protected_files_unchanged": true,
+  "protected_file_count": 209,
+  "unit_checks": {
+    "tests_run": 61,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "source_unchanged_during_check": true,
+    "cloud_inference_requests": 0
+  },
+  "mcp_checks": {
+    "teacher_tool_discovered": true,
+    "formal_submit_disabled": true,
+    "normal_bundle_workflow": true,
+    "observation_contains_live_truth": true,
+    "world_and_memory_identities_consistent": true,
+    "memory_roundtrip": true,
+    "immutable_evidence": true,
+    "same_world": true,
+    "zero_steps_before_rehearsal": true,
+    "rehearsal_clean": true,
+    "frozen_controller_received_world_and_truth": true,
+    "zero_steps_in_frozen_controller": true,
+    "no_provider_requests": true
+  },
+  "mcp_evidence": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/runs/teacher_contract_20261103T150942_15e8cd/checks.json",
+  "world_environment_id": "46e92ffc7e22fab2c8b7b5a42ec4d2496d84e2e86fcd1558c5b2961374958f05",
+  "memory_environment_id": "3d5acb63c30249db8cc091418acc065af972a38959c63b3075610d1b2ff75524",
+  "final_instruction_file_count": 31,
+  "global_cloud_enabled": false,
+  "limitations": [
+    "Live paid teacher invocation and native teacher display have not been exercised.",
+    "Current native evaluator always withholds physical-locking/full-task success.",
+    "No verified grasp, folding skill, controller retiming improvement or long-path continuation introduced.",
+    "Broader upstream optional checks:19 passed,3 unavailable/inapplicable:2 missing official DexJoCo task YAML;1 /home absence assumption conflicts with native local workspace/interpreter."
+  ],
+  "superseded_prepared_roots": [
+    "teacher_ready_20261103A",
+    "teacher_ready_20261103B",
+    "teacher_ready_20261103C",
+    "teacher_ready_20261103D"
+  ],
+  "source_binding_enforced": true,
+  "old_environment_progress_archived": true,
+  "teacher_reasoning_policy": "teacher_adaptive_high",
+  "reasoning_validation": "Local scripted count/messages transport verified; no actual provider inference.",
+  "max_output_tokens_per_request_including_thinking": 8192,
+  "authored_notes_preserved_verbatim": true,
+  "operator_summaries_separate": true,
+  "memory_publication_semantics": "Startup/post-agent-exit only; RESTORE completion pointer published last, not a multi-file live transaction."
+}

@@ -1,0 +1,37 @@
+test_candidate_text_hash_does_not_verify_unknown_or_changed_execution (rax_integration.teacher.tests.test_memory.MemoryChecks.test_candidate_text_hash_does_not_verify_unknown_or_changed_execution) ... ok
+test_changed_environment_preserves_history_invalidates_verification (rax_integration.teacher.tests.test_memory.MemoryChecks.test_changed_environment_preserves_history_invalidates_verification) ... ok
+test_changed_skill_invalidates_verification (rax_integration.teacher.tests.test_memory.MemoryChecks.test_changed_skill_invalidates_verification) ... ok
+test_claims_do_not_promote_skills (rax_integration.teacher.tests.test_memory.MemoryChecks.test_claims_do_not_promote_skills) ... ok
+test_committed_corruption_is_not_silently_repaired (rax_integration.teacher.tests.test_memory.MemoryChecks.test_committed_corruption_is_not_silently_repaired) ... ok
+test_concurrent_sessions_do_not_lose_events (rax_integration.teacher.tests.test_memory.MemoryChecks.test_concurrent_sessions_do_not_lose_events) ... ok
+test_crash_after_journal_commit_before_snapshot_recovers (rax_integration.teacher.tests.test_memory.MemoryChecks.test_crash_after_journal_commit_before_snapshot_recovers) ... ok
+test_debug_replay_attachment_and_actuation_cannot_verify (rax_integration.teacher.tests.test_memory.MemoryChecks.test_debug_replay_attachment_and_actuation_cannot_verify) ... ok
+test_environment_change_resets_active_progress_labels_old_claims (rax_integration.teacher.tests.test_memory.MemoryChecks.test_environment_change_resets_active_progress_labels_old_claims) ... ok
+test_evidence_traversal_and_symlinks_refused (rax_integration.teacher.tests.test_memory.MemoryChecks.test_evidence_traversal_and_symlinks_refused) ... ok
+test_frozen_code_bundle_binding_and_changed_manifest (rax_integration.teacher.tests.test_memory.MemoryChecks.test_frozen_code_bundle_binding_and_changed_manifest) ... ok
+test_identity_is_order_independent_and_source_sensitive (rax_integration.teacher.tests.test_memory.MemoryChecks.test_identity_is_order_independent_and_source_sensitive) ... ok
+test_incomplete_tail_is_preserved_and_repaired (rax_integration.teacher.tests.test_memory.MemoryChecks.test_incomplete_tail_is_preserved_and_repaired) ... ok
+test_persist_resume_idempotency_and_progress (rax_integration.teacher.tests.test_memory.MemoryChecks.test_persist_resume_idempotency_and_progress) ... ok
+test_refutation_preserves_prior_verification (rax_integration.teacher.tests.test_memory.MemoryChecks.test_refutation_preserves_prior_verification) ... ok
+test_same_identity_recovery_keeps_progress_current (rax_integration.teacher.tests.test_memory.MemoryChecks.test_same_identity_recovery_keeps_progress_current) ... ok
+test_task_confirmation_requires_native_evaluator (rax_integration.teacher.tests.test_memory.MemoryChecks.test_task_confirmation_requires_native_evaluator) ... ok
+test_verified_scope_and_modified_evidence (rax_integration.teacher.tests.test_memory.MemoryChecks.test_verified_scope_and_modified_evidence) ... ok
+test_bundle_resume_carries_notes_evidence_and_journal (rax_integration.teacher.tests.test_bundles.BundleChecks.test_bundle_resume_carries_notes_evidence_and_journal) ... ok
+test_bundle_changed_evidence_is_rejected_before_restore (rax_integration.teacher.tests.test_bundles.BundleChecks.test_bundle_changed_evidence_is_rejected_before_restore) ... ok
+test_incomplete_bundle_not_registered_and_restore_never_merges (rax_integration.teacher.tests.test_bundles.BundleChecks.test_incomplete_bundle_not_registered_and_restore_never_merges) ... ok
+test_export_selects_matching_environment_verification (rax_integration.teacher.tests.test_bundles.BundleChecks.test_export_selects_matching_environment_verification) ... ok
+test_authored_notes_preserved_during_publication_and_resume (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_authored_notes_preserved_during_publication_and_resume) ... ok
+test_carry_memory_code_handoff_without_episode_replay (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_carry_memory_code_handoff_without_episode_replay) ... ok
+test_changed_live_world_refuses_before_any_agent_request (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_changed_live_world_refuses_before_any_agent_request) ... ok
+test_failed_publication_retains_previous_completion_pointer (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_failed_publication_retains_previous_completion_pointer) ... ok
+test_grant_must_cover_all_caps_without_starting_anything (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_grant_must_cover_all_caps_without_starting_anything) ... ok
+test_no_paid_grant_refuses_before_transport (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_no_paid_grant_refuses_before_transport) ... ok
+test_normal_agent_command_preserves_file_code_tools_and_bounds (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_normal_agent_command_preserves_file_code_tools_and_bounds) ... ok
+test_normal_workspace_capability_skills_and_no_template_tokens (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_normal_workspace_capability_skills_and_no_template_tokens) ... ok
+test_policy_tampering_invalidates_preparation (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_policy_tampering_invalidates_preparation) ... ok
+test_publication_rejects_destination_symlink (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_publication_rejects_destination_symlink) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.122s
+
+OK

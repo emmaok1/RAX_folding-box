@@ -1,0 +1,10 @@
+test_carry_memory_code_handoff_without_episode_replay (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_carry_memory_code_handoff_without_episode_replay) ... ok
+test_no_paid_grant_refuses_before_transport (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_no_paid_grant_refuses_before_transport) ... ok
+test_normal_agent_command_preserves_file_code_tools_and_bounds (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_normal_agent_command_preserves_file_code_tools_and_bounds) ... ok
+test_normal_workspace_capability_skills_and_no_template_tokens (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_normal_workspace_capability_skills_and_no_template_tokens) ... ok
+test_policy_tampering_invalidates_preparation (rax_integration.teacher.tests.test_prepare.PreparationChecks.test_policy_tampering_invalidates_preparation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.378s
+
+OK
