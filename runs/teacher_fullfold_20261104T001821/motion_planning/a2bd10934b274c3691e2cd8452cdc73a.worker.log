@@ -1,0 +1,7 @@
+Warning: RRTConnect: Skipping invalid start state (invalid state)
+         at line 249 in /project/src/ompl/base/src/Planner.cpp
+Debug:   RRTConnect: Discarded start state RealVectorState [-0.787858 -0.282233 -0.000650206 -1.26211 -0.000154762 -0.471107 0.00297759]
+
+Error:   RRTConnect: Motion planning start tree could not be initialized!
+         at line 219 in /project/src/ompl/geometric/planners/rrt/src/RRTConnect.cpp
+Info:    No solution found after 0.000148 seconds

@@ -1,0 +1,194 @@
+{
+  "category": "small_left",
+  "arm": "left",
+  "target": {
+    "frame": "world",
+    "tcp": "tcp_L",
+    "position_m": [
+      0.07440186582573743,
+      0.4215010304413814,
+      1.1023234707886371
+    ],
+    "quaternion_wxyz": [
+      0.5937701953534503,
+      -0.4936662922526534,
+      0.4965465768136928,
+      -0.39644929569624243
+    ]
+  },
+  "full_original_scene": true,
+  "goal_selection": "fixed commissioning goal, not cloud decision or folding policy",
+  "source_fingerprint": "a7104a54f5769e119b0f1e61d3a14a9e5e2c975c433cee88c431f33eb926b7d2",
+  "cloud_requests": 0,
+  "status": "PASS",
+  "chunks": [
+    {
+      "status": "completed",
+      "reason": null,
+      "plan_id": "09443f9a142d4c759bdc24b4f151a965",
+      "executed": true,
+      "rows_executed": 43,
+      "rows_planned": 43,
+      "cursor_start": 0,
+      "cursor": 43,
+      "remaining_rows": 0,
+      "continuation_available": false,
+      "chunk_completed": true,
+      "command_completed": true,
+      "goal_reached": true,
+      "measured_goal_error": {
+        "position_m": 0.0007144828248442377,
+        "orientation_rad": 0.0017565316168633043
+      },
+      "wall_seconds": 0.9395588829975168,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    }
+  ],
+  "segments": [
+    {
+      "passed": true,
+      "chunks": [
+        {
+          "status": "completed",
+          "reason": null,
+          "plan_id": "09443f9a142d4c759bdc24b4f151a965",
+          "executed": true,
+          "rows_executed": 43,
+          "rows_planned": 43,
+          "cursor_start": 0,
+          "cursor": 43,
+          "remaining_rows": 0,
+          "continuation_available": false,
+          "chunk_completed": true,
+          "command_completed": true,
+          "goal_reached": true,
+          "measured_goal_error": {
+            "position_m": 0.0007144828248442377,
+            "orientation_rad": 0.0017565316168633043
+          },
+          "wall_seconds": 0.9395588829975168,
+          "stop_ack_delay_wall_s": null,
+          "recovery_required": null,
+          "task_success": false,
+          "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+          "world_policy": "simulator_snapshot"
+        }
+      ],
+      "plan": {
+        "status": "planned",
+        "executed": false,
+        "duration_s": 0.86,
+        "terminal_hold_rows": 5,
+        "planned_goal_error": {
+          "position_m": 9.527491749822245e-05,
+          "orientation_rad": 0.00011072137640550759
+        },
+        "planner": "OMPL1.7.0/RRTConnect",
+        "path_method": "OMPL-checked direct connection",
+        "collision_samples": 97,
+        "checked_pairs": 802,
+        "clearance_lower_bound_m": 0.005,
+        "edge_validation": "Discrete <=0.004 rad L2 during search; final edges <= configured per-joint resolution. Not certified continuous collision checking.",
+        "validation_runtime_s": 0.01945951900052023,
+        "dependency_versions": {
+          "ompl": "1.7.0",
+          "mujoco": "3.4.0"
+        },
+        "runtime_s": 0.031406467998749577,
+        "plan_id": "09443f9a142d4c759bdc24b4f151a965",
+        "episode_id": "free_space_commission",
+        "step_id": 0,
+        "source_hash": "a7104a54f5769e119b0f1e61d3a14a9e5e2c975c433cee88c431f33eb926b7d2",
+        "world_version": "75f9d35ee4516542e2e42f3edff6323661cbae0333f0c0fdd14df502ae70634a",
+        "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+        "world_policy": "simulator_snapshot"
+      },
+      "source_fingerprint": "a7104a54f5769e119b0f1e61d3a14a9e5e2c975c433cee88c431f33eb926b7d2",
+      "plan_nonmutating": true,
+      "preview_rows": 43
+    }
+  ],
+  "plan": {
+    "status": "planned",
+    "executed": false,
+    "duration_s": 0.86,
+    "terminal_hold_rows": 5,
+    "planned_goal_error": {
+      "position_m": 9.527491749822245e-05,
+      "orientation_rad": 0.00011072137640550759
+    },
+    "planner": "OMPL1.7.0/RRTConnect",
+    "path_method": "OMPL-checked direct connection",
+    "collision_samples": 97,
+    "checked_pairs": 802,
+    "clearance_lower_bound_m": 0.005,
+    "edge_validation": "Discrete <=0.004 rad L2 during search; final edges <= configured per-joint resolution. Not certified continuous collision checking.",
+    "validation_runtime_s": 0.01945951900052023,
+    "dependency_versions": {
+      "ompl": "1.7.0",
+      "mujoco": "3.4.0"
+    },
+    "runtime_s": 0.031406467998749577,
+    "plan_id": "09443f9a142d4c759bdc24b4f151a965",
+    "episode_id": "free_space_commission",
+    "step_id": 0,
+    "source_hash": "a7104a54f5769e119b0f1e61d3a14a9e5e2c975c433cee88c431f33eb926b7d2",
+    "world_version": "75f9d35ee4516542e2e42f3edff6323661cbae0333f0c0fdd14df502ae70634a",
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  },
+  "final_tcp": [
+    0.07430400775869114,
+    0.42155452324153175,
+    1.10302923033796,
+    0.594271440073168,
+    -0.4932718822613703,
+    0.4960561474282765,
+    -0.3968029791751871
+  ],
+  "actual_displacement_m": 0.010706340420931592,
+  "final_physical_progress": {
+    "design": "video_rebuild",
+    "stabilized": true,
+    "body_walls_and_corners": false,
+    "stable_open_box_geometry": false,
+    "closed_geometry": false,
+    "tab_slot_relationships": [
+      {
+        "feature": "front_tongue_slot",
+        "through_slot": false,
+        "whole_section_fits": false,
+        "insertion_direction_valid": false,
+        "tip_front_frame_m": [
+          5.698545359976189e-17,
+          0.6225000002345069,
+          2.8581044383843032e-08
+        ],
+        "insertion_depth_m": 0.0,
+        "geometric_capture_candidate": false,
+        "physical_retention_verified": false
+      }
+    ],
+    "locking_geometry_candidate": false,
+    "released_persistence": false,
+    "required_release_seconds": 5,
+    "hand_panel_contacts": 0,
+    "robot_panel_contacts": 0,
+    "table_panel_contacts": 17,
+    "max_box_hinge_speed_rad_s": 2.4104400259443216e-05,
+    "max_box_penetration_m": 0.0,
+    "physical_locking_verified": false,
+    "succeed": false,
+    "debug_pose": false,
+    "note": "Video-inspired reconstruction. Reset precrease is curriculum setup; debug geometry and closure alone never earn physical assembly success."
+  },
+  "max_tracking_error_rad": 0.00672228132281083,
+  "actual_sim_time_s": 0.859999999999933,
+  "actual_control_rows": 43,
+  "hand_panel_contacts_peak": 0,
+  "robot_panel_contacts_peak": 0
+}

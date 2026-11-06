@@ -1,0 +1,184 @@
+{
+  "episode_id": "dexmate_c3e30cee0a244e60bdf6a087c6f94e7c",
+  "step_id": 57,
+  "task": "cardboard_box_folding",
+  "state": {
+    "tcp_pose": [
+      0.07457691374564304,
+      -0.39101369867165636,
+      1.0923285687049789,
+      -0.3971490025933273,
+      0.497005577919034,
+      -0.49316909994780406,
+      0.5933315802425868,
+      0.07440186582520952,
+      0.42150103043656173,
+      1.0923234707667406,
+      0.5937701953448684,
+      -0.49366629225730324,
+      0.4965465768227889,
+      -0.3964492956919124
+    ],
+    "arm_joint_positions": [
+      -0.8121244309487032,
+      -0.23636138689187,
+      -0.025455484380568057,
+      -1.294667008937189,
+      -0.013084325217497212,
+      -0.4832631783854265,
+      -0.042771304447808224,
+      0.8000000000189339,
+      0.2799999999962703,
+      3.586274175296583e-12,
+      -1.2499999999996534,
+      -8.591939174476567e-13,
+      0.45000000000691426,
+      -2.041706221886994e-12
+    ],
+    "arm_joint_velocities": [
+      -0.001744112699004344,
+      0.003952494734513073,
+      -0.0013156342554798883,
+      -0.006548308263005931,
+      -0.003060488128140802,
+      -0.007490149009198375,
+      -0.011515473124183304,
+      -1.5913115897151614e-10,
+      3.16408592013306e-11,
+      -3.01492575375162e-11,
+      -2.146280484894108e-12,
+      6.506193091539763e-12,
+      -4.6590348041480075e-11,
+      1.3549213272169832e-11
+    ],
+    "gripper_pose": [
+      0.28654665460062106,
+      0.2865448562529685,
+      0.2894998709063142,
+      0.28950167665522863
+    ],
+    "gripper_opening_commands": {
+      "right": 0.3,
+      "left": 0.3
+    }
+  },
+  "images": [
+    "back",
+    "ego",
+    "wrist_left",
+    "wrist_right"
+  ],
+  "attachments": [
+    {
+      "kind": "rgb",
+      "camera": "back",
+      "content_index": 1
+    },
+    {
+      "kind": "rgb",
+      "camera": "ego",
+      "content_index": 2
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_left",
+      "content_index": 3
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_right",
+      "content_index": 4
+    }
+  ],
+  "episode_ended": true,
+  "sim_time_s": 1.1399999999999644,
+  "action_layout": {
+    "dim": 16,
+    "order": [
+      "right",
+      "left"
+    ],
+    "per_arm": [
+      "world_x_m",
+      "world_y_m",
+      "world_z_m",
+      "qw",
+      "qx",
+      "qy",
+      "qz",
+      "open_fraction"
+    ],
+    "frame": "MuJoCo world, right handed, z up",
+    "orientation": "active local-to-world quaternion wxyz",
+    "tool": "tcp_R / tcp_L, [0,0,0.16] m in each gripper_base frame, same axes",
+    "gripper": {
+      "command_unit": "opening fraction, 0 closed to 1 open",
+      "positive_opening_target_rad": "0.96 * fraction",
+      "zero_opening_mode": "bounded closing torque + damping",
+      "configured_closing_torque_Nm": 0.4
+    },
+    "timing": {
+      "control_dt_s": 0.02,
+      "physics_dt_s": 0.00025,
+      "substeps_per_row": 80,
+      "control_frequency_hz": 50.0,
+      "both_arms_staged_before_physics": true
+    },
+    "semantics": "absolute motor-driven TCP references via existing IK + PD; no teleportation",
+    "zero_pose": "all first seven values zero for an arm holds its previous TCP target"
+  },
+  "control_feedback": {
+    "mode": "planned_joint_references",
+    "ik_residual": null,
+    "ik_residual_semantics": "Residual of IK scratch solution; NOT actual TCP tracking error or proof of arrival.",
+    "tcp_references": {
+      "left": [
+        0.07440186582573743,
+        0.4215010304413814,
+        1.0923234707886371,
+        0.5937701953534503,
+        -0.4936662922526534,
+        0.4965465768136928,
+        -0.39644929569624243
+      ],
+      "right": [
+        0.07435370159348252,
+        -0.39169208350002965,
+        1.0923648642826604,
+        -0.3964444088805902,
+        0.4965528897532072,
+        -0.4936659956329417,
+        0.5937684254831972
+      ]
+    },
+    "reference_tracking": {
+      "right": {
+        "data_valid": true,
+        "actual_minus_reference_position_m": [
+          0.0002232121521605207,
+          0.0006783848283732907,
+          -3.629557768158875e-05
+        ],
+        "position_m": 0.0007150853160276967,
+        "orientation_rad": 0.002134589486925512,
+        "within_reference_tolerance": true
+      },
+      "left": {
+        "data_valid": true,
+        "actual_minus_reference_position_m": [
+          -5.279110482092619e-13,
+          -4.819644683351498e-12,
+          -2.1896484625472112e-11
+        ],
+        "position_m": 2.2426852295900027e-11,
+        "orientation_rad": 0.0,
+        "within_reference_tolerance": true
+      }
+    },
+    "reference_tracking_semantics": "Measured TCP versus current commanded TCP reference. For planned motion this is the current joint-reference FK, not the final trajectory goal.",
+    "reference_tolerance": {
+      "position_m": 0.005,
+      "orientation_rad": 0.05
+    }
+  }
+}

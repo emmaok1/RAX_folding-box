@@ -1,0 +1,561 @@
+{
+  "scope": "static scratch collision queries only; zero physics steps; no cardboard oracle",
+  "probe_pair": [
+    "dexmate_R_gripper_base_collision_115",
+    "dexmate_R_gripper_l1_collision_118"
+  ],
+  "raw_convex_distance_m": -0.034939829339417604,
+  "native_default_contacts": [],
+  "native_filterparent_disabled_contacts": [
+    -0.03493982933941761
+  ],
+  "native_flags_restored": true,
+  "direct_parent_exclusions": [
+    {
+      "geoms": [
+        "dexmate_R_gripper_base_collision_115",
+        "dexmate_R_gripper_l1_collision_118"
+      ],
+      "bodies": [
+        "dexmate_R_gripper_base",
+        "dexmate_R_gripper_l1"
+      ],
+      "reason": "native adjacent joint-attachment geometry (parent-child filter)"
+    },
+    {
+      "geoms": [
+        "dexmate_R_gripper_base_collision_115",
+        "jaw_pad_R_1"
+      ],
+      "bodies": [
+        "dexmate_R_gripper_base",
+        "dexmate_R_gripper_l1"
+      ],
+      "reason": "native adjacent joint-attachment geometry (parent-child filter)"
+    },
+    {
+      "geoms": [
+        "dexmate_R_gripper_base_collision_115",
+        "dexmate_R_gripper_l2_collision_121"
+      ],
+      "bodies": [
+        "dexmate_R_gripper_base",
+        "dexmate_R_gripper_l2"
+      ],
+      "reason": "native adjacent joint-attachment geometry (parent-child filter)"
+    },
+    {
+      "geoms": [
+        "dexmate_R_gripper_base_collision_115",
+        "jaw_pad_R_2"
+      ],
+      "bodies": [
+        "dexmate_R_gripper_base",
+        "dexmate_R_gripper_l2"
+      ],
+      "reason": "native adjacent joint-attachment geometry (parent-child filter)"
+    }
+  ],
+  "source_srdf_always_entries": [
+    {
+      "link1": "base_link",
+      "link2": "lift_link",
+      "reason": "Always"
+    },
+    {
+      "link1": "lift_link",
+      "link2": "torso_flip_link",
+      "reason": "Always"
+    },
+    {
+      "link1": "torso_flip_link",
+      "link2": "L_arm_l1",
+      "reason": "Always"
+    },
+    {
+      "link1": "torso_flip_link",
+      "link2": "R_arm_l1",
+      "reason": "Always"
+    },
+    {
+      "link1": "torso_flip_link",
+      "link2": "head_l1",
+      "reason": "Always"
+    },
+    {
+      "link1": "L_arm_l1",
+      "link2": "L_arm_l2",
+      "reason": "Always"
+    },
+    {
+      "link1": "L_arm_l2",
+      "link2": "L_arm_l3",
+      "reason": "Always"
+    },
+    {
+      "link1": "L_arm_l3",
+      "link2": "L_arm_l4",
+      "reason": "Always"
+    },
+    {
+      "link1": "L_arm_l4",
+      "link2": "L_arm_l5",
+      "reason": "Always"
+    },
+    {
+      "link1": "L_arm_l5",
+      "link2": "L_arm_l6",
+      "reason": "Always"
+    },
+    {
+      "link1": "L_arm_l6",
+      "link2": "L_arm_l7",
+      "reason": "Always"
+    },
+    {
+      "link1": "R_arm_l1",
+      "link2": "R_arm_l2",
+      "reason": "Always"
+    },
+    {
+      "link1": "R_arm_l2",
+      "link2": "R_arm_l3",
+      "reason": "Always"
+    },
+    {
+      "link1": "R_arm_l3",
+      "link2": "R_arm_l4",
+      "reason": "Always"
+    },
+    {
+      "link1": "R_arm_l4",
+      "link2": "R_arm_l5",
+      "reason": "Always"
+    },
+    {
+      "link1": "R_arm_l5",
+      "link2": "R_arm_l6",
+      "reason": "Always"
+    },
+    {
+      "link1": "R_arm_l6",
+      "link2": "R_arm_l7",
+      "reason": "Always"
+    },
+    {
+      "link1": "head_l1",
+      "link2": "head_l2",
+      "reason": "Always"
+    },
+    {
+      "link1": "head_l2",
+      "link2": "head_l3",
+      "reason": "Always"
+    }
+  ],
+  "srdf_never_default_not_imported": true,
+  "coverage_checks": {
+    "pad_table_checked": true,
+    "pad_opposite_arm_checked": true,
+    "opposing_right_jaws_checked": true
+  },
+  "retained_pairs_involving_probe_geoms": [
+    [
+      "floor",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "floor",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "table_collision",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "table_collision",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_base_link_collision_4",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_base_link_collision_4",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_base_link_collision_5",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_base_link_collision_5",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_base_link_collision_6",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_base_link_collision_6",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_lift_link_collision_15",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_lift_link_collision_15",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_lift_link_collision_16",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_lift_link_collision_16",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_lift_link_collision_17",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_lift_link_collision_17",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_lift_link_collision_18",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_lift_link_collision_18",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_lift_link_collision_19",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_lift_link_collision_19",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_37",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_37",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_38",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_38",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_39",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_39",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_40",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_40",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_41",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_41",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_42",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_42",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_43",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_43",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_44",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_44",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_45",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_45",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_46",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_46",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_47",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_47",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_48",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_48",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_49",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_49",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_50",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_50",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_51",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_torso_flip_link_collision_51",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_head_l1_collision_53",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_head_l1_collision_53",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_head_l2_collision_55",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_head_l2_collision_55",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_head_l3_collision_60",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_head_l3_collision_60",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l1_collision_62",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l1_collision_62",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l2_collision_64",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l2_collision_64",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l3_collision_66",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l3_collision_66",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l4_collision_68",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l4_collision_68",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l5_collision_70",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l5_collision_70",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l6_collision_72",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l6_collision_72",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l7_collision_74",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l7_collision_74",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_arm_l8_collision_78",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_arm_l8_collision_78",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_gripper_base_collision_84",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_gripper_base_collision_84",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_gripper_l1_collision_87",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_gripper_l1_collision_87",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "jaw_pad_L_1",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "jaw_pad_L_1",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_L_gripper_l2_collision_90",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_L_gripper_l2_collision_90",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "jaw_pad_L_2",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "jaw_pad_L_2",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l1_collision_93",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_R_arm_l1_collision_93",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l2_collision_95",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_R_arm_l2_collision_95",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l3_collision_97",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_R_arm_l3_collision_97",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l4_collision_99",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_R_arm_l4_collision_99",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l5_collision_101",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_R_arm_l5_collision_101",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l6_collision_103",
+      "dexmate_R_gripper_base_collision_115"
+    ],
+    [
+      "dexmate_R_arm_l6_collision_103",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l7_collision_105",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_arm_l8_collision_109",
+      "dexmate_R_gripper_l1_collision_118"
+    ],
+    [
+      "dexmate_R_gripper_l1_collision_118",
+      "dexmate_R_gripper_l2_collision_121"
+    ],
+    [
+      "dexmate_R_gripper_l1_collision_118",
+      "jaw_pad_R_2"
+    ]
+  ],
+  "mesh_collision": "MuJoCo convex mesh representation, not concave visual surfaces",
+  "native_source": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.4.0/src/engine/engine_collision_driver.c",
+  "cardboard_coverage": "unknown; production planner refuses, no cardboard state queried",
+  "relevant_pair_count": 581,
+  "all_checks_passed": true
+}

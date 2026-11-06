@@ -1,0 +1,41 @@
+{
+  "mode": "auto-research",
+  "phase": "exploration",
+  "observation_profile": "rgb-only",
+  "exploration_envs": 1,
+  "subagents": 0,
+  "robot_tools": [
+    "dexmate_gripper",
+    "dexmate_hold",
+    "dexmate_motion_execute",
+    "dexmate_motion_plan",
+    "dexmate_motion_preview",
+    "dexmate_motion_status",
+    "dexmate_motion_stop",
+    "dexmate_observe",
+    "dexmate_status",
+    "dexmate_step"
+  ],
+  "gemini": false,
+  "benchmark": "dexmate_box",
+  "role": "exploration",
+  "tools": [
+    "dexmate_gripper",
+    "dexmate_hold",
+    "dexmate_motion_execute",
+    "dexmate_motion_plan",
+    "dexmate_motion_preview",
+    "dexmate_motion_status",
+    "dexmate_motion_stop",
+    "dexmate_observe",
+    "dexmate_status",
+    "dexmate_step",
+    "evaluate",
+    "finish",
+    "register",
+    "rehearse",
+    "start_episode",
+    "status",
+    "submit"
+  ]
+}

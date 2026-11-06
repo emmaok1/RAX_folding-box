@@ -1,0 +1,24 @@
+test_callback_failure_preserves_operator_stop_cause (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_callback_failure_preserves_operator_stop_cause) ... ok
+test_callback_failure_records_actual_step_and_final_result (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_callback_failure_records_actual_step_and_final_result) ... ok
+test_changed_paper_snapshot_refuses_without_live_mutation (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_changed_paper_snapshot_refuses_without_live_mutation) ... ok
+test_fast_moving_world_refuses_before_motion (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_fast_moving_world_refuses_before_motion) ... ok
+test_full_scene_immutable_plan_and_original_controller_execution (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_full_scene_immutable_plan_and_original_controller_execution) ... ok
+test_injected_collision_world_detects_paper_not_live_teleportation (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_injected_collision_world_detects_paper_not_live_teleportation) ... ok
+test_legacy_mode_still_refuses_without_box_state_reads (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_legacy_mode_still_refuses_without_box_state_reads) ... ok
+test_policy_change_refuses_without_motion (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_policy_change_refuses_without_motion) ... ok
+test_policy_revocation_during_execution_stops_next_row (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_policy_revocation_during_execution_stops_next_row) ... ok
+test_policy_revoked_during_edge_prevents_next_actuation (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_policy_revoked_during_edge_prevents_next_actuation) ... ok
+test_stop_after_first_actual_control_row (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_stop_after_first_actual_control_row) ... ok
+test_stop_during_edge_validation_is_not_collision (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_stop_during_edge_validation_is_not_collision) ... ok
+test_external_stop_after_plan_closes_final_loop (rax_integration.planning_validation.display_stop_checks.DisplayStopChecks.test_external_stop_after_plan_closes_final_loop) ... {"phase": "INITIAL PAUSED", "task_id": "external-stop-test", "wall_unix_s": 1793738561.4787214, "step_id": 0, "sim_time_s": 0.0, "information_policy": "simulator-state-assisted local collision planning; not vision-only", "paper_present": true}
+{"phase": "PLANNING", "task_id": "external-stop-test", "wall_unix_s": 1793738561.479066, "step_id": 0, "sim_time_s": 0.0, "target": {"frame": "world", "tcp": "tcp_R", "position_m": [0.0, 0.0, 1.0], "quaternion_wxyz": [1.0, 0.0, 0.0, 0.0]}}
+{"phase": "PLANNING REFUSED", "task_id": "external-stop-test", "wall_unix_s": 1793738561.4792275, "step_id": 0, "sim_time_s": 0.0, "result": {"status": "refused", "reason": "STOP_REQUESTED"}}
+ok
+test_stop_before_start_does_not_create_planner (rax_integration.planning_validation.display_stop_checks.DisplayStopChecks.test_stop_before_start_does_not_create_planner) ... {"phase": "INITIAL PAUSED", "task_id": "stop-test", "wall_unix_s": 1793738561.4807482, "step_id": 0, "sim_time_s": 0.0, "information_policy": "simulator-state-assisted local collision planning; not vision-only", "paper_present": true}
+{"phase": "STOPPED BEFORE PLANNING", "task_id": "stop-test", "wall_unix_s": 1793738561.4808252, "step_id": 0, "sim_time_s": 0.0}
+ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 36.401s
+
+OK

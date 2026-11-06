@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "tests_run": 6,
+  "measurements": [
+    {
+      "paper_pairs": 221,
+      "full_model_nq": 38,
+      "status": "completed",
+      "reason": null,
+      "plan_id": "39f52f2d551b47d889996e6c399d4e09",
+      "executed": true,
+      "rows_executed": 20,
+      "rows_planned": 20,
+      "command_completed": true,
+      "goal_reached": true,
+      "measured_goal_error": {
+        "position_m": 0.0009313011247460833,
+        "orientation_rad": 0.001883545909659906
+      },
+      "wall_seconds": 1.090374919000169,
+      "stop_ack_delay_wall_s": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    },
+    {
+      "status": "stopped",
+      "reason": "STOP_REQUESTED",
+      "plan_id": "308598adaeac47358b638852940d2fe2",
+      "executed": true,
+      "rows_executed": 1,
+      "rows_planned": 20,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.012520172370369745,
+        "orientation_rad": 0.017997440832708662
+      },
+      "wall_seconds": 0.039790835999156116,
+      "stop_ack_delay_wall_s": 0.0006134510040283203,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    }
+  ],
+  "protected_before": {
+    "environment.py": "aadae081f6409dd912e43541155f4880fd8084c2de80ac5f4bbe46cd6ecb5118",
+    "robot_model.py": "9aa4938bf2b3a8862cc225f70c7201cec4776db5caf01f6ae766bf3350d51103",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "models/arena.xml": "710af53544d786542a2fe0feb7add83b395d2f4f961b4276a7b990435b9eb7ab",
+    "box_geometry.py": "c8083abbee86ab82ee08c8d59e0d1fd26f2e1f9ff1d8e781c92682f082b44b9d",
+    "geometry/panels.json": "fb595e8efa4a3e201decc53216556503fd0da0ab6b0f36cc31b551b827084dd3"
+  },
+  "protected_after": {
+    "environment.py": "aadae081f6409dd912e43541155f4880fd8084c2de80ac5f4bbe46cd6ecb5118",
+    "robot_model.py": "9aa4938bf2b3a8862cc225f70c7201cec4776db5caf01f6ae766bf3350d51103",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "models/arena.xml": "710af53544d786542a2fe0feb7add83b395d2f4f961b4276a7b990435b9eb7ab",
+    "box_geometry.py": "c8083abbee86ab82ee08c8d59e0d1fd26f2e1f9ff1d8e781c92682f082b44b9d",
+    "geometry/panels.json": "fb595e8efa4a3e201decc53216556503fd0da0ab6b0f36cc31b551b827084dd3"
+  },
+  "protected_unchanged": true,
+  "cloud_requests": 0
+}

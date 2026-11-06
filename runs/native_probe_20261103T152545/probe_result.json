@@ -1,0 +1,10 @@
+{
+  "kind": "OFFLINE SCRIPTED NATIVE CLI SANDBOX PROBE",
+  "root": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/runs/native_probe_20261103T152545",
+  "cli_returncode": 0,
+  "proof_written": false,
+  "scripted_messages": 2,
+  "actual_cloud_inference_requests": 0,
+  "robot_steps": 0,
+  "elapsed_seconds": 1.1908901160004461
+}

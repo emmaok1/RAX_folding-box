@@ -1,0 +1,1 @@
+{"content": [{"type": "text", "text": "{\"status\": \"refused\", \"reason\": \"INSUFFICIENT_DYNAMIC_WORLD_COVERAGE\", \"executed\": false, \"episode_id\": \"dexmate_d57304a5cf8d4889aa994b9d29b88760\", \"step_id\": 0, \"coverage\": \"Unknown dynamic objects are not read or collision-certified; no cardboard avoidance claim.\", \"episode_ended\": false}"}]}

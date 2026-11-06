@@ -1,0 +1,35 @@
+{
+  "category": "intermediate",
+  "arm": "right",
+  "target": {
+    "frame": "world",
+    "tcp": "tcp_R",
+    "position_m": [
+      -0.02,
+      -0.36,
+      1.13
+    ],
+    "quaternion_wxyz": [
+      -0.39644711461038995,
+      0.4965483901840249,
+      -0.4936644682955539,
+      0.5937716516180421
+    ]
+  },
+  "full_original_scene": true,
+  "goal_selection": "fixed commissioning goal, not cloud decision or folding policy",
+  "source_fingerprint": null,
+  "cloud_requests": 0,
+  "status": "FAIL",
+  "chunks": [],
+  "plan": {
+    "status": "refused",
+    "reason": "PATH_VALIDATION_FAILED",
+    "executed": false,
+    "episode_id": "free_space_commission",
+    "step_id": 0,
+    "samples": 483,
+    "collision": null
+  },
+  "plan_nonmutating": true
+}

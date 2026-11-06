@@ -1,0 +1,291 @@
+{
+  "task_id": "MP-TRACK-CONTINUE-20261104",
+  "order_revision": 2,
+  "observed_utc": "2026-11-04T04:45:37.673661+00:00",
+  "scope": "Independent current static kinematics and pure predicates only; incomplete motion runtime NOT validated.",
+  "physics_control_rows": 0,
+  "sim_time_s": 0.0,
+  "provider_requests": 0,
+  "viewer_launched": false,
+  "state_unchanged_after_reset": true,
+  "source_hashes": {
+    "environment.py": "aadae081f6409dd912e43541155f4880fd8084c2de80ac5f4bbe46cd6ecb5118",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "rax_integration/motion_planning/service.py": "d21901698a906beecf5a17fab2bd6b7309d4dd1a41e5a399686fb2d1f61c6af9",
+    "rax_integration/motion_planning/config.json": "72e4c79e36dc8349c67c32487c03d98719da5c59ae7649149c83ffddb94c4620",
+    "rax_integration/motion_planning/limits.py": "71211f2146c84d572fd11b3f6a55be8bdc36710e52ac95fbf55018719ae10cb9",
+    "rax_integration/motion_planning/telemetry.py": "0323f7a217cdb6aaeeca7a5e55bdef7e080febfe4e2049c3ad2fd73eb5b452f4",
+    "rax_integration/upstream/services/dexmate_box/tools.py": "3076ca2f02a60da72ca42b91a45f3453d336642f5f54a7bc352a29543fa2a8af"
+  },
+  "cases": [
+    {
+      "id": "M01",
+      "area": "frames and robot mapping",
+      "status": "pass",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities.",
+      "kind": "current loaded full-scene kinematics; zero control rows",
+      "arms": {
+        "left": {
+          "passed": true,
+          "joint_names": [
+            "L_arm_j1",
+            "L_arm_j2",
+            "L_arm_j3",
+            "L_arm_j4",
+            "L_arm_j5",
+            "L_arm_j6",
+            "L_arm_j7"
+          ],
+          "qpos_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "qvel_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "site_body": "dexmate_L_gripper_base",
+          "tcp_local_m": [
+            0.0,
+            0.0,
+            0.16
+          ],
+          "position_error_m": 0.0,
+          "rotation_matrix_error": 1.6653345369377348e-16,
+          "quaternion_sign_error_rad": 0.0
+        },
+        "right": {
+          "passed": true,
+          "joint_names": [
+            "R_arm_j1",
+            "R_arm_j2",
+            "R_arm_j3",
+            "R_arm_j4",
+            "R_arm_j5",
+            "R_arm_j6",
+            "R_arm_j7"
+          ],
+          "qpos_indices": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "qvel_indices": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "site_body": "dexmate_R_gripper_base",
+          "tcp_local_m": [
+            0.0,
+            0.0,
+            0.16
+          ],
+          "position_error_m": 0.0,
+          "rotation_matrix_error": 2.220446049250313e-16,
+          "quaternion_sign_error_rad": 0.0
+        }
+      },
+      "limitation": "Virtual TCP transform only; no fingertip/grasp-access proof."
+    },
+    {
+      "id": "M02",
+      "area": "small translations",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities."
+    },
+    {
+      "id": "M03",
+      "area": "orientation and reachability",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities.",
+      "subchecks": {
+        "schema_refusals": [
+          {
+            "case": "frame",
+            "refused": true,
+            "error_type": "RejectedBeforeAction",
+            "reason": "Target TCP/frame mismatch"
+          },
+          {
+            "case": "tcp",
+            "refused": true,
+            "error_type": "RejectedBeforeAction",
+            "reason": "Target TCP/frame mismatch"
+          },
+          {
+            "case": "zero_quaternion",
+            "refused": true,
+            "error_type": "RejectedBeforeAction",
+            "reason": "Quaternion must be nonzero"
+          },
+          {
+            "case": "nonfinite_position",
+            "refused": true,
+            "error_type": "RejectedBeforeAction",
+            "reason": "Invalid position_m"
+          },
+          {
+            "case": "invalid_arm",
+            "refused": true,
+            "reason": "Invalid arm"
+          }
+        ]
+      },
+      "subcheck_passed": true,
+      "remaining": "Real orientation-only, unreachable and timed-out planner queries not run on current repair."
+    },
+    {
+      "id": "M04",
+      "area": "trackability",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities."
+    },
+    {
+      "id": "M05",
+      "area": "long-path boundaries",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities."
+    },
+    {
+      "id": "M06",
+      "area": "cursor and ownership",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities.",
+      "subcheck_passed": true,
+      "subchecks": [
+        {
+          "expected_cursor": 0,
+          "result": {
+            "reason": "CURSOR_MISMATCH",
+            "plan_id": "one",
+            "cursor": 50,
+            "expected_cursor": 0
+          }
+        },
+        {
+          "expected_cursor": 49,
+          "result": {
+            "reason": "CURSOR_MISMATCH",
+            "plan_id": "one",
+            "cursor": 50,
+            "expected_cursor": 49
+          }
+        },
+        {
+          "expected_cursor": 51,
+          "result": {
+            "reason": "CURSOR_MISMATCH",
+            "plan_id": "one",
+            "cursor": 50,
+            "expected_cursor": 51
+          }
+        },
+        {
+          "expected_cursor": null,
+          "result": {
+            "reason": "EXPECTED_CURSOR_REQUIRED",
+            "plan_id": "one",
+            "cursor": 50
+          }
+        },
+        {
+          "expected_cursor": true,
+          "result": {
+            "reason": "INVALID_EXPECTED_CURSOR",
+            "plan_id": "one",
+            "cursor": 50
+          }
+        },
+        {
+          "expected_cursor": -1,
+          "result": {
+            "reason": "INVALID_EXPECTED_CURSOR",
+            "plan_id": "one",
+            "cursor": 50
+          }
+        },
+        {
+          "expected_cursor": 50,
+          "result": null
+        }
+      ],
+      "remaining": "Pure admission predicate only; no mutex/backend/budget/physical execution or stale-other-plan proof here."
+    },
+    {
+      "id": "M07",
+      "area": "collision coverage",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities."
+    },
+    {
+      "id": "M08",
+      "area": "freshness and state boundaries",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities."
+    },
+    {
+      "id": "M09",
+      "area": "STOP and errors",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities.",
+      "sampler_exception_restored": true,
+      "remaining": "No search/chunk/between-chunk STOP or execution error tests in this zero-step check."
+    },
+    {
+      "id": "M10",
+      "area": "budgets and episode end",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities.",
+      "subchecks": {
+        "max_plan_rows": 500,
+        "max_execute_rows": 50,
+        "plan501": {
+          "refused": true,
+          "reason": "max_plan_rows must be an integer1..500"
+        },
+        "execute51": {
+          "refused": true,
+          "reason": "max_execute_rows must be an integer1..50"
+        }
+      },
+      "remaining": "Pure limit validation only; action-call/episode/actual-row budget integration not run on current repair."
+    },
+    {
+      "id": "M11",
+      "area": "end-to-end local MCP",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities."
+    },
+    {
+      "id": "M12",
+      "area": "full-scene repeatability",
+      "status": "not-run",
+      "reason": "Current execution-runtime refinement blocked by source protection; prior passing runs have different source identities."
+    }
+  ],
+  "historical_evidence_separate": [
+    "planning_validation/evidence/mp_track_continue_20261104/implementation.json"
+  ],
+  "remaining_blocker": "Execution sources are read-only444; no chmod/replace/bypass performed."
+}

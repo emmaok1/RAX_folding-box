@@ -1,0 +1,45 @@
+{
+  "category": "near_box_standoff",
+  "arm": "right",
+  "target": {
+    "frame": "world",
+    "tcp": "tcp_R",
+    "position_m": [
+      -0.15,
+      -0.3,
+      1.12
+    ],
+    "quaternion_wxyz": [
+      -0.39644711461038995,
+      0.4965483901840249,
+      -0.4936644682955539,
+      0.5937716516180421
+    ]
+  },
+  "full_original_scene": true,
+  "goal_selection": "fixed commissioning goal, not cloud decision or folding policy",
+  "source_fingerprint": null,
+  "cloud_requests": 0,
+  "status": "FAIL",
+  "chunks": [],
+  "plan": {
+    "status": "refused",
+    "reason": "TRAJECTORY_TOO_LONG",
+    "executed": false,
+    "episode_id": "free_space_commission",
+    "step_id": 0,
+    "samples": 386,
+    "collision": null,
+    "path_waypoints": 2,
+    "joint_path_span_rad": [
+      0.5059205375626283,
+      0.08936059637153462,
+      0.0614990904450901,
+      1.2060442599101093,
+      0.0013895389620410693,
+      0.7147245386337795,
+      0.20484812490704576
+    ]
+  },
+  "plan_nonmutating": true
+}

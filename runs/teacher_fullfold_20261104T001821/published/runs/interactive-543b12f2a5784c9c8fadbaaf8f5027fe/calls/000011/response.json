@@ -1,0 +1,1 @@
+{"content": [{"type": "text", "text": "{\"status\": \"refused\", \"reason\": \"TRAJECTORY_TOO_LONG\", \"executed\": false, \"episode_id\": \"dexmate_3453b4b9a45f468fa4a5ef40d85ef9a1\", \"step_id\": 24, \"samples\": 201, \"collision\": {\"geoms\": [\"table_collision\", \"dexmate_R_arm_l4_collision_99\"], \"distance_m\": 0.002905404506377922}, \"episode_ended\": false}"}]}

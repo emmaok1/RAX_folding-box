@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/upstream/services/controller/frontend.py", line 514, in <module>
+    main()
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/upstream/services/controller/frontend.py", line 477, in main
+    config = load_configuration(args.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/upstream/services/controller/frontend.py", line 466, in load_configuration
+    return with_task_timeouts(Configuration.from_dict(json.loads(Path(path).read_text())))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/upstream/services/controller/config.py", line 144, in from_dict
+    return cls(**value)
+           ^^^^^^^^^^^^
+  File "<string>", line 35, in __init__
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/upstream/services/controller/config.py", line 198, in __post_init__
+    if not self.root.is_relative_to(artifact_root()):
+                                    ^^^^^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/upstream/services/storage_root.py", line 21, in artifact_root
+    raise RuntimeError(
+RuntimeError: No artifact root: set RAX_ARTIFACT_ROOT or create a 'runtime' symlink in /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/upstream

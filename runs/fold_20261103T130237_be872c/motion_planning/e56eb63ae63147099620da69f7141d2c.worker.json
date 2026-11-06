@@ -1,0 +1,1 @@
+{"status": "refused", "reason": "TRAJECTORY_TOO_LONG", "executed": false, "samples": 153, "collision": null, "path_waypoints": 2, "joint_path_span_rad": [0.08774048219947872, 0.3209313924208021, 0.20521168940129403, 0.07524319981201533, 0.07056326303323446, 0.040125021451688225, 0.3973562322014206]}

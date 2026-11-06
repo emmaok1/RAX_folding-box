@@ -1,0 +1,14 @@
+test_external_stop_after_plan_closes_final_loop (rax_integration.planning_validation.display_stop_checks.DisplayStopChecks.test_external_stop_after_plan_closes_final_loop) ... {"phase": "INITIAL PAUSED", "task_id": "external-stop-test", "wall_unix_s": 1793691497.4922795, "step_id": 0, "sim_time_s": 0.0, "information_policy": "simulator-state-assisted local collision planning; not vision-only", "paper_present": true}
+{"phase": "PLANNING", "task_id": "external-stop-test", "wall_unix_s": 1793691497.492683, "step_id": 0, "sim_time_s": 0.0, "target": {"frame": "world", "tcp": "tcp_R", "position_m": [0.0, 0.0, 1.0], "quaternion_wxyz": [1.0, 0.0, 0.0, 0.0]}}
+{"phase": "PLANNING REFUSED", "task_id": "external-stop-test", "wall_unix_s": 1793691497.49284, "step_id": 0, "sim_time_s": 0.0, "result": {"status": "refused", "reason": "STOP_REQUESTED"}}
+ok
+test_stop_before_start_does_not_create_planner (rax_integration.planning_validation.display_stop_checks.DisplayStopChecks.test_stop_before_start_does_not_create_planner) ... {"phase": "INITIAL PAUSED", "task_id": "stop-test", "wall_unix_s": 1793691497.4951167, "step_id": 0, "sim_time_s": 0.0, "information_policy": "simulator-state-assisted local collision planning; not vision-only", "paper_present": true}
+{"phase": "STOPPED BEFORE PLANNING", "task_id": "stop-test", "wall_unix_s": 1793691497.495195, "step_id": 0, "sim_time_s": 0.0}
+ok
+test_policy_revocation_during_execution_stops_next_row (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_policy_revocation_during_execution_stops_next_row) ... ok
+test_fast_moving_world_refuses_before_motion (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_fast_moving_world_refuses_before_motion) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 5.840s
+
+OK

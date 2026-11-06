@@ -1,0 +1,2 @@
+/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/runs/planning_mcp_20261102T231505_169c69
+{'all_motion_tools_discovered': True, 'production_dynamic_coverage_refused': True, 'planning_no_physics_steps': True, 'invalid_execution_no_physics_steps': True, 'refused_execution_keeps_control_mode': True, 'stop_visible': True, 'core_source_unchanged': True}

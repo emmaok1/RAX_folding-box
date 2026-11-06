@@ -1,0 +1,1 @@
+{"content": [{"type": "text", "text": "{\"status\": \"refused\", \"reason\": \"TRAJECTORY_TOO_LONG\", \"executed\": false, \"episode_id\": \"dexmate_bc14afd16b0e46f8948d4d724008e06d\", \"step_id\": 100, \"samples\": 94, \"collision\": null, \"episode_ended\": false}"}]}

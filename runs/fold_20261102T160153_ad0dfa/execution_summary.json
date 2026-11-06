@@ -1,0 +1,62 @@
+{
+  "run_kind": "real_cloud_attempt",
+  "model_request_attempts": 14,
+  "provider_usage_responses": 13,
+  "requests_without_response_or_usage": [
+    "014"
+  ],
+  "known_usage_cost_estimate_usd": 0.5739891,
+  "final_actual_invoice_cost_usd": null,
+  "cost_reservation_usd": 3.3026639999999996,
+  "action_tool_calls": 9,
+  "executed_control_rows": 215,
+  "sim_seconds": 4.2999999999995095,
+  "robot_contact_rows": 5,
+  "hand_contact_rows": 5,
+  "max_robot_panel_contacts": 1,
+  "max_hand_panel_contacts": 1,
+  "max_contact_penetration_m": 0.0007897957221611552,
+  "panel_peak_absolute_angle_deg": {
+    "body_front": 0.6690981513177153,
+    "body_back": 0.2937430238460689,
+    "side_right": 0.38139159884650164,
+    "side_left": 0.46636884195788747,
+    "front_corner_right": 0.2854426496964303,
+    "front_corner_left": 0.6504722657680876,
+    "back_corner_right": 1.4853677624776338,
+    "back_corner_left": 0.6782416410629513,
+    "lid": 0.20715756911972938,
+    "lid_side_right": 1.1264252915369275,
+    "lid_side_left": 0.3114113110223225,
+    "lid_front": 0.2585507249218205,
+    "locking_tongue": 0.08327290229718057
+  },
+  "panel_final_angle_deg": {
+    "body_front": 3.7235979766075552e-06,
+    "body_back": -5.414621972026177e-05,
+    "side_right": 0.21881568669260168,
+    "side_left": -0.00017053540594058692,
+    "front_corner_right": 0.2368185732934855,
+    "front_corner_left": -0.00019833124488960176,
+    "back_corner_right": 1.426968236549239,
+    "back_corner_left": 0.5916034213550709,
+    "lid": 6.688390323471969e-05,
+    "lid_side_right": 0.7631248723476232,
+    "lid_side_left": 0.01601050414363677,
+    "lid_front": -3.684779775088655e-06,
+    "locking_tongue": 0.025681047961623578
+  },
+  "base_translation_m": [
+    -0.014876182356542034,
+    0.015370325815603002,
+    -0.00019002452324268226
+  ],
+  "physics_warning_rows": 0,
+  "verified_grasp": false,
+  "verified_wall_fold": false,
+  "verified_locked_assembly": false,
+  "core_scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+  "end_reason_evidence": "ConnectionResetError recorded in relay; request 014 has no response/usage. No final Claude CLI result event. CLI return code was not captured, so upstream versus downstream disconnect is unverified. No budget cap was reached.",
+  "no_additional_episode_or_paid_retry": true,
+  "measurement_sampling": "At 20 ms control-step ends; unobserved 0.25 ms substep peaks may be larger."
+}

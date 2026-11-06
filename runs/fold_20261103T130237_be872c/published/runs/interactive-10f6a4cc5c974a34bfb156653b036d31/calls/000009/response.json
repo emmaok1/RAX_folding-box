@@ -1,0 +1,1 @@
+{"content": [{"type": "text", "text": "{\"status\": \"refused\", \"reason\": \"IK_NOT_FOUND\", \"executed\": false, \"episode_id\": \"dexmate_bc14afd16b0e46f8948d4d724008e06d\", \"step_id\": 100, \"samples\": 1, \"collision\": null, \"goal_ik_best_error\": [0.3033932283507384, 0.4303908968452916], \"episode_ended\": false}"}]}

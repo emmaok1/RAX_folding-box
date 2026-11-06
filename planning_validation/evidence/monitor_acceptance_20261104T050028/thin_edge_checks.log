@@ -1,0 +1,7 @@
+test_clearance_threshold_is_preserved (rax_integration.planning_validation.thin_edge_checks.ThinEdgeChecks.test_clearance_threshold_is_preserved) ... ok
+test_thin_crossing_rejected_despite_clear_endpoints (rax_integration.planning_validation.thin_edge_checks.ThinEdgeChecks.test_thin_crossing_rejected_despite_clear_endpoints) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+OK

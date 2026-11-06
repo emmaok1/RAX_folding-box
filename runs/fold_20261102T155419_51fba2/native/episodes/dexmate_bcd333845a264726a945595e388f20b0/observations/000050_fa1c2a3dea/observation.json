@@ -1,0 +1,130 @@
+{
+  "episode_id": "dexmate_bcd333845a264726a945595e388f20b0",
+  "step_id": 50,
+  "task": "cardboard_box_folding",
+  "state": {
+    "tcp_pose": [
+      0.07435589390935798,
+      -0.4217245612477778,
+      1.096704809120735,
+      -0.3965764438500736,
+      0.4963633321601931,
+      -0.49351595717274116,
+      0.5939634388461398,
+      0.07439441036657359,
+      0.4215316898535109,
+      1.0966696817332897,
+      0.5939637642290405,
+      -0.49351596660717884,
+      0.4963602574557289,
+      -0.3965797931124742
+    ],
+    "arm_joint_positions": [
+      -0.7947969254435445,
+      -0.28096042988314274,
+      -0.0003021033897199835,
+      -1.2551486638558278,
+      -7.763909321238653e-05,
+      -0.4595079215057944,
+      0.0013557493595177839,
+      0.7947955876283369,
+      0.2809592566531346,
+      0.0003003939590942337,
+      -1.2551534002990694,
+      8.083763896813448e-05,
+      0.45950787421884587,
+      -0.0013571564879217108
+    ],
+    "arm_joint_velocities": [
+      -0.0005634564896124635,
+      0.00010741136266986649,
+      -0.00019952551570912255,
+      0.00024245845362384812,
+      2.93544250333949e-05,
+      -0.0014859034847474343,
+      0.0002562183777601333,
+      0.000571385149953852,
+      -0.00010964550161029471,
+      0.00019541948032083476,
+      0.0002520100853371618,
+      -2.8950518233899064e-05,
+      0.0014888845080983754,
+      -0.0002564501244835055
+    ],
+    "gripper_pose": [
+      0.2865434687231724,
+      0.28654171436827075,
+      0.28950036742455987,
+      0.2895021739459748
+    ],
+    "gripper_opening_commands": {
+      "right": 0.3,
+      "left": 0.3
+    }
+  },
+  "images": [
+    "back",
+    "ego",
+    "wrist_left",
+    "wrist_right"
+  ],
+  "attachments": [
+    {
+      "kind": "rgb",
+      "camera": "back",
+      "content_index": 1
+    },
+    {
+      "kind": "rgb",
+      "camera": "ego",
+      "content_index": 2
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_left",
+      "content_index": 3
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_right",
+      "content_index": 4
+    }
+  ],
+  "episode_ended": false,
+  "sim_time_s": 0.9999999999999176,
+  "action_layout": {
+    "dim": 16,
+    "order": [
+      "right",
+      "left"
+    ],
+    "per_arm": [
+      "world_x_m",
+      "world_y_m",
+      "world_z_m",
+      "qw",
+      "qx",
+      "qy",
+      "qz",
+      "open_fraction"
+    ],
+    "frame": "MuJoCo world, right handed, z up",
+    "orientation": "active local-to-world quaternion wxyz",
+    "tool": "tcp_R / tcp_L, [0,0,0.16] m in each gripper_base frame, same axes",
+    "gripper": {
+      "command_unit": "opening fraction, 0 closed to 1 open",
+      "positive_opening_target_rad": "0.96 * fraction",
+      "zero_opening_mode": "bounded closing torque + damping",
+      "configured_closing_torque_Nm": 0.4
+    },
+    "timing": {
+      "control_dt_s": 0.02,
+      "physics_dt_s": 0.00025,
+      "substeps_per_row": 80,
+      "control_frequency_hz": 50.0,
+      "both_arms_staged_before_physics": true
+    },
+    "semantics": "absolute motor-driven TCP references via existing IK + PD; no teleportation",
+    "zero_pose": "all first seven values zero for an arm holds its previous TCP target"
+  }
+}

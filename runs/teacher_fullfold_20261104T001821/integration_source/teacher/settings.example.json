@@ -1,0 +1,8 @@
+{
+  "model": "claude-sonnet-4-6",
+  "episodes": 3,
+  "episode_seconds": 600,
+  "budget_usd": 0.0,
+  "wall_seconds": 600,
+  "max_requests": 40
+}

@@ -1,0 +1,1 @@
+{"content": [{"type": "text", "text": "{\"status\": \"stopped\", \"executed\": false, \"reason\": \"local paused-plan STOP test\", \"terminalized_plans\": [\"b7ff4548c5b947a09d0564623611f501\"], \"pending_execution_boundary\": false, \"episode_ended\": false}"}]}

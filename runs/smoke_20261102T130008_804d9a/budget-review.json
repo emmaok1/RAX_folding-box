@@ -1,0 +1,20 @@
+{
+  "provider": "anthropic",
+  "endpoint": "https://api.anthropic.com",
+  "model": "claude-sonnet-4-6",
+  "max_requests": 3,
+  "max_token_count_requests": 3,
+  "max_input_tokens_per_request": 24000,
+  "max_input_tokens_total": 27978,
+  "max_output_tokens_per_request": 320,
+  "max_output_tokens_total": 960,
+  "max_cost_usd": 0.25,
+  "max_wall_seconds": 80,
+  "max_episode_starts": 1,
+  "max_action_tool_calls": 1,
+  "max_action_rows": 25,
+  "input_usd_per_million": 3,
+  "output_usd_per_million": 15,
+  "cache_write_multiplier_bound": 2,
+  "authorization": "explicit_command_line_budget"
+}

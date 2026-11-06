@@ -1,0 +1,131 @@
+{
+  "tests_run": 13,
+  "passed": true,
+  "failures": [],
+  "measurements": [
+    {
+      "fixture": "static robot/table, cardboard omitted",
+      "side": "right",
+      "status": "completed",
+      "reason": null,
+      "plan_id": "0415198c905949fd85cf0c76f8095116",
+      "executed": true,
+      "rows_executed": 20,
+      "rows_planned": 20,
+      "command_completed": true,
+      "goal_reached": true,
+      "measured_goal_error": {
+        "position_m": 0.0009313011247460833,
+        "orientation_rad": 0.001883545909659906
+      },
+      "wall_seconds": 0.344719458000327,
+      "task_success": false,
+      "coverage": "static scene only; no cardboard avoidance claim"
+    },
+    {
+      "fixture": "static robot/table, cardboard omitted",
+      "side": "left",
+      "status": "completed",
+      "reason": null,
+      "plan_id": "b651553e57694a9daadbafab29a846ab",
+      "executed": true,
+      "rows_executed": 20,
+      "rows_planned": 20,
+      "command_completed": true,
+      "goal_reached": true,
+      "measured_goal_error": {
+        "position_m": 0.0009289774068605409,
+        "orientation_rad": 0.0018853848287879419
+      },
+      "wall_seconds": 0.34344949400110636,
+      "task_success": false,
+      "coverage": "static scene only; no cardboard avoidance claim"
+    },
+    {
+      "diagnostic_sensor_fault_only": true,
+      "status": "stopped",
+      "reason": "TRACKING_ERROR",
+      "plan_id": "cbccf047f53e4885a73c6609028eb247",
+      "executed": true,
+      "rows_executed": 1,
+      "rows_planned": 20,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.09653366708188614,
+        "orientation_rad": 0.10160607683856643
+      },
+      "wall_seconds": 0.016743742002290674,
+      "task_success": false,
+      "coverage": "static scene only; no cardboard avoidance claim"
+    },
+    {
+      "status": "stopped",
+      "reason": "STOP_REQUESTED",
+      "plan_id": "5880dd1fff294f9c9f864ad8726a7bdd",
+      "executed": true,
+      "rows_executed": 1,
+      "rows_planned": 20,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.012520172370369745,
+        "orientation_rad": 0.017997440832708662
+      },
+      "wall_seconds": 0.016973954003333347,
+      "task_success": false,
+      "coverage": "static scene only; no cardboard avoidance claim"
+    },
+    {
+      "negative_fixture_initialization": true,
+      "refusal": {
+        "status": "refused",
+        "reason": "START_IN_COLLISION",
+        "executed": false,
+        "episode_id": "diagnostic_static",
+        "step_id": 0,
+        "samples": 1,
+        "collision": {
+          "geoms": [
+            "dexmate_R_arm_l5_collision_101",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "distance_m": 0.00387725250087679
+        }
+      }
+    },
+    {
+      "actual_task_scene": true,
+      "no_hidden_qpos_reads": true,
+      "status": "refused",
+      "reason": "INSUFFICIENT_DYNAMIC_WORLD_COVERAGE",
+      "executed": false,
+      "episode_id": "actual_box",
+      "step_id": 0,
+      "coverage": "Unknown dynamic objects are not read or collision-certified; no cardboard avoidance claim."
+    }
+  ],
+  "protected_hashes_before": {
+    "environment.py": "aadae081f6409dd912e43541155f4880fd8084c2de80ac5f4bbe46cd6ecb5118",
+    "robot_model.py": "9aa4938bf2b3a8862cc225f70c7201cec4776db5caf01f6ae766bf3350d51103",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "models/arena.xml": "710af53544d786542a2fe0feb7add83b395d2f4f961b4276a7b990435b9eb7ab",
+    "box_geometry.py": "c8083abbee86ab82ee08c8d59e0d1fd26f2e1f9ff1d8e781c92682f082b44b9d",
+    "geometry/panels.json": "fb595e8efa4a3e201decc53216556503fd0da0ab6b0f36cc31b551b827084dd3"
+  },
+  "protected_hashes_after": {
+    "environment.py": "aadae081f6409dd912e43541155f4880fd8084c2de80ac5f4bbe46cd6ecb5118",
+    "robot_model.py": "9aa4938bf2b3a8862cc225f70c7201cec4776db5caf01f6ae766bf3350d51103",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "models/arena.xml": "710af53544d786542a2fe0feb7add83b395d2f4f961b4276a7b990435b9eb7ab",
+    "box_geometry.py": "c8083abbee86ab82ee08c8d59e0d1fd26f2e1f9ff1d8e781c92682f082b44b9d",
+    "geometry/panels.json": "fb595e8efa4a3e201decc53216556503fd0da0ab6b0f36cc31b551b827084dd3"
+  },
+  "protected_files_unchanged": true,
+  "inference_requests": 0,
+  "scope": "Static fixture tracked motion is not cardboard avoidance or task success. Actual box scene must refuse unknown dynamic coverage."
+}

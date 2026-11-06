@@ -1,0 +1,26 @@
+{
+  "phase": "FINAL PAUSED",
+  "task_id": "MP-FULL-20261103-072531",
+  "wall_unix_s": 1793691155.301675,
+  "step_id": 32,
+  "sim_time_s": 0.6399999999999573,
+  "result": {
+    "status": "completed",
+    "reason": null,
+    "plan_id": "f0727fb80cc6430388b633f1f834d2aa",
+    "executed": true,
+    "rows_executed": 32,
+    "rows_planned": 32,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.00032635528479655896,
+      "orientation_rad": 0.002806522328276569
+    },
+    "wall_seconds": 5.153731877999235,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  }
+}

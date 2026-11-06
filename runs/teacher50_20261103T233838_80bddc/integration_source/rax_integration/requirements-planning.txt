@@ -1,0 +1,2 @@
+# CPython 3.11, Linux x86_64 / glibc >=2.28; isolated target only.
+ompl==1.7.0 --hash=sha256:45427665ad6475463c5ebd1258b8326a8b298b3d411816201a85229db4ae656a

@@ -1,0 +1,123 @@
+/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/evidence/repeat_20261102T231647
+[
+  {
+    "side": "right",
+    "repeat": 0,
+    "status": "completed",
+    "reason": null,
+    "plan_id": "752d9796d1034afcac77d5e6dc313f6c",
+    "executed": true,
+    "rows_executed": 20,
+    "rows_planned": 20,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0009313011247460833,
+      "orientation_rad": 0.001883545909659906
+    },
+    "wall_seconds": 4.354508184002043,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "static scene only; no cardboard avoidance claim"
+  },
+  {
+    "side": "right",
+    "repeat": 1,
+    "status": "completed",
+    "reason": null,
+    "plan_id": "936d6d6a6cfa4dbda107d3f9bc58a389",
+    "executed": true,
+    "rows_executed": 20,
+    "rows_planned": 20,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0009313011247460833,
+      "orientation_rad": 0.001883545909659906
+    },
+    "wall_seconds": 0.49659952000001795,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "static scene only; no cardboard avoidance claim"
+  },
+  {
+    "side": "right",
+    "repeat": 2,
+    "status": "completed",
+    "reason": null,
+    "plan_id": "8611dc6b660f4c998159a6f5df4f4612",
+    "executed": true,
+    "rows_executed": 20,
+    "rows_planned": 20,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0009313011247460833,
+      "orientation_rad": 0.001883545909659906
+    },
+    "wall_seconds": 0.4711421629981487,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "static scene only; no cardboard avoidance claim"
+  },
+  {
+    "side": "left",
+    "repeat": 0,
+    "status": "completed",
+    "reason": null,
+    "plan_id": "dc1d075b495547e7ac22ffc318761af3",
+    "executed": true,
+    "rows_executed": 20,
+    "rows_planned": 20,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0009289774068605409,
+      "orientation_rad": 0.0018853848287879419
+    },
+    "wall_seconds": 0.4817854129978514,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "static scene only; no cardboard avoidance claim"
+  },
+  {
+    "side": "left",
+    "repeat": 1,
+    "status": "completed",
+    "reason": null,
+    "plan_id": "2824ddb8a6334c7d93c366ace0785634",
+    "executed": true,
+    "rows_executed": 20,
+    "rows_planned": 20,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0009289774068605409,
+      "orientation_rad": 0.0018853848287879419
+    },
+    "wall_seconds": 0.5281450889997359,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "static scene only; no cardboard avoidance claim"
+  },
+  {
+    "side": "left",
+    "repeat": 2,
+    "status": "completed",
+    "reason": null,
+    "plan_id": "0c2bdedf78fa47f69f9c320f0a11fe1c",
+    "executed": true,
+    "rows_executed": 20,
+    "rows_planned": 20,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0009289774068605409,
+      "orientation_rad": 0.0018853848287879419
+    },
+    "wall_seconds": 0.4589781510003377,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "static scene only; no cardboard avoidance claim"
+  }
+]

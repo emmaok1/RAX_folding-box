@@ -1,0 +1,284 @@
+{
+  "loop_complete": true,
+  "inference_sent": true,
+  "offline_scripted_api_fixture": false,
+  "model": "claude-sonnet-4-6",
+  "endpoint": "https://api.anthropic.com",
+  "actual_model_inference_requests": 4,
+  "actual_api_cost_usd": null,
+  "scripted_wire_requests": 0,
+  "termination_reason": "cli_exit",
+  "cli_returncode": 0,
+  "model_request_evidence": [
+    {
+      "file": "001.request.json",
+      "contains_image": false,
+      "contains_tool_result": false,
+      "observations_sent_to_api": []
+    },
+    {
+      "file": "002.request.json",
+      "contains_image": true,
+      "contains_tool_result": true,
+      "observations_sent_to_api": [
+        {
+          "step_id": 0,
+          "images": 4
+        }
+      ]
+    },
+    {
+      "file": "003.request.json",
+      "contains_image": true,
+      "contains_tool_result": true,
+      "observations_sent_to_api": [
+        {
+          "step_id": 0,
+          "images": 4
+        }
+      ]
+    },
+    {
+      "file": "004.request.json",
+      "contains_image": true,
+      "contains_tool_result": true,
+      "observations_sent_to_api": [
+        {
+          "step_id": 0,
+          "images": 4
+        },
+        {
+          "step_id": 25,
+          "images": 4
+        }
+      ]
+    }
+  ],
+  "api_budget": {
+    "inference_requests": 4,
+    "token_count_requests": 4,
+    "input_tokens_reserved": 32022,
+    "output_tokens_reserved": 2048,
+    "cost_reserved_usd": 0.222852,
+    "rejections": [],
+    "usage": [
+      {
+        "request": "001",
+        "provider_usage": {
+          "input_tokens": 3,
+          "cache_creation_input_tokens": 3276,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3276
+          },
+          "output_tokens": 62,
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "http_status": 200
+      },
+      {
+        "request": "002",
+        "provider_usage": {
+          "input_tokens": 1,
+          "cache_creation_input_tokens": 3326,
+          "cache_read_input_tokens": 3276,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3326
+          },
+          "output_tokens": 512,
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "http_status": 200
+      },
+      {
+        "request": "003",
+        "provider_usage": {
+          "input_tokens": 3,
+          "cache_creation_input_tokens": 482,
+          "cache_read_input_tokens": 6602,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 482
+          },
+          "output_tokens": 173,
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "http_status": 200
+      },
+      {
+        "request": "004",
+        "provider_usage": {
+          "input_tokens": 1,
+          "cache_creation_input_tokens": 6820,
+          "cache_read_input_tokens": 7084,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6820
+          },
+          "output_tokens": 293,
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "http_status": 200
+      }
+    ]
+  },
+  "episodes": [
+    {
+      "episode_id": "dexmate_3ced599d84bb409fb84dba4eb96ff0a5",
+      "step_id": 25,
+      "sim_time_s": 0.5000000000000003,
+      "termination_reason": "operator_or_agent_finish",
+      "integration_executed": true,
+      "partial_task_progress": {
+        "stabilized": true,
+        "body_walls_and_corners": false,
+        "double_wall_geometry": false,
+        "tab_slot_relationships": [
+          {
+            "side": "right",
+            "entry_base_m": [
+              -0.1542430965044842,
+              3.7615230618817334e-07,
+              0.0
+            ],
+            "tail_base_m": [
+              -0.19726570844843344,
+              3.7615230596720033e-07,
+              1.136886886514601e-06
+            ],
+            "delta_base_m": [
+              -0.10206695844843344,
+              -3.3244130194301786e-08,
+              1.136886886514601e-06
+            ],
+            "near_slot": false,
+            "through_slot": false,
+            "under_base_overlap_m": -0.10533820844843345,
+            "captured_under_base": false,
+            "tab_base_contacts": 0
+          },
+          {
+            "side": "left",
+            "entry_base_m": [
+              0.13907226151637817,
+              3.761523059112352e-07,
+              0.0
+            ],
+            "tail_base_m": [
+              0.19727802453354204,
+              3.7615230594173577e-07,
+              -2.8559717321944476e-06
+            ],
+            "delta_base_m": [
+              0.10207927453354204,
+              -3.324413021976635e-08,
+              -2.8559717321944476e-06
+            ],
+            "near_slot": false,
+            "through_slot": false,
+            "under_base_overlap_m": -0.10535052453354206,
+            "captured_under_base": false,
+            "tab_base_contacts": 0
+          }
+        ],
+        "locking_geometry_candidate": false,
+        "stable_open_box_geometry": false,
+        "closed_geometry": false,
+        "released_persistence": false,
+        "required_release_seconds": 5,
+        "hand_panel_contacts": 0,
+        "robot_panel_contacts": 0,
+        "table_panel_contacts": 92,
+        "max_box_hinge_speed_rad_s": 0.1927735158874744,
+        "max_box_penetration_m": 2.7101764216094375e-08,
+        "physical_locking_verified": false,
+        "succeed": false,
+        "debug_pose": false,
+        "note": "Geometric release/capture progress is separate. Final success is withheld until physical lock insertion/retention validation passes; debug placement never earns success."
+      },
+      "complete_folding_with_physical_locking": false,
+      "task_kind": "custom task integrated with RAX",
+      "official_dexjoco_benchmark": false,
+      "source_unchanged": true
+    }
+  ],
+  "elapsed_seconds": 39.180729155001245,
+  "integration_success": true,
+  "complete_folding_with_physical_locking": false,
+  "task_kind": "custom task integrated with RAX, not an official DexJoCo benchmark",
+  "estimated_api_cost_usd": 0.1041366,
+  "cost_estimate_source": "Per-phase provider usage at configured list/cache rates; invoice not queried",
+  "token_usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 13904,
+    "cache_read_input_tokens": 16962,
+    "output_tokens": 1040,
+    "total_input_including_cache": 30874
+  },
+  "action_provenance_verified": true,
+  "model_action_tool_calls": 1,
+  "executed_native_rows_match_model_requests": true,
+  "measured_tcp_delta_m": {
+    "right": [
+      -6.635413138403323e-06,
+      -1.183416817540639e-05,
+      0.002165694796574469
+    ],
+    "left": [
+      -5.154215673250362e-06,
+      1.4023662981421658e-05,
+      0.002167960027349647
+    ]
+  },
+  "robot_cardboard_contacts_during_smoke": 0,
+  "max_passive_crease_change_rad": 0.006688188362272663,
+  "max_passive_flex_change_rad": 0.0006239369148204018,
+  "model_stop_reasons": [
+    {
+      "response": "001.response.raw",
+      "stop_reason": "tool_use"
+    },
+    {
+      "response": "002.response.raw",
+      "stop_reason": "max_tokens"
+    },
+    {
+      "response": "003.response.raw",
+      "stop_reason": "tool_use"
+    },
+    {
+      "response": "004.response.raw",
+      "stop_reason": "end_turn"
+    }
+  ],
+  "operator_review": "The model described the cardboard as unchanged. Recorder shows small passive settling without robot/cardboard contact; this is not folding or locking progress.",
+  "video_validation": {
+    "decoded_frames": 6,
+    "nonblank": true,
+    "distinct_frames": 6,
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "r_frame_rate": "10/1",
+          "nb_frames": "6"
+        }
+      ]
+    }
+  },
+  "credential_scan_matches": 0,
+  "credential_file_mode": "0o600"
+}

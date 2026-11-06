@@ -1,0 +1,27 @@
+{
+  "status": "planned",
+  "executed": false,
+  "duration_s": 0.64,
+  "planned_goal_error": {
+    "position_m": 1.3496908208898643e-05,
+    "orientation_rad": 2.4568853596534574e-05
+  },
+  "planner": "OMPL1.7.0/RRTConnect",
+  "path_method": "OMPL-checked direct connection",
+  "collision_samples": 81,
+  "checked_pairs": 802,
+  "clearance_lower_bound_m": 0.005,
+  "edge_validation": "Discrete <=0.004 rad L2 during search; final edges <= configured per-joint resolution. Not certified continuous collision checking.",
+  "dependency_versions": {
+    "ompl": "1.7.0",
+    "mujoco": "3.4.0"
+  },
+  "runtime_s": 0.6368576449999637,
+  "plan_id": "ff1297870b594571b695949d59001b91",
+  "episode_id": "USER-PLANNER-TEST-20261103T204359",
+  "step_id": 0,
+  "source_hash": "eeb9dc0fe60b2198fae9b9df0abee2038bc2f185956cf0b5cff08125ebd3e2e1",
+  "world_version": "75f9d35ee4516542e2e42f3edff6323661cbae0333f0c0fdd14df502ae70634a",
+  "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+  "world_policy": "simulator_snapshot"
+}

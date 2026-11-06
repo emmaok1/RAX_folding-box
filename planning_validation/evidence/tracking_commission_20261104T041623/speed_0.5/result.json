@@ -1,0 +1,147 @@
+{
+  "speed_scale": 0.5,
+  "source_history": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/runs/teacher_fullfold_20261104T001821",
+  "cloud_requests": 0,
+  "full_original_scene": true,
+  "controller_and_guards_unchanged": true,
+  "initialization": {
+    "status": "completed",
+    "reason": null,
+    "plan_id": "543f2a0c067a4decbd3bc1c5a2d7770f",
+    "executed": true,
+    "rows_executed": 24,
+    "rows_planned": 24,
+    "cursor_start": 0,
+    "cursor": 24,
+    "remaining_rows": 0,
+    "continuation_available": false,
+    "chunk_completed": true,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0006206319054049304,
+      "orientation_rad": 0.0027362422638011513
+    },
+    "wall_seconds": 1.3713401310014888,
+    "stop_ack_delay_wall_s": null,
+    "recovery_required": null,
+    "task_success": false,
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  },
+  "full_reference_rows": 82,
+  "prefix_only": false,
+  "chunks": [
+    {
+      "status": "paused",
+      "reason": null,
+      "plan_id": "4c94ff3ee3204be496596a4efab7d784",
+      "executed": true,
+      "rows_executed": 50,
+      "rows_planned": 82,
+      "cursor_start": 0,
+      "cursor": 50,
+      "remaining_rows": 32,
+      "continuation_available": true,
+      "chunk_completed": true,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.011291884240972536,
+        "orientation_rad": 0.003405986275065544
+      },
+      "wall_seconds": 3.017699438998534,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    },
+    {
+      "status": "completed",
+      "reason": null,
+      "plan_id": "4c94ff3ee3204be496596a4efab7d784",
+      "executed": true,
+      "rows_executed": 32,
+      "rows_planned": 82,
+      "cursor_start": 50,
+      "cursor": 82,
+      "remaining_rows": 0,
+      "continuation_available": false,
+      "chunk_completed": true,
+      "command_completed": true,
+      "goal_reached": true,
+      "measured_goal_error": {
+        "position_m": 0.00032614214173854974,
+        "orientation_rad": 0.0008675933964900193
+      },
+      "wall_seconds": 1.8182504850010446,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    }
+  ],
+  "execution": {
+    "status": "completed",
+    "reason": null,
+    "plan_id": "4c94ff3ee3204be496596a4efab7d784",
+    "executed": true,
+    "rows_executed": 32,
+    "rows_planned": 82,
+    "cursor_start": 50,
+    "cursor": 82,
+    "remaining_rows": 0,
+    "continuation_available": false,
+    "chunk_completed": true,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.00032614214173854974,
+      "orientation_rad": 0.0008675933964900193
+    },
+    "wall_seconds": 1.8182504850010446,
+    "stop_ack_delay_wall_s": null,
+    "recovery_required": null,
+    "task_success": false,
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  },
+  "status": "PASS",
+  "final_physical_progress": {
+    "design": "video_rebuild",
+    "stabilized": true,
+    "body_walls_and_corners": false,
+    "stable_open_box_geometry": false,
+    "closed_geometry": false,
+    "tab_slot_relationships": [
+      {
+        "feature": "front_tongue_slot",
+        "through_slot": false,
+        "whole_section_fits": false,
+        "insertion_direction_valid": false,
+        "tip_front_frame_m": [
+          2.0249400646928256e-17,
+          0.6224999997259298,
+          -2.188515860085311e-08
+        ],
+        "insertion_depth_m": 0.0,
+        "geometric_capture_candidate": false,
+        "physical_retention_verified": false
+      }
+    ],
+    "locking_geometry_candidate": false,
+    "released_persistence": false,
+    "required_release_seconds": 5,
+    "hand_panel_contacts": 0,
+    "robot_panel_contacts": 0,
+    "table_panel_contacts": 17,
+    "max_box_hinge_speed_rad_s": 0.0001583020613053751,
+    "max_box_penetration_m": 0.0,
+    "physical_locking_verified": false,
+    "succeed": false,
+    "debug_pose": false,
+    "note": "Video-inspired reconstruction. Reset precrease is curriculum setup; debug geometry and closure alone never earn physical assembly success."
+  }
+}

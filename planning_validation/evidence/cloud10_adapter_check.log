@@ -1,0 +1,11 @@
+test_call_budget_and_normal_audit (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_call_budget_and_normal_audit) ... ok
+test_expired_wall_budget (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_expired_wall_budget) ... ok
+test_finished_episode (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_finished_episode) ... ok
+test_row_budget (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_row_budget) ... ok
+test_stop_marks_episode_finished (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_stop_marks_episode_finished) ... ok
+test_terminal_row_audit_video_and_episode (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_terminal_row_audit_video_and_episode) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK

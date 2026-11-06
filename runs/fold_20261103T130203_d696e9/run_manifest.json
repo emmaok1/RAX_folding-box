@@ -1,0 +1,30 @@
+{
+  "run_kind": "preparation_only",
+  "agent_launched": false,
+  "live_view_requested": true,
+  "core_scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+  "integration_source_hashes": {
+    "fold.py": "b6b862e4f7e4b677baa7a65cc07a48ade49e5872cadfc557d1e8e214b7209cd9",
+    "live_view.py": "9be1bdaa1bd8e63642121773671cede8dd0a0d2d8ee7f6de3901a95299596932",
+    "launch.py": "03233cf384feb31fd0078ba2e9a96fe703c881dc523daad6bae932cbcb0ed57d",
+    "claude_relay.py": "a4452c5db8791119ba3e8008ed7a2f9877b1093421117da02f59cf96f4ec5fd6",
+    "fold_config.json": "85b4e8f339de7940fa0ea2e9471bde4a3c1c0885781a16b0dc451154c2dfbc83",
+    "TASK.md": "d522ee589cd8d48aa4049ef5becf4c095a3d8e08b8911c04167201687e3f4910",
+    "ROBOT.md": "cf950b2e43f73dd700bb620df70bad7c13233aa85ffe403274dc50f0acb5f20f",
+    "FOLD_AGENT.md": "6e590c0748a1ca70026709173540ed20f83f7cc5ae79c81c19ba05e0a90bb295",
+    "upstream/services/dexmate_box/backend.py": "a34affd2f7456cff06ff1f043dc95480e23a8814f65f69abd3afbe4f39c7a45a",
+    "upstream/services/dexmate_box/tools.py": "3375a92c2b4ceb0501cce2d588c30c11e22dfe200d102390d8e52deaeeb00ff2",
+    "upstream/services/dexmate_box/benchmark.py": "b4a65c35f8aea8998d94b2ab9be41b1426496a128510bb6f920953dc859ffcba",
+    "upstream/services/dexmate_box/registry.py": "67afb0f300df9b60e9750d6b6aa465882ac49ead4b39af8957f8b27e76574a40",
+    "requirements-planning.txt": "ff556481770e4d90792d8a318647a0b26cc65ad88f8f08ac4f7a82df5a3af35a",
+    "motion_planning/__init__.py": "a4af613bfe18a4cde152139d7d1492ce5f085931aa62d885cecc34ea97fe8b08",
+    "motion_planning/collision.py": "6be2a2f08b5da0ab4997a7febc690c9ceb5916e99b31e53d1d50e5359f23d1bf",
+    "motion_planning/model.py": "4e598cb60e637966534f301fd82b195fb63949934b79f57f591080d21fce35af",
+    "motion_planning/ompl_engine.py": "798acb12d62b952bed9aca29e4829d2e304915827362ca6c6263e0d2e4cc6819",
+    "motion_planning/operator_stop.py": "82305951d31f1b934ca19224d143aa466c19c9a3fe93d194419e1224f3e83607",
+    "motion_planning/service.py": "2ee9250604883c6f46f6ca441f95cebfa914fd06d2c7836012790c98fc43861a",
+    "motion_planning/trajectory.py": "23a477d7414a21a2c8d193d4930123fed0072dbabc89852e8ff02221c82c4e08",
+    "motion_planning/worker.py": "0cb003db80aee4b4357923701bd63e7646c9718e5e3b7d447471d85afd42802c",
+    "motion_planning/config.json": "74edbf78bda3f3cd1b865f3cbf63644a00c61ded2f243a3cb667c9ca2d89c0de"
+  }
+}

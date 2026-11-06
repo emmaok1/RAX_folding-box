@@ -1,0 +1,6 @@
+{
+  "run_kind": "preparation_only",
+  "agent_launched": false,
+  "live_view_requested": false,
+  "clarification": "Prepared configuration only; no frontend, agent, API request, or episode launched."
+}

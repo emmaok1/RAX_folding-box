@@ -1,0 +1,22 @@
+{
+  "cartesian_control_rows": 310,
+  "planned_joint_rows": 17,
+  "rows_with_hand_panel_contact": 0,
+  "peak_any_hinge_degrees": 39.52992503193167,
+  "any_near_closed_jaw_command": true,
+  "tool_calls": {
+    "dexmate_observe": 4,
+    "dexmate_step": 7,
+    "dexmate_hold": 2,
+    "dexmate_motion_plan": 6,
+    "dexmate_motion_execute": 1,
+    "dexmate_gripper": 1
+  },
+  "planner_refusals": {
+    "START_NOT_SETTLED": 1,
+    "IK_NOT_FOUND": 1,
+    "GOAL_IN_COLLISION": 1,
+    "TRAJECTORY_TOO_LONG": 2
+  },
+  "note": "This attempt timed out; full RAX multi-episode exploration/skill development was not enabled."
+}

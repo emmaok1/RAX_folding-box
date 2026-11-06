@@ -1,0 +1,26 @@
+{
+  "parts": {
+    "handoff": {
+      "files": 2,
+      "bytes": 1456
+    },
+    "memory": {
+      "files": 11,
+      "bytes": 30294
+    },
+    "code": {
+      "files": 0,
+      "bytes": 0
+    }
+  },
+  "excluded": {},
+  "skipped": [],
+  "max_mb": 100,
+  "session_files": [],
+  "home_files": [],
+  "teacher_memory": true,
+  "environment_id": "bc79db7131672a914d02dba777599a6aa3630be677c37e7b578b9bd27c1456fe",
+  "memory_revision": 2,
+  "stage": "local_memory_checkpoint",
+  "cloud_requests": 0
+}

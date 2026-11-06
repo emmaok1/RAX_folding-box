@@ -1,0 +1,26 @@
+{
+  "phase": "FINAL PAUSED",
+  "task_id": "USER-PLANNER-TEST-20261103T204359",
+  "wall_unix_s": 1793738677.6791713,
+  "step_id": 32,
+  "sim_time_s": 0.6399999999999573,
+  "result": {
+    "status": "completed",
+    "reason": null,
+    "plan_id": "ff1297870b594571b695949d59001b91",
+    "executed": true,
+    "rows_executed": 32,
+    "rows_planned": 32,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.00032635528479655896,
+      "orientation_rad": 0.002806522328276569
+    },
+    "wall_seconds": 5.623083363999967,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  }
+}

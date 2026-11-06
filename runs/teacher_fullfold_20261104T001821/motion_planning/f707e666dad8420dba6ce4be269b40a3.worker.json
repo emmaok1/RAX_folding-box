@@ -1,0 +1,1 @@
+{"status": "refused", "reason": "NO_PATH_WITHIN_BUDGET", "executed": false, "samples": 322, "collision": {"geoms": ["table_collision", "dexmate_R_arm_l8_collision_109"], "distance_m": 0.004074416405513315}, "goal_ik_best_error": [7.023467464233515e-06, 2.4620811410475747e-05]}

@@ -1,0 +1,4 @@
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 9 states (6 start + 3 goal)
+Info:    ProblemDefinition: Adding approximate solution from planner RRTConnect
+Info:    Solution found in 3.126832 seconds

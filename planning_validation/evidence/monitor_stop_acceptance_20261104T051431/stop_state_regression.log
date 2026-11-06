@@ -1,0 +1,30 @@
+test_active_stop_does_not_block_or_mutate_midrow (rax_integration.planning_validation.stop_state_checks.StopStateChecks.test_active_stop_does_not_block_or_mutate_midrow) ... ok
+test_out_of_band_flag_finalizes_on_next_execute_admission (rax_integration.planning_validation.stop_state_checks.StopStateChecks.test_out_of_band_flag_finalizes_on_next_execute_admission) ... ok
+test_paused_stop_immediately_terminalizes_and_releases_owner (rax_integration.planning_validation.stop_state_checks.StopStateChecks.test_paused_stop_immediately_terminalizes_and_releases_owner) ... ok
+test_stop_then_resume_refuses_without_motion (rax_integration.planning_validation.stop_state_checks.StopStateChecks.test_stop_then_resume_refuses_without_motion) ... ok
+test_stop_at_chunk_boundary_never_executes_next_row (rax_integration.planning_validation.continuation_checks.ContinuationChecks.test_stop_at_chunk_boundary_never_executes_next_row) ... ok
+test_stop_during_edge_validation_is_not_collision (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_stop_during_edge_validation_is_not_collision) ... ok
+test_callback_failure_preserves_operator_stop_cause (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_callback_failure_preserves_operator_stop_cause) ... ok
+test_stop_after_first_actual_control_row (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_stop_after_first_actual_control_row) ... ok
+test_06_stop_during_execution (rax_integration.planning_validation.run_checks.PlannerChecks.test_06_stop_during_execution) ... ok
+test_07_cancel_planning_out_of_band (rax_integration.planning_validation.run_checks.PlannerChecks.test_07_cancel_planning_out_of_band) ... ok
+test_call_budget_and_normal_audit (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_call_budget_and_normal_audit) ... ok
+test_duplicate_and_skipped_cursor_spend_no_action_budget (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_duplicate_and_skipped_cursor_spend_no_action_budget) ... ok
+test_expired_wall_budget (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_expired_wall_budget) ... ok
+test_explicit_chunk_over_fold_row_cap_refuses (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_explicit_chunk_over_fold_row_cap_refuses) ... ok
+test_finished_episode (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_finished_episode) ... ok
+test_row_budget (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_row_budget) ... ok
+test_stop_marks_episode_finished (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_stop_marks_episode_finished) ... ok
+test_terminal_row_audit_video_and_episode (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_terminal_row_audit_video_and_episode) ... ok
+test_bad_cursor_provider_cannot_loop_without_limit (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_bad_cursor_provider_cannot_loop_without_limit) ... ok
+test_cancel_before_execution_never_moves (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_cancel_before_execution_never_moves) ... ok
+test_cancel_between_chunks_never_runs_next_chunk (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_cancel_between_chunks_never_runs_next_chunk) ... ok
+test_explicit_plan_execute_limits_override_legacy_names (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_explicit_plan_execute_limits_override_legacy_names) ... ok
+test_same_id_continues_to_actual_full_completion (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_same_id_continues_to_actual_full_completion) ... ok
+test_tracking_stop_is_final_without_retry (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_tracking_stop_is_final_without_retry) ... ok
+test_window_closed_during_execution_also_publishes_stop (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_window_closed_during_execution_also_publishes_stop) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 18.106s
+
+OK

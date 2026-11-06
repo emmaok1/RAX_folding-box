@@ -1,0 +1,60 @@
+{
+  "task_id": "MP-FULL-20261103-072531",
+  "scene": "FULL ORIGINAL robot,table,cardboard",
+  "world_policy": "simulator_snapshot",
+  "cloud_requests": 0,
+  "start_tcp": [
+    0.07436335805883337,
+    -0.4216935369890724,
+    1.0923631198701875,
+    -0.39644711461038995,
+    0.4965483901840249,
+    -0.4936644682955539,
+    0.5937716516180421
+  ],
+  "target": {
+    "frame": "world",
+    "tcp": "tcp_R",
+    "position_m": [
+      0.08155624476454297,
+      -0.3812609895059325,
+      1.084957046381494
+    ],
+    "quaternion_wxyz": [
+      -0.4193618636230462,
+      0.49811106006860384,
+      -0.4958418894527221,
+      0.5745970934836788
+    ]
+  },
+  "end_tcp": [
+    0.08149664392768363,
+    -0.38137644714788277,
+    1.0846568902257063,
+    -0.41870446588845694,
+    0.4990804782924857,
+    -0.49511279552324844,
+    0.5748639544636273
+  ],
+  "measured_translation_m": 0.04166218280266622,
+  "display_delay_per_20ms_row_s": 0.1,
+  "execution": {
+    "status": "completed",
+    "reason": null,
+    "plan_id": "f0727fb80cc6430388b633f1f834d2aa",
+    "executed": true,
+    "rows_executed": 32,
+    "rows_planned": 32,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.00032635528479655896,
+      "orientation_rad": 0.002806522328276569
+    },
+    "wall_seconds": 5.153731877999235,
+    "stop_ack_delay_wall_s": null,
+    "task_success": false,
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  }
+}

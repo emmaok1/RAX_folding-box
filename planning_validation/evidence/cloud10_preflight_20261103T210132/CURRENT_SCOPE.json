@@ -1,0 +1,37 @@
+{
+  "phase": "single_cloud_attempt_stopped",
+  "cloud_inference_allowed": false,
+  "training_or_exploration_allowed": false,
+  "authorization": {
+    "actual_user_message": "$20",
+    "timestamp": "2026-11-03T00:00:00.818Z",
+    "verified_original_session": "/home/jennyok/.codex/sessions/2026/11/02/rollout-2026-11-02T15-45-39-01a19ea7-7d8e-7d10-9e9b-ad808b7ec7b4.jsonl",
+    "line": 559,
+    "supersedes": "Earlier pending/blocked status; historical API budgets not reused"
+  },
+  "physical_completion": "Full folding and physical locking remain unverified; unchanged success guard.",
+  "integration_checks_allowed": true,
+  "previous_box_design_basis": "cancelled by user",
+  "current_scene_status": "Current 4 mm video-inspired 14-panel/13-hinge plain box; no grasp aids",
+  "reference_video": "2b3a9cc52088540b8d5fb29466b82659.mp4",
+  "current_manifest": "geometry/panels.json",
+  "handoff_received": true,
+  "future_check_version": "fresh video-based 14-panel/13-hinge design; not B273",
+  "execution_requested": true,
+  "current_scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+  "approved_budget_usd": 20.0,
+  "max_model_requests": 40,
+  "max_wall_seconds": 600,
+  "max_task_attempts": 1,
+  "attempt_consumed": true,
+  "completed_run_root": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/runs/fold_20261102T160153_ad0dfa",
+  "local_stage1": {
+    "implementation_allowed": true,
+    "dependencies_and_local_tests_allowed": true,
+    "bounded_free_space_simulation_allowed": true,
+    "paid_inference_allowed": false,
+    "contact_grasp_folding_allowed": false,
+    "hidden_box_truth_for_planning_allowed": false,
+    "authorization": "New monitor-delegated user permission: Now I give you the permission to do it. Stage1 only."
+  }
+}

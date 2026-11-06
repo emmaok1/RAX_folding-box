@@ -1,0 +1,16 @@
+test_invalid_pose_is_not_arrival_or_nan_json (rax_integration.planning_validation.feedback_checks.FeedbackChecks.test_invalid_pose_is_not_arrival_or_nan_json) ... ok
+test_planned_reference_feedback_does_not_claim_final_goal (rax_integration.planning_validation.feedback_checks.FeedbackChecks.test_planned_reference_feedback_does_not_claim_final_goal) ... ok
+test_quaternion_sign_equivalence_and_orientation_error (rax_integration.planning_validation.feedback_checks.FeedbackChecks.test_quaternion_sign_equivalence_and_orientation_error) ... ok
+test_real_step187_small_solver_error_is_not_arrival (rax_integration.planning_validation.feedback_checks.FeedbackChecks.test_real_step187_small_solver_error_is_not_arrival) ... ok
+test_real_step227_large_physical_error_reaches_tool_reply (rax_integration.planning_validation.feedback_checks.FeedbackChecks.test_real_step227_large_physical_error_reaches_tool_reply) ... ok
+test_call_budget_and_normal_audit (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_call_budget_and_normal_audit) ... ok
+test_expired_wall_budget (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_expired_wall_budget) ... ok
+test_finished_episode (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_finished_episode) ... ok
+test_row_budget (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_row_budget) ... ok
+test_stop_marks_episode_finished (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_stop_marks_episode_finished) ... ok
+test_terminal_row_audit_video_and_episode (rax_integration.planning_validation.adapter_checks.AdapterChecks.test_terminal_row_audit_video_and_episode) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.004s
+
+OK

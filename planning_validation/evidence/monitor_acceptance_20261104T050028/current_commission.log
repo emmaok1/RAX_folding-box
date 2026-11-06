@@ -1,0 +1,5 @@
+{"case": "small_right", "repeat": 0, "status": "PASS", "reason": null, "rows": 43, "goal_error": {"position_m": 0.0007069543348992409, "orientation_rad": 0.0017463913221238076}}
+{"case": "small_left", "repeat": 0, "status": "PASS", "reason": null, "rows": 43, "goal_error": {"position_m": 0.0007144828248442377, "orientation_rad": 0.0017565316168633043}}
+{"case": "intermediate", "repeat": 0, "status": "PASS", "reason": null, "rows": 515, "goal_error": {"position_m": 6.0055583026122606e-05, "orientation_rad": 0.00013712833351180905}}
+{"case": "near_box_standoff", "repeat": 0, "status": "PASS", "reason": null, "rows": 978, "goal_error": {"position_m": 0.00035203857473024516, "orientation_rad": 0.0003853622499567701}}
+EVIDENCE /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/evidence/free_space_commission_20261104T045210

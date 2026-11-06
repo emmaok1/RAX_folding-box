@@ -1,0 +1,4 @@
+{
+  "world_policy": "simulator_snapshot",
+  "information_source": "explicit simulator-assisted local collision planning; not vision-only"
+}

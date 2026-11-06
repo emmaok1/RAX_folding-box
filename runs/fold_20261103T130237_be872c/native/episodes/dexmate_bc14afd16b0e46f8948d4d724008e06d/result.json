@@ -1,0 +1,46 @@
+{
+  "episode_id": "dexmate_bc14afd16b0e46f8948d4d724008e06d",
+  "step_id": 327,
+  "sim_time_s": 6.540000000002247,
+  "termination_reason": "operator_or_agent_finish",
+  "integration_executed": true,
+  "partial_task_progress": {
+    "design": "video_rebuild",
+    "stabilized": true,
+    "body_walls_and_corners": false,
+    "stable_open_box_geometry": false,
+    "closed_geometry": false,
+    "tab_slot_relationships": [
+      {
+        "feature": "front_tongue_slot",
+        "through_slot": false,
+        "whole_section_fits": false,
+        "insertion_direction_valid": false,
+        "tip_front_frame_m": [
+          2.1756030962167836e-17,
+          0.6223937020329297,
+          0.0004992413577126464
+        ],
+        "insertion_depth_m": 0.0,
+        "geometric_capture_candidate": false,
+        "physical_retention_verified": false
+      }
+    ],
+    "locking_geometry_candidate": false,
+    "released_persistence": false,
+    "required_release_seconds": 5,
+    "hand_panel_contacts": 0,
+    "robot_panel_contacts": 0,
+    "table_panel_contacts": 9,
+    "max_box_hinge_speed_rad_s": 0.0005302431593440932,
+    "max_box_penetration_m": 0.0,
+    "physical_locking_verified": false,
+    "succeed": false,
+    "debug_pose": false,
+    "note": "Video-inspired reconstruction. Reset precrease is curriculum setup; debug geometry and closure alone never earn physical assembly success."
+  },
+  "complete_folding_with_physical_locking": false,
+  "task_kind": "custom task integrated with RAX",
+  "official_dexjoco_benchmark": false,
+  "source_unchanged": true
+}

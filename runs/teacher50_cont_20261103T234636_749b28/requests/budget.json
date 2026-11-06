@@ -1,0 +1,70 @@
+{
+  "inference_requests": 3,
+  "token_count_requests": 4,
+  "input_tokens_reserved": 46023,
+  "output_tokens_reserved": 24576,
+  "cost_reserved_usd": 0.6447780000000001,
+  "rejections": [],
+  "usage": [
+    {
+      "request": "001",
+      "provider_usage": {
+        "input_tokens": 10,
+        "cache_creation_input_tokens": 8206,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 8206
+        },
+        "output_tokens": 478,
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard",
+        "output_tokens_details": {
+          "thinking_tokens": 21
+        }
+      },
+      "http_status": 200
+    },
+    {
+      "request": "002",
+      "provider_usage": {
+        "input_tokens": 8,
+        "cache_creation_input_tokens": 3498,
+        "cache_read_input_tokens": 8206,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3498
+        },
+        "output_tokens": 310,
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard",
+        "output_tokens_details": {
+          "thinking_tokens": 30
+        }
+      },
+      "http_status": 200
+    }
+  ],
+  "limits": {
+    "cache_write_multiplier_bound": 2,
+    "endpoint": "https://api.anthropic.com",
+    "input_usd_per_million": 3,
+    "max_cost_usd": 47.959568,
+    "max_input_tokens_per_request": 160000,
+    "max_input_tokens_total": 2603288,
+    "max_output_tokens_per_request": 8192,
+    "max_output_tokens_total": 270336,
+    "max_requests": 33,
+    "max_token_count_requests": 66,
+    "max_wall_seconds": 124,
+    "model": "claude-sonnet-4-6",
+    "output_usd_per_million": 15,
+    "pricing_note": "Pinned Sonnet4.6 rates verified2026-11-03; review before future paid grant or model change.",
+    "pricing_source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "provider": "anthropic",
+    "reasoning_policy": "teacher_budgeted_high"
+  },
+  "elapsed_seconds": 125.32232763200045
+}

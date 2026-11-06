@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "checks": {
+    "discovered_bounded_optional_chunk": true,
+    "full_scene_plan": true,
+    "plan_preview_nonmutation": true,
+    "first_chunk_exact7": true,
+    "first_chunk_not_full_goal": true,
+    "same_plan_full_completion": true,
+    "cursor_no_duplicate_rows": true,
+    "percall_ceiling": true,
+    "status_cursor_complete": true,
+    "stop_visible": true,
+    "native_stop_result": true,
+    "core_sources_unchanged": true,
+    "native_audit_video": true
+  },
+  "chunks": [
+    {
+      "status": "paused",
+      "reason": null,
+      "plan_id": "4d41d1bc583046d0a3efc5b6384a6123",
+      "executed": true,
+      "rows_executed": 7,
+      "rows_planned": 55,
+      "cursor_start": 0,
+      "cursor": 7,
+      "remaining_rows": 48,
+      "continuation_available": true,
+      "chunk_completed": true,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.019944663417072052,
+        "orientation_rad": 0.00012258105665729655
+      },
+      "wall_seconds": 0.18715355200038175,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    },
+    {
+      "status": "completed",
+      "reason": null,
+      "plan_id": "4d41d1bc583046d0a3efc5b6384a6123",
+      "executed": true,
+      "rows_executed": 48,
+      "rows_planned": 55,
+      "cursor_start": 7,
+      "cursor": 55,
+      "remaining_rows": 0,
+      "continuation_available": false,
+      "chunk_completed": true,
+      "command_completed": true,
+      "goal_reached": true,
+      "measured_goal_error": {
+        "position_m": 0.00046406223976225145,
+        "orientation_rad": 0.0012361212779396673
+      },
+      "wall_seconds": 1.2585279230006563,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    }
+  ],
+  "inference_requests": 0,
+  "scope": "Actual local RAX/MCP; full original robot/table/cardboard; measured joint execution, no agent/cloud/contact/folding."
+}

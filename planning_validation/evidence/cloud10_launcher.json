@@ -1,0 +1,14 @@
+{
+  "pid": 23913,
+  "task_id": "CLOUD-FOLD-10-20261103-205926",
+  "command": [
+    "./run.sh",
+    "rax-fold",
+    "--live",
+    "--key-file",
+    "/home/jennyok/.config/rax/dexmate_box_anthropic_api_key",
+    "--approve-budget-usd",
+    "10"
+  ],
+  "log": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/planning_validation/evidence/cloud10_real_launch.log"
+}

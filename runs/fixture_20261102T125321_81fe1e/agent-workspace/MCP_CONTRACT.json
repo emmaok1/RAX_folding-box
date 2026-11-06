@@ -1,0 +1,31 @@
+{
+  "mode": "auto-research",
+  "phase": "exploration",
+  "observation_profile": "rgb-only",
+  "exploration_envs": 1,
+  "subagents": 0,
+  "robot_tools": [
+    "dexmate_gripper",
+    "dexmate_hold",
+    "dexmate_observe",
+    "dexmate_status",
+    "dexmate_step"
+  ],
+  "gemini": false,
+  "benchmark": "dexmate_box",
+  "role": "exploration",
+  "tools": [
+    "dexmate_gripper",
+    "dexmate_hold",
+    "dexmate_observe",
+    "dexmate_status",
+    "dexmate_step",
+    "evaluate",
+    "finish",
+    "register",
+    "rehearse",
+    "start_episode",
+    "status",
+    "submit"
+  ]
+}

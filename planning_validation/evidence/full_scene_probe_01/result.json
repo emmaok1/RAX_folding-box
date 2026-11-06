@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "reason": null,
+  "plan_id": "6763bf7b095e44fdb90fcfabb183f600",
+  "executed": true,
+  "rows_executed": 20,
+  "rows_planned": 20,
+  "command_completed": true,
+  "goal_reached": true,
+  "measured_goal_error": {
+    "position_m": 0.0009313011247460833,
+    "orientation_rad": 0.001883545909659906
+  },
+  "wall_seconds": 1.322625117001735,
+  "stop_ack_delay_wall_s": null,
+  "task_success": false,
+  "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+  "world_policy": "simulator_snapshot"
+}

@@ -1,0 +1,8 @@
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 4 states (2 start + 2 goal)
+Info:    Solution found in 0.706495 seconds
+Warning: Solution path may slightly touch on an invalid region of the state space
+         at line 819 in /project/src/ompl/geometric/src/PathSimplifier.cpp
+Warning: Solution path may slightly touch on an invalid region of the state space
+         at line 848 in /project/src/ompl/geometric/src/PathSimplifier.cpp
+Info:    SimpleSetup: Path simplification took 0.958108 seconds and changed from 3 to 21 states

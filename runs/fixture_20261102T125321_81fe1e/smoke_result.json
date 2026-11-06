@@ -1,0 +1,173 @@
+{
+  "loop_complete": true,
+  "inference_sent": false,
+  "offline_scripted_api_fixture": true,
+  "model": "claude-sonnet-4-6",
+  "endpoint": "https://api.anthropic.com",
+  "actual_model_inference_requests": 0,
+  "actual_api_cost_usd": 0,
+  "estimated_api_cost_usd": 0,
+  "cost_estimate_source": "Claude Code list-price estimate; final invoice not queried",
+  "token_usage": {
+    "input_tokens": 24000,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 600,
+    "total_input_including_cache": 24000
+  },
+  "scripted_wire_requests": 3,
+  "termination_reason": "cli_exit",
+  "cli_returncode": 0,
+  "model_request_evidence": [
+    {
+      "file": "001.request.json",
+      "contains_image": false,
+      "contains_tool_result": false,
+      "observations_sent_to_api": []
+    },
+    {
+      "file": "002.request.json",
+      "contains_image": true,
+      "contains_tool_result": true,
+      "observations_sent_to_api": [
+        {
+          "step_id": 0,
+          "images": 4
+        }
+      ]
+    },
+    {
+      "file": "003.request.json",
+      "contains_image": true,
+      "contains_tool_result": true,
+      "observations_sent_to_api": [
+        {
+          "step_id": 0,
+          "images": 4
+        },
+        {
+          "step_id": 25,
+          "images": 4
+        }
+      ]
+    }
+  ],
+  "api_budget": {
+    "inference_requests": 3,
+    "token_count_requests": 3,
+    "input_tokens_reserved": 24768,
+    "output_tokens_reserved": 1536,
+    "cost_reserved_usd": 0.17164800000000002,
+    "rejections": [],
+    "usage": [
+      {
+        "request": "001",
+        "provider_usage": {
+          "input_tokens": 8000,
+          "output_tokens": 200
+        },
+        "http_status": 200
+      },
+      {
+        "request": "002",
+        "provider_usage": {
+          "input_tokens": 8000,
+          "output_tokens": 200
+        },
+        "http_status": 200
+      },
+      {
+        "request": "003",
+        "provider_usage": {
+          "input_tokens": 8000,
+          "output_tokens": 200
+        },
+        "http_status": 200
+      }
+    ]
+  },
+  "episodes": [
+    {
+      "episode_id": "dexmate_2e082bed14df48e793871c9078ead292",
+      "step_id": 25,
+      "sim_time_s": 0.5000000000000003,
+      "termination_reason": "operator_or_agent_finish",
+      "integration_executed": true,
+      "partial_task_progress": {
+        "stabilized": true,
+        "body_walls_and_corners": false,
+        "double_wall_geometry": false,
+        "tab_slot_relationships": [
+          {
+            "side": "right",
+            "entry_base_m": [
+              -0.16047878145016065,
+              3.761523058149846e-07,
+              0.0
+            ],
+            "tail_base_m": [
+              -0.19400568920671132,
+              3.761523059404235e-07,
+              -9.625820717050226e-07
+            ],
+            "delta_base_m": [
+              -0.09880693920671133,
+              -0.00029807575972957604,
+              -9.625820717050226e-07
+            ],
+            "near_slot": false,
+            "through_slot": false,
+            "under_base_overlap_m": -0.10207818920671133,
+            "captured_under_base": false,
+            "tab_base_contacts": 0
+          },
+          {
+            "side": "left",
+            "entry_base_m": [
+              0.1402496250390009,
+              3.7615230569926555e-07,
+              0.0
+            ],
+            "tail_base_m": [
+              0.19401813871113763,
+              3.761523059332606e-07,
+              -5.0812315278868954e-06
+            ],
+            "delta_base_m": [
+              0.09881938871113763,
+              -0.0002980757597295832,
+              -5.0812315278868954e-06
+            ],
+            "near_slot": false,
+            "through_slot": false,
+            "under_base_overlap_m": -0.10209063871113765,
+            "captured_under_base": false,
+            "tab_base_contacts": 0
+          }
+        ],
+        "locking_geometry_candidate": false,
+        "stable_open_box_geometry": false,
+        "closed_geometry": false,
+        "released_persistence": false,
+        "required_release_seconds": 5,
+        "hand_panel_contacts": 0,
+        "robot_panel_contacts": 0,
+        "table_panel_contacts": 99,
+        "max_box_hinge_speed_rad_s": 0.3680691920845691,
+        "max_box_penetration_m": 4.992813566080978e-07,
+        "physical_locking_verified": false,
+        "succeed": false,
+        "debug_pose": false,
+        "note": "Geometric release/capture progress is separate. Final success is withheld until physical lock insertion/retention validation passes; debug placement never earns success."
+      },
+      "complete_folding_with_physical_locking": false,
+      "task_kind": "custom task integrated with RAX",
+      "official_dexjoco_benchmark": false,
+      "source_unchanged": true
+    }
+  ],
+  "elapsed_seconds": 10.20197948599889,
+  "integration_success": true,
+  "complete_folding_with_physical_locking": false,
+  "task_kind": "custom task integrated with RAX, not an official DexJoCo benchmark"
+}

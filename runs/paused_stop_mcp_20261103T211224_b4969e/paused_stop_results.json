@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "checks": {
+    "real_full_scene_plan": true,
+    "paused_at7": true,
+    "immediate_terminal_state": true,
+    "immediate_owner_release": true,
+    "stop_ack_not_pending": true,
+    "resume_refused": true,
+    "no_extra_step_or_cursor": true,
+    "no_extra_action_charge": true,
+    "native_operator_stop": true,
+    "core_unchanged": true
+  },
+  "detail": {
+    "plan": {
+      "status": "planned",
+      "executed": false,
+      "duration_s": 0.86,
+      "terminal_hold_rows": 5,
+      "planned_goal_error": {
+        "position_m": 9.526994700217455e-05,
+        "orientation_rad": 0.00011064912759084611
+      },
+      "planner": "OMPL1.7.0/RRTConnect",
+      "collision_samples": 97,
+      "checked_pairs": 802,
+      "clearance_lower_bound_m": 0.005,
+      "edge_validation": "Discrete <=0.004 rad L2 during search; final edges <= configured per-joint resolution. Not certified continuous collision checking.",
+      "validation_runtime_s": 0.01953796800080454,
+      "dependency_versions": {
+        "ompl": "1.7.0",
+        "mujoco": "3.4.0"
+      },
+      "runtime_s": 0.03158089899807237,
+      "plan_id": "b7ff4548c5b947a09d0564623611f501",
+      "episode_id": "dexmate_6da080eb52b241339dd62e04ccc32efc",
+      "step_id": 0,
+      "source_hash": "bd97ccabdfc1aa7db1183e9386f405d332dbb11f824a4f85e1afce4816592f84",
+      "world_version": "75f9d35ee4516542e2e42f3edff6323661cbae0333f0c0fdd14df502ae70634a",
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot",
+      "episode_ended": false
+    },
+    "first_chunk": {
+      "status": "paused",
+      "reason": null,
+      "plan_id": "b7ff4548c5b947a09d0564623611f501",
+      "executed": true,
+      "rows_executed": 7,
+      "rows_planned": 43,
+      "cursor_start": 0,
+      "cursor": 7,
+      "remaining_rows": 36,
+      "continuation_available": true,
+      "chunk_completed": true,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.009983566225122045,
+        "orientation_rad": 0.00013737226401440463
+      },
+      "wall_seconds": 0.18015412699969602,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    },
+    "stop": {
+      "status": "stopped",
+      "executed": false,
+      "reason": "local paused-plan STOP test",
+      "terminalized_plans": [
+        "b7ff4548c5b947a09d0564623611f501"
+      ],
+      "pending_execution_boundary": false,
+      "episode_ended": false
+    },
+    "status_after_stop": {
+      "status": "stopped",
+      "episode_id": "dexmate_6da080eb52b241339dd62e04ccc32efc",
+      "step_id": 7,
+      "active_plan": null,
+      "owner_plan": null,
+      "plan_state": "stopped",
+      "cursor": 7,
+      "total_rows": 43,
+      "recovery_required": {
+        "plan_id": "b7ff4548c5b947a09d0564623611f501",
+        "reason": "STOP_REQUESTED",
+        "policy": "Terminal execution/budget failure; no resume/old-target hold. Explicit operator-authorized reset and fresh commissioning required."
+      },
+      "last_result": {
+        "status": "stopped",
+        "reason": "STOP_REQUESTED",
+        "executed": false,
+        "rows_executed": 0,
+        "plan_id": "b7ff4548c5b947a09d0564623611f501",
+        "cursor": 7,
+        "remaining_rows": 36,
+        "continuation_available": false,
+        "command_completed": false,
+        "goal_reached": false,
+        "recovery_required": {
+          "plan_id": "b7ff4548c5b947a09d0564623611f501",
+          "reason": "STOP_REQUESTED",
+          "policy": "Terminal execution/budget failure; no resume/old-target hold. Explicit operator-authorized reset and fresh commissioning required."
+        }
+      },
+      "planner": "OMPL1.7.0/RRTConnect",
+      "control_dt_s": 0.02,
+      "max_rows_per_call": 50,
+      "max_rows": 50,
+      "max_plan_rows": 500,
+      "max_execute_rows": 50,
+      "max_trajectory_rows": 500,
+      "dynamic_coverage": "simulator_snapshot",
+      "world_policy": "simulator_snapshot",
+      "cardboard_avoidance_verified": false,
+      "held_object_planning": "unsupported",
+      "moving_jaw_planning": "unsupported",
+      "perception": "not vision-only; local simulator geometry",
+      "synchronized_two_arm_planning": "unsupported",
+      "stop_semantics": "MCP stop may queue behind dispatcher. Operator STOP file is checked before every control row. Guard-stopped paths cannot resume; explicit operator-authorized reset/recommissioning is required, never an automatic reference reset.",
+      "episode_ended": false
+    },
+    "resume_refusal": {
+      "status": "refused",
+      "reason": "PLAN_ALREADY_USED",
+      "executed": false,
+      "episode_id": "dexmate_6da080eb52b241339dd62e04ccc32efc",
+      "step_id": 7,
+      "plan_id": "b7ff4548c5b947a09d0564623611f501",
+      "terminal_reason": "EPISODE_ENDED"
+    }
+  },
+  "error": null,
+  "inference_requests": 0,
+  "scope": "Actual local frontend/gateway and full-scene motor execution7rows; STOP-state test only, no grasp/folding."
+}

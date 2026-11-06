@@ -1,0 +1,34 @@
+======================================================================
+FAIL: test_policy_revoked_during_edge_prevents_next_actuation (rax_integration.planning_validation.full_scene_checks.FullSceneChecks.test_policy_revoked_during_edge_prevents_next_actuation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/full_scene_checks.py", line 84, in test_policy_revoked_during_edge_prevents_next_actuation
+    pid=self.plan();before=state(self.e)
+        ^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/full_scene_checks.py", line 28, in plan
+    self.assertEqual(p['status'],'planned',p);return p['plan_id']
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'refused' != 'planned'
+- refused
++ planned
+ : {'status': 'refused', 'reason': 'SOURCE_CHANGED_RECREATE_SERVICE', 'executed': False, 'episode_id': 'full_scene_check', 'step_id': 0}
+
+======================================================================
+FAIL: test_05_tracking_guard_sensor_fault (rax_integration.planning_validation.run_checks.PlannerChecks.test_05_tracking_guard_sensor_fault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/run_checks.py", line 39, in test_05_tracking_guard_sensor_fault
+    p=self.plan();real=robot_snapshot
+      ^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/run_checks.py", line 26, in plan
+    r=self.s.plan({'episode_id':'diagnostic_static','expected_step_id':self.e.env_step,'arm':side,'target':nearby_target(self.e,side)});self.assertEqual(r['status'],'planned',r);return r['plan_id']
+                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'refused' != 'planned'
+- refused
++ planned
+ : {'status': 'refused', 'reason': 'WORLD_OR_START_CHANGED_DURING_PLANNING', 'executed': False, 'episode_id': 'diagnostic_static', 'step_id': 0}
+
+----------------------------------------------------------------------
+Ran 34 tests in 70.143s
+
+FAILED (failures=2)

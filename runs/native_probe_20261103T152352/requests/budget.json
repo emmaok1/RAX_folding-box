@@ -1,0 +1,46 @@
+{
+  "inference_requests": 2,
+  "token_count_requests": 2,
+  "input_tokens_reserved": 20512,
+  "output_tokens_reserved": 16384,
+  "cost_reserved_usd": 0.368832,
+  "rejections": [],
+  "usage": [
+    {
+      "request": "001",
+      "provider_usage": {
+        "input_tokens": 10000,
+        "output_tokens": 200
+      },
+      "http_status": 200
+    },
+    {
+      "request": "002",
+      "provider_usage": {
+        "input_tokens": 10000,
+        "output_tokens": 200
+      },
+      "http_status": 200
+    }
+  ],
+  "limits": {
+    "cache_write_multiplier_bound": 2,
+    "endpoint": "https://api.anthropic.com",
+    "input_usd_per_million": 3,
+    "max_cost_usd": 100,
+    "max_input_tokens_per_request": 160000,
+    "max_input_tokens_total": 2800000,
+    "max_output_tokens_per_request": 8192,
+    "max_output_tokens_total": 327680,
+    "max_requests": 4,
+    "max_token_count_requests": 80,
+    "max_wall_seconds": 90,
+    "model": "claude-sonnet-4-6",
+    "output_usd_per_million": 15,
+    "pricing_note": "Pinned Sonnet4.6 rates verified2026-11-03; review before future paid grant or model change.",
+    "pricing_source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "provider": "anthropic",
+    "reasoning_policy": "teacher_adaptive_high"
+  },
+  "elapsed_seconds": 1.191400583998984
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/repeat_execution.py", line 29, in <module>
+    if __name__=='__main__':run()
+                            ^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/repeat_execution.py", line 16, in run
+    e=StaticRobotFixture();e.render_spec=GymRenderingSpec();root=OUT/f'{side}_{trial}';s=MotionService(e,'static_fixture',root,scene_text=e.fixture_xml);r=s.plan({'episode_id':'static_fixture','expected_step_id':0,'arm':side,'target':nearby_target(e,side)});assert r['status']=='planned',r
+                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'status': 'refused', 'reason': 'PLANNER_PROCESS_EXIT', 'executed': False, 'episode_id': 'static_fixture', 'step_id': 0, 'returncode': 1, 'worker_log': '265bbf49eee44981b4171c5a9bab3210.worker.log'}

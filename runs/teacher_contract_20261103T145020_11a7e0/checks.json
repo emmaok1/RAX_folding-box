@@ -1,0 +1,10 @@
+{
+  "teacher_tool_discovered": true,
+  "normal_bundle_workflow": true,
+  "observation_contains_live_truth": true,
+  "same_world": true,
+  "zero_steps_before_rehearsal": true,
+  "rehearsal_clean": false,
+  "frozen_controller_received_world_and_truth": false,
+  "no_provider_requests": true
+}

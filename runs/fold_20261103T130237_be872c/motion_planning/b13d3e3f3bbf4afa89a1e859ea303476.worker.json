@@ -1,0 +1,1 @@
+{"status": "refused", "reason": "GOAL_IN_COLLISION", "executed": false, "samples": 10, "collision": {"geoms": ["table_collision", "dexmate_R_arm_l4_collision_99"], "distance_m": -0.0036801900303241593}, "goal_ik_best_error": [1.5595623810977004e-05, 3.0539487527694864e-05]}

@@ -1,0 +1,130 @@
+{
+  "episode_id": "dexmate_6c17fa8860604ef4a018d6bc6e19c2cf",
+  "step_id": 0,
+  "task": "cardboard_box_folding",
+  "state": {
+    "tcp_pose": [
+      0.07436335805883337,
+      -0.4216935369890724,
+      1.0923631198701875,
+      -0.39644711461038995,
+      0.4965483901840249,
+      -0.4936644682955539,
+      0.5937716516180421,
+      0.07440186582573743,
+      0.4215010304413814,
+      1.0923234707886371,
+      0.5937701953534503,
+      -0.4936662922526534,
+      0.4965465768136928,
+      -0.39644929569624243
+    ],
+    "arm_joint_positions": [
+      -0.8,
+      -0.28,
+      0.0,
+      -1.25,
+      0.0,
+      -0.45,
+      0.0,
+      0.8,
+      0.28,
+      0.0,
+      -1.25,
+      0.0,
+      0.45,
+      0.0
+    ],
+    "arm_joint_velocities": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gripper_pose": [
+      0.288,
+      0.288,
+      0.288,
+      0.288
+    ],
+    "gripper_opening_commands": {
+      "right": 0.3,
+      "left": 0.3
+    }
+  },
+  "images": [
+    "back",
+    "ego",
+    "wrist_left",
+    "wrist_right"
+  ],
+  "attachments": [
+    {
+      "kind": "rgb",
+      "camera": "back",
+      "content_index": 1
+    },
+    {
+      "kind": "rgb",
+      "camera": "ego",
+      "content_index": 2
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_left",
+      "content_index": 3
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_right",
+      "content_index": 4
+    }
+  ],
+  "episode_ended": false,
+  "sim_time_s": 0.0,
+  "action_layout": {
+    "dim": 16,
+    "order": [
+      "right",
+      "left"
+    ],
+    "per_arm": [
+      "world_x_m",
+      "world_y_m",
+      "world_z_m",
+      "qw",
+      "qx",
+      "qy",
+      "qz",
+      "open_fraction"
+    ],
+    "frame": "MuJoCo world, right handed, z up",
+    "orientation": "active local-to-world quaternion wxyz",
+    "tool": "tcp_R / tcp_L, [0,0,0.16] m in each gripper_base frame, same axes",
+    "gripper": {
+      "command_unit": "opening fraction, 0 closed to 1 open",
+      "positive_opening_target_rad": "0.96 * fraction",
+      "zero_opening_mode": "bounded closing torque + damping",
+      "configured_closing_torque_Nm": 0.2
+    },
+    "timing": {
+      "control_dt_s": 0.02,
+      "physics_dt_s": 0.0005,
+      "substeps_per_row": 40,
+      "control_frequency_hz": 50.0,
+      "both_arms_staged_before_physics": true
+    },
+    "semantics": "absolute motor-driven TCP references via existing IK + PD; no teleportation",
+    "zero_pose": "all first seven values zero for an arm holds its previous TCP target"
+  }
+}

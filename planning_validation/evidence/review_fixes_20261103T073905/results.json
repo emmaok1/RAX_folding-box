@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 4,
+  "duration_seconds": 5.84,
+  "scope": "review fixes only; builds on30 earlier regression and9 MCP checks; no native demonstration relaunched",
+  "sha256": {
+    "rax_integration/motion_planning/service.py": "fc3a96dc4450d154b59c3a7ffab63988af24e4a4cbc3273539d7425ce76b66fa",
+    "rax_integration/planning_validation/full_scene_live.py": "7acb5f06b2dfcc98b865d1b833ae1ecd2d6062e7194af2e28ac140ba57214f37",
+    "rax_integration/planning_validation/display_stop_checks.py": "6c2f87e9f29a35d5f776790447bc7bf941859f4ae0f2771ff5a0083a3dea2025",
+    "rax_integration/planning_validation/full_scene_checks.py": "8f5f604a7e6bddb2725d91c5bd1fa48d581c8bb16a2c9fd88f6f72af1752d308"
+  }
+}

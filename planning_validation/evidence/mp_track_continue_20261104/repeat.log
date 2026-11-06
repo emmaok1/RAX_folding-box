@@ -1,0 +1,9 @@
+{"case": "small_right", "repeat": 0, "status": "PASS", "reason": null, "rows": 48, "goal_error": {"position_m": 0.0005145933478939677, "orientation_rad": 0.0011518834923227301}}
+{"case": "small_right", "repeat": 1, "status": "PASS", "reason": null, "rows": 48, "goal_error": {"position_m": 0.0005145933478939677, "orientation_rad": 0.0011518834923227301}}
+{"case": "small_left", "repeat": 0, "status": "PASS", "reason": null, "rows": 48, "goal_error": {"position_m": 0.0005200894195794848, "orientation_rad": 0.0011593793942873381}}
+{"case": "small_left", "repeat": 1, "status": "PASS", "reason": null, "rows": 48, "goal_error": {"position_m": 0.0005200894195794848, "orientation_rad": 0.0011593793942873381}}
+{"case": "intermediate", "repeat": 0, "status": "PASS", "reason": null, "rows": 525, "goal_error": {"position_m": 6.084598708549667e-05, "orientation_rad": 7.642528039912948e-05}}
+{"case": "intermediate", "repeat": 1, "status": "PASS", "reason": null, "rows": 525, "goal_error": {"position_m": 6.084598708549667e-05, "orientation_rad": 7.642528039912948e-05}}
+{"case": "near_box_standoff", "repeat": 0, "status": "PASS", "reason": null, "rows": 1003, "goal_error": {"position_m": 0.0004000598191896656, "orientation_rad": 0.00031269088360843486}}
+{"case": "near_box_standoff", "repeat": 1, "status": "PASS", "reason": null, "rows": 1003, "goal_error": {"position_m": 0.0004000598191896656, "orientation_rad": 0.00031269088360843486}}
+EVIDENCE /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/evidence/free_space_commission_20261104T042812

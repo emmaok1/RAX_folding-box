@@ -1,0 +1,1 @@
+{"status": "refused", "reason": "PLANNER_ERROR", "error_type": "ArgumentError", "detail": "Python argument types in\n    PlannerTerminationCondition.__init__(PlannerTerminationCondition, function)\ndid not match C++ signature:\n    __init__(_object*, std::function<bool ()> fn, double period)\n    __init__(_object*, std::function<bool ()> fn)"}

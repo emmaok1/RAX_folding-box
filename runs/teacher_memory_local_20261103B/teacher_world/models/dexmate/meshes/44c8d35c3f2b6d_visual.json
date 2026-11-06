@@ -1,0 +1,189 @@
+[
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_0.obj",
+    "rgba": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vertices": 1470,
+    "faces": 2180
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_1.obj",
+    "rgba": [
+      0.01568627450980392,
+      0.2784313725490196,
+      0.0,
+      1.0
+    ],
+    "vertices": 675,
+    "faces": 618
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_2.obj",
+    "rgba": [
+      0.4,
+      0.4,
+      0.4,
+      1.0
+    ],
+    "vertices": 735,
+    "faces": 674
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_3.obj",
+    "rgba": [
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "vertices": 126,
+    "faces": 114
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_4.obj",
+    "rgba": [
+      1.0,
+      0.03529411764705882,
+      0.03529411764705882,
+      1.0
+    ],
+    "vertices": 126,
+    "faces": 106
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_5.obj",
+    "rgba": [
+      1.0,
+      0.07450980392156863,
+      0.07450980392156863,
+      1.0
+    ],
+    "vertices": 528,
+    "faces": 794
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_6.obj",
+    "rgba": [
+      0.9215686274509803,
+      0.9215686274509803,
+      0.9215686274509803,
+      1.0
+    ],
+    "vertices": 27487,
+    "faces": 35335
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_7.obj",
+    "rgba": [
+      1.0,
+      0.1568627450980392,
+      0.09411764705882353,
+      1.0
+    ],
+    "vertices": 100,
+    "faces": 94
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_8.obj",
+    "rgba": [
+      0.16470588235294117,
+      0.16470588235294117,
+      0.16470588235294117,
+      1.0
+    ],
+    "vertices": 3625,
+    "faces": 3700
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_9.obj",
+    "rgba": [
+      0.20392156862745098,
+      0.20392156862745098,
+      0.20392156862745098,
+      1.0
+    ],
+    "vertices": 219,
+    "faces": 216
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_10.obj",
+    "rgba": [
+      1.0,
+      0.21568627450980393,
+      0.21568627450980393,
+      1.0
+    ],
+    "vertices": 280,
+    "faces": 263
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_11.obj",
+    "rgba": [
+      0.2196078431372549,
+      0.2196078431372549,
+      0.2196078431372549,
+      1.0
+    ],
+    "vertices": 794,
+    "faces": 792
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_12.obj",
+    "rgba": [
+      0.4117647058823529,
+      0.4117647058823529,
+      0.4117647058823529,
+      1.0
+    ],
+    "vertices": 725,
+    "faces": 646
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_13.obj",
+    "rgba": [
+      0.7725490196078432,
+      0.7725490196078432,
+      0.7725490196078432,
+      1.0
+    ],
+    "vertices": 519,
+    "faces": 437
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_14.obj",
+    "rgba": [
+      0.7803921568627451,
+      0.7803921568627451,
+      0.7803921568627451,
+      1.0
+    ],
+    "vertices": 1442,
+    "faces": 1385
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_15.obj",
+    "rgba": [
+      0.6,
+      0.6470588235294118,
+      0.8588235294117647,
+      1.0
+    ],
+    "vertices": 84,
+    "faces": 84
+  },
+  {
+    "file": "dexmate/meshes/44c8d35c3f2b6d_v_16.obj",
+    "rgba": [
+      0.6039215686274509,
+      0.6509803921568628,
+      0.8666666666666667,
+      1.0
+    ],
+    "vertices": 150,
+    "faces": 150
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "category": "intermediate",
+  "arm": "right",
+  "target": {
+    "frame": "world",
+    "tcp": "tcp_R",
+    "position_m": [
+      0.02,
+      -0.39,
+      1.115
+    ],
+    "quaternion_wxyz": [
+      -0.39644711461038995,
+      0.4965483901840249,
+      -0.4936644682955539,
+      0.5937716516180421
+    ]
+  },
+  "full_original_scene": true,
+  "goal_selection": "fixed commissioning goal, not cloud decision or folding policy",
+  "source_fingerprint": null,
+  "cloud_requests": 0,
+  "status": "FAIL",
+  "chunks": [],
+  "segments": [
+    {
+      "passed": false,
+      "chunks": [],
+      "plan": {
+        "status": "refused",
+        "reason": "PATH_VALIDATION_TIMEOUT",
+        "executed": false,
+        "episode_id": "free_space_commission",
+        "step_id": 0,
+        "samples": 668,
+        "collision": null,
+        "validation_runtime_s": 4.006551449998369
+      },
+      "source_fingerprint": null,
+      "plan_nonmutating": true
+    }
+  ],
+  "plan": {
+    "status": "refused",
+    "reason": "PATH_VALIDATION_TIMEOUT",
+    "executed": false,
+    "episode_id": "free_space_commission",
+    "step_id": 0,
+    "samples": 668,
+    "collision": null,
+    "validation_runtime_s": 4.006551449998369
+  },
+  "failure": {
+    "status": "refused",
+    "reason": "PATH_VALIDATION_TIMEOUT",
+    "executed": false,
+    "episode_id": "free_space_commission",
+    "step_id": 0,
+    "samples": 668,
+    "collision": null,
+    "validation_runtime_s": 4.006551449998369
+  },
+  "actual_control_rows": 0,
+  "actual_sim_time_s": 0.0
+}

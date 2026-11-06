@@ -1,0 +1,48 @@
+{
+  "inference_requests": 1,
+  "token_count_requests": 1,
+  "input_tokens_reserved": 14155,
+  "output_tokens_reserved": 320,
+  "cost_reserved_usd": 0.08973,
+  "rejections": [],
+  "usage": [
+    {
+      "request": "001",
+      "provider_usage": {
+        "input_tokens": 3,
+        "cache_creation_input_tokens": 7036,
+        "cache_read_input_tokens": 6827,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7036
+        },
+        "output_tokens": 88,
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "http_status": 200
+    }
+  ],
+  "limits": {
+    "provider": "anthropic",
+    "endpoint": "https://api.anthropic.com",
+    "model": "claude-sonnet-4-6",
+    "max_requests": 1,
+    "max_token_count_requests": 1,
+    "max_input_tokens_per_request": 24000,
+    "max_input_tokens_total": 24000,
+    "max_output_tokens_per_request": 320,
+    "max_output_tokens_total": 320,
+    "max_cost_usd": 0.1,
+    "max_wall_seconds": 40,
+    "max_episode_starts": 1,
+    "max_action_tool_calls": 1,
+    "max_action_rows": 25,
+    "input_usd_per_million": 3,
+    "output_usd_per_million": 15,
+    "cache_write_multiplier_bound": 2,
+    "authorization": "user_authorized_read_only_completion_of_executed_smoke"
+  },
+  "elapsed_seconds": 5.919196061000548
+}

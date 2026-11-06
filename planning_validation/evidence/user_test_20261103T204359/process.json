@@ -1,0 +1,19 @@
+{
+  "pid": 16822,
+  "task_id": "USER-PLANNER-TEST-20261103T204359",
+  "command": [
+    "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/.venv/bin/python",
+    "-u",
+    "-m",
+    "rax_integration.planning_validation.full_scene_live",
+    "--execute",
+    "--task-id",
+    "USER-PLANNER-TEST-20261103T204359",
+    "--run-dir",
+    "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/planning_validation/evidence/user_test_20261103T204359",
+    "--preview-seconds",
+    "20",
+    "--display-delay",
+    ".1"
+  ]
+}

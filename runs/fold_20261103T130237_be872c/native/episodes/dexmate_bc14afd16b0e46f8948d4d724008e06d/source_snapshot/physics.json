@@ -1,0 +1,109 @@
+{
+  "status": "VIDEO REBUILD: engineering prop, not calibrated material",
+  "thickness_m": 0.004,
+  "density_kg_m3": 100.0,
+  "hinge_armature_kgm2": 1e-08,
+  "spring_reference_rad": 0,
+  "hinge_range_rad": [
+    -0.12,
+    1.78
+  ],
+  "basis_weight_g_m2": 400.0,
+  "mass_rule": "net polygon area * basis weight; regions partitioned without overlap; effective homogeneous-prism inertia",
+  "material_source": {
+    "name": "Video-inspired rigid scored-board proxy",
+    "provenance": "Thickness,grammage and crease law are engineering choices; video supplies no material measurements."
+  },
+  "hinge_friction_solref": [
+    0.002,
+    1
+  ],
+  "hinge_friction_solimp": [
+    0.999,
+    0.9999,
+    1e-05,
+    0.5,
+    2
+  ],
+  "contacts": {
+    "fingertip_cardboard": {
+      "sliding_mu": 0.6,
+      "sensitivity_range": [
+        0.4,
+        0.8
+      ],
+      "condim": 3,
+      "torsional_m": 0.0,
+      "rolling_m": 0.0,
+      "solref": [
+        0.004,
+        1
+      ],
+      "solimp": [
+        0.99,
+        0.999,
+        0.0001,
+        0.5,
+        2
+      ],
+      "margin_m": 1e-05
+    },
+    "table_cardboard": {
+      "sliding_mu": 0.4,
+      "sensitivity_range": [
+        0.25,
+        0.55
+      ],
+      "condim": 3,
+      "torsional_m": 0.0,
+      "rolling_m": 0.0,
+      "solref": [
+        0.004,
+        1
+      ],
+      "solimp": [
+        0.99,
+        0.999,
+        0.0001,
+        0.5,
+        2
+      ],
+      "margin_m": 1e-05
+    },
+    "cardboard_cardboard": {
+      "sliding_mu": 0.35,
+      "sensitivity_range": [
+        0.2,
+        0.5
+      ],
+      "condim": 3,
+      "torsional_m": 0.0,
+      "rolling_m": 0.0,
+      "solref": [
+        0.004,
+        1
+      ],
+      "solimp": [
+        0.99,
+        0.999,
+        0.0001,
+        0.5,
+        2
+      ],
+      "margin_m": 1e-05
+    }
+  },
+  "rotational_friction_note": "condim3: no added spin/rolling resistance. Finite patch force couples provide moments; avoids unmeasured adhesive-like torsion/rolling coefficients.",
+  "crease_law": {
+    "type": "passive spring plus dry friction, length scaled",
+    "fold_stiffness_Nm_rad_per_m": 0.001,
+    "reverse_stiffness_Nm_rad_per_m": 0.15,
+    "damping_Nms_rad_per_m": 0.02,
+    "frictionloss_Nm_per_m": 0.1,
+    "note": "Assumed preworked scored board; static friction retains intermediate folds. No active holding torque or angle targets."
+  },
+  "reverse_hinge_range_rad": [
+    -1.78,
+    0.12
+  ]
+}

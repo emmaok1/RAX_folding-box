@@ -1,0 +1,19 @@
+{
+  "run_kind": "real_cloud_attempt",
+  "agent_launched": true,
+  "live_view_requested": true,
+  "core_scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+  "integration_source_hashes": {
+    "fold.py": "eb66c555fc355909cd1218f2cea23cd843b00703a9847afc41e082fe6ab6d66b",
+    "live_view.py": "39d4b6bf1af58329bb99419de33309a66a754e46b9a2794a3cf18a4c6ded0b8e",
+    "launch.py": "03233cf384feb31fd0078ba2e9a96fe703c881dc523daad6bae932cbcb0ed57d",
+    "claude_relay.py": "f6aa438e545221d2fdf845e1ad2192914246318bb32b9e4a55fd356387f07964",
+    "fold_config.json": "afc9cdad8cc5391ba2ae5cca3899595c1dce0f8e77e49b342890d88c90570c20",
+    "TASK.md": "d522ee589cd8d48aa4049ef5becf4c095a3d8e08b8911c04167201687e3f4910",
+    "ROBOT.md": "f1e15bd2b1715a3c7d52ebcdd15c5012f97a29c4ce7955266981173c000fd7e7",
+    "FOLD_AGENT.md": "d26fe168ca380004da261b1a2e18154875bb08d9ccd08fd942353a74df1294f0",
+    "upstream/services/dexmate_box/backend.py": "da7d54ca3b26b3e49664c839b50ce868bb5c40dece47a78112ad002b9143914f",
+    "upstream/services/dexmate_box/tools.py": "859705f01ff2f9a7b462dc37a0482cb725d8407a0a1e548fc5a3780f6beb599b",
+    "upstream/services/dexmate_box/benchmark.py": "b4a65c35f8aea8998d94b2ab9be41b1426496a128510bb6f920953dc859ffcba"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "updated_images_sent_to_claude": true,
+  "observations": [
+    {
+      "step_id": 25,
+      "images": 4
+    }
+  ],
+  "inference_requests": 1,
+  "estimated_api_cost_usd": 0.0455931,
+  "token_usage": {
+    "input_tokens": 3,
+    "cache_creation_input_tokens": 7036,
+    "cache_read_input_tokens": 6827,
+    "output_tokens": 88,
+    "total_input_including_cache": 13866
+  },
+  "cli_returncode": 0,
+  "api_budget": {
+    "inference_requests": 1,
+    "token_count_requests": 1,
+    "input_tokens_reserved": 14155,
+    "output_tokens_reserved": 320,
+    "cost_reserved_usd": 0.08973,
+    "rejections": [],
+    "usage": [
+      {
+        "request": "001",
+        "provider_usage": {
+          "input_tokens": 3,
+          "cache_creation_input_tokens": 7036,
+          "cache_read_input_tokens": 6827,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7036
+          },
+          "output_tokens": 88,
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "http_status": 200
+      }
+    ]
+  },
+  "additional_robot_actions": 0,
+  "additional_episodes": 0,
+  "model_report": "Both TCPs rose ~+0.002 m in world-z (right: 1.0923\u21921.0945, left: 1.0923\u21921.0945), confirmed in the back image where grippers appear marginally higher. Orientations and xy positions held. The cardboard panels are unchanged. Folding and physical locking remain incomplete; this demonstrates integration only.",
+  "original_phase_end_reason": "Model request limit",
+  "completion_kind": "one read-only continuation",
+  "cli_cumulative_estimated_cost_usd": 0.0879069,
+  "cli_cumulative_usage": {
+    "input_tokens": 3,
+    "cache_creation_input_tokens": 7036,
+    "cache_read_input_tokens": 6827,
+    "output_tokens": 88,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 7036,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "cost_estimate_source": "Per-phase provider usage at configured list/cache rates; invoice not queried",
+  "model_tool_calls": [],
+  "episode_count_after_continuation": 1
+}

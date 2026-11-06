@@ -1,0 +1,18 @@
+{
+  "note": "Version after moving-world guard; passed30 regression and9 real MCP checks. Earlier visible32-row run precedes this guard; its original logs remain unchanged.",
+  "sha256": {
+    "rax_integration/motion_planning/__init__.py": "a4af613bfe18a4cde152139d7d1492ce5f085931aa62d885cecc34ea97fe8b08",
+    "rax_integration/motion_planning/collision.py": "6be2a2f08b5da0ab4997a7febc690c9ceb5916e99b31e53d1d50e5359f23d1bf",
+    "rax_integration/motion_planning/model.py": "4e598cb60e637966534f301fd82b195fb63949934b79f57f591080d21fce35af",
+    "rax_integration/motion_planning/ompl_engine.py": "798acb12d62b952bed9aca29e4829d2e304915827362ca6c6263e0d2e4cc6819",
+    "rax_integration/motion_planning/operator_stop.py": "82305951d31f1b934ca19224d143aa466c19c9a3fe93d194419e1224f3e83607",
+    "rax_integration/motion_planning/service.py": "9be3db973c7a4b3f9eba2bb0e5c8d9e3c2337224b17bfca9169f94beb33f5266",
+    "rax_integration/motion_planning/trajectory.py": "23a477d7414a21a2c8d193d4930123fed0072dbabc89852e8ff02221c82c4e08",
+    "rax_integration/motion_planning/worker.py": "0cb003db80aee4b4357923701bd63e7646c9718e5e3b7d447471d85afd42802c",
+    "rax_integration/motion_planning/config.json": "74edbf78bda3f3cd1b865f3cbf63644a00c61ded2f243a3cb667c9ca2d89c0de",
+    "rax_integration/upstream/services/dexmate_box/backend.py": "2291a014c4687152843bcd62ab9f605117d431fb446a0f496729a2bc7559f66c",
+    "rax_integration/planning_validation/full_scene_live.py": "8ebbc54890cde886c13e20e13b59957332a6f361833fd2f94339d8400070f727",
+    "rax_integration/planning_validation/full_scene_checks.py": "604b946f231e477029256eaff65373f748339af69f6068cbe4baeec4015c382a",
+    "rax_integration/planning_validation/full_scene_mcp_check.py": "d1023b627e497523e94c42679e16487e18e3eb38419f4e11774ca2cfde1fec3c"
+  }
+}

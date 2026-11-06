@@ -1,0 +1,653 @@
+{
+  "movable_joints": [
+    {
+      "name": "L_arm_j1",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "3.071",
+        "effort": "150",
+        "velocity": "2.4"
+      },
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "L_arm_j2",
+      "urdf_limit": {
+        "lower": "-0.453",
+        "upper": "1.553",
+        "effort": "150",
+        "velocity": "2.4"
+      },
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "L_arm_j3",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "3.071",
+        "effort": "80",
+        "velocity": "2.7"
+      },
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "L_arm_j4",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "0.244",
+        "effort": "80",
+        "velocity": "2.7"
+      },
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "L_arm_j5",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "3.071",
+        "effort": "25",
+        "velocity": "2.7"
+      },
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "L_arm_j6",
+      "urdf_limit": {
+        "lower": "-1.396",
+        "upper": "1.396",
+        "effort": "25",
+        "velocity": "2.7"
+      },
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "L_arm_j7",
+      "urdf_limit": {
+        "lower": "-1.378",
+        "upper": "1.117",
+        "effort": "25",
+        "velocity": "2.7"
+      },
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "L_gripper_j1",
+      "urdf_limit": {
+        "lower": "0",
+        "upper": "0.96",
+        "effort": "0",
+        "velocity": "0"
+      },
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "L_gripper_j2",
+      "urdf_limit": {
+        "lower": "0",
+        "upper": "0.96",
+        "effort": "0",
+        "velocity": "0"
+      },
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "R_arm_j1",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "3.071",
+        "effort": "150",
+        "velocity": "2.4"
+      },
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "R_arm_j2",
+      "urdf_limit": {
+        "lower": "-1.553",
+        "upper": "0.453",
+        "effort": "150",
+        "velocity": "2.4"
+      },
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "R_arm_j3",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "3.071",
+        "effort": "80",
+        "velocity": "2.7"
+      },
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "R_arm_j4",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "0.244",
+        "effort": "80",
+        "velocity": "2.7"
+      },
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "R_arm_j5",
+      "urdf_limit": {
+        "lower": "-3.071",
+        "upper": "3.071",
+        "effort": "25",
+        "velocity": "2.7"
+      },
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "R_arm_j6",
+      "urdf_limit": {
+        "lower": "-1.396",
+        "upper": "1.396",
+        "effort": "25",
+        "velocity": "2.7"
+      },
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "R_arm_j7",
+      "urdf_limit": {
+        "lower": "-1.117",
+        "upper": "1.378",
+        "effort": "25",
+        "velocity": "2.7"
+      },
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "R_gripper_j1",
+      "urdf_limit": {
+        "lower": "0",
+        "upper": "0.96",
+        "effort": "0",
+        "velocity": "0"
+      },
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "R_gripper_j2",
+      "urdf_limit": {
+        "lower": "0",
+        "upper": "0.96",
+        "effort": "0",
+        "velocity": "0"
+      },
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "fixed_joints": [
+    "Lift",
+    "torso_flip",
+    "arm_center_j0",
+    "head_j1",
+    "head_j2",
+    "head_j3",
+    "zed_left_depth_mount",
+    "zed_left_camera_mount",
+    "zed_right_camera_mount",
+    "L_arm_j8",
+    "L_ee_j0",
+    "L_hand_mount",
+    "L_camera_joint",
+    "R_arm_j8",
+    "R_ee_j0",
+    "R_hand_mount",
+    "R_camera_joint"
+  ],
+  "mesh_parts": 0,
+  "hand_collision_bodies": [
+    "dexmate_L_gripper_base",
+    "dexmate_L_gripper_l1",
+    "dexmate_L_gripper_l2",
+    "dexmate_R_gripper_base",
+    "dexmate_R_gripper_l1",
+    "dexmate_R_gripper_l2"
+  ],
+  "custom_jaw_pads": [
+    {
+      "side": "L",
+      "jaw": 1,
+      "vertices_link_frame_m": [
+        [
+          0.022061774186305876,
+          -0.025,
+          0.105
+        ],
+        [
+          0.025061774186305875,
+          -0.025,
+          0.105
+        ],
+        [
+          0.025637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          0.022637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          0.022061774186305876,
+          0.025,
+          0.105
+        ],
+        [
+          0.025061774186305875,
+          0.025,
+          0.105
+        ],
+        [
+          0.025637801835898495,
+          0.025,
+          0.153
+        ],
+        [
+          0.022637801835898495,
+          0.025,
+          0.153
+        ]
+      ],
+      "added_mass_kg": 0.007920000000000002,
+      "note": "Custom engineered elastomer pad; positive face slope fixes heel interference. Geometry/material not manufacturer measurements."
+    },
+    {
+      "side": "L",
+      "jaw": 2,
+      "vertices_link_frame_m": [
+        [
+          -0.022061774186305876,
+          -0.025,
+          0.105
+        ],
+        [
+          -0.025061774186305875,
+          -0.025,
+          0.105
+        ],
+        [
+          -0.025637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          -0.022637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          -0.022061774186305876,
+          0.025,
+          0.105
+        ],
+        [
+          -0.025061774186305875,
+          0.025,
+          0.105
+        ],
+        [
+          -0.025637801835898495,
+          0.025,
+          0.153
+        ],
+        [
+          -0.022637801835898495,
+          0.025,
+          0.153
+        ]
+      ],
+      "added_mass_kg": 0.007920000000000002,
+      "note": "Custom engineered elastomer pad; positive face slope fixes heel interference. Geometry/material not manufacturer measurements."
+    },
+    {
+      "side": "R",
+      "jaw": 1,
+      "vertices_link_frame_m": [
+        [
+          0.022061774186305876,
+          -0.025,
+          0.105
+        ],
+        [
+          0.025061774186305875,
+          -0.025,
+          0.105
+        ],
+        [
+          0.025637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          0.022637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          0.022061774186305876,
+          0.025,
+          0.105
+        ],
+        [
+          0.025061774186305875,
+          0.025,
+          0.105
+        ],
+        [
+          0.025637801835898495,
+          0.025,
+          0.153
+        ],
+        [
+          0.022637801835898495,
+          0.025,
+          0.153
+        ]
+      ],
+      "added_mass_kg": 0.007920000000000002,
+      "note": "Custom engineered elastomer pad; positive face slope fixes heel interference. Geometry/material not manufacturer measurements."
+    },
+    {
+      "side": "R",
+      "jaw": 2,
+      "vertices_link_frame_m": [
+        [
+          -0.022061774186305876,
+          -0.025,
+          0.105
+        ],
+        [
+          -0.025061774186305875,
+          -0.025,
+          0.105
+        ],
+        [
+          -0.025637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          -0.022637801835898495,
+          -0.025,
+          0.153
+        ],
+        [
+          -0.022061774186305876,
+          0.025,
+          0.105
+        ],
+        [
+          -0.025061774186305875,
+          0.025,
+          0.105
+        ],
+        [
+          -0.025637801835898495,
+          0.025,
+          0.153
+        ],
+        [
+          -0.022637801835898495,
+          0.025,
+          0.153
+        ]
+      ],
+      "added_mass_kg": 0.007920000000000002,
+      "note": "Custom engineered elastomer pad; positive face slope fixes heel interference. Geometry/material not manufacturer measurements."
+    }
+  ],
+  "source": "models/dexmate/provenance.json",
+  "srdf_always_exclusions": [
+    [
+      "base_link",
+      "lift_link"
+    ],
+    [
+      "lift_link",
+      "torso_flip_link"
+    ],
+    [
+      "torso_flip_link",
+      "L_arm_l1"
+    ],
+    [
+      "torso_flip_link",
+      "R_arm_l1"
+    ],
+    [
+      "torso_flip_link",
+      "head_l1"
+    ],
+    [
+      "L_arm_l1",
+      "L_arm_l2"
+    ],
+    [
+      "L_arm_l2",
+      "L_arm_l3"
+    ],
+    [
+      "L_arm_l3",
+      "L_arm_l4"
+    ],
+    [
+      "L_arm_l4",
+      "L_arm_l5"
+    ],
+    [
+      "L_arm_l5",
+      "L_arm_l6"
+    ],
+    [
+      "L_arm_l6",
+      "L_arm_l7"
+    ],
+    [
+      "R_arm_l1",
+      "R_arm_l2"
+    ],
+    [
+      "R_arm_l2",
+      "R_arm_l3"
+    ],
+    [
+      "R_arm_l3",
+      "R_arm_l4"
+    ],
+    [
+      "R_arm_l4",
+      "R_arm_l5"
+    ],
+    [
+      "R_arm_l5",
+      "R_arm_l6"
+    ],
+    [
+      "R_arm_l6",
+      "R_arm_l7"
+    ],
+    [
+      "head_l1",
+      "head_l2"
+    ],
+    [
+      "head_l2",
+      "head_l3"
+    ]
+  ],
+  "config": {
+    "model": "Dexmate Vega 1 U, official wrist-FT + DexGripper S variant",
+    "mount_position_m": [
+      -0.88,
+      0.0,
+      0.0
+    ],
+    "mount_yaw_rad": 0.0,
+    "manual_stand_lift_m": 0.12,
+    "manual_stand_flip_rad": 0.0,
+    "head_joints_rad": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "home_left_rad": [
+      0.8,
+      0.28,
+      0,
+      -1.25,
+      0,
+      0.45,
+      0
+    ],
+    "home_right_rad": [
+      -0.8,
+      -0.28,
+      0,
+      -1.25,
+      0,
+      -0.45,
+      0
+    ],
+    "joint_kp_Nm_rad": [
+      180,
+      180,
+      130,
+      130,
+      60,
+      50,
+      40
+    ],
+    "joint_kd_Nms_rad": [
+      22,
+      22,
+      16,
+      16,
+      8,
+      7,
+      6
+    ],
+    "arm_damping_Nms_rad": 0.3,
+    "arm_armature_kgm2": 0.015,
+    "gripper_max_torque_Nm": 0.6,
+    "gripper_kp_Nm_rad": 5.0,
+    "gripper_kd_Nms_rad": 0.15,
+    "gripper_max_speed_rad_s": 1.0,
+    "jaw_pad_half_width_m": 0.025,
+    "jaw_pad_friction": [
+      0.8,
+      0.005,
+      0.0001
+    ],
+    "control_dt_s": 0.02,
+    "physics_dt_s": 0.00025,
+    "episode_seconds": 90,
+    "release_seconds": 5,
+    "assumptions": "Mount, home, PD gains, armature and jaw-pad geometry/material are simulation choices, not manufacturer calibration. Arm effort/velocity limits come from the pinned URDF. Gripper limits are provisional because official URDF effort/velocity fields are zero. Root, stand and head fixed during tabletop work. No mobile-base or torso actuation.",
+    "wrist_camera_note": "Virtual optics in front of camera housing; preserves left/right wrist streams. Intrinsics/extrinsics are provisional, not measured calibration.",
+    "numerics_note": "0.25ms implicitfast physics, unchanged20ms controller. Timestep convergence check identified intermittent jaw contact at0.5ms; finer step and stiff URDF jaw mimic coupling selected. Coulomb contact retained; no-slip postsolver disabled. No constraints added to cardboard.",
+    "jaw_pad_design": {
+      "type": "parallel sloped pads at4mm design opening",
+      "design_board_gap_m": 0.004,
+      "design_jaw_angle_rad": 0.012,
+      "thickness_m": 0.003,
+      "z_limits_link_m": [
+        0.105,
+        0.153
+      ],
+      "density_kg_m3": 1100,
+      "provenance": "Custom engineering pad; elastomer density and contact properties provisional. Vendor hand and actuation topology retained."
+    },
+    "gripper_closing_torque_Nm": 0.4,
+    "gripper_control_note": "Video-rebuild engineering choice:0.4Nm closing,0.6Nm limit; not calibrated manufacturer limits. Actual forces measured.",
+    "gripper_mimic_solref": [
+      0.002,
+      1
+    ],
+    "gripper_mimic_solimp": [
+      0.99,
+      0.999,
+      0.0001,
+      0.5,
+      2
+    ]
+  }
+}

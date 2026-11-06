@@ -1,0 +1,16 @@
+{
+  "inference_requests": 0,
+  "token_count_requests": 0,
+  "rejections": [
+    "Operator STOP requested"
+  ],
+  "errors": [
+    {
+      "stage": "request_validation",
+      "exception_type": "ValueError",
+      "request": null
+    }
+  ],
+  "limits": {},
+  "elapsed_seconds": 0.00018848399849957787
+}

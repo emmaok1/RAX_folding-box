@@ -1,0 +1,85 @@
+{
+  "mode": "rehearsal",
+  "reason": "exit",
+  "returncode": 0,
+  "task_complete": false,
+  "episode_id": "dexmate_2a4054f5d5af4311ab25dcb8ebf45641",
+  "start_step_id": 0,
+  "end_step_id": 0,
+  "artifacts": {
+    "directory": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0",
+    "mcp_trace": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/mcp.jsonl",
+    "frames": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/frames",
+    "code": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/code",
+    "exports": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/exports",
+    "stdout": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/stdout.log",
+    "stderr": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/stderr.log",
+    "log_details": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/logs.json",
+    "final_response": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/calls/000004/response.json",
+    "final_images": [
+      {
+        "content_index": 1,
+        "path": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/calls/000004/image_01.png"
+      },
+      {
+        "content_index": 2,
+        "path": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/calls/000004/image_02.png"
+      },
+      {
+        "content_index": 3,
+        "path": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/calls/000004/image_03.png"
+      },
+      {
+        "content_index": 4,
+        "path": "runtime/autonomous_controller/runs/rehearsal-0a29423b4b5c49deb5cf5b24011908e0/calls/000004/image_04.png"
+      }
+    ]
+  },
+  "recording_errors": [],
+  "api_budget": {
+    "phase": "development",
+    "calls_used": 0,
+    "tokens_charged": 0,
+    "tokens_reported": 0,
+    "unresolved_reserved_tokens": 0,
+    "reported_cost_usd": 0.0,
+    "session_cost_limit_usd": null,
+    "session_cost_reported_usd": 0.0,
+    "session_cost_reserved_usd": 0.0,
+    "session_cost_remaining_usd": null,
+    "session_cost_blocked": false
+  },
+  "simulator_exited": null,
+  "sha256": "dea8a6bf37d08bb3b2b666a99ca49d96f1f2274f438b1975bca3ef9767d7c07c",
+  "timing": {
+    "schema": "episode_wall_timing_v1",
+    "wall_limit_seconds": 600,
+    "total_seconds": 2.3751260329991055,
+    "environment_setup_seconds": 1.8875941660007811,
+    "environment_step_seconds": 0,
+    "environment_other_mcp_seconds": 0.015414773999509634,
+    "gemini_api_seconds": 0.0,
+    "protocol_seconds": 4.576500032271724e-05,
+    "controller_processing_seconds": 0.0639521680004691,
+    "container_overhead_seconds": 0.0009033089991135057,
+    "evaluation_seconds": 0.3087806390012702,
+    "environment_shutdown_seconds": 0.09839115099930495,
+    "supervisor_overhead_seconds": 4.406099833431654e-05,
+    "mcp_tools": {
+      "protocol_or_rejected": {
+        "seconds": 4.576500032271724e-05,
+        "calls": 1
+      },
+      "dexmate_teacher_state": {
+        "seconds": 0.011663579998639761,
+        "calls": 1
+      },
+      "dexmate_teacher_memory": {
+        "seconds": 0.003751194000869873,
+        "calls": 1
+      }
+    }
+  },
+  "output_error": null,
+  "bundle": "e0cde941f4d34011a033c1549f24d235"
+}

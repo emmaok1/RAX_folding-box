@@ -1,0 +1,1 @@
+{"status": "refused", "reason": "START_IN_COLLISION", "executed": false, "samples": 1, "collision": {"geoms": ["dexmate_R_gripper_base_collision_115", "dexmate_R_gripper_l1_collision_118"], "distance_m": -0.034939829339417604}}

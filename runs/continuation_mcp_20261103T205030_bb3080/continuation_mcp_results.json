@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "checks": {
+    "discovered_bounded_optional_chunk": true,
+    "discovered_cursor_contract": true,
+    "full_scene_plan": true,
+    "whole_plan_exceeds_percall": true,
+    "plan_preview_nonmutation": true,
+    "first_chunk_exact7": true,
+    "first_chunk_not_full_goal": true,
+    "duplicate_cursor_no_motion": true,
+    "duplicate_cursor_no_action_budget": true,
+    "skipped_cursor_no_motion": true,
+    "skipped_cursor_no_action_budget": true,
+    "missing_cursor_no_motion": true,
+    "missing_cursor_no_action_budget": true,
+    "same_plan_full_completion": true,
+    "cursor_no_duplicate_rows": true,
+    "percall_ceiling": true,
+    "status_cursor_complete": true,
+    "stop_visible": true,
+    "native_stop_result": true,
+    "core_sources_unchanged": true,
+    "native_audit_video": true
+  },
+  "chunks": [
+    {
+      "status": "paused",
+      "reason": null,
+      "plan_id": "120db02a06374045bc17e0302b0af8c6",
+      "executed": true,
+      "rows_executed": 7,
+      "rows_planned": 57,
+      "cursor_start": 0,
+      "cursor": 7,
+      "remaining_rows": 50,
+      "continuation_available": true,
+      "chunk_completed": true,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.029945192371700725,
+        "orientation_rad": 0.0001246923351208095
+      },
+      "wall_seconds": 0.20986002100107726,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    },
+    {
+      "status": "completed",
+      "reason": null,
+      "plan_id": "120db02a06374045bc17e0302b0af8c6",
+      "executed": true,
+      "rows_executed": 50,
+      "rows_planned": 57,
+      "cursor_start": 7,
+      "cursor": 57,
+      "remaining_rows": 0,
+      "continuation_available": false,
+      "chunk_completed": true,
+      "command_completed": true,
+      "goal_reached": true,
+      "measured_goal_error": {
+        "position_m": 0.0007131479953951481,
+        "orientation_rad": 0.002133744816213648
+      },
+      "wall_seconds": 1.5930661339989456,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    }
+  ],
+  "inference_requests": 0,
+  "scope": "Actual local RAX/MCP; full original robot/table/cardboard; measured joint execution, no agent/cloud/contact/folding."
+}

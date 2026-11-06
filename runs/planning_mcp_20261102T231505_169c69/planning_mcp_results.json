@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "all_motion_tools_discovered": true,
+    "production_dynamic_coverage_refused": true,
+    "planning_no_physics_steps": true,
+    "invalid_execution_no_physics_steps": true,
+    "refused_execution_keeps_control_mode": true,
+    "stop_visible": true,
+    "core_source_unchanged": true
+  },
+  "passed": true,
+  "inference_requests": 0,
+  "simulation_steps": 0,
+  "scope": "Actual current box scene refusal/contract only, not tracked execution or cardboard avoidance."
+}

@@ -1,0 +1,175 @@
+{
+  "episode_id": "dexmate_bc14afd16b0e46f8948d4d724008e06d",
+  "step_id": 117,
+  "task": "cardboard_box_folding",
+  "state": {
+    "tcp_pose": [
+      0.07416725799353596,
+      -0.4120570788178045,
+      1.0880017041811243,
+      -0.39731183581995666,
+      0.4963551508257227,
+      -0.4926130741586942,
+      0.5942282629882818,
+      0.0743055840816612,
+      0.42203293171050726,
+      1.0919457193961062,
+      0.5947200164586175,
+      -0.49359649387557586,
+      0.4964664126696355,
+      -0.3952109618269003
+    ],
+    "arm_joint_positions": [
+      -0.7342006417294044,
+      0.11937108611638564,
+      0.4538340231216408,
+      -1.2451811275058433,
+      -0.6454855326803132,
+      -0.3237935269937095,
+      0.29427161619754016,
+      0.7169568213964448,
+      0.634932619423377,
+      0.4710581900198195,
+      -1.2387018963761307,
+      -0.5977497892046957,
+      0.3454636107000526,
+      0.29151806477127623
+    ],
+    "arm_joint_velocities": [
+      -0.12402255975343215,
+      0.15424784444013803,
+      -0.07324708609588237,
+      -0.06333421089874874,
+      -0.02839304255648065,
+      0.04577859314523612,
+      -0.12888520708523474,
+      7.073086422800222e-06,
+      -1.6954872569455817e-06,
+      4.005775008631425e-06,
+      1.5590983983468746e-05,
+      2.4209967627269663e-05,
+      -2.269661526213308e-06,
+      5.764319616414223e-05
+    ],
+    "gripper_pose": [
+      0.9590118061028629,
+      0.95901129885988,
+      0.9602640813660628,
+      0.9602649262174158
+    ],
+    "gripper_opening_commands": {
+      "right": 1.0,
+      "left": 1.0
+    }
+  },
+  "images": [
+    "back",
+    "ego",
+    "wrist_left",
+    "wrist_right"
+  ],
+  "attachments": [
+    {
+      "kind": "rgb",
+      "camera": "back",
+      "content_index": 1
+    },
+    {
+      "kind": "rgb",
+      "camera": "ego",
+      "content_index": 2
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_left",
+      "content_index": 3
+    },
+    {
+      "kind": "rgb",
+      "camera": "wrist_right",
+      "content_index": 4
+    }
+  ],
+  "episode_ended": false,
+  "sim_time_s": 2.340000000000063,
+  "action_layout": {
+    "dim": 16,
+    "order": [
+      "right",
+      "left"
+    ],
+    "per_arm": [
+      "world_x_m",
+      "world_y_m",
+      "world_z_m",
+      "qw",
+      "qx",
+      "qy",
+      "qz",
+      "open_fraction"
+    ],
+    "frame": "MuJoCo world, right handed, z up",
+    "orientation": "active local-to-world quaternion wxyz",
+    "tool": "tcp_R / tcp_L, [0,0,0.16] m in each gripper_base frame, same axes",
+    "gripper": {
+      "command_unit": "opening fraction, 0 closed to 1 open",
+      "positive_opening_target_rad": "0.96 * fraction",
+      "zero_opening_mode": "bounded closing torque + damping",
+      "configured_closing_torque_Nm": 0.4
+    },
+    "timing": {
+      "control_dt_s": 0.02,
+      "physics_dt_s": 0.00025,
+      "substeps_per_row": 80,
+      "control_frequency_hz": 50.0,
+      "both_arms_staged_before_physics": true
+    },
+    "semantics": "absolute motor-driven TCP references via existing IK + PD; no teleportation",
+    "zero_pose": "all first seven values zero for an arm holds its previous TCP target"
+  },
+  "control_feedback": {
+    "mode": "planned_joint_references",
+    "ik_residual": null,
+    "tcp_references": {
+      "left": [
+        0.07430502486881373,
+        0.422036280216418,
+        1.091946187495501,
+        0.5947230973852168,
+        -0.4935976045811161,
+        0.4964640969210649,
+        -0.39520784741281284
+      ],
+      "right": [
+        0.07448966368691948,
+        -0.3992894518921201,
+        1.0787453169548038,
+        -0.39683496054275186,
+        0.49799421720541825,
+        -0.4928716779775574,
+        0.5929597648817184
+      ]
+    }
+  },
+  "transition": {
+    "motion": {
+      "status": "stopped",
+      "reason": "TRACKING_ERROR",
+      "plan_id": "e28c2a1c52a24853b80be96de9bd08a1",
+      "executed": true,
+      "rows_executed": 17,
+      "rows_planned": 49,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.07286163696002643,
+        "orientation_rad": 0.003995181713454118
+      },
+      "wall_seconds": 1.3705809809998755,
+      "stop_ack_delay_wall_s": null,
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    }
+  }
+}

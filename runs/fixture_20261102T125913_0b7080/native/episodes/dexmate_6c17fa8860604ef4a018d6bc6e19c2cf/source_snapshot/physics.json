@@ -1,0 +1,144 @@
+{
+  "status": "DigiFlute E MATERIAL SUBSTITUTION; source thickness/grammage, uncalibrated contact/crease assumptions",
+  "thickness_m": 0.00153,
+  "density_kg_m3": 254.90196078431376,
+  "friction": [
+    0.35,
+    0,
+    0
+  ],
+  "hinge_damping_Nms_rad": 0.0003,
+  "hinge_stiffness_Nm_rad": 0.00015,
+  "hinge_frictionloss_Nm": 3e-05,
+  "hinge_armature_kgm2": 1e-08,
+  "collision_margin_m": 2e-05,
+  "spring_reference_rad": 0,
+  "curve_samples_per_cubic": 25,
+  "cut_extent_note": "Native vector units retained; nominal flat label is not used to stretch cut geometry.",
+  "hinge_range_rad": [
+    -0.15,
+    3.2
+  ],
+  "contact_solref": [
+    0.004,
+    1
+  ],
+  "contact_solimp": [
+    0.99,
+    0.999,
+    0.0001,
+    0.5,
+    2
+  ],
+  "hinge_surface_offset_m": 0.000765,
+  "hinge_surface_offset_note": "Finite-thickness outward folding surface, replacing midplane hinge. Native panel cut polygons unchanged.",
+  "unscored_flexures": {
+    "status": "ENGINEERED extra scores for E-flute derivative at former unscored approximation lines; passive law provisional",
+    "tab_bend_x_pdf_pt": [
+      29.0,
+      1253.3
+    ],
+    "lid_tip_bend_y_pdf_pt": 185.0,
+    "tab_stiffness_Nm_rad": 5e-05,
+    "tab_frictionloss_Nm": 0.0001,
+    "lid_tip_stiffness_Nm_rad": 0.0003,
+    "lid_tip_frictionloss_Nm": 2e-05,
+    "damping_Nms_rad": 0.0001,
+    "range_rad": [
+      -1.65,
+      1.65
+    ],
+    "note": "Two tail and two lid-tip extra scores are explicit engineering changes, not original manufacturer creases. No snapping or retention constraint.",
+    "hinge_surface_note": "Tabs bend downward about -thickness/2; lid-side tips bend upward about +thickness/2. Opposite bending surfaces avoid finite-thickness self-intersection."
+  },
+  "basis_weight_g_m2": 390.0,
+  "mass_rule": "net polygon area * basis weight; regions partitioned without overlap; effective homogeneous-prism inertia",
+  "material_source": {
+    "name": "Smurfit Westrock DigiFlute E",
+    "url": "https://smurfitkappasheetfeeding.com/digiflute/",
+    "finished_caliper_mm": 1.53,
+    "basis_weight_g_m2": 390,
+    "not_original_sm1_material": true,
+    "bending_stiffness_MD_note": "Supplier lists 996 but unit/test condition not specified on page; not converted into scored crease stiffness."
+  },
+  "hinge_friction_solref": [
+    0.02,
+    1
+  ],
+  "hinge_friction_solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2
+  ],
+  "contacts": {
+    "fingertip_cardboard": {
+      "sliding_mu": 0.6,
+      "sensitivity_range": [
+        0.4,
+        0.8
+      ],
+      "condim": 3,
+      "torsional_m": 0.0,
+      "rolling_m": 0.0,
+      "solref": [
+        0.004,
+        1
+      ],
+      "solimp": [
+        0.99,
+        0.999,
+        0.0001,
+        0.5,
+        2
+      ],
+      "margin_m": 1e-05
+    },
+    "table_cardboard": {
+      "sliding_mu": 0.4,
+      "sensitivity_range": [
+        0.25,
+        0.55
+      ],
+      "condim": 3,
+      "torsional_m": 0.0,
+      "rolling_m": 0.0,
+      "solref": [
+        0.004,
+        1
+      ],
+      "solimp": [
+        0.99,
+        0.999,
+        0.0001,
+        0.5,
+        2
+      ],
+      "margin_m": 1e-05
+    },
+    "cardboard_cardboard": {
+      "sliding_mu": 0.35,
+      "sensitivity_range": [
+        0.2,
+        0.5
+      ],
+      "condim": 3,
+      "torsional_m": 0.0,
+      "rolling_m": 0.0,
+      "solref": [
+        0.004,
+        1
+      ],
+      "solimp": [
+        0.99,
+        0.999,
+        0.0001,
+        0.5,
+        2
+      ],
+      "margin_m": 1e-05
+    }
+  },
+  "rotational_friction_note": "condim3: no added spin/rolling resistance. Finite patch force couples provide moments; avoids unmeasured adhesive-like torsion/rolling coefficients."
+}

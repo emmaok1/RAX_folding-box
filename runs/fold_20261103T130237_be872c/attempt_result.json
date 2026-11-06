@@ -1,0 +1,94 @@
+{
+  "offline_scripted_fixture": false,
+  "inference_sent": true,
+  "model": "claude-sonnet-4-6",
+  "actual_model_requests": 21,
+  "scripted_fixture_requests": 0,
+  "estimated_api_cost_usd": 0.8813475,
+  "token_usage": {
+    "input_tokens": 21,
+    "cache_creation_input_tokens": 91466,
+    "cache_read_input_tokens": 759095,
+    "output_tokens": 6984,
+    "total_input_including_cache": 850582
+  },
+  "cli_returncode": 143,
+  "provider_usage_responses": 20,
+  "requests_without_recorded_usage": 1,
+  "termination_reason": "wall_time_limit",
+  "elapsed_seconds": 601.6482123169999,
+  "episodes": [
+    {
+      "episode_id": "dexmate_bc14afd16b0e46f8948d4d724008e06d",
+      "step_id": 327,
+      "sim_time_s": 6.540000000002247,
+      "termination_reason": "operator_or_agent_finish",
+      "integration_executed": true,
+      "partial_task_progress": {
+        "design": "video_rebuild",
+        "stabilized": true,
+        "body_walls_and_corners": false,
+        "stable_open_box_geometry": false,
+        "closed_geometry": false,
+        "tab_slot_relationships": [
+          {
+            "feature": "front_tongue_slot",
+            "through_slot": false,
+            "whole_section_fits": false,
+            "insertion_direction_valid": false,
+            "tip_front_frame_m": [
+              2.1756030962167836e-17,
+              0.6223937020329297,
+              0.0004992413577126464
+            ],
+            "insertion_depth_m": 0.0,
+            "geometric_capture_candidate": false,
+            "physical_retention_verified": false
+          }
+        ],
+        "locking_geometry_candidate": false,
+        "released_persistence": false,
+        "required_release_seconds": 5,
+        "hand_panel_contacts": 0,
+        "robot_panel_contacts": 0,
+        "table_panel_contacts": 9,
+        "max_box_hinge_speed_rad_s": 0.0005302431593440932,
+        "max_box_penetration_m": 0.0,
+        "physical_locking_verified": false,
+        "succeed": false,
+        "debug_pose": false,
+        "note": "Video-inspired reconstruction. Reset precrease is curriculum setup; debug geometry and closure alone never earn physical assembly success."
+      },
+      "complete_folding_with_physical_locking": false,
+      "task_kind": "custom task integrated with RAX",
+      "official_dexjoco_benchmark": false,
+      "source_unchanged": true
+    }
+  ],
+  "limits": {
+    "provider": "anthropic",
+    "endpoint": "https://api.anthropic.com",
+    "model": "claude-sonnet-4-6",
+    "max_requests": 40,
+    "max_token_count_requests": 80,
+    "max_input_tokens_per_request": 160000,
+    "max_input_tokens_total": 1400000,
+    "max_output_tokens_per_request": 1024,
+    "max_output_tokens_total": 40960,
+    "max_cost_usd": 10.0,
+    "max_wall_seconds": 600,
+    "max_episode_starts": 1,
+    "max_action_tool_calls": 200,
+    "max_action_rows": 50,
+    "input_usd_per_million": 3,
+    "output_usd_per_million": 15,
+    "cache_write_multiplier_bound": 2,
+    "authorization": "Fresh direct user authorization in monitor: connect cloud API and attempt full box folding with MuJoCo visible; NEW USD10 cap, one episode,40 requests,600s.",
+    "run_kind": "single_user_directed_folding_attempt",
+    "price_source": "https://platform.claude.com/docs/en/models/sonnet-4-6/overview",
+    "collision_world_policy": "simulator_snapshot",
+    "task_id": "CLOUD-FOLD-10-20261103-205926"
+  },
+  "complete_folding_with_physical_locking": false,
+  "planner": "Real cloud-model decisions through Claude Code and RAX MCP; no fixed-fold script"
+}

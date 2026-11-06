@@ -1,0 +1,24 @@
+{
+  "loop_complete": false,
+  "inference_sent": false,
+  "offline_scripted_api_fixture": true,
+  "model": "claude-sonnet-4-6",
+  "endpoint": "https://api.anthropic.com",
+  "termination_reason": "cli_exit",
+  "cli_returncode": 1,
+  "model_request_evidence": [],
+  "api_budget": {
+    "inference_requests": 0,
+    "token_count_requests": 0,
+    "input_tokens_reserved": 0,
+    "output_tokens_reserved": 0,
+    "cost_reserved_usd": 0.0,
+    "rejections": [],
+    "usage": []
+  },
+  "episodes": [],
+  "elapsed_seconds": 1.0023427970008925,
+  "integration_success": false,
+  "complete_folding_with_physical_locking": false,
+  "task_kind": "custom task integrated with RAX, not an official DexJoCo benchmark"
+}

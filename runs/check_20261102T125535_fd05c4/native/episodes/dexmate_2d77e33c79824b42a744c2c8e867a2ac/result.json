@@ -1,0 +1,70 @@
+{
+  "episode_id": "dexmate_2d77e33c79824b42a744c2c8e867a2ac",
+  "step_id": 0,
+  "sim_time_s": 0.0,
+  "termination_reason": "operator_or_agent_finish",
+  "integration_executed": false,
+  "partial_task_progress": {
+    "stabilized": false,
+    "body_walls_and_corners": false,
+    "double_wall_geometry": false,
+    "tab_slot_relationships": [
+      {
+        "side": "right",
+        "entry_base_m": null,
+        "tail_base_m": [
+          -0.19400583333333332,
+          3.7615230594201243e-07,
+          0.0
+        ],
+        "delta_base_m": [
+          -0.09880708333333332,
+          -0.00029807575972957447,
+          0.0
+        ],
+        "near_slot": false,
+        "through_slot": false,
+        "under_base_overlap_m": -0.10207833333333333,
+        "captured_under_base": false,
+        "tab_base_contacts": 0
+      },
+      {
+        "side": "left",
+        "entry_base_m": null,
+        "tail_base_m": [
+          0.19401833333333332,
+          3.7615230594201243e-07,
+          0.0
+        ],
+        "delta_base_m": [
+          0.09881958333333332,
+          -0.00029807575972957447,
+          0.0
+        ],
+        "near_slot": false,
+        "through_slot": false,
+        "under_base_overlap_m": -0.10209083333333334,
+        "captured_under_base": false,
+        "tab_base_contacts": 0
+      }
+    ],
+    "locking_geometry_candidate": false,
+    "stable_open_box_geometry": false,
+    "closed_geometry": false,
+    "released_persistence": false,
+    "required_release_seconds": 5,
+    "hand_panel_contacts": 0,
+    "robot_panel_contacts": 0,
+    "table_panel_contacts": 0,
+    "max_box_hinge_speed_rad_s": 0.0,
+    "max_box_penetration_m": 4.234722053407395e-09,
+    "physical_locking_verified": false,
+    "succeed": false,
+    "debug_pose": false,
+    "note": "Geometric release/capture progress is separate. Final success is withheld until physical lock insertion/retention validation passes; debug placement never earns success."
+  },
+  "complete_folding_with_physical_locking": false,
+  "task_kind": "custom task integrated with RAX",
+  "official_dexjoco_benchmark": false,
+  "source_unchanged": true
+}

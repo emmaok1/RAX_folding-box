@@ -1,0 +1,11 @@
+test_bad_cursor_provider_cannot_loop_without_limit (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_bad_cursor_provider_cannot_loop_without_limit) ... ok
+test_cancel_before_execution_never_moves (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_cancel_before_execution_never_moves) ... ok
+test_cancel_between_chunks_never_runs_next_chunk (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_cancel_between_chunks_never_runs_next_chunk) ... ok
+test_same_id_continues_to_actual_full_completion (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_same_id_continues_to_actual_full_completion) ... ok
+test_tracking_stop_is_final_without_retry (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_tracking_stop_is_final_without_retry) ... ok
+test_window_closed_during_execution_also_publishes_stop (rax_integration.planning_validation.display_continuation_checks.DisplayContinuationChecks.test_window_closed_during_execution_also_publishes_stop) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

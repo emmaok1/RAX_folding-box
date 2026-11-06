@@ -1,0 +1,130 @@
+{
+  "speed_scale": 1.0,
+  "source_history": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/runs/teacher_fullfold_20261104T001821",
+  "cloud_requests": 0,
+  "full_original_scene": true,
+  "controller_and_guards_unchanged": true,
+  "initialization": {
+    "status": "completed",
+    "reason": null,
+    "plan_id": "021aa1caaf804f3d871a95ae5106cb91",
+    "executed": true,
+    "rows_executed": 24,
+    "rows_planned": 24,
+    "cursor_start": 0,
+    "cursor": 24,
+    "remaining_rows": 0,
+    "continuation_available": false,
+    "chunk_completed": true,
+    "command_completed": true,
+    "goal_reached": true,
+    "measured_goal_error": {
+      "position_m": 0.0006206319054049304,
+      "orientation_rad": 0.0027362422638011513
+    },
+    "wall_seconds": 1.3618714670010377,
+    "stop_ack_delay_wall_s": null,
+    "recovery_required": null,
+    "task_success": false,
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  },
+  "full_reference_rows": 41,
+  "prefix_only": false,
+  "chunks": [
+    {
+      "status": "stopped",
+      "reason": "TRACKING_ERROR",
+      "plan_id": "3bddea40136540bba025a81908f6fc17",
+      "executed": true,
+      "rows_executed": 19,
+      "rows_planned": 41,
+      "cursor_start": 0,
+      "cursor": 19,
+      "remaining_rows": 22,
+      "continuation_available": false,
+      "chunk_completed": false,
+      "command_completed": false,
+      "goal_reached": false,
+      "measured_goal_error": {
+        "position_m": 0.030239912559958303,
+        "orientation_rad": 0.003316221963081002
+      },
+      "wall_seconds": 1.1909197109998786,
+      "stop_ack_delay_wall_s": null,
+      "recovery_required": {
+        "plan_id": "3bddea40136540bba025a81908f6fc17",
+        "reason": "TRACKING_ERROR",
+        "policy": "No resume/reference reset. Explicit operator-authorized episode reset and fresh settled-start commissioning required; do not use Cartesian hold as recovery."
+      },
+      "task_success": false,
+      "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+      "world_policy": "simulator_snapshot"
+    }
+  ],
+  "execution": {
+    "status": "stopped",
+    "reason": "TRACKING_ERROR",
+    "plan_id": "3bddea40136540bba025a81908f6fc17",
+    "executed": true,
+    "rows_executed": 19,
+    "rows_planned": 41,
+    "cursor_start": 0,
+    "cursor": 19,
+    "remaining_rows": 22,
+    "continuation_available": false,
+    "chunk_completed": false,
+    "command_completed": false,
+    "goal_reached": false,
+    "measured_goal_error": {
+      "position_m": 0.030239912559958303,
+      "orientation_rad": 0.003316221963081002
+    },
+    "wall_seconds": 1.1909197109998786,
+    "stop_ack_delay_wall_s": null,
+    "recovery_required": {
+      "plan_id": "3bddea40136540bba025a81908f6fc17",
+      "reason": "TRACKING_ERROR",
+      "policy": "No resume/reference reset. Explicit operator-authorized episode reset and fresh settled-start commissioning required; do not use Cartesian hold as recovery."
+    },
+    "task_success": false,
+    "coverage": "simulator-state-assisted full-scene collision snapshot; not vision-only or contact/folding proof",
+    "world_policy": "simulator_snapshot"
+  },
+  "status": "FAIL",
+  "final_physical_progress": {
+    "design": "video_rebuild",
+    "stabilized": true,
+    "body_walls_and_corners": false,
+    "stable_open_box_geometry": false,
+    "closed_geometry": false,
+    "tab_slot_relationships": [
+      {
+        "feature": "front_tongue_slot",
+        "through_slot": false,
+        "whole_section_fits": false,
+        "insertion_direction_valid": false,
+        "tip_front_frame_m": [
+          5.698545359976189e-17,
+          0.6225000002345069,
+          2.8581044383843032e-08
+        ],
+        "insertion_depth_m": 0.0,
+        "geometric_capture_candidate": false,
+        "physical_retention_verified": false
+      }
+    ],
+    "locking_geometry_candidate": false,
+    "released_persistence": false,
+    "required_release_seconds": 5,
+    "hand_panel_contacts": 0,
+    "robot_panel_contacts": 0,
+    "table_panel_contacts": 17,
+    "max_box_hinge_speed_rad_s": 2.4104400259443216e-05,
+    "max_box_penetration_m": 0.0,
+    "physical_locking_verified": false,
+    "succeed": false,
+    "debug_pose": false,
+    "note": "Video-inspired reconstruction. Reset precrease is curriculum setup; debug geometry and closure alone never earn physical assembly success."
+  }
+}

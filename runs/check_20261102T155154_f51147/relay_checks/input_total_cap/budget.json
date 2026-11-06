@@ -1,0 +1,41 @@
+{
+  "inference_requests": 1,
+  "token_count_requests": 2,
+  "input_tokens_reserved": 1256,
+  "output_tokens_reserved": 512,
+  "cost_reserved_usd": 0.015216,
+  "rejections": [
+    "Input token limit"
+  ],
+  "usage": [
+    {
+      "request": "001",
+      "provider_usage": {
+        "input_tokens": 1000,
+        "output_tokens": 5
+      },
+      "http_status": 200
+    }
+  ],
+  "limits": {
+    "provider": "anthropic",
+    "endpoint": "https://api.anthropic.com",
+    "model": "claude-sonnet-4-6",
+    "max_requests": 4,
+    "max_token_count_requests": 4,
+    "max_input_tokens_per_request": 24000,
+    "max_input_tokens_total": 2000,
+    "max_output_tokens_per_request": 512,
+    "max_output_tokens_total": 2048,
+    "max_cost_usd": 0.5,
+    "max_wall_seconds": 120,
+    "max_episode_starts": 1,
+    "max_action_tool_calls": 1,
+    "max_action_rows": 25,
+    "input_usd_per_million": 3,
+    "output_usd_per_million": 15,
+    "cache_write_multiplier_bound": 2,
+    "authorization": "historical_only; current phase offline-only; no renewed API authorization"
+  },
+  "elapsed_seconds": 0.5023826019996704
+}

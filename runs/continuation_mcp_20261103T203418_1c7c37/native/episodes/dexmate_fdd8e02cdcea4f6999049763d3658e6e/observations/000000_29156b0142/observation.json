@@ -1,0 +1,175 @@
+{
+  "episode_id": "dexmate_fdd8e02cdcea4f6999049763d3658e6e",
+  "step_id": 0,
+  "task": "cardboard_box_folding",
+  "state": {
+    "tcp_pose": [
+      0.07436335805883337,
+      -0.4216935369890724,
+      1.0923631198701875,
+      -0.39644711461038995,
+      0.4965483901840249,
+      -0.4936644682955539,
+      0.5937716516180421,
+      0.07440186582573743,
+      0.4215010304413814,
+      1.0923234707886371,
+      0.5937701953534503,
+      -0.4936662922526534,
+      0.4965465768136928,
+      -0.39644929569624243
+    ],
+    "arm_joint_positions": [
+      -0.8,
+      -0.28,
+      0.0,
+      -1.25,
+      0.0,
+      -0.45,
+      0.0,
+      0.8,
+      0.28,
+      0.0,
+      -1.25,
+      0.0,
+      0.45,
+      0.0
+    ],
+    "arm_joint_velocities": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gripper_pose": [
+      0.288,
+      0.288,
+      0.288,
+      0.288
+    ],
+    "gripper_opening_commands": {
+      "right": 0.3,
+      "left": 0.3
+    }
+  },
+  "images": [
+    "back"
+  ],
+  "attachments": [
+    {
+      "kind": "rgb",
+      "camera": "back",
+      "content_index": 1
+    }
+  ],
+  "episode_ended": false,
+  "sim_time_s": 0.0,
+  "action_layout": {
+    "dim": 16,
+    "order": [
+      "right",
+      "left"
+    ],
+    "per_arm": [
+      "world_x_m",
+      "world_y_m",
+      "world_z_m",
+      "qw",
+      "qx",
+      "qy",
+      "qz",
+      "open_fraction"
+    ],
+    "frame": "MuJoCo world, right handed, z up",
+    "orientation": "active local-to-world quaternion wxyz",
+    "tool": "tcp_R / tcp_L, [0,0,0.16] m in each gripper_base frame, same axes",
+    "gripper": {
+      "command_unit": "opening fraction, 0 closed to 1 open",
+      "positive_opening_target_rad": "0.96 * fraction",
+      "zero_opening_mode": "bounded closing torque + damping",
+      "configured_closing_torque_Nm": 0.4
+    },
+    "timing": {
+      "control_dt_s": 0.02,
+      "physics_dt_s": 0.00025,
+      "substeps_per_row": 80,
+      "control_frequency_hz": 50.0,
+      "both_arms_staged_before_physics": true
+    },
+    "semantics": "absolute motor-driven TCP references via existing IK + PD; no teleportation",
+    "zero_pose": "all first seven values zero for an arm holds its previous TCP target"
+  },
+  "control_feedback": {
+    "mode": "cartesian_ik",
+    "ik_residual": {
+      "left": {
+        "position_m": 0.0,
+        "orientation_rad": 0.0
+      },
+      "right": {
+        "position_m": 0.0,
+        "orientation_rad": 0.0
+      }
+    },
+    "ik_residual_semantics": "Residual of IK scratch solution; NOT actual TCP tracking error or proof of arrival.",
+    "tcp_references": {
+      "left": [
+        0.07440186582573743,
+        0.4215010304413814,
+        1.0923234707886371,
+        0.5937701953534503,
+        -0.4936662922526534,
+        0.4965465768136928,
+        -0.39644929569624243
+      ],
+      "right": [
+        0.07436335805883337,
+        -0.4216935369890724,
+        1.0923631198701875,
+        -0.39644711461038995,
+        0.4965483901840249,
+        -0.4936644682955539,
+        0.5937716516180421
+      ]
+    },
+    "reference_tracking": {
+      "right": {
+        "data_valid": true,
+        "actual_minus_reference_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_m": 0.0,
+        "orientation_rad": 0.0,
+        "within_reference_tolerance": true
+      },
+      "left": {
+        "data_valid": true,
+        "actual_minus_reference_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_m": 0.0,
+        "orientation_rad": 0.0,
+        "within_reference_tolerance": true
+      }
+    },
+    "reference_tracking_semantics": "Measured TCP versus current commanded TCP reference. For planned motion this is the current joint-reference FK, not the final trajectory goal.",
+    "reference_tolerance": {
+      "position_m": 0.005,
+      "orientation_rad": 0.05
+    }
+  }
+}

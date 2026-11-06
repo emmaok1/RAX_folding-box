@@ -1,0 +1,1 @@
+{"content": [{"type": "text", "text": "{\"status\": \"refused\", \"reason\": \"NO_PATH_WITHIN_BUDGET\", \"executed\": false, \"episode_id\": \"dexmate_3453b4b9a45f468fa4a5ef40d85ef9a1\", \"step_id\": 24, \"samples\": 329, \"collision\": null, \"goal_ik_best_error\": [7.687013725655145e-06, 3.9904605370369165e-05], \"episode_ended\": false}"}]}

@@ -1,0 +1,1 @@
+{"live_view": true, "max_action_rows": 50, "max_action_tool_calls": 200, "max_episode_starts": 2, "offline_fixture": false, "run_kind": "teacher_development"}

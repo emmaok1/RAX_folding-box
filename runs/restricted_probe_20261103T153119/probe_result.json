@@ -1,0 +1,22 @@
+{
+  "kind": "OFFLINE SCRIPTED RESTRICTED CLI + RAX PROBE",
+  "root": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/runs/restricted_probe_20261103T153119",
+  "checks": {
+    "no_native_execution_or_messaging_tools": true,
+    "outside_canary_read_denied": true,
+    "workspace_write_allowed": true,
+    "world_read_allowed": true,
+    "unadvertised_bash_denied": true,
+    "world_write_denied": true,
+    "controller_write_allowed": true,
+    "controller_registered": true,
+    "rehearsal_reply_ok": true,
+    "frozen_python_rehearsal_proof": true,
+    "bash_not_executed": true,
+    "canary_not_in_cli_output": true,
+    "cli_clean_exit": true
+  },
+  "scripted_messages": 9,
+  "actual_cloud_inference_requests": 0,
+  "robot_steps": 0
+}

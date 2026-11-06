@@ -1,0 +1,13 @@
+test_bad_targets_and_unreachable_request_do_not_move (__main__.MicroChecks.test_bad_targets_and_unreachable_request_do_not_move) ... ok
+test_chunk_length_boundaries_49_50_51 (__main__.MicroChecks.test_chunk_length_boundaries_49_50_51) ... ok
+test_left_multi_waypoint_standoff (__main__.MicroChecks.test_left_multi_waypoint_standoff) ... ok
+test_named_frames_tcp_and_fk_both_arms (__main__.MicroChecks.test_named_frames_tcp_and_fk_both_arms) ... ok
+test_small_signed_world_axes_both_arms (__main__.MicroChecks.test_small_signed_world_axes_both_arms) ... ok
+test_small_world_orientation_both_arms (__main__.MicroChecks.test_small_world_orientation_both_arms) ... ok
+test_total_500_admission_and_501_refusal (__main__.MicroChecks.test_total_500_admission_and_501_refusal) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 212.661s
+
+OK
+EVIDENCE rax_integration/planning_validation/evidence/micro_checks_20261104T044708

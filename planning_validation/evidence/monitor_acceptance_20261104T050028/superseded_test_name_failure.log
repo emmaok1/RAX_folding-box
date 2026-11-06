@@ -1,0 +1,53 @@
+test_bad_targets_and_unreachable_request_do_not_move (__main__.MicroChecks.test_bad_targets_and_unreachable_request_do_not_move) ... ok
+test_chunk_length_boundaries_49_50_51 (__main__.MicroChecks.test_chunk_length_boundaries_49_50_51) ... ok
+test_named_frames_tcp_and_fk_both_arms (__main__.MicroChecks.test_named_frames_tcp_and_fk_both_arms) ... FAIL
+test_small_signed_world_axes_both_arms (__main__.MicroChecks.test_small_signed_world_axes_both_arms) ... ok
+test_small_world_orientation_both_arms (__main__.MicroChecks.test_small_world_orientation_both_arms) ... ok
+test_total_500_admission_and_501_refusal (__main__.MicroChecks.test_total_500_admission_and_501_refusal) ... ok
+
+======================================================================
+FAIL: test_named_frames_tcp_and_fk_both_arms (__main__.MicroChecks.test_named_frames_tcp_and_fk_both_arms)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/micro_checks.py", line 51, in test_named_frames_tcp_and_fk_both_arms
+    self.assertEqual([e.model.joint(int(j)).name for j in arm['joint_ids']],[f'dexmate_{prefix}_arm_j{i}' for i in range(1,8)])
+AssertionError: Lists differ: ['R_arm_j1', 'R_arm_j2', 'R_arm_j3', 'R_arm[36 chars]_j7'] != ['dexmate_R_arm_j1', 'dexmate_R_arm_j2', 'd[92 chars]_j7']
+
+First differing element 0:
+'R_arm_j1'
+'dexmate_R_arm_j1'
+
+- ['R_arm_j1',
++ ['dexmate_R_arm_j1',
+?   ++++++++
+
+-  'R_arm_j2',
++  'dexmate_R_arm_j2',
+?   ++++++++
+
+-  'R_arm_j3',
++  'dexmate_R_arm_j3',
+?   ++++++++
+
+-  'R_arm_j4',
++  'dexmate_R_arm_j4',
+?   ++++++++
+
+-  'R_arm_j5',
++  'dexmate_R_arm_j5',
+?   ++++++++
+
+-  'R_arm_j6',
++  'dexmate_R_arm_j6',
+?   ++++++++
+
+-  'R_arm_j7']
++  'dexmate_R_arm_j7']
+?   ++++++++
+
+
+----------------------------------------------------------------------
+Ran 6 tests in 88.379s
+
+FAILED (failures=1)
+EVIDENCE rax_integration/planning_validation/evidence/micro_checks_20261104T043752

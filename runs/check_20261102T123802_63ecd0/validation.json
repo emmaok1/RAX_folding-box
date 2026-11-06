@@ -1,0 +1,107 @@
+{
+  "all_passed": true,
+  "checks": {
+    "custom_task_registered": true,
+    "official_claude_harness_command": true,
+    "claude_sandbox_enabled": true,
+    "actual_robot_and_dimensions": true,
+    "four_camera_images": true,
+    "observe_does_not_step": true,
+    "physics_timing": true,
+    "right_tcp_frame_and_wxyz": true,
+    "right_tool_axes": true,
+    "left_tcp_frame_and_wxyz": true,
+    "left_tool_axes": true,
+    "invalid_chunk_atomic_0": true,
+    "invalid_chunk_atomic_1": true,
+    "invalid_chunk_atomic_2": true,
+    "invalid_chunk_atomic_3": true,
+    "synchronized_bimanual_motion": true,
+    "metre_target_accuracy": true,
+    "normalized_orientation_and_time": true,
+    "coupled_gripper_control": true,
+    "gripper_units_and_mapping": true,
+    "physical_lock_gate_preserved": true,
+    "deterministic_reset": true,
+    "native_horizon_termination": true,
+    "terminal_actions_rejected": true,
+    "scene_geometry_physics_unchanged": true,
+    "episode_video_decodable": true,
+    "mcp_initialize": true,
+    "mcp_custom_tool_discovery": true,
+    "official_stdio_mcp_bridge": true,
+    "mcp_observe_action_updated_image_loop": true,
+    "mcp_robot_only_observation": true,
+    "mcp_custom_evaluation": true,
+    "mcp_episode_closed": true,
+    "all_scene_sources_still_unchanged": true
+  },
+  "evidence": {
+    "actual_robot_and_dimensions": {
+      "nq": 47,
+      "nv": 46,
+      "actuators": 16,
+      "action_dim": 16
+    },
+    "reset_tcp_poses_wxyz": {
+      "right": [
+        0.07436335805883337,
+        -0.4216935369890724,
+        1.0923631198701875,
+        -0.39644711461038995,
+        0.4965483901840249,
+        -0.4936644682955539,
+        0.5937716516180421
+      ],
+      "left": [
+        0.07440186582573743,
+        0.4215010304413814,
+        1.0923234707886371,
+        0.5937701953534503,
+        -0.4936662922526534,
+        0.4965465768136928,
+        -0.39644929569624243
+      ]
+    },
+    "synchronized_bimanual_motion": {
+      "right": [
+        -5.290040582736633e-06,
+        -5.194823465837217e-07,
+        0.0029957115493559616
+      ],
+      "left": [
+        -5.287831225594952e-06,
+        5.149479875288243e-07,
+        0.0029956310565191213
+      ]
+    },
+    "coupled_gripper_control": {
+      "right": [
+        0.6230922311205406,
+        0.6230200795240695
+      ],
+      "left": [
+        0.625009200630706,
+        0.6250892808430196
+      ]
+    },
+    "episode_video_decodable": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "22"
+        }
+      ]
+    }
+  },
+  "inference_requests": 0,
+  "model_cost_usd": 0,
+  "wall_seconds": 23.07488841600025,
+  "custom_task_not_official_dexjoco": true,
+  "complete_folding_with_physical_locking": false,
+  "terminal_test_uses_clock_fixture": true,
+  "physical_environment_defects": "See ../../ENVIRONMENT_DEFECTS.md; no physical completion claimed"
+}

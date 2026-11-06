@@ -1,0 +1,18 @@
+test_01_plan_preview_and_tracked_execution_both_arms (__main__.PlannerChecks.test_01_plan_preview_and_tracked_execution_both_arms) ... ok
+test_02_stale_step_refuses_without_motion (__main__.PlannerChecks.test_02_stale_step_refuses_without_motion) ... ok
+test_03_measured_start_change_refuses (__main__.PlannerChecks.test_03_measured_start_change_refuses) ... ok
+test_04_source_world_change_refuses (__main__.PlannerChecks.test_04_source_world_change_refuses) ... ok
+test_05_tracking_guard_sensor_fault (__main__.PlannerChecks.test_05_tracking_guard_sensor_fault) ... ok
+test_06_stop_during_execution (__main__.PlannerChecks.test_06_stop_during_execution) ... ok
+test_07_cancel_planning_out_of_band (__main__.PlannerChecks.test_07_cancel_planning_out_of_band) ... ok
+test_08_unsettled_reference_refuses (__main__.PlannerChecks.test_08_unsettled_reference_refuses) ... ok
+test_09_pair_coverage_and_collision_refusal (__main__.PlannerChecks.test_09_pair_coverage_and_collision_refusal) ... ok
+test_10_schema_unknown_fields_and_zero_quaternion (__main__.PlannerChecks.test_10_schema_unknown_fields_and_zero_quaternion) ... ok
+test_11_ownership_refusal (__main__.PlannerChecks.test_11_ownership_refusal) ... ok
+test_12_live_dynamic_scene_refusal_and_no_truth_reads (__main__.PlannerChecks.test_12_live_dynamic_scene_refusal_and_no_truth_reads) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 36.936s
+
+OK
+EVIDENCE /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/evidence/checks_20261102T231102

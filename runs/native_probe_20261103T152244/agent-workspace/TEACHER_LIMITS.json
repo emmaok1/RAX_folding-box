@@ -1,0 +1,31 @@
+{
+  "api_limits": {
+    "cache_write_multiplier_bound": 2,
+    "endpoint": "https://api.anthropic.com",
+    "input_usd_per_million": 3,
+    "max_cost_usd": 0.0,
+    "max_input_tokens_per_request": 160000,
+    "max_input_tokens_total": 2800000,
+    "max_output_tokens_per_request": 8192,
+    "max_output_tokens_total": 327680,
+    "max_requests": 40,
+    "max_token_count_requests": 80,
+    "max_wall_seconds": 600,
+    "model": "claude-sonnet-4-6",
+    "output_usd_per_million": 15,
+    "pricing_note": "Pinned Sonnet4.6 rates verified2026-11-03; review before future paid grant or model change.",
+    "pricing_source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "provider": "anthropic",
+    "reasoning_policy": "teacher_adaptive_high"
+  },
+  "authoritative_capability": "Configuration.teacher_privileged=true",
+  "cloud_inference_authorized": false,
+  "exploration_episode_ceiling": 3,
+  "formal_evaluation_allowed": false,
+  "role": "privileged_teacher_in_auto_research",
+  "schema": "rax.teacher.policy.v1",
+  "scope": "Preparation and local validation only until a NEW explicit paid/episode authorization.",
+  "session_wall_seconds": 600,
+  "training_authorized": false,
+  "world_policy": "simulator_snapshot"
+}

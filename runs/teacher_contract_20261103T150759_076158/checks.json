@@ -1,0 +1,15 @@
+{
+  "teacher_tool_discovered": true,
+  "formal_submit_disabled": true,
+  "normal_bundle_workflow": true,
+  "observation_contains_live_truth": true,
+  "world_and_memory_identities_consistent": true,
+  "memory_roundtrip": true,
+  "immutable_evidence": true,
+  "same_world": true,
+  "zero_steps_before_rehearsal": true,
+  "rehearsal_clean": true,
+  "frozen_controller_received_world_and_truth": true,
+  "zero_steps_in_frozen_controller": true,
+  "no_provider_requests": true
+}

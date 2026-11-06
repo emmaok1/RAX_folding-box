@@ -1,0 +1,78 @@
+{
+  "episode_id": "dexmate_3c2595b8826b43379d0468f010b46608",
+  "step_id": 25,
+  "sim_time_s": 0.5000000000000003,
+  "termination_reason": "operator_or_agent_finish",
+  "integration_executed": true,
+  "partial_task_progress": {
+    "stabilized": true,
+    "body_walls_and_corners": false,
+    "double_wall_geometry": false,
+    "tab_slot_relationships": [
+      {
+        "side": "right",
+        "entry_base_m": [
+          -0.3064329346027024,
+          3.8805555620736883e-07,
+          0.0
+        ],
+        "tail_base_m": [
+          -0.21763661914043517,
+          3.880555555987845e-07,
+          -6.186813098702193e-08
+        ],
+        "delta_base_m": [
+          -0.11326283330710184,
+          -2.4694444442086313e-07,
+          -6.186813098702193e-08
+        ],
+        "near_slot": false,
+        "through_slot": false,
+        "under_base_overlap_m": -0.11604977775154629,
+        "captured_under_base": false,
+        "tab_base_contacts": 0
+      },
+      {
+        "side": "left",
+        "entry_base_m": [
+          0.36511674180957365,
+          3.880555558083582e-07,
+          0.0
+        ],
+        "tail_base_m": [
+          0.21763824218072308,
+          3.8805555558315584e-07,
+          -1.1490018644371343e-07
+        ],
+        "delta_base_m": [
+          0.11327341690294529,
+          -2.469444444364918e-07,
+          -1.1490018644371343e-07
+        ],
+        "near_slot": false,
+        "through_slot": false,
+        "under_base_overlap_m": -0.11606036134738973,
+        "captured_under_base": false,
+        "tab_base_contacts": 0
+      }
+    ],
+    "locking_geometry_candidate": false,
+    "stable_open_box_geometry": false,
+    "closed_geometry": false,
+    "released_persistence": false,
+    "required_release_seconds": 5,
+    "hand_panel_contacts": 0,
+    "robot_panel_contacts": 0,
+    "table_panel_contacts": 34,
+    "max_box_hinge_speed_rad_s": 0.00028941171738182533,
+    "max_box_penetration_m": 3.5341785758876895e-09,
+    "physical_locking_verified": false,
+    "succeed": false,
+    "debug_pose": false,
+    "note": "Geometric release/capture progress is separate. Final success is withheld until physical lock insertion/retention validation passes; debug placement never earns success."
+  },
+  "complete_folding_with_physical_locking": false,
+  "task_kind": "custom task integrated with RAX",
+  "official_dexjoco_benchmark": false,
+  "source_unchanged": true
+}

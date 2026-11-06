@@ -1,0 +1,592 @@
+{
+  "passed": false,
+  "tests_run": 6,
+  "cases": [
+    {
+      "case": "invalid_unreachable",
+      "kind": "schema_and_real_planning_refusal_no_motion",
+      "status": "pass",
+      "reason": "IK_NOT_FOUND"
+    },
+    {
+      "case": "length_49",
+      "kind": "actual_full_scene_prefix_scheduler_test_not_goal_test",
+      "status": "pass",
+      "chunk_rows": [
+        49
+      ]
+    },
+    {
+      "case": "length_50",
+      "kind": "actual_full_scene_prefix_scheduler_test_not_goal_test",
+      "status": "pass",
+      "chunk_rows": [
+        50
+      ]
+    },
+    {
+      "case": "length_51",
+      "kind": "actual_full_scene_prefix_scheduler_test_not_goal_test",
+      "status": "pass",
+      "chunk_rows": [
+        50,
+        1
+      ]
+    },
+    {
+      "case": "axis_0_-1",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.06936335805883337,
+          -0.4216935369890724,
+          1.0923631198701875
+        ],
+        "quaternion_wxyz": [
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ]
+      },
+      "status": "pass",
+      "chunks": 2,
+      "rows": 56,
+      "goal_error": {
+        "position_m": 2.471581584912108e-05,
+        "orientation_rad": 0.00019870702236867273
+      },
+      "max_tracking_error_rad": 0.007640866670415969,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_0_1",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07936335805883338,
+          -0.4216935369890724,
+          1.0923631198701875
+        ],
+        "quaternion_wxyz": [
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ]
+      },
+      "status": "pass",
+      "chunks": 2,
+      "rows": 56,
+      "goal_error": {
+        "position_m": 0.00018312665821024147,
+        "orientation_rad": 0.00015479386804336968
+      },
+      "max_tracking_error_rad": 0.0076396178964808215,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_1_-1",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07436335805883337,
+          -0.4266935369890724,
+          1.0923631198701875
+        ],
+        "quaternion_wxyz": [
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 33,
+      "goal_error": {
+        "position_m": 0.0003081532937435881,
+        "orientation_rad": 0.0007896443293679854
+      },
+      "max_tracking_error_rad": 0.0030827658538603586,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_1_1",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07436335805883337,
+          -0.4166935369890724,
+          1.0923631198701875
+        ],
+        "quaternion_wxyz": [
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 33,
+      "goal_error": {
+        "position_m": 0.00026739584344159887,
+        "orientation_rad": 0.00077070770715524
+      },
+      "max_tracking_error_rad": 0.0030830216119912546,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_2_-1",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0873631198701876
+        ],
+        "quaternion_wxyz": [
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 37,
+      "goal_error": {
+        "position_m": 0.0004706563461411817,
+        "orientation_rad": 0.0009658700801442015
+      },
+      "max_tracking_error_rad": 0.0041998330261796,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_2_1",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0973631198701874
+        ],
+        "quaternion_wxyz": [
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 37,
+      "goal_error": {
+        "position_m": 0.0004593423370253156,
+        "orientation_rad": 0.0009624198340940672
+      },
+      "max_tracking_error_rad": 0.004199864108626217,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_0_-1",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.06940186582573743,
+          0.4215010304413814,
+          1.0923234707886371
+        ],
+        "quaternion_wxyz": [
+          0.5937701953534503,
+          -0.4936662922526534,
+          0.4965465768136928,
+          -0.39644929569624243
+        ]
+      },
+      "status": "pass",
+      "chunks": 2,
+      "rows": 56,
+      "goal_error": {
+        "position_m": 2.5018656612561574e-05,
+        "orientation_rad": 0.00019936379822163566
+      },
+      "max_tracking_error_rad": 0.00764180043089735,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_0_1",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07940186582573744,
+          0.4215010304413814,
+          1.0923234707886371
+        ],
+        "quaternion_wxyz": [
+          0.5937701953534503,
+          -0.4936662922526534,
+          0.4965465768136928,
+          -0.39644929569624243
+        ]
+      },
+      "status": "pass",
+      "chunks": 2,
+      "rows": 56,
+      "goal_error": {
+        "position_m": 0.00018304196431737703,
+        "orientation_rad": 0.00015783382777502321
+      },
+      "max_tracking_error_rad": 0.007640536814697674,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_1_-1",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07440186582573743,
+          0.41650103044138137,
+          1.0923234707886371
+        ],
+        "quaternion_wxyz": [
+          0.5937701953534503,
+          -0.4936662922526534,
+          0.4965465768136928,
+          -0.39644929569624243
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 33,
+      "goal_error": {
+        "position_m": 0.00027125489167780415,
+        "orientation_rad": 0.0007757690827331099
+      },
+      "max_tracking_error_rad": 0.003079495737494886,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_1_1",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07440186582573743,
+          0.4265010304413814,
+          1.0923234707886371
+        ],
+        "quaternion_wxyz": [
+          0.5937701953534503,
+          -0.4936662922526534,
+          0.4965465768136928,
+          -0.39644929569624243
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 33,
+      "goal_error": {
+        "position_m": 0.00031163924302322416,
+        "orientation_rad": 0.0007945898277468637
+      },
+      "max_tracking_error_rad": 0.0030792602875289177,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_2_-1",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07440186582573743,
+          0.4215010304413814,
+          1.0873234707886372
+        ],
+        "quaternion_wxyz": [
+          0.5937701953534503,
+          -0.4936662922526534,
+          0.4965465768136928,
+          -0.39644929569624243
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 37,
+      "goal_error": {
+        "position_m": 0.0004757992121698212,
+        "orientation_rad": 0.0009727652751983791
+      },
+      "max_tracking_error_rad": 0.004199268665175948,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "axis_2_1",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07440186582573743,
+          0.4215010304413814,
+          1.097323470788637
+        ],
+        "quaternion_wxyz": [
+          0.5937701953534503,
+          -0.4936662922526534,
+          0.4965465768136928,
+          -0.39644929569624243
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 37,
+      "goal_error": {
+        "position_m": 0.0004643976177810531,
+        "orientation_rad": 0.0009691939904793786
+      },
+      "max_tracking_error_rad": 0.004199296027504074,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "orientation_axis_0",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875
+        ],
+        "quaternion_wxyz": [
+          -0.40076516627264885,
+          0.4930698733239606,
+          -0.4988272404610467,
+          0.5894410621060996
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 32,
+      "goal_error": {
+        "position_m": 0.0001870045586834299,
+        "orientation_rad": 0.0009005049288991181
+      },
+      "max_tracking_error_rad": 0.003113810935526325,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "orientation_axis_1",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875
+        ],
+        "quaternion_wxyz": [
+          -0.3921240386121805,
+          0.501711052538609,
+          -0.49710528088414924,
+          0.5894158954593653
+        ]
+      },
+      "status": "pass",
+      "chunks": 2,
+      "rows": 56,
+      "goal_error": {
+        "position_m": 0.0003134485414210296,
+        "orientation_rad": 0.0008822882974259287
+      },
+      "max_tracking_error_rad": 0.008406441241062823,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "orientation_axis_2",
+      "arm": "right",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_R",
+        "position_m": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875
+        ],
+        "quaternion_wxyz": [
+          -0.4016135885148205,
+          0.5008374636497032,
+          -0.4893125239116724,
+          0.5902894327940912
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 48,
+      "goal_error": {
+        "position_m": 0.0003596980277033934,
+        "orientation_rad": 0.001057834758924798
+      },
+      "max_tracking_error_rad": 0.007098263723956956,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "orientation_axis_0",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07440186582573743,
+          0.4215010304413814,
+          1.0923234707886371
+        ],
+        "quaternion_wxyz": [
+          0.5980555828275183,
+          -0.4884659382652942,
+          0.4999872986937501,
+          -0.39210106879269013
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 32,
+      "goal_error": {
+        "position_m": 0.00021616581161729064,
+        "orientation_rad": 0.0008923014713475842
+      },
+      "max_tracking_error_rad": 0.0031131541925524244,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "orientation_axis_1",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07440186582573743,
+          0.4215010304413814,
+          1.0923234707886371
+        ],
+        "quaternion_wxyz": [
+          0.5894144550746641,
+          -0.4971071238051211,
+          0.5017092265291798,
+          -0.3921262036981575
+        ]
+      },
+      "status": "pass",
+      "chunks": 2,
+      "rows": 56,
+      "goal_error": {
+        "position_m": 0.00031574235101105495,
+        "orientation_rad": 0.0008854926292222481
+      },
+      "max_tracking_error_rad": 0.00840652652552426,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "orientation_axis_2",
+      "arm": "left",
+      "kind": "actual_full_scene_motor_execution",
+      "plan_status": "planned",
+      "target": {
+        "frame": "world",
+        "tcp": "tcp_L",
+        "position_m": [
+          0.07440186582573743,
+          0.4215010304413814,
+          1.0923234707886371
+        ],
+        "quaternion_wxyz": [
+          0.5972072152560235,
+          -0.4979806262820833,
+          0.4922196734178581,
+          -0.39125264343422256
+        ]
+      },
+      "status": "pass",
+      "chunks": 1,
+      "rows": 48,
+      "goal_error": {
+        "position_m": 0.00035304117773062856,
+        "orientation_rad": 0.0010418476115862938
+      },
+      "max_tracking_error_rad": 0.007097391347226771,
+      "sampled_robot_panel_contacts": 0
+    },
+    {
+      "case": "total_length_limit",
+      "kind": "nonexecuting_admission_test",
+      "status": "pass",
+      "accepted": 500,
+      "refused": 501
+    }
+  ],
+  "failures": [
+    [
+      "test_named_frames_tcp_and_fk_both_arms (__main__.MicroChecks.test_named_frames_tcp_and_fk_both_arms)",
+      "Traceback (most recent call last):\n  File \"/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/rax_integration/planning_validation/micro_checks.py\", line 51, in test_named_frames_tcp_and_fk_both_arms\n    self.assertEqual([e.model.joint(int(j)).name for j in arm['joint_ids']],[f'dexmate_{prefix}_arm_j{i}' for i in range(1,8)])\nAssertionError: Lists differ: ['R_arm_j1', 'R_arm_j2', 'R_arm_j3', 'R_arm[36 chars]_j7'] != ['dexmate_R_arm_j1', 'dexmate_R_arm_j2', 'd[92 chars]_j7']\n\nFirst differing element 0:\n'R_arm_j1'\n'dexmate_R_arm_j1'\n\n- ['R_arm_j1',\n+ ['dexmate_R_arm_j1',\n?   ++++++++\n\n-  'R_arm_j2',\n+  'dexmate_R_arm_j2',\n?   ++++++++\n\n-  'R_arm_j3',\n+  'dexmate_R_arm_j3',\n?   ++++++++\n\n-  'R_arm_j4',\n+  'dexmate_R_arm_j4',\n?   ++++++++\n\n-  'R_arm_j5',\n+  'dexmate_R_arm_j5',\n?   ++++++++\n\n-  'R_arm_j6',\n+  'dexmate_R_arm_j6',\n?   ++++++++\n\n-  'R_arm_j7']\n+  'dexmate_R_arm_j7']\n?   ++++++++\n\n"
+    ]
+  ],
+  "cloud_requests": 0,
+  "scope": "Full unchanged scene; explicit local reset per independent test. No viewer/contact/folding/cloud. Test-selected targets, not autonomous teacher."
+}

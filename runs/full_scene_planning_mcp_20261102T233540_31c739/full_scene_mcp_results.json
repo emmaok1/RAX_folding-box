@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "motion_tools_discovered": true,
+    "full_scene_plan_succeeds": true,
+    "explicit_simulator_policy": true,
+    "full_scene_collision_pairs": true,
+    "preview_no_live_step": true,
+    "plan_and_preview_keep_step_zero": true,
+    "changed_policy_prevents_execution": true,
+    "stop_visible_without_motion": true,
+    "core_source_unchanged": true
+  },
+  "inference_requests": 0,
+  "simulation_steps": 0,
+  "scope": "Full actual scene via real local RAX/MCP plan+preview+policy refusal. No executed trajectory in this check."
+}

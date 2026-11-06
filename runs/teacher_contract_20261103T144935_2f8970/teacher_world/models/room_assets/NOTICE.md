@@ -1,0 +1,1 @@
+Room/table/textures extracted from DexJoCo Bimanual Assembly, commit 8d23b0fab23b17a58c4b55f3942e17013aaf8267. Upstream MIT license retained in DEXJOCO_LICENSE. Source: https://github.com/brave-eai/dexjoco (local installed DexJoCo checkout); third-party asset provenance follows upstream. Robot assets are separately sourced from dexmate-ai/dexmate-urdf.

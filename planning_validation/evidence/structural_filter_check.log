@@ -1,0 +1,15 @@
+/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/rax_integration/planning_validation/evidence/structural_filter_check.json
+{
+  "raw_convex_distance_m": -0.034939829339417604,
+  "native_default_contacts": [],
+  "native_filterparent_disabled_contacts": [
+    -0.03493982933941761
+  ],
+  "coverage_checks": {
+    "pad_table_checked": true,
+    "pad_opposite_arm_checked": true,
+    "opposing_right_jaws_checked": true
+  },
+  "relevant_pair_count": 581,
+  "all_checks_passed": true
+}

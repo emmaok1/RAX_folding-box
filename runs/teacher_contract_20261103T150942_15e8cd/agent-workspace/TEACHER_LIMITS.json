@@ -1,0 +1,6 @@
+{
+  "role": "teacher",
+  "cloud_allowed": false,
+  "max_exploration_episodes": 2,
+  "reason": "zero-motion interface validation only"
+}
