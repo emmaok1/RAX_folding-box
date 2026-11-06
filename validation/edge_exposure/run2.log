@@ -1,0 +1,13 @@
+ompl_approach sim 0.5 wall 1.1 base [-0.32    -0.       0.92201] tcp [ 0.07436 -0.42169  1.09236] load 0.0
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 31 states (15 start + 16 goal)
+Info:    Solution found in 0.165042 seconds
+Info:    SimpleSetup: Path simplification took 1.708719 seconds and changed from 26 to 4 states
+near_surface sim 7.28 wall 9.8 base [-0.32     0.       0.92201] tcp [-0.31988  0.       0.98   ] load 0.0
+slow_touch sim 13.54 wall 16.3 base [-0.32     0.       0.92201] tcp [-0.32005 -0.       0.94928] load 0.0
+load_settle sim 16.44 wall 19.3 base [-0.32     0.       0.92201] tcp [-0.3199   0.       0.94738] load 0.053
+drag sim 31.44 wall 36.8 base [-3.1994e-01  1.2000e-04  9.2201e-01] tcp [-3.1696e-01  8.7000e-04  9.4763e-01] load 3.471
+drag 100 base_dx 1.4760620006215586e-05 load 3.491287418138677 angle [5.669833428272761e-05, 1.1908098377927027e-06, -90.01471862099473]
+drag 200 base_dx -0.00018445314637061117 load 3.4854624447592935 angle [1.8916894852965355e-05, 3.941853447179406e-05, -90.01843424015469]
+STOP RuntimeError('Force/penetration bound exceeded (13.30615524700913, 13.30615524700913, 4.0945927448547304e-07)')
+RESULT {"error": "RuntimeError('Force/penetration bound exceeded (13.30615524700913, 13.30615524700913, 4.0945927448547304e-07)')", "final_geometry": {"front_bounds_min_m": [-0.5204278544955043, -0.14441330449319578, 0.9199995905407247], "front_bounds_max_m": [-0.430292234115548, 0.14462886896690527, 0.9240024098005701], "front_min_x_overhang_m": 0.0, "base_bounds_min_m": [-0.4304304378895334, -0.15001645811465203, 0.9200023329776233], "base_bounds_max_m": [-0.21028968072954446, 0.150086673284259, 0.9240090957106272], "base_vertices_inside_table_xy": true, "table_bounds_world_m": [[-0.55, -0.8, 0.86], [0.25, 0.8, 0.92]]}, "substeps": 144962, "wall_seconds": 42.59339190099854}

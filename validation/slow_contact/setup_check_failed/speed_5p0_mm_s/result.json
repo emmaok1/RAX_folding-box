@@ -1,0 +1,53 @@
+{
+  "speed_mm_s": 5.0,
+  "increment_mm_per_20ms": 0.1,
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  },
+  "result": "fail",
+  "error": "AssertionError(('Unsafe or inconsistent initial clearance', 0.03232686269549323))",
+  "contact_confirmed": false,
+  "first_contact": null,
+  "peaks_by_phase": {
+    "setup": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    },
+    "ompl_path_replay": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    },
+    "common_prestage": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    },
+    "common_start_settle": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    }
+  },
+  "peak_contact_force_N": 0.0,
+  "peak_sum_normal_N": 0.0,
+  "max_hand_base_penetration_m": 0.0,
+  "physics_substeps_observed": 32080,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "wall_seconds": 7.257213356999273,
+  "simulation_time_s": 8.020000000003984
+}

@@ -1,0 +1,226 @@
+{
+  "result": "pass",
+  "test": "Reachable Cartesian target inside table rejected by real OMPL; zero physical execution",
+  "requested_tcp_world_wxyz": [
+    -0.32,
+    -0.065,
+    0.88,
+    0.0,
+    1.0,
+    0.0,
+    0.0
+  ],
+  "achieved_scratch_tcp_world_wxyz": [
+    -0.3200009649391024,
+    -0.0649992446176274,
+    0.880001528456989,
+    3.3914072440857526e-06,
+    0.9999999999534681,
+    2.1635947270448597e-06,
+    -8.768182406061653e-06
+  ],
+  "ik_residual": {
+    "position_m": 1.959053538654795e-06,
+    "orientation_rad": 1.9293916963332227e-05
+  },
+  "goal_q_right": [
+    0.5523048574333879,
+    -0.26988963794615667,
+    -2.151152952079506,
+    -1.4287503059504483,
+    0.9498235196789355,
+    -0.8635198360035997,
+    1.1343228919108197
+  ],
+  "goal_valid": false,
+  "blocking_contacts": [
+    {
+      "geoms": [
+        "table_collision",
+        "dexmate_R_gripper_l1_collision_118"
+      ],
+      "penetration_m": 0.060889188853124776,
+      "world_contact_position_m": [
+        -0.36511699095552574,
+        -0.05502391194212487,
+        0.8895554055734377
+      ],
+      "geom_ids": [
+        7,
+        132
+      ]
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "jaw_pad_R_1"
+      ],
+      "penetration_m": 0.04369786911475286,
+      "world_contact_position_m": [
+        -0.3543223347899416,
+        -0.0734342596513993,
+        0.8818489446303588
+      ],
+      "geom_ids": [
+        7,
+        133
+      ]
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "dexmate_R_gripper_l2_collision_121"
+      ],
+      "penetration_m": 0.060868185164713255,
+      "world_contact_position_m": [
+        -0.2749046031421088,
+        -0.05502752158336244,
+        0.8895659074176434
+      ],
+      "geom_ids": [
+        7,
+        136
+      ]
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "jaw_pad_R_2"
+      ],
+      "penetration_m": 0.04369654395246532,
+      "world_contact_position_m": [
+        -0.2856927372829295,
+        -0.06157473639266334,
+        0.8818482951846864
+      ],
+      "geom_ids": [
+        7,
+        137
+      ]
+    },
+    {
+      "geoms": [
+        "dexmate_R_gripper_l1_collision_118",
+        "card_base_0"
+      ],
+      "penetration_m": 0.0648991231910601,
+      "world_contact_position_m": [
+        -0.3651169351836247,
+        -0.0599563935490626,
+        0.8915604055213004
+      ],
+      "geom_ids": [
+        132,
+        139
+      ]
+    },
+    {
+      "geoms": [
+        "dexmate_R_gripper_l2_collision_121",
+        "card_base_0"
+      ],
+      "penetration_m": 0.06487811875398099,
+      "world_contact_position_m": [
+        -0.27490461923691445,
+        -0.05995981636881151,
+        0.8915709070730544
+      ],
+      "geom_ids": [
+        136,
+        139
+      ]
+    }
+  ],
+  "planner": {
+    "planner": "OMPL RRTConnect",
+    "version": "2.0.1",
+    "label": "inside_table",
+    "rng_seed_initial": 2026,
+    "joint_dimension": 7,
+    "joint_limits_rad": [
+      [
+        -3.071,
+        3.071
+      ],
+      [
+        -1.553,
+        0.453
+      ],
+      [
+        -3.071,
+        3.071
+      ],
+      [
+        -3.071,
+        0.244
+      ],
+      [
+        -3.071,
+        3.071
+      ],
+      [
+        -1.396,
+        1.396
+      ],
+      [
+        -1.117,
+        1.378
+      ]
+    ],
+    "range_rad": 0.15,
+    "collision_segment_l2_rad": 0.005,
+    "solve_budget_s": 2.0,
+    "setup_s": 0.00018407300376566127,
+    "ompl_import_s": 0.007533573996624909,
+    "solve_s": 2.0148301779991016,
+    "status": "Invalid goal",
+    "exact_solution": false,
+    "collision_checks_solve": {
+      "checks": 2,
+      "valid": 1,
+      "invalid": 1
+    },
+    "fallback_used": false,
+    "adapter_total_s": 2.015057563003211
+  },
+  "planning_adapter_wall_seconds": 2.0154342829991947,
+  "have_any_solution_path": false,
+  "have_approximate_solution_path": null,
+  "returned_path_is_none": true,
+  "executed_state_exactly_unchanged": {
+    "qpos": true,
+    "qvel": true,
+    "ctrl": true,
+    "time": true,
+    "qcmd": true,
+    "targets": true,
+    "grippers": true,
+    "env_step": true
+  },
+  "motor_interface_calls_after_snapshot": {
+    "step": 0,
+    "step_joint_targets": 0
+  },
+  "executed_time_before_s": 0.49999999999997263,
+  "executed_time_after_s": 0.49999999999997263,
+  "screenshots": "Both before.png and rejected.png show unchanged safe executed baseline, never scratch collision state.",
+  "mujoco_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "validation/planner_comparison/common.py": "f69467ea5cf046c33954dbad645b8c5839feef9908a255dd145ade8bed035560",
+    "validation/planner_comparison/ompl/planner.py": "648487a7ffb943d09800d0760aaaa2cf5f6fea143514148dd4c7398aed9b36eb",
+    "validation/planner_comparison/ompl_followup/invalid_goal/test.py": "6bdb70e3c31957fa04f8e41c7406b5941b278346adbe63e46ea06ee8091831a5"
+  }
+}

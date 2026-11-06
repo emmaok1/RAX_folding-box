@@ -1,0 +1,5 @@
+RESUMED first-trial postprocessing; physics not rerun
+FIRST {"pickup_success": true, "cleanup_success": true, "outcome": "pickup_and_cleanup_succeeded"}
+START 1 fixed offset0
+START 2 fixed offset0
+{"pickup_passed": 3, "cleanup_passed": 3, "protocol_passed": 3, "same_initial_execution_state": true, "same_settled_execution_state": true, "same_approach_path": true, "core_unchanged": true}

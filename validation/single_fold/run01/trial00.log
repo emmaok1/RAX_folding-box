@@ -1,0 +1,10 @@
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 38 states (18 start + 20 goal)
+Info:    Solution found in 0.134533 seconds
+Info:    SimpleSetup: Path simplification took 0.780135 seconds and changed from 28 to 6 states
+OMPL approach
+Closing moving panel
+FOLD5
+FOLD15
+FOLD_HOLD False {'duration_s': 1.1800000000056343, 'min_angle_deg': 14.115712869136829, 'max_angle_deg': 14.567180555050621, 'max_joint_fk_error_rad': 1.3669939312677126e-05, 'min_loaded_jaw_N': 1.2906403947703122, 'max_moving_fixture_N': 0.0, 'max_relative_slip_m': 0.0006018467333485598, 'max_relative_rotation_rad': 0.011140708906033922, 'max_base_translation_m': 0.000588483033603748, 'max_base_rotation_deg': 0.09903229318678335}
+{"fixture_ready": true, "grasp_success": true, "fold15_success": false, "hold_success": false, "return_success": false, "release_success": false, "error": "RuntimeError('Actual fold/hold criteria failed {\"duration_s\": 1.1800000000056343, \"min_angle_deg\": 14.115712869136829, \"max_angle_deg\": 14.567180555050621, \"max_joint_fk_error_rad\": 1.3669939312677126e-05, \"min_loaded_jaw_N\": 1.2906403947703122, \"max_moving_fixture_N\": 0.0, \"max_relative_slip_m\": 0.0006018467333485598, \"max_relative_rotation_rad\": 0.011140708906033922, \"max_base_translation_m\": 0.000588483033603748, \"max_base_rotation_deg\": 0.09903229318678335}')", "failure_phase": "fold_hold", "peak_hand_normal_N": 3.1369200732086395, "hand_force_overshoot_N": 0.0}

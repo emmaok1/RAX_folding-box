@@ -1,0 +1,18 @@
+{"kind": "move5mm", "route": "baseline", "result": "pass", "error": null, "tracking_m": 4.291346134797795e-05, "peak_force_N": 0.0, "wall_seconds": 4.795142779003072}
+{"kind": "move5mm", "route": "community", "result": "pass", "error": null, "tracking_m": 8.635989622028422e-10, "peak_force_N": 0.0, "wall_seconds": 7.890365369996289}
+{"kind": "touch", "route": "baseline", "result": "fail", "error": "NameError(\"name 'pairs' is not defined\")", "tracking_m": null, "peak_force_N": 0.0, "wall_seconds": 0.9316593070034287}
+{"kind": "touch", "route": "community", "result": "fail", "error": "NameError(\"name 'pairs' is not defined\")", "tracking_m": null, "peak_force_N": 0.0, "wall_seconds": 0.9373664030063082}
+Traceback (most recent call last):
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/vega_impedance/compare.py", line 209, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/vega_impedance/compare.py", line 201, in main
+    pairs_equal = {kind:len({r['initial_state_sha256'] for r in reports if r['kind']==kind})==1 for kind in ['move5mm','touch']}
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/vega_impedance/compare.py", line 201, in <dictcomp>
+    pairs_equal = {kind:len({r['initial_state_sha256'] for r in reports if r['kind']==kind})==1 for kind in ['move5mm','touch']}
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/vega_impedance/compare.py", line 201, in <setcomp>
+    pairs_equal = {kind:len({r['initial_state_sha256'] for r in reports if r['kind']==kind})==1 for kind in ['move5mm','touch']}
+                             ~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'initial_state_sha256'

@@ -1,0 +1,27 @@
+{
+  "return_success": true,
+  "time_s": 49.42000000014496,
+  "metrics": {
+    "hold_duration_s": 1.1800000000056343,
+    "hold_y_min_m": 0.0002336933070667957,
+    "hold_y_max_m": 0.0004707956243764633,
+    "hold_final_com_delta_m": [
+      0.0001561322959353653,
+      0.00023863456733497213,
+      -1.6566699923226125e-05
+    ],
+    "hold_final_tcp_delta_m": [
+      1.087165027724435e-06,
+      1.4215621724211758e-07,
+      -7.800009773628602e-07
+    ],
+    "max_abs_x_drift_m": 0.0001561322959353653,
+    "max_abs_z_drift_m": 3.83956461009749e-05,
+    "max_relative_translation_m": 0.00028493190925872255,
+    "max_relative_rotation_rad": 0.0020256553917170524,
+    "max_support_N": 0.0,
+    "min_loaded_jaw_N": 1.070484675297057,
+    "hold_max_return_error_m": 0.00047712209635396595,
+    "sample_count": 310
+  }
+}

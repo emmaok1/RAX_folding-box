@@ -1,0 +1,1194 @@
+<robot name="mujoco_snapshot" tesseract:make_convex="true">
+  <link name="world" />
+  <link name="table" />
+  <joint name="fixed_table" type="fixed">
+    <parent link="world" />
+    <child link="table" />
+    <origin xyz="-0.14999999999999999 0 0" rpy="0 0 0" />
+  </joint>
+  <link name="dexmate_mount" />
+  <joint name="fixed_dexmate_mount" type="fixed">
+    <parent link="world" />
+    <child link="dexmate_mount" />
+    <origin xyz="-0.88 0 0" rpy="0 0 0" />
+  </joint>
+  <link name="dexmate_base_link" />
+  <joint name="fixed_dexmate_base_link" type="fixed">
+    <parent link="dexmate_mount" />
+    <child link="dexmate_base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  <link name="dexmate_lift_link" />
+  <joint name="fixed_dexmate_lift_link" type="fixed">
+    <parent link="dexmate_base_link" />
+    <child link="dexmate_lift_link" />
+    <origin xyz="0 0 0.13" rpy="0 0 1.5707900000276822" />
+  </joint>
+  <link name="dexmate_torso_flip_link" />
+  <joint name="fixed_dexmate_torso_flip_link" type="fixed">
+    <parent link="dexmate_lift_link" />
+    <child link="dexmate_torso_flip_link" />
+    <origin xyz="0 -0.061869999999999981 0.78600000000000003" rpy="0 0 0" />
+  </joint>
+  <link name="dexmate_arm_center" />
+  <joint name="fixed_dexmate_arm_center" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="dexmate_arm_center" />
+    <origin xyz="0 0.038519999999999999 0.25982000000000005" rpy="0 0 -1.5707900000276822" />
+  </joint>
+  <link name="dexmate_head_l1" />
+  <joint name="fixed_dexmate_head_l1" type="fixed">
+    <parent link="dexmate_arm_center" />
+    <child link="dexmate_head_l1" />
+    <origin xyz="-0.07350000000000001 -0.072499999999999995 0.014000000000000012" rpy="0 0 0" />
+  </joint>
+  <link name="dexmate_head_l2" />
+  <joint name="fixed_dexmate_head_l2" type="fixed">
+    <parent link="dexmate_head_l1" />
+    <child link="dexmate_head_l2" />
+    <origin xyz="0 0.072499999999999995 -0.0035000000000000586" rpy="0 0 0" />
+  </joint>
+  <link name="dexmate_head_l3" />
+  <joint name="fixed_dexmate_head_l3" type="fixed">
+    <parent link="dexmate_head_l2" />
+    <child link="dexmate_head_l3" />
+    <origin xyz="0 0.002 0.049500000000000099" rpy="0 0 0" />
+  </joint>
+  <link name="dexmate_zed_depth_frame" />
+  <joint name="fixed_dexmate_zed_depth_frame" type="fixed">
+    <parent link="dexmate_head_l3" />
+    <child link="dexmate_zed_depth_frame" />
+    <origin xyz="0.025000000000000022 0.023 0.048899999999999944" rpy="-1.5707899999948967 -2.0013990464917697e-11 -1.5707899999948967" />
+  </joint>
+  <link name="dexmate_zed_left_camera" />
+  <joint name="fixed_dexmate_zed_left_camera" type="fixed">
+    <parent link="dexmate_head_l3" />
+    <child link="dexmate_zed_left_camera" />
+    <origin xyz="0.036499999999999977 0.023 0.048899999999999944" rpy="-1.5707899999948967 -2.0013990464917697e-11 -1.5707899999948967" />
+  </joint>
+  <link name="dexmate_zed_right_camera" />
+  <joint name="fixed_dexmate_zed_right_camera" type="fixed">
+    <parent link="dexmate_head_l3" />
+    <child link="dexmate_zed_right_camera" />
+    <origin xyz="0.036499999999999977 -0.027000000000000003 0.048899999999999944" rpy="-1.5707899999948967 -2.0013990464917697e-11 -1.5707899999948967" />
+  </joint>
+  <link name="dexmate_L_arm_l1" />
+  <joint name="fixed_dexmate_L_arm_l1" type="fixed">
+    <parent link="dexmate_arm_center" />
+    <child link="dexmate_L_arm_l1" />
+    <origin xyz="0 0.16946 0" rpy="0 0.80000000135844163 0" />
+  </joint>
+  <link name="dexmate_L_arm_l2" />
+  <joint name="fixed_dexmate_L_arm_l2" type="fixed">
+    <parent link="dexmate_L_arm_l1" />
+    <child link="dexmate_L_arm_l2" />
+    <origin xyz="0.039999999999999813 0.059999999999999998 0.045399999999999996" rpy="0 0 0.28000000001631703" />
+  </joint>
+  <link name="dexmate_L_arm_l3" />
+  <joint name="fixed_dexmate_L_arm_l3" type="fixed">
+    <parent link="dexmate_L_arm_l2" />
+    <child link="dexmate_L_arm_l3" />
+    <origin xyz="0.1644000000000001 0 -0.04300000000000001" rpy="-5.0377633035037893e-12 0 -1.1866936473337066e-17" />
+  </joint>
+  <link name="dexmate_L_arm_l4" />
+  <joint name="fixed_dexmate_L_arm_l4" type="fixed">
+    <parent link="dexmate_L_arm_l3" />
+    <child link="dexmate_L_arm_l4" />
+    <origin xyz="0.11299999999999977 0.043299999999999783 0.060000000000000026" rpy="3.9726958644732687e-17 -1.2500000016605004 -9.1468716373942443e-17" />
+  </joint>
+  <link name="dexmate_L_arm_l5" />
+  <joint name="fixed_dexmate_L_arm_l5" type="fixed">
+    <parent link="dexmate_L_arm_l4" />
+    <child link="dexmate_L_arm_l5" />
+    <origin xyz="0.19380000000000003 -0.043400000000000105 -0.039999999999999813" rpy="-2.7264835035392662e-11 0 4.9504934564825291e-18" />
+  </joint>
+  <link name="dexmate_L_arm_l6" />
+  <joint name="fixed_dexmate_L_arm_l6" type="fixed">
+    <parent link="dexmate_L_arm_l5" />
+    <child link="dexmate_L_arm_l6" />
+    <origin xyz="0.076199999999999934 0.031899999999999928 -1.1102230246251565e-16" rpy="2.2881680142555034e-17 0.45000000008813901 4.8465525680100621e-17" />
+  </joint>
+  <link name="dexmate_L_arm_l7" />
+  <joint name="fixed_dexmate_L_arm_l7" type="fixed">
+    <parent link="dexmate_L_arm_l6" />
+    <child link="dexmate_L_arm_l7" />
+    <origin xyz="0.064999999999999974 -0.032000000000000028 0.031900000000000039" rpy="-4.8882681615930711e-18 0 -1.0766868302028015e-10" />
+  </joint>
+  <link name="dexmate_L_arm_l8" />
+  <joint name="fixed_dexmate_L_arm_l8" type="fixed">
+    <parent link="dexmate_L_arm_l7" />
+    <child link="dexmate_L_arm_l8" />
+    <origin xyz="0.11597000000000002 -1.1102230246251565e-16 -0.032000000000000028" rpy="7.0299315559986514e-12 1.5707900000276824 7.0299378309189815e-12" />
+  </joint>
+  <link name="dexmate_L_ee" />
+  <joint name="fixed_dexmate_L_ee" type="fixed">
+    <parent link="dexmate_L_arm_l8" />
+    <child link="dexmate_L_ee" />
+    <origin xyz="0 -1.1102230246251565e-16 -2.7755575615628914e-17" rpy="0 0 -1.5707900000276824" />
+  </joint>
+  <link name="dexmate_L_gripper_base" />
+  <joint name="fixed_dexmate_L_gripper_base" type="fixed">
+    <parent link="dexmate_L_arm_l8" />
+    <child link="dexmate_L_gripper_base" />
+    <origin xyz="1.1102230246251565e-16 -1.1102230246251565e-16 0.08249999999999999" rpy="0 0 -1.570800000073203" />
+  </joint>
+  <link name="dexmate_L_gripper_l1" />
+  <joint name="fixed_dexmate_L_gripper_l1" type="fixed">
+    <parent link="dexmate_L_gripper_base" />
+    <child link="dexmate_L_gripper_l1" />
+    <origin xyz="-0.025807000000000024 -0.0015000000000001679 0.029349999999999998" rpy="8.8281308165211026e-18 -0.28949987089062446 3.4429071506914784e-17" />
+  </joint>
+  <link name="dexmate_L_gripper_l2" />
+  <joint name="fixed_dexmate_L_gripper_l2" type="fixed">
+    <parent link="dexmate_L_gripper_base" />
+    <child link="dexmate_L_gripper_l2" />
+    <origin xyz="0.025792999999999955 -0.0015000000000002789 0.029350000000000005" rpy="-9.6695435065319613e-17 0.28950167663944071 -5.8650568706451572e-17" />
+  </joint>
+  <link name="dexmate_L_camera_link" />
+  <joint name="fixed_dexmate_L_camera_link" type="fixed">
+    <parent link="dexmate_L_gripper_base" />
+    <child link="dexmate_L_camera_link" />
+    <origin xyz="0.00019999999999997797 -0.074590000000000045 0.0017503999999999992" rpy="-0.087266000006215233 2.2204460492503131e-16 4.8572257327350599e-17" />
+  </joint>
+  <link name="dexmate_R_arm_l1" />
+  <joint name="R_arm_j1" type="revolute">
+    <parent link="dexmate_arm_center" />
+    <child link="dexmate_R_arm_l1" />
+    <origin xyz="0 -0.16946 0" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-3.071" upper="3.071" effort="200" velocity="2.4" />
+    <dynamics damping="0" friction="0" />
+  </joint>
+  <link name="dexmate_R_arm_l2" />
+  <joint name="R_arm_j2" type="revolute">
+    <parent link="dexmate_R_arm_l1" />
+    <child link="dexmate_R_arm_l2" />
+    <origin xyz="0.040000000000000036 -0.059999999999999998 0.045400000000000107" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.553" upper="0.453" effort="200" velocity="2.4" />
+    <dynamics damping="0" friction="0" />
+  </joint>
+  <link name="dexmate_R_arm_l3" />
+  <joint name="R_arm_j3" type="revolute">
+    <parent link="dexmate_R_arm_l2" />
+    <child link="dexmate_R_arm_l3" />
+    <origin xyz="0.16439999999999999 0 -0.042999999999999927" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-3.071" upper="3.071" effort="200" velocity="2.4" />
+    <dynamics damping="0" friction="0" />
+  </joint>
+  <link name="dexmate_R_arm_l4" />
+  <joint name="R_arm_j4" type="revolute">
+    <parent link="dexmate_R_arm_l3" />
+    <child link="dexmate_R_arm_l4" />
+    <origin xyz="0.11299999999999999 0.043300000000000005 0.060000000000000053" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-3.071" upper="0.244" effort="200" velocity="2.4" />
+    <dynamics damping="0" friction="0" />
+  </joint>
+  <link name="dexmate_R_arm_l5" />
+  <joint name="R_arm_j5" type="revolute">
+    <parent link="dexmate_R_arm_l4" />
+    <child link="dexmate_R_arm_l5" />
+    <origin xyz="0.19379999999999997 -0.043399999999999994 -0.040000000000000036" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-3.071" upper="3.071" effort="200" velocity="2.4" />
+    <dynamics damping="0" friction="0" />
+  </joint>
+  <link name="dexmate_R_arm_l6" />
+  <joint name="R_arm_j6" type="revolute">
+    <parent link="dexmate_R_arm_l5" />
+    <child link="dexmate_R_arm_l6" />
+    <origin xyz="0.07619999999999999 -0.031899999999999984 0" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-1.396" upper="1.396" effort="200" velocity="2.4" />
+    <dynamics damping="0" friction="0" />
+  </joint>
+  <link name="dexmate_R_arm_l7" />
+  <joint name="R_arm_j7" type="revolute">
+    <parent link="dexmate_R_arm_l6" />
+    <child link="dexmate_R_arm_l7" />
+    <origin xyz="0.065000000000000002 0.032000000000000001 0.031900000000000039" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.117" upper="1.378" effort="200" velocity="2.4" />
+    <dynamics damping="0" friction="0" />
+  </joint>
+  <link name="dexmate_R_arm_l8" />
+  <joint name="fixed_dexmate_R_arm_l8" type="fixed">
+    <parent link="dexmate_R_arm_l7" />
+    <child link="dexmate_R_arm_l8" />
+    <origin xyz="0.11597 0 -0.032000000000000028" rpy="0 1.5707900000276824 0" />
+  </joint>
+  <link name="dexmate_R_ee" />
+  <joint name="fixed_dexmate_R_ee" type="fixed">
+    <parent link="dexmate_R_arm_l8" />
+    <child link="dexmate_R_ee" />
+    <origin xyz="2.2204460492503131e-16 0 0" rpy="0 0 1.5707900000276824" />
+  </joint>
+  <link name="dexmate_R_gripper_base" />
+  <joint name="fixed_dexmate_R_gripper_base" type="fixed">
+    <parent link="dexmate_R_arm_l8" />
+    <child link="dexmate_R_gripper_base" />
+    <origin xyz="2.2204460492503131e-16 0 0.082500000000000004" rpy="0 0 -1.570800000073203" />
+  </joint>
+  <link name="dexmate_R_gripper_l1" />
+  <joint name="fixed_dexmate_R_gripper_l1" type="fixed">
+    <parent link="dexmate_R_gripper_base" />
+    <child link="dexmate_R_gripper_l1" />
+    <origin xyz="-0.025806999999999997 -0.0015000000000000568 0.029349999999999994" rpy="-6.4876124091816273e-18 -0.28654233825388076 -3.5481042003410146e-17" />
+  </joint>
+  <link name="dexmate_R_gripper_l2" />
+  <joint name="fixed_dexmate_R_gripper_l2" type="fixed">
+    <parent link="dexmate_R_gripper_base" />
+    <child link="dexmate_R_gripper_l2" />
+    <origin xyz="0.02579300000000001 -0.0015000000000000568 0.029349999999999994" rpy="9.3071669533782388e-17 0.28654058288470097 1.0353439952548643e-17" />
+  </joint>
+  <link name="dexmate_R_camera_link" />
+  <joint name="fixed_dexmate_R_camera_link" type="fixed">
+    <parent link="dexmate_R_gripper_base" />
+    <child link="dexmate_R_camera_link" />
+    <origin xyz="0.00019999999999997797 -0.074589999999999934 0.0017503999999999992" rpy="-0.08726600000621515 0 -1.3877787807814457e-17" />
+  </joint>
+  <link name="box_base" />
+  <joint name="fixed_box_base" type="fixed">
+    <parent link="world" />
+    <child link="box_base" />
+    <origin xyz="-0.32000000025864667 -5.8502416855328138e-11 0.92200996638435595" rpy="-6.8801235819648809e-09 -1.011367478653824e-08 -1.5707963271245067" />
+  </joint>
+  <link name="box_body_front" />
+  <joint name="fixed_box_body_front" type="fixed">
+    <parent link="box_base" />
+    <child link="box_body_front" />
+    <origin xyz="-1.6543612251060553e-24 -0.11000000013933003 0" rpy="-6.9665039031413148e-08 0 7.4729018550367618e-17" />
+  </joint>
+  <link name="box_front_corner_right" />
+  <joint name="fixed_box_front_corner_right" type="fixed">
+    <parent link="box_body_front" />
+    <child link="box_front_corner_right" />
+    <origin xyz="0.14449999828020332 -0.044999999999999984 6.6613381477509392e-16" rpy="-5.8797220167829168e-23 8.598983252117165e-07 -6.3095192228020711e-17" />
+  </joint>
+  <link name="box_front_corner_left" />
+  <joint name="fixed_box_front_corner_left" type="fixed">
+    <parent link="box_body_front" />
+    <child link="box_front_corner_left" />
+    <origin xyz="-0.14449999823921178 -0.04500000000000004 7.7715611723760958e-16" rpy="1.3033639915244855e-22 -8.8039410606199908e-07 -5.5197571572994674e-17" />
+  </joint>
+  <link name="box_body_back" />
+  <joint name="fixed_box_body_back" type="fixed">
+    <parent link="box_base" />
+    <child link="box_body_back" />
+    <origin xyz="0 0.10999999982902744 0" rpy="-8.5486265649301097e-08 0 1.5473439061763948e-16" />
+  </joint>
+  <link name="box_back_corner_right" />
+  <joint name="fixed_box_back_corner_right" type="fixed">
+    <parent link="box_body_back" />
+    <child link="box_back_corner_right" />
+    <origin xyz="0.14449999994302415 0.045000000000000012 -1.1102230246251565e-16" rpy="-6.4639864943066553e-24 2.8487916248209899e-08 -1.2762694870748757e-16" />
+  </joint>
+  <link name="box_back_corner_left" />
+  <joint name="fixed_box_back_corner_left" type="fixed">
+    <parent link="box_body_back" />
+    <child link="box_back_corner_left" />
+    <origin xyz="-0.14449999997177626 0.045000000000000012 -1.1102230246251565e-16" rpy="-1.7982593248404445e-23 -1.411185035493645e-08 1.4403478680348007e-17" />
+  </joint>
+  <link name="box_lid" />
+  <joint name="fixed_box_lid" type="fixed">
+    <parent link="box_body_back" />
+    <child link="box_lid" />
+    <origin xyz="-1.6543612251060553e-24 0.090000000152427068 -1.1102230246251565e-16" rpy="7.6213526647639669e-08 0 -5.2332514512898256e-17" />
+  </joint>
+  <link name="box_lid_side_right" />
+  <joint name="fixed_box_lid_side_right" type="fixed">
+    <parent link="box_lid" />
+    <child link="box_lid_side_right" />
+    <origin xyz="0.13899999792048692 0.10724999999999998 1.1102230246251565e-15" rpy="7.6656533377083342e-24 1.0397565286535126e-06 7.0849554001747099e-17" />
+  </joint>
+  <link name="box_lid_side_left" />
+  <joint name="fixed_box_lid_side_left" type="fixed">
+    <parent link="box_lid" />
+    <child link="box_lid_side_left" />
+    <origin xyz="-0.13899999923751549 0.10725 1.1102230246251565e-16" rpy="3.608430694636164e-24 -3.8124226220404012e-07 8.5058610562853266e-17" />
+  </joint>
+  <link name="box_lid_front" />
+  <joint name="fixed_box_lid_front" type="fixed">
+    <parent link="box_lid" />
+    <child link="box_lid_front" />
+    <origin xyz="0 0.21450000002112968 0" rpy="1.0564853539455893e-08 0 -5.3424746954770425e-17" />
+  </joint>
+  <link name="box_locking_tongue" />
+  <joint name="fixed_box_locking_tongue" type="fixed">
+    <parent link="box_lid_front" />
+    <child link="box_locking_tongue" />
+    <origin xyz="0 0.05000000005582729 0" rpy="-2.7913651007523088e-08 0 -8.0889810121825815e-17" />
+  </joint>
+  <link name="box_side_right" />
+  <joint name="fixed_box_side_right" type="fixed">
+    <parent link="box_base" />
+    <child link="box_side_right" />
+    <origin xyz="0.14999999813911755 0 8.8817841970012523e-16" rpy="-7.5041828904587943e-24 9.3044124183094823e-07 3.6639820626984648e-17" />
+  </joint>
+  <link name="box_side_left" />
+  <joint name="fixed_box_side_left" type="fixed">
+    <parent link="box_base" />
+    <child link="box_side_left" />
+    <origin xyz="-0.14999999838457473 0 5.5511151231257827e-16" rpy="-8.9744996727227166e-23 -8.0771261412593276e-07 1.0799837939144665e-16" />
+  </joint>
+  <link name="geom_0">
+    <collision>
+      <geometry>
+        <box size="200 200 2" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_0" type="fixed">
+    <parent link="world" />
+    <child link="geom_0" />
+    <origin xyz="0 0 -1" rpy="0 0 0" />
+  </joint>
+  <link name="geom_7">
+    <collision>
+      <geometry>
+        <box size="0.80000000000000004 1.6000000000000001 0.059999999999999998" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_7" type="fixed">
+    <parent link="table" />
+    <child link="geom_7" />
+    <origin xyz="0 0 0.89000000000000001" rpy="0 0 0" />
+  </joint>
+  <link name="geom_16">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_3.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_16" type="fixed">
+    <parent link="dexmate_base_link" />
+    <child link="geom_16" />
+    <origin xyz="0.088947255861975494 -0.021980999763565257 -0.14950020501127773" rpy="1.3245093825710046 -1.5707899999948982 3.1415894900167234" />
+  </joint>
+  <link name="geom_17">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_4.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_17" type="fixed">
+    <parent link="dexmate_base_link" />
+    <child link="geom_17" />
+    <origin xyz="0.062442689229468606 -1.9582853717370846e-06 0.11724284366242374" rpy="3.141568413773733 -0.22169168933986971 0.00015912438871512613" />
+  </joint>
+  <link name="geom_18">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_5.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_18" type="fixed">
+    <parent link="dexmate_base_link" />
+    <child link="geom_18" />
+    <origin xyz="0.089312942705136233 -0.0079065587297410499 -0.1123950873612931" rpy="-0.13071027414960934 -1.5682745186649123 -1.5293342153123533" />
+  </joint>
+  <link name="geom_27">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_14.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_27" type="fixed">
+    <parent link="dexmate_lift_link" />
+    <child link="geom_27" />
+    <origin xyz="0.032381507779817395 0.15668277882682691 0.69094670289262283" rpy="-1.5600602671946879 -0.0064564586182891404 -1.5669208886301123" />
+  </joint>
+  <link name="geom_28">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_15.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_28" type="fixed">
+    <parent link="dexmate_lift_link" />
+    <child link="geom_28" />
+    <origin xyz="9.9903731854208345e-07 -0.0075374006514896674 0.77448583680788941" rpy="1.4432899320127035e-14 -1.5366486858201005 1.5707963267948817" />
+  </joint>
+  <link name="geom_29">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_16.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_29" type="fixed">
+    <parent link="dexmate_lift_link" />
+    <child link="geom_29" />
+    <origin xyz="0.001239693128666235 0.1528178784914348 0.52877168567062671" rpy="-3.0505151974816882 0.012906642626832054 -1.5704442916378674" />
+  </joint>
+  <link name="geom_30">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_17.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_30" type="fixed">
+    <parent link="dexmate_lift_link" />
+    <child link="geom_30" />
+    <origin xyz="9.3131709447345068e-06 0.036238675679155175 0.45233407935848202" rpy="3.043763900207078 -4.4660234297388968e-06 0.00018549441132820199" />
+  </joint>
+  <link name="geom_31">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_18.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_31" type="fixed">
+    <parent link="dexmate_lift_link" />
+    <child link="geom_31" />
+    <origin xyz="-0.0091952225696528486 0.1521623595431113 0.4449949883790697" rpy="-2.1768350925834508 -6.3267672127942376e-06 -1.570796326794899" />
+  </joint>
+  <link name="geom_49">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_36.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_49" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_49" />
+    <origin xyz="-1.1896246718226323e-08 0.14872208184390456 0.12599901699619387" rpy="3.1415926535897931 -6.3267672141265052e-06 -1.5707963267948974" />
+  </joint>
+  <link name="geom_50">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_37.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_50" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_50" />
+    <origin xyz="-3.8155441404335442e-07 0.14452713180073329 0.052730270387736256" rpy="-1.5707995921556623 -1.5619427461955422 -1.5707963267950489" />
+  </joint>
+  <link name="geom_51">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_38.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_51" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_51" />
+    <origin xyz="-1.1670549517459234e-08 0.057285874513400503 0.015816370426607329" rpy="-3.1415926535897736 -1.5420118443456119 -1.5707963267949163" />
+  </joint>
+  <link name="geom_52">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_39.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_52" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_52" />
+    <origin xyz="-0.11832098921986961 0.10980291546138332 0.27603379789213423" rpy="0.9166173262138031 -0.00039943964720690062 -0.0018390202912233478" />
+  </joint>
+  <link name="geom_53">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_40.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_53" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_53" />
+    <origin xyz="0.02999996063111764 0.14120090345644198 0.10099907384134432" rpy="3.1415926535897931 -6.3267672141265052e-06 -1.5707963267948974" />
+  </joint>
+  <link name="geom_54">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_41.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_54" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_54" />
+    <origin xyz="-0.00022956021535000757 0.063268895599792097 0.19246327388767182" rpy="-1.5848332558187321 0.073148955204633825 -1.5750545180990629" />
+  </joint>
+  <link name="geom_55">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_42.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_55" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_55" />
+    <origin xyz="-0.075009555224917437 0.11013769831587994 0.2735229455189977" rpy="-3.1302634523852371 -0.0062094110375303657 -0.0008013289207549068" />
+  </joint>
+  <link name="geom_56">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_43.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_56" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_56" />
+    <origin xyz="-0.00060889181957769236 0.1348125313664581 0.10099983866277362" rpy="-1.6126194993335279 -1.569912682186589 -1.5365198313093877" />
+  </joint>
+  <link name="geom_57">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_44.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_57" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_57" />
+    <origin xyz="8.4494397070244124e-10 0.13045218657303548 0.05289903252197925" rpy="1.57079632699343 -1.5707900000276822 1.5707963265963636" />
+  </joint>
+  <link name="geom_58">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_45.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_58" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_58" />
+    <origin xyz="-0.092630986627595946 0.11542383415494417 0.2747592643902973" rpy="1.3583129356962762 -0.080432387712455311 -0.4811071097402545" />
+  </joint>
+  <link name="geom_59">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_46.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_59" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_59" />
+    <origin xyz="0.0095000447915716529 0.1279512534149263 0.075999177174938093" rpy="1.5708044628463311 0 0" />
+  </joint>
+  <link name="geom_60">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_47.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_60" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_60" />
+    <origin xyz="3.3529540781950819e-05 -0.011095220591632371 0.15827571922025119" rpy="2.5606770791363682 -6.3267672139044606e-06 -1.5707963267948952" />
+  </joint>
+  <link name="geom_61">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_48.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_61" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_61" />
+    <origin xyz="-0.00017730374451653433 0.13696902445130021 0.05315321015413943" rpy="-1.5910312264763222 -0.033844853675010889 -1.5715131828004198" />
+  </joint>
+  <link name="geom_62">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_49.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_62" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_62" />
+    <origin xyz="-0.01737923945898134 0.13653954019666914 0.09192198677227037" rpy="-2.9117906139856204 0.47211724964241331 -0.0016582182568034565" />
+  </joint>
+  <link name="geom_63">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_50.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_63" type="fixed">
+    <parent link="dexmate_torso_flip_link" />
+    <child link="geom_63" />
+    <origin xyz="-4.4823705744388535e-08 0.13045346725496465 0.12599919325275899" rpy="-2.4772606897955827 -6.3267672134603714e-06 -1.5707963267948983" />
+  </joint>
+  <link name="geom_65">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_52.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_65" type="fixed">
+    <parent link="dexmate_head_l1" />
+    <child link="geom_65" />
+    <origin xyz="6.0124775247416551e-07 0.073315995494604491 -0.025993535354323249" rpy="3.0937707141909661 -1.5610359401264937 -1.5229260328645422" />
+  </joint>
+  <link name="geom_67">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_54.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_67" type="fixed">
+    <parent link="dexmate_head_l2" />
+    <child link="geom_67" />
+    <origin xyz="1.3962301941283783e-06 0.00017122269208570177 0.030924950737799994" rpy="1.5471495291935202 -0.00016873488874358245 1.4077627833564144e-05" />
+  </joint>
+  <link name="geom_72">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_59.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_72" type="fixed">
+    <parent link="dexmate_head_l3" />
+    <child link="geom_72" />
+    <origin xyz="0.0036123429065642032 -0.0020133899197230373 0.026587424257020986" rpy="1.57085770842937 0.15303784235625195 9.2299406373563819e-05" />
+  </joint>
+  <link name="geom_74">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_61.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_74" type="fixed">
+    <parent link="dexmate_L_arm_l1" />
+    <child link="geom_74" />
+    <origin xyz="0.021657731527604529 0.040752786364085108 0.0013363772396453866" rpy="1.6234037772755414 -0.45886570610943833 -0.77773951176354517" />
+  </joint>
+  <link name="geom_76">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_63.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_76" type="fixed">
+    <parent link="dexmate_L_arm_l2" />
+    <child link="geom_76" />
+    <origin xyz="0.051174614791058781 2.2444460190396143e-07 -0.041997512695124889" rpy="1.5845170908395445 7.1507447518825984e-08 1.5707911154991663" />
+  </joint>
+  <link name="geom_78">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_65.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_78" type="fixed">
+    <parent link="dexmate_L_arm_l3" />
+    <child link="geom_78" />
+    <origin xyz="0.065755557184004498 0.0012047683513030094 0.032086022339258391" rpy="0.0044386980745587667 -1.039175701690612 -3.128295665148408" />
+  </joint>
+  <link name="geom_80">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_67.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_80" type="fixed">
+    <parent link="dexmate_L_arm_l4" />
+    <child link="geom_80" />
+    <origin xyz="0.061912909132299986 -0.043338345917860788 -0.017759246102954762" rpy="-3.1332666530898958 -1.338534447600626 -0.0091538549824317084" />
+  </joint>
+  <link name="geom_82">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_69.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_82" type="fixed">
+    <parent link="dexmate_L_arm_l5" />
+    <child link="geom_82" />
+    <origin xyz="0.047267853249777197 -0.0035085454192176346 -1.5802142405707542e-06" rpy="-0.5017776494396422 -1.5706959168595818 -2.731713259600931" />
+  </joint>
+  <link name="geom_84">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_71.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_84" type="fixed">
+    <parent link="dexmate_L_arm_l6" />
+    <child link="geom_84" />
+    <origin xyz="0.040884293618643791 -0.022397859288893041 -0.0054149497072493169" rpy="1.7254252730240922 0.022015425965584035 1.2103837124491026" />
+  </joint>
+  <link name="geom_86">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_73.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_86" type="fixed">
+    <parent link="dexmate_L_arm_l7" />
+    <child link="geom_86" />
+    <origin xyz="0.035564329151063112 5.6643150958546329e-07 -0.019184877367320885" rpy="3.1415287864067558 -1.1003429206152746 2.9597232143574459e-05" />
+  </joint>
+  <link name="geom_90">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_77.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_90" type="fixed">
+    <parent link="dexmate_L_arm_l8" />
+    <child link="geom_90" />
+    <origin xyz="0.0010899375469005657 -4.1161219774599189e-05 -0.022348408757247681" rpy="-0.20792265198504356 -0.020725046998468111 1.5685282606094662" />
+  </joint>
+  <link name="geom_96">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_83.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_96" type="fixed">
+    <parent link="dexmate_L_gripper_base" />
+    <child link="geom_96" />
+    <origin xyz="9.735671045674188e-05 -0.014316799861920582 -0.0089428389228779839" rpy="2.014634733422763 -0.0032821018514366251 0.0027898451221628484" />
+  </joint>
+  <link name="geom_99">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_86.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_99" type="fixed">
+    <parent link="dexmate_L_gripper_l1" />
+    <child link="geom_99" />
+    <origin xyz="0.0081256720272425698 0.0044780996278601659 0.063521440807450896" rpy="0.14009524191595213 -0.074791521219390367 1.4568637696057003" />
+  </joint>
+  <link name="geom_100">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_87.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_100" type="fixed">
+    <parent link="dexmate_L_gripper_l1" />
+    <child link="geom_100" />
+    <origin xyz="0.023849788121879101 0 0.12899999693036082" rpy="1.5707963267948959 0.012118440072343084 0" />
+  </joint>
+  <link name="geom_103">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_90.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_103" type="fixed">
+    <parent link="dexmate_L_gripper_l2" />
+    <child link="geom_103" />
+    <origin xyz="-0.0081236724681463812 0.0044820999237905612 0.063498441538040171" rpy="-0.14009523817581782 -0.074791531729951455 1.6847287578458983" />
+  </joint>
+  <link name="geom_104">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_91.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_104" type="fixed">
+    <parent link="dexmate_L_gripper_l2" />
+    <child link="geom_104" />
+    <origin xyz="-0.02384978812187899 1.1102230246251565e-16 0.12899999693036079" rpy="1.5707963267948972 -0.012118440072342862 0" />
+  </joint>
+  <link name="geom_107">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_94.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_107" type="fixed">
+    <parent link="dexmate_R_arm_l1" />
+    <child link="geom_107" />
+    <origin xyz="0.021682637295384888 -0.040867092149778822 0.0012203521804665662" rpy="1.5306120425918801 -0.23607735731943724 0.76232240906713877" />
+  </joint>
+  <link name="geom_109">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_96.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_109" type="fixed">
+    <parent link="dexmate_R_arm_l2" />
+    <child link="geom_109" />
+    <origin xyz="0.051174614791058559 2.2444460195947258e-07 -0.041997512695125083" rpy="1.5845170908395445 7.1507447740870589e-08 1.5707911154991663" />
+  </joint>
+  <link name="geom_111">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_98.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_111" type="fixed">
+    <parent link="dexmate_R_arm_l3" />
+    <child link="geom_111" />
+    <origin xyz="0.065755557184004609 0.0012047683513031759 0.032086022339258502" rpy="0.0044386980745587667 -1.0391757016906129 -3.128295665148408" />
+  </joint>
+  <link name="geom_113">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_100.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_113" type="fixed">
+    <parent link="dexmate_R_arm_l4" />
+    <child link="geom_113" />
+    <origin xyz="0.06191290913230002 -0.043338345917860788 -0.017759246102954984" rpy="-3.1332666530898963 -1.338534447600626 -0.0091538549824314863" />
+  </joint>
+  <link name="geom_115">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_102.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_115" type="fixed">
+    <parent link="dexmate_R_arm_l5" />
+    <child link="geom_115" />
+    <origin xyz="0.047267853249777225 0.0035085454233984292 1.5709040002143126e-06" rpy="2.6643066251581398 1.570696944506484 2.7562048804867314" />
+  </joint>
+  <link name="geom_117">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_104.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_117" type="fixed">
+    <parent link="dexmate_R_arm_l6" />
+    <child link="geom_117" />
+    <origin xyz="0.040865419755540505 0.022392411951627361 -0.0054172490595296718" rpy="1.7252940651350459 -0.022608621233798809 1.9309592750446292" />
+  </joint>
+  <link name="geom_119">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_106.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_119" type="fixed">
+    <parent link="dexmate_R_arm_l7" />
+    <child link="geom_119" />
+    <origin xyz="0.035564329151063084 5.6643150955770771e-07 -0.019184877367321107" rpy="3.1415287864067558 -1.1003429206152744 2.9597232143574459e-05" />
+  </joint>
+  <link name="geom_123">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_110.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_123" type="fixed">
+    <parent link="dexmate_R_arm_l8" />
+    <child link="geom_123" />
+    <origin xyz="0.0010899375469006767 -4.1161219774515923e-05 -0.022348408757247654" rpy="-0.20792265198504334 -0.020725046998468333 1.5685282606094662" />
+  </joint>
+  <link name="geom_129">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_116.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_129" type="fixed">
+    <parent link="dexmate_R_gripper_base" />
+    <child link="geom_129" />
+    <origin xyz="9.7356710456797391e-05 -0.014316799861920471 -0.0089428389228779943" rpy="2.0146347334227634 -0.0032821018514370692 0.0027898451221630705" />
+  </joint>
+  <link name="geom_132">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_119.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_132" type="fixed">
+    <parent link="dexmate_R_gripper_l1" />
+    <child link="geom_132" />
+    <origin xyz="0.0081256720272426253 0.004478099627860388 0.063521440807450882" rpy="0.14009524191595191 -0.074791521219390367 1.4568637696056999" />
+  </joint>
+  <link name="geom_133">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_120.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_133" type="fixed">
+    <parent link="dexmate_R_gripper_l1" />
+    <child link="geom_133" />
+    <origin xyz="0.023849788121879101 0 0.12899999693036077" rpy="1.5707963267948961 0.012118440072343084 2.2204460492503131e-16" />
+  </joint>
+  <link name="geom_136">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_123.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_136" type="fixed">
+    <parent link="dexmate_R_gripper_l2" />
+    <child link="geom_136" />
+    <origin xyz="-0.0081236724681463812 0.0044820999237906722 0.063498441538040198" rpy="-0.14009523817581759 -0.074791531729951677 1.6847287578458985" />
+  </joint>
+  <link name="geom_137">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_124.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_137" type="fixed">
+    <parent link="dexmate_R_gripper_l2" />
+    <child link="geom_137" />
+    <origin xyz="-0.023849788121879129 0 0.12899999693036079" rpy="1.5707963267948959 -0.012118440072342862 0" />
+  </joint>
+  <link name="geom_139">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_126.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_139" type="fixed">
+    <parent link="box_base" />
+    <child link="geom_139" />
+    <origin xyz="0 0 0" rpy="3.1415926535897931 -1.5707963267948948 0" />
+  </joint>
+  <link name="geom_140">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_127.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_140" type="fixed">
+    <parent link="box_body_front" />
+    <child link="geom_140" />
+    <origin xyz="-0.10221547975652659 -0.042516250441012482 0" rpy="-3.0431318820730011 -1.5707963267948948 0" />
+  </joint>
+  <link name="geom_141">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_128.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_141" type="fixed">
+    <parent link="box_body_front" />
+    <child link="geom_141" />
+    <origin xyz="0 -0.071790907909796031 -1.1102230246251565e-16" rpy="3.1415926535897931 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_142">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_129.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_142" type="fixed">
+    <parent link="box_body_front" />
+    <child link="geom_142" />
+    <origin xyz="0 -0.012820509309395989 0" rpy="3.1415926535897931 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_143">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_130.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_143" type="fixed">
+    <parent link="box_body_front" />
+    <child link="geom_143" />
+    <origin xyz="0.10221547975652658 -0.042516250441012482 0" rpy="3.0431318820730011 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_144">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_134.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_144" type="fixed">
+    <parent link="box_front_corner_right" />
+    <child link="geom_144" />
+    <origin xyz="0.032500000000000029 -5.5511151231257827e-17 0" rpy="1.5707963267948954 -1.5707963267948948 0" />
+  </joint>
+  <link name="geom_145">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_135.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_145" type="fixed">
+    <parent link="box_front_corner_left" />
+    <child link="geom_145" />
+    <origin xyz="-0.032500000000000029 0 1.1102230246251565e-16" rpy="1.5707963267948974 -1.570796326794895 0" />
+  </joint>
+  <link name="geom_146">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_131.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_146" type="fixed">
+    <parent link="box_body_back" />
+    <child link="geom_146" />
+    <origin xyz="-1.6543612251060553e-24 0.04500000000000004 0" rpy="3.1415926535897931 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_147">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_136.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_147" type="fixed">
+    <parent link="box_back_corner_right" />
+    <child link="geom_147" />
+    <origin xyz="0.032500000000000001 2.7755575615628914e-17 -1.1102230246251565e-16" rpy="1.570796326794895 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_148">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_137.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_148" type="fixed">
+    <parent link="box_back_corner_left" />
+    <child link="geom_148" />
+    <origin xyz="-0.032499999999999973 2.7755575615628914e-17 0" rpy="1.5707963267948981 -1.5707963267948948 0" />
+  </joint>
+  <link name="geom_149">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_138.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_149" type="fixed">
+    <parent link="box_lid" />
+    <child link="geom_149" />
+    <origin xyz="0 0.10725 0" rpy="3.1415926535897931 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_150">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_139.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_150" type="fixed">
+    <parent link="box_lid_side_right" />
+    <child link="geom_150" />
+    <origin xyz="0.022500000000000048 -1.7347234759768071e-18 0" rpy="1.5707963267948954 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_151">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_140.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_151" type="fixed">
+    <parent link="box_lid_side_left" />
+    <child link="geom_151" />
+    <origin xyz="-0.022500000000000048 0 0" rpy="1.5707963267948954 -1.5707963267948948 0" />
+  </joint>
+  <link name="geom_152">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_141.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_152" type="fixed">
+    <parent link="box_lid_front" />
+    <child link="geom_152" />
+    <origin xyz="-5.8274377845993268e-19 0.024865776206900989 0" rpy="3.1415926535897931 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_153">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_142.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_153" type="fixed">
+    <parent link="box_locking_tongue" />
+    <child link="geom_153" />
+    <origin xyz="1.6543612251060553e-24 0.0048914277477794255 0" rpy="-3.1415926535897927 -1.5707963267948946 0" />
+  </joint>
+  <link name="geom_154">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_132.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_154" type="fixed">
+    <parent link="box_side_right" />
+    <child link="geom_154" />
+    <origin xyz="0.04482559603894154 5.5511151231257827e-17 0" rpy="1.5707963267948954 -1.570796326794895 0" />
+  </joint>
+  <link name="geom_155">
+    <collision>
+      <geometry>
+        <mesh filename="/home/jennyok/00&#20271;&#20811;&#21033;/0_&#31185;&#30740;/&#8204;Embodied_Minds_Harvard/RAX/&#25240;&#32440;&#30418;/validation/planner_comparison/trajopt/run/model_upward/meshes/hull_133.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_geom_155" type="fixed">
+    <parent link="box_side_left" />
+    <child link="geom_155" />
+    <origin xyz="-0.044825596038941568 5.5511151231257827e-17 1.1102230246251565e-16" rpy="1.5707963267948983 -1.570796326794895 0" />
+  </joint>
+  <link name="tcp_R" />
+  <joint name="tcp_joint" type="fixed">
+    <parent link="dexmate_R_gripper_base" />
+    <child link="tcp_R" />
+    <origin xyz="-2.7755575615628914e-17 0 0.16" rpy="7.0241172025893037e-22 0 2.2745876476239165e-22" />
+  </joint>
+</robot>

@@ -1,0 +1,94 @@
+{
+  "reviewer": "root independent raw trace audit",
+  "final_fixed_controller_conditions": [
+    {
+      "path": "validation/grasp_skill/run04/trial00",
+      "offset_y_mm": 0.0,
+      "complete_protocol_pass": true,
+      "raw_force_peak_N": 3.7700191262764657,
+      "force_peak_agrees_with_report": true,
+      "observed_phases": [
+        "home_settle",
+        "ompl_approach",
+        "insert",
+        "close_position",
+        "close_force",
+        "grasp_settle",
+        "lift",
+        "hold",
+        "place",
+        "release",
+        "retreat",
+        "released_settle"
+      ],
+      "hold_duration_s": 1.1800000000056343,
+      "hold_min_COM_rise_mm": 21.554819456359287,
+      "hold_max_support_N": 0.0,
+      "max_whole_lift_relative_slip_mm": 2.600299745154387,
+      "max_whole_lift_relative_rotation_deg": 0.99376971925298,
+      "released_max_jaw_N": 0.0,
+      "released_min_support_N": 0.14236351968799268,
+      "released_COM_drift_mm": 0.019328437428130483
+    },
+    {
+      "path": "validation/grasp_skill/run04/trial01",
+      "offset_y_mm": 2.0,
+      "complete_protocol_pass": false,
+      "raw_force_peak_N": 9.466459642432783,
+      "force_peak_agrees_with_report": true,
+      "observed_phases": [
+        "home_settle",
+        "ompl_approach",
+        "insert",
+        "close_position",
+        "close_force",
+        "grasp_settle",
+        "lift",
+        "abort_open",
+        "abort_retract"
+      ],
+      "hold_duration_s": 0,
+      "hold_min_COM_rise_mm": null,
+      "hold_max_support_N": null,
+      "max_whole_lift_relative_slip_mm": 2.650197937480039,
+      "max_whole_lift_relative_rotation_deg": 1.0146046782789346
+    },
+    {
+      "path": "validation/grasp_skill/run05_minus2/trial00",
+      "offset_y_mm": -2.0,
+      "complete_protocol_pass": true,
+      "raw_force_peak_N": 4.283399930245599,
+      "force_peak_agrees_with_report": true,
+      "observed_phases": [
+        "home_settle",
+        "ompl_approach",
+        "insert",
+        "close_position",
+        "close_force",
+        "grasp_settle",
+        "lift",
+        "hold",
+        "place",
+        "release",
+        "retreat",
+        "released_settle"
+      ],
+      "hold_duration_s": 1.1800000000056343,
+      "hold_min_COM_rise_mm": 21.540586330068166,
+      "hold_max_support_N": 0.0,
+      "max_whole_lift_relative_slip_mm": 2.6076595701233223,
+      "max_whole_lift_relative_rotation_deg": 0.9961190999997115,
+      "released_max_jaw_N": 0.0,
+      "released_min_support_N": 0.14129235496733333,
+      "released_COM_drift_mm": 0.010883105842313244
+    }
+  ],
+  "core_matches_known_baseline_hashes": {
+    "environment.py": true,
+    "models/scene.xml": true,
+    "physics.json": true,
+    "robot_config.json": true,
+    "video_rebuild/config.json": true
+  },
+  "outcome": "2 complete passes; +2mm monitored force-abort; no general robustness established"
+}

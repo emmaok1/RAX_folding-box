@@ -1,0 +1,18 @@
+from pathlib import Path
+import json,gzip,csv
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+P=Path(__file__).resolve().parent;O=P/'attempt1';r=json.loads((O/'result.json').read_text());tr=json.load(gzip.open(O/'state_trace.json.gz','rt'));ss=list(csv.DictReader(gzip.open(O/'substeps.csv.gz','rt')));initial=r['initial'];final=r.get('final',r.get('stopped'));touch=r.get('touch');after=r.get('after_push',final)
+change=lambda key,a,b:(np.array(b[key])-a[key]).tolist()
+result={'physical_attempts':1,'protocol_completed':r.get('completed',False),'error':r['error'],'commanded_push_after_touch_mm':1000*(after['target'][0]-touch['target'][0]),'actual_tcp_delta_after_touch_mm':(1000*(np.array(after['tcp'][:3])-touch['tcp'][:3])).tolist(),'base_translation_final_from_initial_mm':(1000*(np.array(final['box_pose'][:3])-initial['box_pose'][:3])).tolist(),'base_translation_during_retreat_and_settle_mm':(1000*(np.array(final['box_pose'][:3])-after['box_pose'][:3])).tolist(),'base_euler_change_deg':change('base_euler_deg',initial,final),'final_passive_hinge_changes_deg':{n:final['hinges_deg'][n]-initial['hinges_deg'][n] for n in initial['hinges_deg']},'max_abs_hinge_change_deg':max(abs(x['hinges_deg'][n]-initial['hinges_deg'][n]) for x in tr for n in initial['hinges_deg']),'peak_sum_normal_N':max(x['sum_normal_N'] for x in r['phase_peaks'].values()),'peak_per_contact_N':max(x['per_contact_N'] for x in r['phase_peaks'].values()),'max_card_penetration_mm':1000*max(x['card_penetration_m'] for x in r['phase_peaks'].values()),'max_robot_penetration_mm':1000*max(x['robot_penetration_m'] for x in r['phase_peaks'].values()),'first_contact':r['first_contact'],'contact_pair_names':sorted({tuple(c['geoms']) for x in r['contact_events'] for c in x['contacts']}),'final_force_N':r['final_hand_force_N'],'warnings':r['warnings'],'independent_dense_validation_samples':r['independent_dense_validation_samples'],'substeps':r['substeps'],'simulation_s':r['simulation_s'],'source_sha256':r['source_sha256']}
+for phase in ['slow_edge_touch','push10mm','retreat','released_settle']:
+ xs=[x for x in ss if x['phase']==phase];forces=np.array([[float(x['box_force_'+a+'_N']) for a in 'xyz'] for x in xs]);result[phase]={'mean_world_force_on_box_N':forces.mean(0).tolist(),'max_abs_world_force_on_box_N':abs(forces).max(0).tolist(),'sum_normal_percentiles_50_95_100_N':np.percentile([float(x['hand_normal_sum_N']) for x in xs],[50,95,100]).tolist(),'max_card_penetration_mm':1000*max(float(x['card_penetration_m']) for x in xs),'last_table_support_N':float(xs[-1]['table_support_N'])}
+(P/'summary.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+fig,axs=plt.subplots(3,1,figsize=(9,8),sharex=True);tt=np.array([x['time_s'] for x in tr]);axs[0].plot(tt,[-1000*(x['box_pose'][0]-initial['box_pose'][0]) for x in tr],label='Blank displacement toward edge');axs[0].set_ylabel('Blank displacement (mm)')
+st=np.array([float(x['time_s']) for x in ss]);bins=np.floor(st/.02).astype(int);beg=np.r_[0,np.where(np.diff(bins))[0]+1];nf=np.array([float(x['hand_normal_sum_N']) for x in ss]);axs[1].plot(st[beg],np.maximum.reduceat(nf,beg));axs[1].set_ylabel('Substep peak per20ms (N)')
+for n in ['side_right','body_front']:axs[2].plot(tt,[x['hinges_deg'][n]-initial['hinges_deg'][n] for x in tr],label=n)
+axs[2].set_ylabel('Passive crease change (deg)');axs[2].set_xlabel('Simulation time (s)')
+for ax in axs:ax.grid(alpha=.3)
+axs[0].legend();axs[2].legend();fig.suptitle('Single10mm side-push command: small persistent blank displacement');fig.tight_layout();fig.savefig(P/'measurements.png',dpi=150)

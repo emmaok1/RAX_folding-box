@@ -1,0 +1,316 @@
+{
+  "matched_initial_state": true,
+  "cases": {
+    "original": {
+      "protocol_completed": true,
+      "error": null,
+      "state_type": "after_release",
+      "released": true,
+      "toward_edge_mm": 3.759219320884022,
+      "side_drift_mm": 2.913945328855067,
+      "yaw_change_deg": -1.2452263298580704,
+      "hand_action_delta_mm": [
+        -9.057949538504694,
+        1.0640777645862243,
+        0.5965776119405408
+      ],
+      "peak_sum_normal_N": 0.6287559263929741,
+      "max_hand_box_penetration_m": 0.0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hand_tracking_during_push": {
+        "max_abs_xyz_mm": [
+          1.0125463132944768,
+          1.0642525415625603,
+          0.6001881467355696
+        ],
+        "mean_abs_xyz_mm": [
+          0.6369876027497778,
+          0.3597415740598871,
+          0.42491927467000473
+        ]
+      },
+      "max_transient_hinge_change_deg": 0.0014138717880751194,
+      "controller_details": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 118160,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 12.569409265661422,
+        "peak_applied_torque_Nm": 12.569409265661422
+      },
+      "initial_state_sha256": "cc5ec6945687dbb4bc1b497e7da54a0959a401e6dfe5989f7c2721f8ebfe0991"
+    },
+    "directional": {
+      "protocol_completed": true,
+      "error": null,
+      "state_type": "after_release",
+      "released": true,
+      "toward_edge_mm": 3.812268703005939,
+      "side_drift_mm": 2.7467526252362737,
+      "yaw_change_deg": -1.2621572146092603,
+      "hand_action_delta_mm": [
+        -8.917408911307934,
+        0.45275917158499324,
+        0.3308814349075595
+      ],
+      "peak_sum_normal_N": 0.6257082556998335,
+      "max_hand_box_penetration_m": 0.0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hand_tracking_during_push": {
+        "max_abs_xyz_mm": [
+          1.1534141535441689,
+          0.4527619400766514,
+          0.3343185612743049
+        ],
+        "mean_abs_xyz_mm": [
+          0.6928510497593492,
+          0.15504549263368064,
+          0.2357602911046896
+        ]
+      },
+      "max_transient_hinge_change_deg": 0.001496696864625153,
+      "controller_details": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 118160,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 12.569378078375493,
+        "peak_applied_torque_Nm": 12.569378078375493,
+        "profile": "world_directional_v1",
+        "stiffness_world_N_m": [
+          900.0,
+          2700.0,
+          1800.0
+        ],
+        "linear_damping_world_Ns_m": [
+          120.0,
+          207.84609690826525,
+          169.7056274847714
+        ],
+        "elastic_matrix_desired_frame": [
+          [
+            2700.0,
+            1.0974716840810327e-14,
+            -2.6495310240288707e-14
+          ],
+          [
+            1.097471684081033e-14,
+            1350.0000000000002,
+            -450.00000000000006
+          ],
+          [
+            -2.6495310240288704e-14,
+            -450.00000000000006,
+            1350.0000000000002
+          ]
+        ],
+        "damping_matrix_actual_body_frame": [
+          [
+            207.8460969082651,
+            -9.197947194756602e-08,
+            -1.4933948921991873e-06,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -9.197947194756655e-08,
+            144.85281301548238,
+            -24.852813742385674,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.493394892199187e-06,
+            -24.852813742385685,
+            144.85281446928894,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            12.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            12.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            12.0
+          ]
+        ],
+        "rotation_policy": "Upstream default rotation stiffness/damping unchanged",
+        "change": "Only worldY/Z translational stiffness and damping increased; worldX unchanged"
+      },
+      "initial_state_sha256": "cc5ec6945687dbb4bc1b497e7da54a0959a401e6dfe5989f7c2721f8ebfe0991"
+    }
+  },
+  "released_results_comparable": true,
+  "deltas_modified_minus_original": {
+    "toward_edge_mm": 0.0530493821219169,
+    "absolute_side_drift_mm": -0.16719270361879346,
+    "absolute_yaw_deg": 0.01693088475118998,
+    "peak_force_N": -0.003047670693140603
+  },
+  "limits": "One trial/profile, same contact geometry/motion/physics. WorldY/Z gains only. No force regulation or global guarantee. A smaller hand tracking error need not improve object motion."
+}

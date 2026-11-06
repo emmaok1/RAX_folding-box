@@ -1,0 +1,5 @@
+OMPL approach
+Closing
+Lift
+PICKUP_SUCCESS /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/validation/pick_up/run01/trial02
+{"pickup_success": true, "cleanup_success": true, "protocol_completed": true, "outcome": "pickup_and_cleanup_succeeded", "failure_phase": null, "force_peaks_N": {"pickup": 2.9025727455798345, "cleanup": 3.7700191262764657, "recovery": 0.0}}

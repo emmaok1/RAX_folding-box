@@ -1,0 +1,571 @@
+{
+  "matched_initial_states": {
+    "press05mm": true,
+    "sidepush10mm": true
+  },
+  "rows": [
+    {
+      "task": "press05mm",
+      "controller": "baseline",
+      "protocol_completed": true,
+      "error": null,
+      "translation_goal_achieved": null,
+      "blank_translation_mm": [
+        0.0014023009254904295,
+        0.0050066757268095756,
+        -1.5064942626707989e-06
+      ],
+      "hand_action_delta_mm": [
+        0.22330999763592319,
+        0.02747768375294113,
+        0.014967536586918406
+      ],
+      "peak_sum_normal_N": 0.6142581629701371,
+      "max_hand_box_penetration_m": 0.0,
+      "released": true,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 30.052566619000572,
+      "max_transient_hinge_change_deg": 0.00017639290457130874,
+      "base_yaw_change_deg": -0.0005368394261751064,
+      "force_statistics": {
+        "press05mm": {
+          "mean_sum_normal_N": 0.15742510055077183,
+          "std_sum_normal_N": 0.07396660472561623,
+          "mean_box_force_xyz_N": [
+            0.00652050220384041,
+            0.02678014191762526,
+            -0.15723626357851522
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.013833613256006993,
+            0.05567700546245498,
+            0.2990645269954647
+          ]
+        },
+        "pressed_hold": {
+          "mean_sum_normal_N": 0.2858648065793519,
+          "std_sum_normal_N": 0.0011939991842584703,
+          "mean_box_force_xyz_N": [
+            0.014452805397259731,
+            0.043542805785273,
+            -0.2858648440776807
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.01567777851049634,
+            0.04674927030738794,
+            0.2897437943881809
+          ]
+        },
+        "released_settle": {
+          "mean_sum_normal_N": 0.0,
+          "std_sum_normal_N": 0.0,
+          "mean_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "retreat": {
+          "mean_sum_normal_N": 0.005614487956031382,
+          "std_sum_normal_N": 0.03241482402703314,
+          "mean_box_force_xyz_N": [
+            0.0006950495186170283,
+            0.0004368961632591342,
+            -0.005614489055568695
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.022304355020566408,
+            0.03917149450506788,
+            0.28674778670242673
+          ]
+        },
+        "touch": {
+          "mean_sum_normal_N": 0.0008016944196976802,
+          "std_sum_normal_N": 0.01550021198219997,
+          "mean_box_force_xyz_N": [
+            -7.370859662258508e-05,
+            8.043485414996337e-05,
+            -0.000801694325184935
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.0680139124469309,
+            0.03072743055244198,
+            0.614258107774617
+          ]
+        }
+      },
+      "controller_details": {
+        "type": "Baseline IK/joint PD"
+      }
+    },
+    {
+      "task": "press05mm",
+      "controller": "community",
+      "protocol_completed": true,
+      "error": null,
+      "translation_goal_achieved": null,
+      "blank_translation_mm": [
+        -0.004255369531525055,
+        0.0003440015796110255,
+        -1.5625317706380315e-06
+      ],
+      "hand_action_delta_mm": [
+        0.04345923048809652,
+        -0.0003251892974620585,
+        -0.01856126073740416
+      ],
+      "peak_sum_normal_N": 0.5295822552795625,
+      "max_hand_box_penetration_m": 0.0,
+      "released": true,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 40.20297818900144,
+      "max_transient_hinge_change_deg": 0.00012505588988759292,
+      "base_yaw_change_deg": -0.00030490227922541635,
+      "force_statistics": {
+        "press05mm": {
+          "mean_sum_normal_N": 0.28771680737073224,
+          "std_sum_normal_N": 0.12658997247536052,
+          "mean_box_force_xyz_N": [
+            -0.028792785888286078,
+            -0.0005769912094892755,
+            -0.28771682835746976
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.0506847383927394,
+            0.007661454788058899,
+            0.5252022712368748
+          ]
+        },
+        "pressed_hold": {
+          "mean_sum_normal_N": 0.49946406414514394,
+          "std_sum_normal_N": 0.01912648729132013,
+          "mean_box_force_xyz_N": [
+            -0.044284034322531016,
+            -1.3929068081564442e-05,
+            -0.4994641132604932
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.050355366644490286,
+            0.007280281946298243,
+            0.5295824250962171
+          ]
+        },
+        "released_settle": {
+          "mean_sum_normal_N": 0.0,
+          "std_sum_normal_N": 0.0,
+          "mean_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "retreat": {
+          "mean_sum_normal_N": 0.007831227543244662,
+          "std_sum_normal_N": 0.04771503649559052,
+          "mean_box_force_xyz_N": [
+            -0.00031540673806752307,
+            8.735773515555604e-05,
+            -0.007831227268660867
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.03463997115457701,
+            0.006267945509678808,
+            0.4436334693290273
+          ]
+        },
+        "touch": {
+          "mean_sum_normal_N": 0.0008379561832547524,
+          "std_sum_normal_N": 0.01310664822036457,
+          "mean_box_force_xyz_N": [
+            -9.65207373674431e-05,
+            2.9531765928094497e-05,
+            -0.0008379561224235667
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.05319500366631182,
+            0.042755626873977465,
+            0.4796180925612395
+          ]
+        }
+      },
+      "controller_details": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 39120,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 18.106636675472533,
+        "peak_applied_torque_Nm": 18.106636675472533
+      }
+    },
+    {
+      "task": "sidepush10mm",
+      "controller": "baseline",
+      "protocol_completed": true,
+      "error": null,
+      "translation_goal_achieved": false,
+      "blank_translation_mm": [
+        -0.43513689204199846,
+        0.21919923597234947,
+        -1.5171393030755098e-06
+      ],
+      "hand_action_delta_mm": [
+        -8.471084502062103,
+        0.08359323802320517,
+        2.010039408488873
+      ],
+      "peak_sum_normal_N": 0.33951941314788314,
+      "max_hand_box_penetration_m": 0.0,
+      "released": true,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 48.15289772300457,
+      "max_transient_hinge_change_deg": 0.0008609819078552157,
+      "base_yaw_change_deg": -0.12126407952509055,
+      "force_statistics": {
+        "edge_touch": {
+          "mean_sum_normal_N": 4.509934650222475e-05,
+          "std_sum_normal_N": 0.001378923656941799,
+          "mean_box_force_xyz_N": [
+            -5.057676116832691e-05,
+            -6.316914618736709e-07,
+            -1.3205207596099483e-05
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.07382704153645839,
+            0.0016356507271195718,
+            0.019901798033807844
+          ]
+        },
+        "push10mm": {
+          "mean_sum_normal_N": 0.19269657652103564,
+          "std_sum_normal_N": 0.07409100782529787,
+          "mean_box_force_xyz_N": [
+            -0.14808009214022927,
+            0.0008674792493143912,
+            -0.1464666425580842
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.31496667012170176,
+            0.02853693375826544,
+            0.3207851198902722
+          ]
+        },
+        "released_settle": {
+          "mean_sum_normal_N": 0.0,
+          "std_sum_normal_N": 0.0,
+          "mean_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "retreat": {
+          "mean_sum_normal_N": 0.014277333481719725,
+          "std_sum_normal_N": 0.055254065657278466,
+          "mean_box_force_xyz_N": [
+            -0.008520871859663225,
+            -4.221592356496323e-05,
+            -0.014277334172692892
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.18050459395410554,
+            0.0033172393986586816,
+            0.30338348897004713
+          ]
+        }
+      },
+      "controller_details": {
+        "type": "Baseline IK/joint PD"
+      },
+      "toward_table_edge_mm": 0.43513689204199846
+    },
+    {
+      "task": "sidepush10mm",
+      "controller": "community",
+      "protocol_completed": true,
+      "error": null,
+      "translation_goal_achieved": false,
+      "blank_translation_mm": [
+        -3.759219320884022,
+        2.913945328855067,
+        -4.655884122684029e-06
+      ],
+      "hand_action_delta_mm": [
+        -9.057949538504694,
+        1.0640777645862243,
+        0.5965776119405408
+      ],
+      "peak_sum_normal_N": 0.6287559263929741,
+      "max_hand_box_penetration_m": 0.0,
+      "released": true,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 84.63433056600479,
+      "max_transient_hinge_change_deg": 0.0014138717880751194,
+      "base_yaw_change_deg": -1.2452263298580704,
+      "force_statistics": {
+        "edge_touch": {
+          "mean_sum_normal_N": 0.00021245417836827455,
+          "std_sum_normal_N": 0.0038607284336588045,
+          "mean_box_force_xyz_N": [
+            -0.00023308531668083602,
+            -1.0294926128391778e-05,
+            -6.736879486665681e-05
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.08326913876033129,
+            0.004185529463495731,
+            0.024453066453091574
+          ]
+        },
+        "push10mm": {
+          "mean_sum_normal_N": 0.4704961671380275,
+          "std_sum_normal_N": 0.08632715699699209,
+          "mean_box_force_xyz_N": [
+            -0.3470938782161171,
+            0.013539940751287881,
+            -0.3180659519790733
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.48495984019736105,
+            0.05894283932729867,
+            0.61203283589801
+          ]
+        },
+        "released_settle": {
+          "mean_sum_normal_N": 0.0,
+          "std_sum_normal_N": 0.0,
+          "mean_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "retreat": {
+          "mean_sum_normal_N": 0.00932655925269706,
+          "std_sum_normal_N": 0.05303842600533426,
+          "mean_box_force_xyz_N": [
+            -0.008568516581657238,
+            0.0006339873492117495,
+            -0.004585794261087983
+          ],
+          "peak_abs_box_force_xyz_N": [
+            0.35245008283094326,
+            0.051420578698835206,
+            0.4500166547191121
+          ]
+        }
+      },
+      "controller_details": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 118160,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 12.569409265661422,
+        "peak_applied_torque_Nm": 12.569409265661422
+      },
+      "toward_table_edge_mm": 3.759219320884022
+    }
+  ],
+  "limits": "One deterministic trial each. Position-reference overtravel is not force regulation. Fixed side-push pose; no gain tuning. Force trip observes an exceedance, does not cap it. No physics/model edits or state teleportation.",
+  "report_source_sha256": {
+    "contact_tests.py": "b1b4ce1d38761605c516563f43a9f08ea1fcec6ac1759a858c4f7c52418d4c30",
+    "adapter.py": "32e40d386f900ec6e96c2779eb29700391f3f7314e8754e0b97b5dc9652027e5",
+    "test_support.py": "e8f20a6a53853d9ec4bdca56ae37a638f93dbfd64f73a1f6877e3498b5497c0e",
+    "side_push_fixture.json": "f05b0cf65b271b42ab8cfffaad36c8c7c8bb299859c048179973f2b6f2bd355d"
+  }
+}

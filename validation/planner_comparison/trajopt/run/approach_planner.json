@@ -1,0 +1,27 @@
+{
+  "pipeline": "TrajOptPipeline",
+  "optimizer": "TrajOpt sequential convex optimization + OSQP",
+  "ompl_used": false,
+  "seed": "pipeline MinLengthTask joint interpolation",
+  "setup_seconds": 2.0325647259960533,
+  "model_alignment": {
+    "samples": 6,
+    "max_transform_abs_error": 6.775653649260249e-11,
+    "active_geoms": 71
+  },
+  "solver_max_time_seconds": 10,
+  "planning_seconds": 11.558313002999057,
+  "successful": false,
+  "message": "TrajOptMotionPlannerTask: Failed to find valid solution: OPT_TIME_LIMIT",
+  "returned_waypoints": 0,
+  "collision_config": {
+    "hard_collision_margin_m": 0.0,
+    "hard_collision_coeff": 10.0,
+    "soft_collision_margin_m": 0.005,
+    "soft_collision_coeff": 50.0,
+    "collision_evaluator": "LVS_CONTINUOUS",
+    "longest_valid_segment_length": 0.1,
+    "hard_margin_buffer_m": 0.005,
+    "soft_margin_buffer_m": 0.01
+  }
+}

@@ -1,0 +1,301 @@
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 5 states (2 start + 3 goal)
+Info:    Solution found in 0.012929 seconds
+Info:    SimpleSetup: Path simplification took 0.063936 seconds and changed from 4 to 2 states
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 25 states (2 start + 23 goal)
+Info:    Solution found in 0.137436 seconds
+Info:    SimpleSetup: Path simplification took 1.881731 seconds and changed from 24 to 2 states
+{
+  "protocol": {
+    "task": "Right-hand 5mm upward move, then reset and approach above base, gentle contact, retract.",
+    "approach_tcp_world_wxyz": [
+      -0.32,
+      -0.065,
+      0.98,
+      0,
+      1,
+      0,
+      0
+    ],
+    "approach_q_right": [
+      0.7064171109511613,
+      -0.2193711844649172,
+      -2.174936533189925,
+      -1.302777334538206,
+      0.9195548792273602,
+      -0.7994354424219224,
+      1.373
+    ],
+    "placement": "flat",
+    "settle_seconds": 0.5,
+    "planning_time_limit_seconds": 10,
+    "path_validation_max_joint_increment_rad": 0.005,
+    "playback_max_joint_speed_rad_s": 0.4,
+    "final_settle_seconds": 1.0,
+    "final_tcp_error_limit_m": 0.002,
+    "contact_descent_speed_m_s": 0.005,
+    "contact_descent_limit_m": 0.06,
+    "contact_detection_normal_force_N": 0.01,
+    "contact_abort_force_N": 5.0,
+    "penetration_abort_m": 0.001,
+    "forbidden_contact_penetration_tolerance_m": 0.0001,
+    "planning_collision_tolerance_m": 1e-06,
+    "limits": "One shared deterministic start and goal per stage; this is an integration smoke, not a planner benchmark or folding proof."
+  },
+  "identity": {
+    "route": "OMPL + MuJoCo",
+    "planner": "RRTConnect",
+    "ompl_version": "2.0.1",
+    "mujoco_version": "3.4.0",
+    "python": "3.11.18 (main, Oct 26 2026, 11:35:17) [GCC 15.3.0]",
+    "pre_run_import_s": 0.3033110299948021,
+    "own_and_shared_source_sha256": {
+      "ompl/planner.py": "648487a7ffb943d09800d0760aaaa2cf5f6fea143514148dd4c7398aed9b36eb",
+      "ompl/run_smoke.py": "d644642bed31bfa50b3a9fc37f152f8a361a5744086a3ff9b1d22fbabe0102d4",
+      "common.py": "f69467ea5cf046c33954dbad645b8c5839feef9908a255dd145ade8bed035560",
+      "protocol.json": "d1c7688d3fbfc3b41b93298a467dad89cc46efa9920ba5f3ce55ae8990f6fea6"
+    }
+  },
+  "stages": {
+    "upward": {
+      "planner_metadata": {
+        "planner": "OMPL RRTConnect",
+        "version": "2.0.1",
+        "label": "upward",
+        "rng_seed_initial": 2026,
+        "joint_dimension": 7,
+        "joint_limits_rad": [
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -1.553,
+            0.453
+          ],
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -3.071,
+            0.244
+          ],
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -1.396,
+            1.396
+          ],
+          [
+            -1.117,
+            1.378
+          ]
+        ],
+        "range_rad": 0.15,
+        "collision_segment_l2_rad": 0.005,
+        "solve_budget_s": 10.0,
+        "setup_s": 0.0001926199984154664,
+        "ompl_import_s": 0.007359713999903761,
+        "solve_s": 0.012953197001479566,
+        "status": "Exact solution",
+        "exact_solution": true,
+        "collision_checks_solve": {
+          "checks": 65,
+          "valid": 65,
+          "invalid": 0
+        },
+        "fallback_used": false,
+        "raw_waypoint_count": 4,
+        "raw_path_l2_rad": 0.30048848820886304,
+        "simplification_s": 0.06397030100197298,
+        "waypoint_count": 2,
+        "path_l2_rad": 0.015517502430224466,
+        "ompl_path_check": true,
+        "collision_checks_total": {
+          "checks": 418,
+          "valid": 418,
+          "invalid": 0
+        },
+        "adapter_total_s": 0.07827443799760658
+      },
+      "callback_wall_seconds": 0.07843782700365409,
+      "validity_calls": 420,
+      "path_waypoints": 2,
+      "dense_validation_samples": 4,
+      "dense_validation_seconds": 0.0008063829955062829,
+      "path_joint_length_rad": 0.015517502430224466,
+      "success": true,
+      "execution_wall_seconds": 0.9786296969978139,
+      "actual_final_q": [
+        -0.7937041455084475,
+        -0.2811730247187537,
+        -0.0004289225501932915,
+        -1.2564426021634927,
+        -7.833582269780483e-05,
+        -0.4624339055719296,
+        0.001785374423428277
+      ],
+      "actual_final_tcp": [
+        0.07434396544742287,
+        -0.4216942074711597,
+        1.0973549339660174,
+        -0.3964614732132439,
+        0.496531666574023,
+        -0.4936514389179429,
+        0.5937868819711766
+      ],
+      "final_max_joint_error_rad": 9.345795007664748e-06,
+      "ik": {
+        "position_m": 2.1405588512150585e-05,
+        "orientation_rad": 5.411826823435454e-05
+      },
+      "tcp_error_m": 2.106047191570902e-05,
+      "measured_displacement_m": [
+        -1.939282583272861e-05,
+        -6.70279487302583e-07,
+        0.004991813883158391
+      ]
+    },
+    "approach": {
+      "planner_metadata": {
+        "planner": "OMPL RRTConnect",
+        "version": "2.0.1",
+        "label": "approach",
+        "rng_seed_initial": 2026,
+        "joint_dimension": 7,
+        "joint_limits_rad": [
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -1.553,
+            0.453
+          ],
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -3.071,
+            0.244
+          ],
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -1.396,
+            1.396
+          ],
+          [
+            -1.117,
+            1.378
+          ]
+        ],
+        "range_rad": 0.15,
+        "collision_segment_l2_rad": 0.005,
+        "solve_budget_s": 10.0,
+        "setup_s": 0.0001305210025748238,
+        "ompl_import_s": 0.007359713999903761,
+        "solve_s": 0.13746079400152666,
+        "status": "Exact solution",
+        "exact_solution": true,
+        "collision_checks_solve": {
+          "checks": 711,
+          "valid": 711,
+          "invalid": 0
+        },
+        "fallback_used": false,
+        "raw_waypoint_count": 24,
+        "raw_path_l2_rad": 3.408279153688989,
+        "simplification_s": 1.8817668709962163,
+        "waypoint_count": 2,
+        "path_l2_rad": 3.1398914051856455,
+        "ompl_path_check": true,
+        "collision_checks_total": {
+          "checks": 11514,
+          "valid": 11514,
+          "invalid": 0
+        },
+        "adapter_total_s": 2.1348203430025023
+      },
+      "callback_wall_seconds": 2.1349440409976523,
+      "validity_calls": 11516,
+      "path_waypoints": 2,
+      "dense_validation_samples": 436,
+      "dense_validation_seconds": 0.08094661599898245,
+      "path_joint_length_rad": 3.1398914051856455,
+      "success": true,
+      "execution_wall_seconds": 5.693509880999045,
+      "actual_final_q": [
+        0.7064109923142919,
+        -0.2193745122287225,
+        -2.174924160278878,
+        -1.302777285735292,
+        0.9195410251757703,
+        -0.7994319835451368,
+        1.3729495114434525
+      ],
+      "actual_final_tcp": [
+        -0.3198814071823542,
+        -0.06499770386548327,
+        0.9800005524373518,
+        -1.4506473163996954e-06,
+        0.9999999861900902,
+        5.25548042645818e-06,
+        0.00016610266245985892
+      ],
+      "final_max_joint_error_rad": 5.048855654754547e-05,
+      "tcp_error_m": 0.00011861633031720243
+    },
+    "contact": {
+      "confirmed": true,
+      "first_contact": {
+        "stage": "contact_descent",
+        "time_s": 13.59974999999098,
+        "geoms": [
+          "jaw_pad_R_2",
+          "card_base_0"
+        ],
+        "normal_force_N": 4.967499606421157,
+        "distance_m": 9.008358665461755e-06
+      },
+      "tcp_at_stop": [
+        -0.32003971646774165,
+        -0.06499796978604762,
+        0.9473742284583566,
+        8.67286226421481e-07,
+        0.9999999976477928,
+        3.388428559597534e-05,
+        -5.962815869556194e-05
+      ],
+      "released": true
+    }
+  },
+  "result": "pass",
+  "physics_substeps_observed": 70640,
+  "max_robot_base_penetration_m": 0.0,
+  "peak_robot_base_normal_force_N": 4.967499606421157,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  }
+}

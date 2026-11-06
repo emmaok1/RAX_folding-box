@@ -1,0 +1,148 @@
+{
+  "protocol": {
+    "task": "Right-hand 5mm upward move, then reset and approach above base, gentle contact, retract.",
+    "approach_tcp_world_wxyz": [
+      -0.32,
+      -0.065,
+      0.98,
+      0,
+      1,
+      0,
+      0
+    ],
+    "approach_q_right": [
+      0.7064171109511613,
+      -0.2193711844649172,
+      -2.174936533189925,
+      -1.302777334538206,
+      0.9195548792273602,
+      -0.7994354424219224,
+      1.373
+    ],
+    "placement": "flat",
+    "settle_seconds": 0.5,
+    "planning_time_limit_seconds": 10,
+    "path_validation_max_joint_increment_rad": 0.005,
+    "playback_max_joint_speed_rad_s": 0.4,
+    "final_settle_seconds": 1.0,
+    "final_tcp_error_limit_m": 0.002,
+    "contact_descent_speed_m_s": 0.005,
+    "contact_descent_limit_m": 0.06,
+    "contact_detection_normal_force_N": 0.01,
+    "contact_abort_force_N": 5.0,
+    "penetration_abort_m": 0.001,
+    "forbidden_contact_penetration_tolerance_m": 0.0001,
+    "planning_collision_tolerance_m": 1e-06,
+    "limits": "One shared deterministic start and goal per stage; this is an integration smoke, not a planner benchmark or folding proof."
+  },
+  "identity": {
+    "planner": "Tesseract pure TrajOptPipeline",
+    "package": "tesseract-robotics-nanobind==0.35.0.8",
+    "runtime": "task-local copy of installed libstdc++.so.6.0.34",
+    "device": "CPU",
+    "ompl_used": false
+  },
+  "stages": {
+    "upward": {
+      "planner_metadata": {
+        "pipeline": "TrajOptPipeline",
+        "optimizer": "TrajOpt sequential convex optimization + OSQP",
+        "ompl_used": false,
+        "seed": "pipeline MinLengthTask joint interpolation",
+        "setup_seconds": 2.0516518790027476,
+        "model_alignment": {
+          "samples": 6,
+          "max_transform_abs_error": 6.775653649260249e-11,
+          "active_geoms": 71
+        },
+        "solver_max_time_seconds": 10,
+        "planning_seconds": 1.0341939099962474,
+        "successful": true,
+        "message": "Planning successful",
+        "returned_waypoints": 11
+      },
+      "callback_wall_seconds": 3.089901553998061,
+      "validity_calls": 2,
+      "path_waypoints": 11,
+      "dense_validation_samples": 11,
+      "dense_validation_seconds": 0.00267389600048773,
+      "path_joint_length_rad": 0.015517502430224468,
+      "success": true,
+      "execution_wall_seconds": 0.9990031030029058,
+      "actual_final_q": [
+        -0.793702442480671,
+        -0.28117351578670924,
+        -0.0004285701336160992,
+        -1.2564440918244553,
+        -7.845536244559843e-05,
+        -0.4624370637941801,
+        0.0017860270736552877
+      ],
+      "actual_final_tcp": [
+        0.07434390190163133,
+        -0.42169457853298836,
+        1.097356278324253,
+        -0.39646141950240144,
+        0.4965315418985952,
+        -0.49365154371771697,
+        0.5937869349615724
+      ],
+      "final_max_joint_error_rad": 6.18757275716586e-06,
+      "ik": {
+        "position_m": 2.1405588512150585e-05,
+        "orientation_rad": 5.411826823435454e-05
+      },
+      "tcp_error_m": 2.0650531454161268e-05,
+      "measured_displacement_m": [
+        -1.945637162427405e-05,
+        -1.0413413159549023e-06,
+        0.004993158241394013
+      ]
+    },
+    "approach": {
+      "planner_metadata": {
+        "pipeline": "TrajOptPipeline",
+        "optimizer": "TrajOpt sequential convex optimization + OSQP",
+        "ompl_used": false,
+        "seed": "pipeline MinLengthTask joint interpolation",
+        "setup_seconds": 2.0194873299988103,
+        "model_alignment": {
+          "samples": 6,
+          "max_transform_abs_error": 6.775653649260249e-11,
+          "active_geoms": 71
+        },
+        "solver_max_time_seconds": 10,
+        "planning_seconds": 11.35534242799622,
+        "successful": false,
+        "message": "TrajOptMotionPlannerTask: Failed to find valid solution: OPT_TIME_LIMIT",
+        "returned_waypoints": 0
+      },
+      "callback_wall_seconds": 13.37714945400512,
+      "validity_calls": 2,
+      "success": false,
+      "tcp_error_m": 0.5434870822546035
+    }
+  },
+  "result": "fail",
+  "error": "RuntimeError('Approach planning/tracking failed')",
+  "physics_substeps_observed": 8880,
+  "max_robot_base_penetration_m": 0.0,
+  "peak_robot_base_normal_force_N": 0.0,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  }
+}

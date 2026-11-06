@@ -1,0 +1,505 @@
+{
+  "prediction_only": true,
+  "passed": true,
+  "samples": [
+    {
+      "predicted_angle_rad": -0.0062708928723430825,
+      "ik": {
+        "position_m": 6.604110407648283e-09,
+        "orientation_rad": 2.9062060562764728e-08
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.002664783150039999,
+      "ik": {
+        "position_m": 3.2501994068472577e-05,
+        "orientation_rad": 4.57028159080759e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.01160045917242308,
+      "ik": {
+        "position_m": 3.5396760458200023e-05,
+        "orientation_rad": 4.804139485004053e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.02053613519480616,
+      "ik": {
+        "position_m": 3.75782079353426e-05,
+        "orientation_rad": 5.232850067872537e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.029471811217189243,
+      "ik": {
+        "position_m": 3.9976649993362355e-05,
+        "orientation_rad": 5.841024879669524e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.03840748723957233,
+      "ik": {
+        "position_m": 4.262119936564434e-05,
+        "orientation_rad": 6.603910925825083e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.04734316326195541,
+      "ik": {
+        "position_m": 4.54977681672036e-05,
+        "orientation_rad": 7.49310386453687e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.05627883928433849,
+      "ik": {
+        "position_m": 4.858523804413142e-05,
+        "orientation_rad": 8.485743800230629e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.06521451530672157,
+      "ik": {
+        "position_m": 5.185667762879299e-05,
+        "orientation_rad": 9.564473441568423e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.07415019132910465,
+      "ik": {
+        "position_m": 5.527824454113429e-05,
+        "orientation_rad": 0.00010715714478882252
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.08308586735148774,
+      "ik": {
+        "position_m": 5.880785019450791e-05,
+        "orientation_rad": 0.0001192794025690969
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.0920215433738708,
+      "ik": {
+        "position_m": 6.239390573958534e-05,
+        "orientation_rad": 0.00013190281186122648
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.10095721939625389,
+      "ik": {
+        "position_m": 6.5974431182382e-05,
+        "orientation_rad": 0.000144914707874693
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.10989289541863698,
+      "ik": {
+        "position_m": 6.94769050579696e-05,
+        "orientation_rad": 0.00015819086345551442
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.11882857144102005,
+      "ik": {
+        "position_m": 7.281934219434721e-05,
+        "orientation_rad": 0.00017159060999282828
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.12776424746340315,
+      "ik": {
+        "position_m": 7.591317366356846e-05,
+        "orientation_rad": 0.00018495479335459454
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.13669992348578622,
+      "ik": {
+        "position_m": 7.866850984470915e-05,
+        "orientation_rad": 0.00019810693879361091
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.1456355995081693,
+      "ik": {
+        "position_m": 8.100221239415338e-05,
+        "orientation_rad": 0.0002108580441447608
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.1545712755305524,
+      "ik": {
+        "position_m": 8.284878675207689e-05,
+        "orientation_rad": 0.0002230151774970775
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.16350695155293546,
+      "ik": {
+        "position_m": 8.417335472595761e-05,
+        "orientation_rad": 0.00023439348251166943
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.17244262757531856,
+      "ik": {
+        "position_m": 8.498487960869695e-05,
+        "orientation_rad": 0.0002448303466421981
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.18137830359770163,
+      "ik": {
+        "position_m": 8.534656771749344e-05,
+        "orientation_rad": 0.0002541995759397333
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.1903139796200847,
+      "ik": {
+        "position_m": 8.537939284870837e-05,
+        "orientation_rad": 0.000262422813838671
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.1992496556424678,
+      "ik": {
+        "position_m": 8.525470369276337e-05,
+        "orientation_rad": 0.000269475551533151
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.20818533166485087,
+      "ik": {
+        "position_m": 8.51737244717648e-05,
+        "orientation_rad": 0.0002753861242708696
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.21712100768723394,
+      "ik": {
+        "position_m": 8.53358734522517e-05,
+        "orientation_rad": 0.000280227870030226
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.22605668370961704,
+      "ik": {
+        "position_m": 8.590324980983858e-05,
+        "orientation_rad": 0.00028410649642692654
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.2349923597320001,
+      "ik": {
+        "position_m": 8.697243988388174e-05,
+        "orientation_rad": 0.00028714585852338963
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.24392803575438318,
+      "ik": {
+        "position_m": 8.856344798609917e-05,
+        "orientation_rad": 0.0002894753141212384
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.2528637117767663,
+      "ik": {
+        "position_m": 9.062850887455846e-05,
+        "orientation_rad": 0.0002912207312380431
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.2617993877991494,
+      "ik": {
+        "position_m": 9.307504707649362e-05,
+        "orientation_rad": 0.00029249970746212663
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.2617993877991494,
+      "ik": {
+        "position_m": 9.307504707649362e-05,
+        "orientation_rad": 0.00029249970746212663
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.25307274153917775,
+      "ik": {
+        "position_m": 5.2774196615599974e-05,
+        "orientation_rad": 0.0002637143302470129
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.24434609527920612,
+      "ik": {
+        "position_m": 6.046419015089858e-05,
+        "orientation_rad": 0.00031144316078006424
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.23561944901923446,
+      "ik": {
+        "position_m": 5.877646294796017e-05,
+        "orientation_rad": 0.0003039222923138887
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.22689280275926282,
+      "ik": {
+        "position_m": 5.665286016670997e-05,
+        "orientation_rad": 0.00029135190314152437
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.21816615649929116,
+      "ik": {
+        "position_m": 5.501586344875305e-05,
+        "orientation_rad": 0.00027765064318086843
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.2094395102393195,
+      "ik": {
+        "position_m": 5.4033848380016353e-05,
+        "orientation_rad": 0.00026321566413163263
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.20071286397934787,
+      "ik": {
+        "position_m": 5.373266241902877e-05,
+        "orientation_rad": 0.00024822747788270596
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.19198621771937624,
+      "ik": {
+        "position_m": 5.402415531987674e-05,
+        "orientation_rad": 0.00023289488340721347
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.18325957145940458,
+      "ik": {
+        "position_m": 5.4722649751928316e-05,
+        "orientation_rad": 0.0002174607827048666
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.17453292519943292,
+      "ik": {
+        "position_m": 5.5586113835321885e-05,
+        "orientation_rad": 0.00020218489586035183
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.1658062789394613,
+      "ik": {
+        "position_m": 5.6366262560135785e-05,
+        "orientation_rad": 0.00018732253976828028
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.15707963267948963,
+      "ik": {
+        "position_m": 5.6849841582319394e-05,
+        "orientation_rad": 0.00017310424701508562
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.148352986419518,
+      "ik": {
+        "position_m": 5.6882894463055213e-05,
+        "orientation_rad": 0.00015971966067734593
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.13962634015954634,
+      "ik": {
+        "position_m": 5.6378473984026136e-05,
+        "orientation_rad": 0.00014730792548541539
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.1308996938995747,
+      "ik": {
+        "position_m": 5.531226967103036e-05,
+        "orientation_rad": 0.00013595516248197996
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.12217304763960304,
+      "ik": {
+        "position_m": 5.371126966493816e-05,
+        "orientation_rad": 0.0001256980844325058
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.11344640137963138,
+      "ik": {
+        "position_m": 5.163975555034003e-05,
+        "orientation_rad": 0.00011653183581269024
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.10471975511965975,
+      "ik": {
+        "position_m": 4.918568745369481e-05,
+        "orientation_rad": 0.00010841987425008288
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.09599310885968809,
+      "ik": {
+        "position_m": 4.644930740746723e-05,
+        "orientation_rad": 0.00010130401467020913
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.08726646259971646,
+      "ik": {
+        "position_m": 4.3534761845398264e-05,
+        "orientation_rad": 9.51133575661413e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.0785398163397448,
+      "ik": {
+        "position_m": 4.054479658208716e-05,
+        "orientation_rad": 8.977145652645151e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.06981317007977317,
+      "ik": {
+        "position_m": 3.757809841312541e-05,
+        "orientation_rad": 8.52015834738592e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.06108652381980151,
+      "ik": {
+        "position_m": 3.4728565794351946e-05,
+        "orientation_rad": 8.133026709476709e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.05235987755982985,
+      "ik": {
+        "position_m": 3.2085571398949574e-05,
+        "orientation_rad": 7.808942843503493e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.043633231299858216,
+      "ik": {
+        "position_m": 2.9734037043616137e-05,
+        "orientation_rad": 7.541746781747957e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.034906585039886556,
+      "ik": {
+        "position_m": 2.77529041584269e-05,
+        "orientation_rad": 7.32596211179669e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.026179938779914924,
+      "ik": {
+        "position_m": 2.6210657890944747e-05,
+        "orientation_rad": 7.156784055846264e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.017453292519943264,
+      "ik": {
+        "position_m": 2.515757655692948e-05,
+        "orientation_rad": 7.03003898247843e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.008726646259971604,
+      "ik": {
+        "position_m": 2.4616706231425052e-05,
+        "orientation_rad": 6.942128718186409e-05
+      },
+      "bad": []
+    },
+    {
+      "predicted_angle_rad": 0.0,
+      "ik": {
+        "position_m": 2.457803828205621e-05,
+        "orientation_rad": 6.88996866976011e-05
+      },
+      "bad": []
+    }
+  ],
+  "execution_state_unchanged": true,
+  "state_sha_before": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202",
+  "state_sha_after": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202"
+}

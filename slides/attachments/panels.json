@@ -1,0 +1,766 @@
+{
+  "coordinate_system": "SI meters, flat-blank local XY; no PDF coordinate claims",
+  "design": "video_rebuild",
+  "panels": [
+    {
+      "panel": "base",
+      "parent": null,
+      "polygon_flat_m": [
+        [
+          0.15,
+          -0.11
+        ],
+        [
+          0.15,
+          0.11
+        ],
+        [
+          -0.15,
+          0.11
+        ],
+        [
+          -0.15,
+          -0.11
+        ],
+        [
+          0.15,
+          -0.11
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.066,
+      "origin_flat_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_parent_frame": null,
+      "target_rad": 0
+    },
+    {
+      "panel": "body_front",
+      "parent": "base",
+      "polygon_flat_m": [
+        [
+          -0.1445,
+          -0.2
+        ],
+        [
+          -0.1445,
+          -0.11
+        ],
+        [
+          0.1445,
+          -0.11
+        ],
+        [
+          0.1445,
+          -0.2
+        ],
+        [
+          -0.1445,
+          -0.2
+        ]
+      ],
+      "holes_flat_m": [
+        [
+          [
+            0.027,
+            -0.1445
+          ],
+          [
+            -0.027,
+            -0.1445
+          ],
+          [
+            -0.027,
+            -0.1515
+          ],
+          [
+            0.027,
+            -0.1515
+          ],
+          [
+            0.027,
+            -0.1445
+          ]
+        ]
+      ],
+      "area_m2": 0.025632000000000002,
+      "origin_flat_m": [
+        0.0,
+        -0.11,
+        0.0
+      ],
+      "axis_parent_frame": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "body_back",
+      "parent": "base",
+      "polygon_flat_m": [
+        [
+          0.1445,
+          0.11
+        ],
+        [
+          0.1445,
+          0.2
+        ],
+        [
+          -0.1445,
+          0.2
+        ],
+        [
+          -0.1445,
+          0.11
+        ],
+        [
+          0.1445,
+          0.11
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.026010000000000002,
+      "origin_flat_m": [
+        0.0,
+        0.11,
+        0.0
+      ],
+      "axis_parent_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "side_right",
+      "parent": "base",
+      "polygon_flat_m": [
+        [
+          0.15,
+          -0.1085
+        ],
+        [
+          0.23199999999999998,
+          -0.1085
+        ],
+        [
+          0.24,
+          -0.1005
+        ],
+        [
+          0.24,
+          0.1005
+        ],
+        [
+          0.23199999999999998,
+          0.1085
+        ],
+        [
+          0.15,
+          0.1085
+        ],
+        [
+          0.15,
+          -0.1085
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.019466,
+      "origin_flat_m": [
+        0.15,
+        0.0,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "side_left",
+      "parent": "base",
+      "polygon_flat_m": [
+        [
+          -0.15,
+          -0.1085
+        ],
+        [
+          -0.23199999999999998,
+          -0.1085
+        ],
+        [
+          -0.24,
+          -0.1005
+        ],
+        [
+          -0.24,
+          0.1005
+        ],
+        [
+          -0.23199999999999998,
+          0.1085
+        ],
+        [
+          -0.15,
+          0.1085
+        ],
+        [
+          -0.15,
+          -0.1085
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.019466,
+      "origin_flat_m": [
+        -0.15,
+        0.0,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "front_corner_right",
+      "parent": "body_front",
+      "polygon_flat_m": [
+        [
+          0.2095,
+          -0.194
+        ],
+        [
+          0.2095,
+          -0.116
+        ],
+        [
+          0.1445,
+          -0.116
+        ],
+        [
+          0.1445,
+          -0.194
+        ],
+        [
+          0.2095,
+          -0.194
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.00507,
+      "origin_flat_m": [
+        0.1445,
+        -0.155,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "front_corner_left",
+      "parent": "body_front",
+      "polygon_flat_m": [
+        [
+          -0.1445,
+          -0.194
+        ],
+        [
+          -0.1445,
+          -0.116
+        ],
+        [
+          -0.2095,
+          -0.116
+        ],
+        [
+          -0.2095,
+          -0.194
+        ],
+        [
+          -0.1445,
+          -0.194
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.00507,
+      "origin_flat_m": [
+        -0.1445,
+        -0.155,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "back_corner_right",
+      "parent": "body_back",
+      "polygon_flat_m": [
+        [
+          0.2095,
+          0.116
+        ],
+        [
+          0.2095,
+          0.194
+        ],
+        [
+          0.1445,
+          0.194
+        ],
+        [
+          0.1445,
+          0.116
+        ],
+        [
+          0.2095,
+          0.116
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.00507,
+      "origin_flat_m": [
+        0.1445,
+        0.155,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "back_corner_left",
+      "parent": "body_back",
+      "polygon_flat_m": [
+        [
+          -0.1445,
+          0.116
+        ],
+        [
+          -0.1445,
+          0.194
+        ],
+        [
+          -0.2095,
+          0.194
+        ],
+        [
+          -0.2095,
+          0.116
+        ],
+        [
+          -0.1445,
+          0.116
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.00507,
+      "origin_flat_m": [
+        -0.1445,
+        0.155,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "lid",
+      "parent": "body_back",
+      "polygon_flat_m": [
+        [
+          0.13899999999999998,
+          0.2
+        ],
+        [
+          0.13899999999999998,
+          0.4145
+        ],
+        [
+          -0.13899999999999998,
+          0.4145
+        ],
+        [
+          -0.13899999999999998,
+          0.2
+        ],
+        [
+          0.13899999999999998,
+          0.2
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.05963099999999998,
+      "origin_flat_m": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "axis_parent_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "lid_side_right",
+      "parent": "lid",
+      "polygon_flat_m": [
+        [
+          0.184,
+          0.20550000000000002
+        ],
+        [
+          0.184,
+          0.409
+        ],
+        [
+          0.13899999999999998,
+          0.409
+        ],
+        [
+          0.13899999999999998,
+          0.20550000000000002
+        ],
+        [
+          0.184,
+          0.20550000000000002
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.0091575,
+      "origin_flat_m": [
+        0.13899999999999998,
+        0.30725,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "lid_side_left",
+      "parent": "lid",
+      "polygon_flat_m": [
+        [
+          -0.13899999999999998,
+          0.20550000000000002
+        ],
+        [
+          -0.13899999999999998,
+          0.409
+        ],
+        [
+          -0.184,
+          0.409
+        ],
+        [
+          -0.184,
+          0.20550000000000002
+        ],
+        [
+          -0.13899999999999998,
+          0.20550000000000002
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.0091575,
+      "origin_flat_m": [
+        -0.13899999999999998,
+        0.30725,
+        0.0
+      ],
+      "axis_parent_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "lid_front",
+      "parent": "lid",
+      "polygon_flat_m": [
+        [
+          -0.13349999999999998,
+          0.4145
+        ],
+        [
+          0.13349999999999998,
+          0.4145
+        ],
+        [
+          0.13349999999999998,
+          0.45649999999999996
+        ],
+        [
+          0.12549999999999997,
+          0.46449999999999997
+        ],
+        [
+          -0.12549999999999997,
+          0.46449999999999997
+        ],
+        [
+          -0.13349999999999998,
+          0.45649999999999996
+        ],
+        [
+          -0.13349999999999998,
+          0.4145
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.013285999999999994,
+      "origin_flat_m": [
+        0.0,
+        0.4145,
+        0.0
+      ],
+      "axis_parent_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_rad": 1.5707963267948966
+    },
+    {
+      "panel": "locking_tongue",
+      "parent": "lid_front",
+      "polygon_flat_m": [
+        [
+          -0.025,
+          0.46449999999999997
+        ],
+        [
+          0.025,
+          0.46449999999999997
+        ],
+        [
+          0.025,
+          0.4715
+        ],
+        [
+          0.022000000000000002,
+          0.4745
+        ],
+        [
+          -0.022000000000000002,
+          0.4745
+        ],
+        [
+          -0.025,
+          0.4715
+        ],
+        [
+          -0.025,
+          0.46449999999999997
+        ]
+      ],
+      "holes_flat_m": [],
+      "area_m2": 0.0004910000000000003,
+      "origin_flat_m": [
+        0.0,
+        0.46449999999999997,
+        0.0
+      ],
+      "axis_parent_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_rad": -1.5707963267948966
+    }
+  ],
+  "flex_regions": [],
+  "base_position_m": [
+    -0.32,
+    0.0,
+    0.9222
+  ],
+  "material_layout": {
+    "design": "Video-inspired connected-lid tuck box, reconstructed independently",
+    "status": "Engineering approximation of visible structure, not recovered manufacturer dieline",
+    "base_width_m": 0.3,
+    "base_depth_m": 0.22,
+    "wall_height_m": 0.09,
+    "thickness_m": 0.004,
+    "basis_weight_g_m2": 400,
+    "layer_clearance_m": 0.0015,
+    "corner_flap_width_m": 0.065,
+    "lid_side_flap_width_m": 0.045,
+    "lid_front_flap_depth_m": 0.05,
+    "tongue_width_m": 0.05,
+    "tongue_length_m": 0.01,
+    "slot_width_m": 0.054,
+    "slot_height_m": 0.007,
+    "root_yaw_rad": -1.5707963267948966,
+    "note": "Video-inspired connected-lid box. All box joints start flat. No grasp aids, automatic folding, snapping or hidden attachments.",
+    "root_xy_m": [
+      -0.32,
+      0.0
+    ],
+    "auto_table_height": true,
+    "table_clearance_m": 0.0002,
+    "initial_angles_deg": {},
+    "root_position_m": [
+      -0.32,
+      0.0,
+      0.9222
+    ]
+  },
+  "masses": [
+    {
+      "body": "box_base",
+      "area_m2": 0.066,
+      "panel_mass_kg": 0.026400000000000003,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.026400000000000003
+    },
+    {
+      "body": "box_body_front",
+      "area_m2": 0.025632000000000002,
+      "panel_mass_kg": 0.010252800000000001,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.010252800000000001
+    },
+    {
+      "body": "box_body_back",
+      "area_m2": 0.026010000000000002,
+      "panel_mass_kg": 0.010404000000000002,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.010404000000000002
+    },
+    {
+      "body": "box_side_right",
+      "area_m2": 0.019466,
+      "panel_mass_kg": 0.007786400000000001,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.007786400000000001
+    },
+    {
+      "body": "box_side_left",
+      "area_m2": 0.019466,
+      "panel_mass_kg": 0.007786400000000001,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.007786400000000001
+    },
+    {
+      "body": "box_front_corner_right",
+      "area_m2": 0.00507,
+      "panel_mass_kg": 0.002028,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.002028
+    },
+    {
+      "body": "box_front_corner_left",
+      "area_m2": 0.00507,
+      "panel_mass_kg": 0.002028,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.002028
+    },
+    {
+      "body": "box_back_corner_right",
+      "area_m2": 0.00507,
+      "panel_mass_kg": 0.002028,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.002028
+    },
+    {
+      "body": "box_back_corner_left",
+      "area_m2": 0.00507,
+      "panel_mass_kg": 0.002028,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.002028
+    },
+    {
+      "body": "box_lid",
+      "area_m2": 0.05963099999999998,
+      "panel_mass_kg": 0.023852399999999996,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.023852399999999996
+    },
+    {
+      "body": "box_lid_side_right",
+      "area_m2": 0.0091575,
+      "panel_mass_kg": 0.0036630000000000005,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.0036630000000000005
+    },
+    {
+      "body": "box_lid_side_left",
+      "area_m2": 0.0091575,
+      "panel_mass_kg": 0.0036630000000000005,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.0036630000000000005
+    },
+    {
+      "body": "box_lid_front",
+      "area_m2": 0.013285999999999994,
+      "panel_mass_kg": 0.005314399999999998,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.005314399999999998
+    },
+    {
+      "body": "box_locking_tongue",
+      "area_m2": 0.0004910000000000003,
+      "panel_mass_kg": 0.00019640000000000014,
+      "grasp_feature_mass_kg": 0.0,
+      "mass_kg": 0.00019640000000000014
+    }
+  ],
+  "grasp_features": [],
+  "slots_flat_m": [
+    [
+      [
+        0.027,
+        -0.1515
+      ],
+      [
+        0.027,
+        -0.1445
+      ],
+      [
+        -0.027,
+        -0.1445
+      ],
+      [
+        -0.027,
+        -0.1515
+      ],
+      [
+        0.027,
+        -0.1515
+      ]
+    ]
+  ],
+  "source": "local reference video; geometry inferred/engineered, not traced from a manufacturer template"
+}

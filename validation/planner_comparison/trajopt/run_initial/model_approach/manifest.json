@@ -1,0 +1,3457 @@
+{
+  "geoms": [
+    {
+      "id": 0,
+      "name": "floor",
+      "link": "geom_0",
+      "body": "world",
+      "type": 0,
+      "mesh": -1,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 7,
+      "name": "table_collision",
+      "link": "geom_7",
+      "body": "table",
+      "type": 6,
+      "mesh": -1,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 16,
+      "name": "dexmate_base_link_collision_4",
+      "link": "geom_16",
+      "body": "dexmate_base_link",
+      "type": 7,
+      "mesh": 3,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 17,
+      "name": "dexmate_base_link_collision_5",
+      "link": "geom_17",
+      "body": "dexmate_base_link",
+      "type": 7,
+      "mesh": 4,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 18,
+      "name": "dexmate_base_link_collision_6",
+      "link": "geom_18",
+      "body": "dexmate_base_link",
+      "type": 7,
+      "mesh": 5,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 27,
+      "name": "dexmate_lift_link_collision_15",
+      "link": "geom_27",
+      "body": "dexmate_lift_link",
+      "type": 7,
+      "mesh": 14,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 28,
+      "name": "dexmate_lift_link_collision_16",
+      "link": "geom_28",
+      "body": "dexmate_lift_link",
+      "type": 7,
+      "mesh": 15,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 29,
+      "name": "dexmate_lift_link_collision_17",
+      "link": "geom_29",
+      "body": "dexmate_lift_link",
+      "type": 7,
+      "mesh": 16,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 30,
+      "name": "dexmate_lift_link_collision_18",
+      "link": "geom_30",
+      "body": "dexmate_lift_link",
+      "type": 7,
+      "mesh": 17,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 31,
+      "name": "dexmate_lift_link_collision_19",
+      "link": "geom_31",
+      "body": "dexmate_lift_link",
+      "type": 7,
+      "mesh": 18,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 49,
+      "name": "dexmate_torso_flip_link_collision_37",
+      "link": "geom_49",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 36,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 50,
+      "name": "dexmate_torso_flip_link_collision_38",
+      "link": "geom_50",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 37,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 51,
+      "name": "dexmate_torso_flip_link_collision_39",
+      "link": "geom_51",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 38,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 52,
+      "name": "dexmate_torso_flip_link_collision_40",
+      "link": "geom_52",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 39,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 53,
+      "name": "dexmate_torso_flip_link_collision_41",
+      "link": "geom_53",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 40,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 54,
+      "name": "dexmate_torso_flip_link_collision_42",
+      "link": "geom_54",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 41,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 55,
+      "name": "dexmate_torso_flip_link_collision_43",
+      "link": "geom_55",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 42,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 56,
+      "name": "dexmate_torso_flip_link_collision_44",
+      "link": "geom_56",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 43,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 57,
+      "name": "dexmate_torso_flip_link_collision_45",
+      "link": "geom_57",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 44,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 58,
+      "name": "dexmate_torso_flip_link_collision_46",
+      "link": "geom_58",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 45,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 59,
+      "name": "dexmate_torso_flip_link_collision_47",
+      "link": "geom_59",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 46,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 60,
+      "name": "dexmate_torso_flip_link_collision_48",
+      "link": "geom_60",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 47,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 61,
+      "name": "dexmate_torso_flip_link_collision_49",
+      "link": "geom_61",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 48,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 62,
+      "name": "dexmate_torso_flip_link_collision_50",
+      "link": "geom_62",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 49,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 63,
+      "name": "dexmate_torso_flip_link_collision_51",
+      "link": "geom_63",
+      "body": "dexmate_torso_flip_link",
+      "type": 7,
+      "mesh": 50,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 65,
+      "name": "dexmate_head_l1_collision_53",
+      "link": "geom_65",
+      "body": "dexmate_head_l1",
+      "type": 7,
+      "mesh": 52,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 67,
+      "name": "dexmate_head_l2_collision_55",
+      "link": "geom_67",
+      "body": "dexmate_head_l2",
+      "type": 7,
+      "mesh": 54,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 72,
+      "name": "dexmate_head_l3_collision_60",
+      "link": "geom_72",
+      "body": "dexmate_head_l3",
+      "type": 7,
+      "mesh": 59,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 74,
+      "name": "dexmate_L_arm_l1_collision_62",
+      "link": "geom_74",
+      "body": "dexmate_L_arm_l1",
+      "type": 7,
+      "mesh": 61,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 76,
+      "name": "dexmate_L_arm_l2_collision_64",
+      "link": "geom_76",
+      "body": "dexmate_L_arm_l2",
+      "type": 7,
+      "mesh": 63,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 78,
+      "name": "dexmate_L_arm_l3_collision_66",
+      "link": "geom_78",
+      "body": "dexmate_L_arm_l3",
+      "type": 7,
+      "mesh": 65,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 80,
+      "name": "dexmate_L_arm_l4_collision_68",
+      "link": "geom_80",
+      "body": "dexmate_L_arm_l4",
+      "type": 7,
+      "mesh": 67,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 82,
+      "name": "dexmate_L_arm_l5_collision_70",
+      "link": "geom_82",
+      "body": "dexmate_L_arm_l5",
+      "type": 7,
+      "mesh": 69,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 84,
+      "name": "dexmate_L_arm_l6_collision_72",
+      "link": "geom_84",
+      "body": "dexmate_L_arm_l6",
+      "type": 7,
+      "mesh": 71,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 86,
+      "name": "dexmate_L_arm_l7_collision_74",
+      "link": "geom_86",
+      "body": "dexmate_L_arm_l7",
+      "type": 7,
+      "mesh": 73,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 90,
+      "name": "dexmate_L_arm_l8_collision_78",
+      "link": "geom_90",
+      "body": "dexmate_L_arm_l8",
+      "type": 7,
+      "mesh": 77,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 96,
+      "name": "dexmate_L_gripper_base_collision_84",
+      "link": "geom_96",
+      "body": "dexmate_L_gripper_base",
+      "type": 7,
+      "mesh": 83,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 99,
+      "name": "dexmate_L_gripper_l1_collision_87",
+      "link": "geom_99",
+      "body": "dexmate_L_gripper_l1",
+      "type": 7,
+      "mesh": 86,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 100,
+      "name": "jaw_pad_L_1",
+      "link": "geom_100",
+      "body": "dexmate_L_gripper_l1",
+      "type": 7,
+      "mesh": 87,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 103,
+      "name": "dexmate_L_gripper_l2_collision_90",
+      "link": "geom_103",
+      "body": "dexmate_L_gripper_l2",
+      "type": 7,
+      "mesh": 90,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 104,
+      "name": "jaw_pad_L_2",
+      "link": "geom_104",
+      "body": "dexmate_L_gripper_l2",
+      "type": 7,
+      "mesh": 91,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 107,
+      "name": "dexmate_R_arm_l1_collision_93",
+      "link": "geom_107",
+      "body": "dexmate_R_arm_l1",
+      "type": 7,
+      "mesh": 94,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 109,
+      "name": "dexmate_R_arm_l2_collision_95",
+      "link": "geom_109",
+      "body": "dexmate_R_arm_l2",
+      "type": 7,
+      "mesh": 96,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 111,
+      "name": "dexmate_R_arm_l3_collision_97",
+      "link": "geom_111",
+      "body": "dexmate_R_arm_l3",
+      "type": 7,
+      "mesh": 98,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 113,
+      "name": "dexmate_R_arm_l4_collision_99",
+      "link": "geom_113",
+      "body": "dexmate_R_arm_l4",
+      "type": 7,
+      "mesh": 100,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 115,
+      "name": "dexmate_R_arm_l5_collision_101",
+      "link": "geom_115",
+      "body": "dexmate_R_arm_l5",
+      "type": 7,
+      "mesh": 102,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 117,
+      "name": "dexmate_R_arm_l6_collision_103",
+      "link": "geom_117",
+      "body": "dexmate_R_arm_l6",
+      "type": 7,
+      "mesh": 104,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 119,
+      "name": "dexmate_R_arm_l7_collision_105",
+      "link": "geom_119",
+      "body": "dexmate_R_arm_l7",
+      "type": 7,
+      "mesh": 106,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 123,
+      "name": "dexmate_R_arm_l8_collision_109",
+      "link": "geom_123",
+      "body": "dexmate_R_arm_l8",
+      "type": 7,
+      "mesh": 110,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 129,
+      "name": "dexmate_R_gripper_base_collision_115",
+      "link": "geom_129",
+      "body": "dexmate_R_gripper_base",
+      "type": 7,
+      "mesh": 116,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 132,
+      "name": "dexmate_R_gripper_l1_collision_118",
+      "link": "geom_132",
+      "body": "dexmate_R_gripper_l1",
+      "type": 7,
+      "mesh": 119,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 133,
+      "name": "jaw_pad_R_1",
+      "link": "geom_133",
+      "body": "dexmate_R_gripper_l1",
+      "type": 7,
+      "mesh": 120,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 136,
+      "name": "dexmate_R_gripper_l2_collision_121",
+      "link": "geom_136",
+      "body": "dexmate_R_gripper_l2",
+      "type": 7,
+      "mesh": 123,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 137,
+      "name": "jaw_pad_R_2",
+      "link": "geom_137",
+      "body": "dexmate_R_gripper_l2",
+      "type": 7,
+      "mesh": 124,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 139,
+      "name": "card_base_0",
+      "link": "geom_139",
+      "body": "box_base",
+      "type": 7,
+      "mesh": 126,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 140,
+      "name": "card_body_front_0",
+      "link": "geom_140",
+      "body": "box_body_front",
+      "type": 7,
+      "mesh": 127,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 141,
+      "name": "card_body_front_1",
+      "link": "geom_141",
+      "body": "box_body_front",
+      "type": 7,
+      "mesh": 128,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 142,
+      "name": "card_body_front_2",
+      "link": "geom_142",
+      "body": "box_body_front",
+      "type": 7,
+      "mesh": 129,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 143,
+      "name": "card_body_front_3",
+      "link": "geom_143",
+      "body": "box_body_front",
+      "type": 7,
+      "mesh": 130,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 144,
+      "name": "card_front_corner_right_0",
+      "link": "geom_144",
+      "body": "box_front_corner_right",
+      "type": 7,
+      "mesh": 134,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 145,
+      "name": "card_front_corner_left_0",
+      "link": "geom_145",
+      "body": "box_front_corner_left",
+      "type": 7,
+      "mesh": 135,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 146,
+      "name": "card_body_back_0",
+      "link": "geom_146",
+      "body": "box_body_back",
+      "type": 7,
+      "mesh": 131,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 147,
+      "name": "card_back_corner_right_0",
+      "link": "geom_147",
+      "body": "box_back_corner_right",
+      "type": 7,
+      "mesh": 136,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 148,
+      "name": "card_back_corner_left_0",
+      "link": "geom_148",
+      "body": "box_back_corner_left",
+      "type": 7,
+      "mesh": 137,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 149,
+      "name": "card_lid_0",
+      "link": "geom_149",
+      "body": "box_lid",
+      "type": 7,
+      "mesh": 138,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 150,
+      "name": "card_lid_side_right_0",
+      "link": "geom_150",
+      "body": "box_lid_side_right",
+      "type": 7,
+      "mesh": 139,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 151,
+      "name": "card_lid_side_left_0",
+      "link": "geom_151",
+      "body": "box_lid_side_left",
+      "type": 7,
+      "mesh": 140,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 152,
+      "name": "card_lid_front_0",
+      "link": "geom_152",
+      "body": "box_lid_front",
+      "type": 7,
+      "mesh": 141,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 153,
+      "name": "card_locking_tongue_0",
+      "link": "geom_153",
+      "body": "box_locking_tongue",
+      "type": 7,
+      "mesh": 142,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 154,
+      "name": "card_side_right_0",
+      "link": "geom_154",
+      "body": "box_side_right",
+      "type": 7,
+      "mesh": 132,
+      "contype": 1,
+      "conaffinity": 1
+    },
+    {
+      "id": 155,
+      "name": "card_side_left_0",
+      "link": "geom_155",
+      "body": "box_side_left",
+      "type": 7,
+      "mesh": 133,
+      "contype": 1,
+      "conaffinity": 1
+    }
+  ],
+  "allowed_collision_pairs": [
+    [
+      0,
+      7,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      16,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      17,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      18,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      27,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      28,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      29,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      0,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      16,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      17,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      18,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      27,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      28,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      29,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      7,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      17,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      18,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      27,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      28,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      29,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      16,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      18,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      27,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      28,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      29,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      17,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      27,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      28,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      29,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      18,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      28,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      29,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      27,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      29,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      28,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      30,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      29,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      31,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      30,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      49,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      31,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      50,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      49,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      51,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      50,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      52,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      51,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      53,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      52,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      54,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      53,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      55,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      54,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      56,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      55,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      57,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      56,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      58,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      57,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      59,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      58,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      60,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      59,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      61,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      60,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      62,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      61,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      62,
+      63,
+      "welded_or_parent"
+    ],
+    [
+      62,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      62,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      62,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      62,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      62,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      62,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      63,
+      65,
+      "welded_or_parent"
+    ],
+    [
+      63,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      63,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      63,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      63,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      63,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      65,
+      67,
+      "welded_or_parent"
+    ],
+    [
+      65,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      65,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      65,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      65,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      67,
+      72,
+      "welded_or_parent"
+    ],
+    [
+      67,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      67,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      67,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      72,
+      74,
+      "welded_or_parent"
+    ],
+    [
+      72,
+      107,
+      "welded_or_parent"
+    ],
+    [
+      72,
+      139,
+      "welded_or_parent"
+    ],
+    [
+      74,
+      76,
+      "welded_or_parent"
+    ],
+    [
+      76,
+      78,
+      "welded_or_parent"
+    ],
+    [
+      78,
+      80,
+      "welded_or_parent"
+    ],
+    [
+      80,
+      82,
+      "welded_or_parent"
+    ],
+    [
+      82,
+      84,
+      "welded_or_parent"
+    ],
+    [
+      84,
+      86,
+      "welded_or_parent"
+    ],
+    [
+      84,
+      90,
+      "welded_or_parent"
+    ],
+    [
+      84,
+      96,
+      "welded_or_parent"
+    ],
+    [
+      86,
+      90,
+      "welded_or_parent"
+    ],
+    [
+      86,
+      96,
+      "welded_or_parent"
+    ],
+    [
+      86,
+      99,
+      "welded_or_parent"
+    ],
+    [
+      86,
+      100,
+      "welded_or_parent"
+    ],
+    [
+      86,
+      103,
+      "welded_or_parent"
+    ],
+    [
+      86,
+      104,
+      "welded_or_parent"
+    ],
+    [
+      90,
+      96,
+      "welded_or_parent"
+    ],
+    [
+      90,
+      99,
+      "welded_or_parent"
+    ],
+    [
+      90,
+      100,
+      "welded_or_parent"
+    ],
+    [
+      90,
+      103,
+      "welded_or_parent"
+    ],
+    [
+      90,
+      104,
+      "welded_or_parent"
+    ],
+    [
+      96,
+      99,
+      "welded_or_parent"
+    ],
+    [
+      96,
+      100,
+      "welded_or_parent"
+    ],
+    [
+      96,
+      103,
+      "welded_or_parent"
+    ],
+    [
+      96,
+      104,
+      "welded_or_parent"
+    ],
+    [
+      99,
+      100,
+      "welded_or_parent"
+    ],
+    [
+      103,
+      104,
+      "welded_or_parent"
+    ],
+    [
+      107,
+      109,
+      "welded_or_parent"
+    ],
+    [
+      109,
+      111,
+      "welded_or_parent"
+    ],
+    [
+      111,
+      113,
+      "welded_or_parent"
+    ],
+    [
+      113,
+      115,
+      "welded_or_parent"
+    ],
+    [
+      115,
+      117,
+      "welded_or_parent"
+    ],
+    [
+      117,
+      119,
+      "welded_or_parent"
+    ],
+    [
+      117,
+      123,
+      "welded_or_parent"
+    ],
+    [
+      117,
+      129,
+      "welded_or_parent"
+    ],
+    [
+      119,
+      123,
+      "welded_or_parent"
+    ],
+    [
+      119,
+      129,
+      "welded_or_parent"
+    ],
+    [
+      119,
+      132,
+      "welded_or_parent"
+    ],
+    [
+      119,
+      133,
+      "welded_or_parent"
+    ],
+    [
+      119,
+      136,
+      "welded_or_parent"
+    ],
+    [
+      119,
+      137,
+      "welded_or_parent"
+    ],
+    [
+      123,
+      129,
+      "welded_or_parent"
+    ],
+    [
+      123,
+      132,
+      "welded_or_parent"
+    ],
+    [
+      123,
+      133,
+      "welded_or_parent"
+    ],
+    [
+      123,
+      136,
+      "welded_or_parent"
+    ],
+    [
+      123,
+      137,
+      "welded_or_parent"
+    ],
+    [
+      129,
+      132,
+      "welded_or_parent"
+    ],
+    [
+      129,
+      133,
+      "welded_or_parent"
+    ],
+    [
+      129,
+      136,
+      "welded_or_parent"
+    ],
+    [
+      129,
+      137,
+      "welded_or_parent"
+    ],
+    [
+      132,
+      133,
+      "welded_or_parent"
+    ],
+    [
+      136,
+      137,
+      "welded_or_parent"
+    ],
+    [
+      139,
+      140,
+      "welded_or_parent"
+    ],
+    [
+      139,
+      141,
+      "welded_or_parent"
+    ],
+    [
+      139,
+      142,
+      "welded_or_parent"
+    ],
+    [
+      139,
+      143,
+      "welded_or_parent"
+    ],
+    [
+      139,
+      146,
+      "welded_or_parent"
+    ],
+    [
+      139,
+      154,
+      "welded_or_parent"
+    ],
+    [
+      139,
+      155,
+      "welded_or_parent"
+    ],
+    [
+      140,
+      141,
+      "welded_or_parent"
+    ],
+    [
+      140,
+      142,
+      "welded_or_parent"
+    ],
+    [
+      140,
+      143,
+      "welded_or_parent"
+    ],
+    [
+      140,
+      144,
+      "welded_or_parent"
+    ],
+    [
+      140,
+      145,
+      "welded_or_parent"
+    ],
+    [
+      141,
+      142,
+      "welded_or_parent"
+    ],
+    [
+      141,
+      143,
+      "welded_or_parent"
+    ],
+    [
+      141,
+      144,
+      "welded_or_parent"
+    ],
+    [
+      141,
+      145,
+      "welded_or_parent"
+    ],
+    [
+      142,
+      143,
+      "welded_or_parent"
+    ],
+    [
+      142,
+      144,
+      "welded_or_parent"
+    ],
+    [
+      142,
+      145,
+      "welded_or_parent"
+    ],
+    [
+      143,
+      144,
+      "welded_or_parent"
+    ],
+    [
+      143,
+      145,
+      "welded_or_parent"
+    ],
+    [
+      146,
+      147,
+      "welded_or_parent"
+    ],
+    [
+      146,
+      148,
+      "welded_or_parent"
+    ],
+    [
+      146,
+      149,
+      "welded_or_parent"
+    ],
+    [
+      149,
+      150,
+      "welded_or_parent"
+    ],
+    [
+      149,
+      151,
+      "welded_or_parent"
+    ],
+    [
+      149,
+      152,
+      "welded_or_parent"
+    ],
+    [
+      152,
+      153,
+      "welded_or_parent"
+    ]
+  ],
+  "floor_approximation": "infinite plane replaced by200x200x2m box with exact top plane",
+  "snapshot_qpos": [
+    0.8000000013584413,
+    0.28000000001631703,
+    -5.037723709029215e-12,
+    -1.2500000016605004,
+    -2.7264860730696297e-11,
+    0.45000000008813895,
+    -1.0766866292236404e-10,
+    0.2894998708906247,
+    0.28950167663944054,
+    -0.7999999987137382,
+    -0.280000000004848,
+    -4.280752858787423e-12,
+    -1.2499999984723487,
+    1.3374627500003033e-11,
+    -0.44999999991146694,
+    5.927248139731709e-11,
+    0.28654233825388076,
+    0.28654058288470086,
+    -0.32000000025864667,
+    -5.850241685532814e-11,
+    0.922009966384356,
+    0.707106781070013,
+    -6.008215192263267e-09,
+    -1.1432329284837246e-09,
+    -0.7071067813030826,
+    6.966503903141313e-08,
+    -8.59898325114623e-07,
+    -8.803941062657042e-07,
+    -8.548626564930111e-08,
+    -2.8487916217285295e-08,
+    -1.411185040996392e-08,
+    7.621352664763967e-08,
+    -1.039756528499407e-06,
+    -3.8124226230524944e-07,
+    1.0564853539455895e-08,
+    -2.791365100752308e-08,
+    -9.304412416586052e-07,
+    -8.077126142767241e-07
+  ]
+}

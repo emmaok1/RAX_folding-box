@@ -1,0 +1,23 @@
+{
+  "error": null,
+  "max_angle_deg": 0.0018318504045023967,
+  "max_continuous_seconds_above15_with_opposing_contacts": 0,
+  "opposing_contact_frames": 0,
+  "max_box_penetration_m_at50Hz": 1.5577289375013525e-05,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "final_angle_deg": 7.920468056165285e-06,
+  "final_contacts": [],
+  "simulation_seconds": 15.599999999986318,
+  "wall_seconds": 15.261813402175903,
+  "scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+  "method": "Execution exclusively FoldingBoxEnv.step motor references. No executed-state, geometry, physics, collision, force, or equality modifications. Initial overhang assumption was incorrect: table world edge \u22120.55m; front wall edge \u22120.52m. Trace sampled at50Hz."
+}

@@ -1,0 +1,409 @@
+{
+  "prediction_only": true,
+  "attachment_in_execution": false,
+  "sample_spacing_m": 0.001,
+  "samples": [
+    {
+      "world_y_shift_m": 0.0,
+      "ik_error": {
+        "position_m": 4.575216520763339e-07,
+        "orientation_rad": 1.6551313267860408e-06
+      },
+      "predicted_tcp_m": [
+        -0.1366280357057692,
+        -0.6514997735314149,
+        1.1668481312644934
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00047113411948332407,
+        -0.650015089459165,
+        1.164312077052205
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.001,
+      "ik_error": {
+        "position_m": 1.2873743570278887e-05,
+        "orientation_rad": 7.524225216001656e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662152955942733,
+        -0.6505111385070341,
+        1.1668501683849033
+      ],
+      "predicted_panel_body_position_m": [
+        -0.0004647552181380743,
+        -0.6490160725163472,
+        1.164313381835286
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.002,
+      "ik_error": {
+        "position_m": 1.3387340893458028e-05,
+        "orientation_rad": 7.750940724123212e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662158441235903,
+        -0.6495117122150093,
+        1.1668504179664392
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046481329574715735,
+        -0.648016337292224,
+        1.1643136404282084
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.003,
+      "ik_error": {
+        "position_m": 1.3236936468077583e-05,
+        "orientation_rad": 7.597825391342393e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662178171887426,
+        -0.648511635089307,
+        1.1668504532794335
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046500756387093944,
+        -0.6470164662246807,
+        1.1643137173630917
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.004,
+      "ik_error": {
+        "position_m": 1.3054449639325502e-05,
+        "orientation_rad": 7.431439552177047e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662197697025563,
+        -0.6475115212958724,
+        1.1668504749314073
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046519957936966283,
+        -0.6460165766253316,
+        1.16431378056662
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.005,
+      "ik_error": {
+        "position_m": 1.2871124255960638e-05,
+        "orientation_rad": 7.269628420976996e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662216583914094,
+        -0.646511402480192,
+        1.1668504936429382
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046538530429940383,
+        -0.6450166759130681,
+        1.1643138395048827
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.006,
+      "ik_error": {
+        "position_m": 1.2688448571458252e-05,
+        "orientation_rad": 7.113106595683299e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662234828870765,
+        -0.6455112803923315,
+        1.1668505100150472
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046556471311542946,
+        -0.6440167648645576,
+        1.164313894745408
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.007,
+      "ik_error": {
+        "position_m": 1.2506497577594694e-05,
+        "orientation_rad": 6.961773410385169e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662252445382642,
+        -0.6445111553420464,
+        1.166850524153128
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046573793887363935,
+        -0.6430168439232099,
+        1.1643139464104408
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.008,
+      "ik_error": {
+        "position_m": 1.2325295167010377e-05,
+        "orientation_rad": 6.815490494697173e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662269448317724,
+        -0.6435110275781591,
+        1.166850536140204
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046590512780919635,
+        -0.642016913522416,
+        1.1643139946037913
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.009000000000000001,
+      "ik_error": {
+        "position_m": 1.21448765515493e-05,
+        "orientation_rad": 6.674118022943816e-05
+      },
+      "predicted_tcp_m": [
+        -0.1366228585320559,
+        -0.6425108973516008,
+        1.1668505460592775
+      ],
+      "predicted_panel_body_position_m": [
+        -0.0004660664327203745,
+        -0.6410169740993769,
+        1.164314039431182
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.01,
+      "ik_error": {
+        "position_m": 1.1965289199459486e-05,
+        "orientation_rad": 6.537516493465962e-05
+      },
+      "predicted_tcp_m": [
+        -0.13662301676113373,
+        -0.6415107649160826,
+        1.1668505539940328
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00046622201175908207,
+        -0.6400170260934006,
+        1.1643140810007058
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.009,
+      "ik_error": {
+        "position_m": 1.4105801504494317e-05,
+        "orientation_rad": 6.576253793285237e-05
+      },
+      "predicted_tcp_m": [
+        -0.13663979608801632,
+        -0.6424928214106196,
+        1.1668487171437463
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00048279205460619035,
+        -0.6410168447331963,
+        1.164313080570175
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.008,
+      "ik_error": {
+        "position_m": 1.599187121173617e-05,
+        "orientation_rad": 7.396787677972001e-05
+      },
+      "predicted_tcp_m": [
+        -0.1366415551735094,
+        -0.6434921079646284,
+        1.1668489095470969
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00048453716912622014,
+        -0.6420172403670436,
+        1.1643133778349588
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.006999999999999999,
+      "ik_error": {
+        "position_m": 1.637182864700774e-05,
+        "orientation_rad": 7.561376069607207e-05
+      },
+      "predicted_tcp_m": [
+        -0.13664183866572757,
+        -0.6444918342612471,
+        1.1668488698303197
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00048481803130653867,
+        -0.6430171895514616,
+        1.1643133497106288
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.005999999999999999,
+      "ik_error": {
+        "position_m": 1.667255454280631e-05,
+        "orientation_rad": 7.691738810740313e-05
+      },
+      "predicted_tcp_m": [
+        -0.1366420363314028,
+        -0.6454915711175564,
+        1.16684881393976
+      ],
+      "predicted_panel_body_position_m": [
+        -0.0004850136668055338,
+        -0.6440171029297258,
+        1.1643133001821513
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.004999999999999999,
+      "ik_error": {
+        "position_m": 1.697607392892594e-05,
+        "orientation_rad": 7.822605724886913e-05
+      },
+      "predicted_tcp_m": [
+        -0.13664222872296558,
+        -0.6464912958364424,
+        1.166848754230977
+      ],
+      "predicted_panel_body_position_m": [
+        -0.0004852040317446793,
+        -0.6450170048140831,
+        1.1643132462828036
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.003999999999999999,
+      "ik_error": {
+        "position_m": 1.7287363354190254e-05,
+        "orientation_rad": 7.955977703129644e-05
+      },
+      "predicted_tcp_m": [
+        -0.13664242018856435,
+        -0.6474910065881341,
+        1.1668486913186484
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00048539344066805823,
+        -0.6460168960817223,
+        1.1643131888581608
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.002999999999999999,
+      "ik_error": {
+        "position_m": 1.7607043367190104e-05,
+        "orientation_rad": 8.092002107691374e-05
+      },
+      "predicted_tcp_m": [
+        -0.1366426107662124,
+        -0.6484907027865602,
+        1.1668486251712018
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00048558192986039583,
+        -0.6470167763436783,
+        1.1643131278556096
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.001999999999999999,
+      "ik_error": {
+        "position_m": 1.793550723052938e-05,
+        "orientation_rad": 8.230722022436878e-05
+      },
+      "predicted_tcp_m": [
+        -0.1366428002489346,
+        -0.6494903839250848,
+        1.1668485557255055
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00048576929245083833,
+        -0.6480166451490242,
+        1.1643130631748073
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.0009999999999999992,
+      "ik_error": {
+        "position_m": 1.8273159456123174e-05,
+        "orientation_rad": 8.372177475226436e-05
+      },
+      "predicted_tcp_m": [
+        -0.13664298841961312,
+        -0.6504900495077295,
+        1.1668484829214811
+      ],
+      "predicted_panel_body_position_m": [
+        -0.0004859553115257875,
+        -0.6490165020531388,
+        1.1643129947156563
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    },
+    {
+      "world_y_shift_m": 0.0,
+      "ik_error": {
+        "position_m": 1.8620430514833575e-05,
+        "orientation_rad": 8.51641203653591e-05
+      },
+      "predicted_tcp_m": [
+        -0.13664317506701776,
+        -0.6514896990465833,
+        1.1668484067044538
+      ],
+      "predicted_panel_body_position_m": [
+        -0.00048613977604838876,
+        -0.6500163466240314,
+        1.1643129223814315
+      ],
+      "intended_contacts_allowed": 3,
+      "rejected": []
+    }
+  ],
+  "execution_state_unchanged": true,
+  "live_state_sha256_before": "2461b9832646139fa6ed051f47bc894dcf406db18744a3a5dc208dd41cc11590",
+  "live_state_sha256_after": "2461b9832646139fa6ed051f47bc894dcf406db18744a3a5dc208dd41cc11590"
+}

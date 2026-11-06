@@ -1,0 +1,151 @@
+{
+  "box_base": {
+    "mass": true,
+    "inertia": true,
+    "ipos": true,
+    "iquat": true
+  },
+  "dexmate_R_gripper_l1": {
+    "mass": true,
+    "inertia": true,
+    "ipos": true,
+    "iquat": true
+  },
+  "dexmate_R_gripper_l2": {
+    "mass": true,
+    "inertia": true,
+    "ipos": true,
+    "iquat": true
+  },
+  "gravity": true,
+  "timestep": true,
+  "integrator": true,
+  "noslip_iterations": true,
+  "robot_geom_equal": true,
+  "actuator_limits_equal": true,
+  "equality_count": 2,
+  "freejoint_count": 1,
+  "object_actuators": [],
+  "cardboard_contact_pairs": [
+    {
+      "geom1": "dexmate_L_gripper_l1_collision_87",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "jaw_pad_L_1",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "dexmate_L_gripper_l2_collision_90",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "jaw_pad_L_2",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "dexmate_R_gripper_l1_collision_118",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "jaw_pad_R_1",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "dexmate_R_gripper_l2_collision_121",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "jaw_pad_R_2",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.6 0.6 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "table_collision",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.4 0.4 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    },
+    {
+      "geom1": "support_top",
+      "matches_baseline_pair": true,
+      "attributes": {
+        "geom2": "card_base_0",
+        "condim": "3",
+        "friction": "0.4 0.4 0 0 0",
+        "solref": "0.004 1",
+        "solimp": "0.99 0.999 0.0001 0.5 2",
+        "margin": "1e-05"
+      }
+    }
+  ]
+}

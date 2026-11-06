@@ -1,0 +1,168 @@
+{
+  "physical_attempts": 1,
+  "protocol_completed": true,
+  "error": null,
+  "commanded_push_after_touch_mm": -10.000000000000009,
+  "actual_tcp_delta_after_touch_mm": [
+    -8.471084502062103,
+    0.08359323802320517,
+    2.010039408488873
+  ],
+  "base_translation_final_from_initial_mm": [
+    -0.43513689204199846,
+    0.21919923597234947,
+    -1.5171393030755098e-06
+  ],
+  "base_translation_during_retreat_and_settle_mm": [
+    -0.0019237550867856612,
+    0.001291408898986202,
+    -1.5415842713473182e-05
+  ],
+  "base_euler_change_deg": [
+    1.4994055857054773e-07,
+    1.910323225442207e-06,
+    -0.12126302174505099
+  ],
+  "final_passive_hinge_changes_deg": {
+    "body_front": 2.310694048398856e-06,
+    "body_back": 5.2313019515087655e-06,
+    "side_right": 1.3043244471188624e-05,
+    "side_left": -8.212401011262318e-06,
+    "front_corner_right": 1.6426938001348247e-05,
+    "front_corner_left": -1.0261314366472851e-05,
+    "back_corner_right": -2.4706493974377174e-05,
+    "back_corner_left": -1.0378583471101681e-06,
+    "lid": -1.4251083724608914e-05,
+    "lid_side_right": 5.558799111587748e-05,
+    "lid_side_left": 3.128139132917402e-05,
+    "lid_front": 8.484706647818708e-06,
+    "locking_tongue": 4.640739176576254e-06
+  },
+  "max_abs_hinge_change_deg": 0.0008547986554589345,
+  "peak_sum_normal_N": 0.33951941314788314,
+  "peak_per_contact_N": 0.33951941314788314,
+  "max_card_penetration_mm": 0.07668659677199392,
+  "max_robot_penetration_mm": 0.0,
+  "first_contact": {
+    "time_s": 16.39249999998726,
+    "phase": "slow_edge_touch",
+    "contacts": [
+      {
+        "geoms": [
+          "jaw_pad_R_2",
+          "card_side_right_0"
+        ],
+        "normal_N": 0.06627663047619722,
+        "distance_m": 9.99999774868e-06,
+        "position_world_m": [
+          -0.21149672347124376,
+          -0.21841008587542457,
+          0.9240136886801306
+        ]
+      }
+    ]
+  },
+  "contact_pair_names": [
+    [
+      "jaw_pad_R_2",
+      "card_side_right_0"
+    ]
+  ],
+  "final_force_N": 0.0,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_dense_validation_samples": 615,
+  "substeps": 165600,
+  "simulation_s": 41.400000000106665,
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  },
+  "slow_edge_touch": {
+    "mean_world_force_on_box_N": [
+      -5.057676116832691e-05,
+      -6.316914618736709e-07,
+      -1.3205207596099483e-05
+    ],
+    "max_abs_world_force_on_box_N": [
+      0.07382704153645839,
+      0.0016356507271195718,
+      0.019901798033807844
+    ],
+    "sum_normal_percentiles_50_95_100_N": [
+      0.0,
+      0.0,
+      0.06627663047619722
+    ],
+    "max_card_penetration_mm": 0.0,
+    "last_table_support_N": 1.053897113726574
+  },
+  "push10mm": {
+    "mean_world_force_on_box_N": [
+      -0.14808009214022927,
+      0.0008674792493143912,
+      -0.1464666425580842
+    ],
+    "max_abs_world_force_on_box_N": [
+      0.31496667012170176,
+      0.02853693375826544,
+      0.3207851198902722
+    ],
+    "sum_normal_percentiles_50_95_100_N": [
+      0.2272932042740667,
+      0.25912854932751755,
+      0.33951941314788314
+    ],
+    "max_card_penetration_mm": 0.0,
+    "last_table_support_N": 1.2748196956325775
+  },
+  "retreat": {
+    "mean_world_force_on_box_N": [
+      -0.008520871859663225,
+      -4.221592356496323e-05,
+      -0.014277334172692892
+    ],
+    "max_abs_world_force_on_box_N": [
+      0.18050459395410554,
+      0.0033172393986586816,
+      0.30338348897004713
+    ],
+    "sum_normal_percentiles_50_95_100_N": [
+      0.0,
+      0.20779986332910028,
+      0.3033836811303487
+    ],
+    "max_card_penetration_mm": 0.0,
+    "last_table_support_N": 1.0539072702331629
+  },
+  "released_settle": {
+    "mean_world_force_on_box_N": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_abs_world_force_on_box_N": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sum_normal_percentiles_50_95_100_N": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_card_penetration_mm": 0.0,
+    "last_table_support_N": 1.0539087592301555
+  }
+}

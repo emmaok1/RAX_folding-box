@@ -1,0 +1,12 @@
+世界坐标方向性刚度修改：单次同姿态10mm侧推对照。
+推动X刚度保持900N/m；Y由900升至2700，Z由900升至1800。
+平移阻尼按刚度比例平方根缩放；旋转/零空间控制、姿态、几何、摩擦、OMPL路径和电机限制不变。
+起始qpos/qvel/ctrl完全相同：True；两组均完成撤离：True。
+
+original: {"protocol_completed": true, "error": null, "state_type": "after_release", "toward_edge_mm": 3.759219320884022, "side_drift_mm": 2.913945328855067, "yaw_change_deg": -1.2452263298580704, "peak_sum_normal_N": 0.6287559263929741, "hand_action_delta_mm": [-9.057949538504694, 1.0640777645862243, 0.5965776119405408], "hand_tracking_during_push": {"max_abs_xyz_mm": [1.0125463132944768, 1.0642525415625603, 0.6001881467355696], "mean_abs_xyz_mm": [0.6369876027497778, 0.3597415740598871, 0.42491927467000473]}, "max_hand_box_penetration_m": 0.0, "warnings": [0, 0, 0, 0, 0, 0, 0, 0]}
+directional: {"protocol_completed": true, "error": null, "state_type": "after_release", "toward_edge_mm": 3.812268703005939, "side_drift_mm": 2.7467526252362737, "yaw_change_deg": -1.2621572146092603, "peak_sum_normal_N": 0.6257082556998335, "hand_action_delta_mm": [-8.917408911307934, 0.45275917158499324, 0.3308814349075595], "hand_tracking_during_push": {"max_abs_xyz_mm": [1.1534141535441689, 0.4527619400766514, 0.3343185612743049], "mean_abs_xyz_mm": [0.6928510497593492, 0.15504549263368064, 0.2357602911046896]}, "max_hand_box_penetration_m": 0.0, "warnings": [0, 0, 0, 0, 0, 0, 0, 0]}
+
+差值（修改版−原版，侧偏/转动比较绝对值）：{"toward_edge_mm": 0.0530493821219169, "absolute_side_drift_mm": -0.16719270361879346, "absolute_yaw_deg": 0.01693088475118998, "peak_force_N": -0.003047670693140603}
+这是一项局部增益修改的单次实验，不证明一般优越性；不自动替换默认控制器。
+5N是离散观测后中止阈值，不是硬力上限。没有执行更大位移、抓取或折叠。
+上游控制源码和基线模型/物理参数保持不变。

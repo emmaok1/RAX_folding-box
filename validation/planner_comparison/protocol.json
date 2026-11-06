@@ -1,0 +1,36 @@
+{
+  "task": "Right-hand 5mm upward move, then reset and approach above base, gentle contact, retract.",
+  "approach_tcp_world_wxyz": [
+    -0.32,
+    -0.065,
+    0.98,
+    0,
+    1,
+    0,
+    0
+  ],
+  "approach_q_right": [
+    0.7064171109511613,
+    -0.2193711844649172,
+    -2.174936533189925,
+    -1.302777334538206,
+    0.9195548792273602,
+    -0.7994354424219224,
+    1.373
+  ],
+  "placement": "flat",
+  "settle_seconds": 0.5,
+  "planning_time_limit_seconds": 10,
+  "path_validation_max_joint_increment_rad": 0.005,
+  "playback_max_joint_speed_rad_s": 0.4,
+  "final_settle_seconds": 1.0,
+  "final_tcp_error_limit_m": 0.002,
+  "contact_descent_speed_m_s": 0.005,
+  "contact_descent_limit_m": 0.06,
+  "contact_detection_normal_force_N": 0.01,
+  "contact_abort_force_N": 5.0,
+  "penetration_abort_m": 0.001,
+  "forbidden_contact_penetration_tolerance_m": 0.0001,
+  "planning_collision_tolerance_m": 1e-06,
+  "limits": "One shared deterministic start and goal per stage; this is an integration smoke, not a planner benchmark or folding proof."
+}

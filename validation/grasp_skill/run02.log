@@ -1,0 +1,10 @@
+TRIAL 0 0.0
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 38 states (18 start + 20 goal)
+Info:    Solution found in 0.150179 seconds
+Info:    SimpleSetup: Path simplification took 1.027691 seconds and changed from 28 to 5 states
+OMPL approach
+Closing
+Lift
+{"success": false, "error": "RuntimeError('Retention failed {\"duration_s\": 1.1800000000056343, \"min_com_lift_m\": 0.00799086031455909, \"max_com_lift_m\": 0.008184356347568755, \"relative_translation_drift_m\": 0.00042606987566976175, \"relative_angle_drift_rad\": 0.003083944390759104, \"opposing_all_samples\": true, \"max_support_N\": 0.15367973499775953}')", "peak_sum_normal_N": 1.8152933403084943, "hold_metrics": {"duration_s": 1.1800000000056343, "min_com_lift_m": 0.00799086031455909, "max_com_lift_m": 0.008184356347568755, "relative_translation_drift_m": 0.00042606987566976175, "relative_angle_drift_rad": 0.003083944390759104, "opposing_all_samples": true, "max_support_N": 0.15367973499775953}, "wall_seconds": 71.1521287680007}
+RESULT /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/validation/grasp_skill/run02 core_unchanged True

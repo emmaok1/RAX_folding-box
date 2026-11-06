@@ -1,0 +1,14 @@
+{
+  "pickup_success": true,
+  "time_s": 37.02000000008575,
+  "hold_metrics": {
+    "duration_s": 1.1800000000056343,
+    "min_com_lift_m": 0.021554819456359287,
+    "max_com_lift_m": 0.022105480572758074,
+    "relative_translation_drift_m": 4.058077436210222e-05,
+    "relative_angle_drift_rad": 0.00025478639569040173,
+    "opposing_pads_all_samples": false,
+    "opposing_all_samples": true,
+    "max_support_N": 0.0
+  }
+}

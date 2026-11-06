@@ -1,0 +1,5 @@
+START 0
+FIRST all_stages_succeeded
+START 1
+START 2
+{'pickup_success': 3, 'transport_success': 3, 'return_success': 3, 'cleanup_success': 3, 'protocol_completed': 3}

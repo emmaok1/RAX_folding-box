@@ -1,0 +1,22 @@
+Checkpoint NOT achieved. Two physical attempts, 15.6 simulated seconds each.
+
+Both commanded a right-hand horizontal approach to body_front, close, 25-degree hinge arc, 1.2-second hold command, opening and retreat. They used symmetric wrist rolls. Neither attained an opposing-jaw grasp. Their actual hands stayed away from the commanded grasp and contacted an adjacent corner with one jaw; this was pushing, not retention of the front wall.
+
+Attempt 1: front crease range -1.022 to +0.224 degrees; 0 seconds >=15 degrees; 0 opposing-jaw frames. Peak hand/card normal force 24.63 N, against card_front_corner_right_0. Maximum sampled cardboard penetration 1.366 mm; this is appreciable relative to the 4 mm board, so a clean penetration result is not claimed. Base drift [13.14,-25.51,0.396] mm.
+Attempt 2: front crease range -0.0122 to +0.00183 degrees; 0 seconds >=15 degrees; 0 opposing-jaw frames. Peak one-jaw/corner normal force 13.52 N. Maximum sampled cardboard penetration 0.0156 mm. Base drift [2.334,-7.635,0.0244] mm.
+Both had finite state and zero MuJoCo warning counters. Both ended with no hand/cardboard contact following opening and retreat. This demonstrates contact release, not release of a successful grasp. Contact, angle and penetration data are sampled at 50 Hz after motor-control steps; physics-substep extrema were not measured.
+
+World geometry: table center [-0.15,0,0.89] m and half sizes [0.4,0.8,0.03] m yield bounds x[-0.55,0.25], y[-0.8,0.8], z[0.86,0.92]. Front wall bounds x[-0.52,-0.43], y[-0.1445,0.1445], z[0.9202,0.9242] m. Its free edge is 30 mm inside the tabletop edge; the initial overhang assumption omitted the table body's transform and was corrected. Side-right free edge y=-0.24, side-left y=+0.24; both are also over the table.
+
+Read-only diagnostics: scratch horizontal grasp at [-0.49,-0.10,0.9222] m reaches sub-0.1 mm IK residual, yet the lower jaw overlaps the table by about 41 mm and wrist/forearm meshes overlap torso. Scratch 20-degree and40-degree tilts also overlap tabletop by about49 and48 mm. A60-degree candidate has182.8 mm IK error and is not a valid reachable grasp. Search over80 seeds across two wrist rolls found no collision-free scratch candidate for this target. These scratch states were never executed. No third physical attempt occurred.
+
+Concrete obstacle: the tested direct pinch poses require unavailable underside clearance and have self-collision/tracking problems. This bounded failure does not show task impossibility. A next diagnostic could test a contact-safe edge-lifting setup or deliberately slide the blank toward an edge before attempting the pinch; neither was evaluated here.
+
+Execution uses ONLY existing FoldingBoxEnv.step motor references. No executed qpos/qvel writes, box forces, geometry/physics changes, collision masks, welds or grasp aids. Core baseline and upstream rax unchanged. Git tracked working tree clean.
+
+Reproduce either attempt:
+MUJOCO_GL=egl .venv/bin/python validation/feasibility_tester/reproduce.py --attempt 1
+MUJOCO_GL=egl .venv/bin/python validation/feasibility_tester/reproduce.py --attempt 2
+New runs write rerun_attempt1/ or rerun_attempt2/ to preserve archived evidence.
+
+Evidence: attempt1_trace.json, attempt2_trace.json; summary.json; diagnostics.json and diagnostics.py; measurements.png; attempts_before.png, attempt2_hold.png, attempt2_retract.png. Historical attempt scripts/logs preserve the original trajectories; current reproduce.py uses robust jaw-name matching.

@@ -1,0 +1,16 @@
+kinematic_plugins:
+  search_libraries: [tesseract_kinematics_kdl_factories]
+  fwd_kin_plugins:
+    right:
+      default: KDLFwdKinChain
+      plugins:
+        KDLFwdKinChain:
+          class: KDLFwdKinChainFactory
+          config: {base_link: world, tip_link: tcp_R}
+  inv_kin_plugins:
+    right:
+      default: KDLInvKinChainLMA
+      plugins:
+        KDLInvKinChainLMA:
+          class: KDLInvKinChainLMAFactory
+          config: {base_link: world, tip_link: tcp_R}

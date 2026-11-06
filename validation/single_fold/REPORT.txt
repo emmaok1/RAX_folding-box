@@ -1,0 +1,27 @@
+夹具辅助原被动单折痕物理试验报告
+
+修正后的固定条件完整协议通过 3/3。原始底板+side_left侧板，原hinge/反向tendon均被动；真实接触夹具约束自由底板。不是原始桌面完整纸盒或双臂折叠成功。
+
+trial | fixture | grasp | fold15 | hold | return | release | actual hold(deg) | hand peak(N)
+trial00 | True | True | True | True | True | True | 14.115713–14.567181 | 3.448744
+trial01 | True | True | True | True | True | True | 14.115713–14.567181 | 3.448744
+trial02 | True | True | True | True | True | True | 14.115713–14.567181 | 3.448744
+
+三次 fresh 正常home重置，场景、接近路径、控制和任务参数完全相同，原始轨迹数值一致。这是固定条件重复性，不能推断随机位置或其他折痕的可靠性。
+实际15°目标保持：14.115713–14.567181°，持续1.18s；移动板/夹具接触力0N，保持期间最小颚组力1.290640N。
+去程全段相对滑移0.601847mm、相对转角0.638316°；底板最大平移0.588483mm/旋转0.099032°。
+返回段独立统计：滑移0.504247mm、转角0.431271°；返回保持实际角-0.101165–0.386575°。释放退手后角-0.415760°，手接触0N。
+全程手力峰值3.448744N，5N监测阈值超调0N。夹具/底板内部法向力另列，峰值4.717200N，不与握力相加。每.25ms原始手力和电机/夹具记录保留。无非预期机器人碰撞、MuJoCo warning或力矩饱和。
+双新增pad并未同时承载；成功基于真实两颚碰撞组对移动板的接触保持。
+
+每阶段手力峰值（N）：{"fixture_settle": 0.0, "ompl_approach": 0.0, "insert": 0.0, "close_position": 0.9292946837771404, "close_force": 2.80077049614209, "grasp_settle": 2.8850588697033857, "fold5": 2.8914201224859895, "checkpoint5": 2.896684559045198, "fold15": 3.1369200732086395, "fold_hold": 3.0299035881684193, "fold_return": 3.448744212557086, "return_hold": 2.958253370978869, "release": 0.9492298262090051, "retreat": 0.0, "released_settle": 0.0}
+
+唯一物理重试原因：run01已达到相同实际折痕角和保持时长，但FK使用MuJoCo缓存body姿态与积分后joint qpos比较，最大1.36699e-5rad超过1e-5数值容差；对齐前一.25ms子步后仅1.11e-16rad。原失败、视频、源码及未完成异常恢复保留。run02仅改用独立scratch对同一qpos执行mj_kinematics，每次验证执行state未改变，仍使用1e-5容差。物理材料、夹具、阈值及控制无改动。
+补充统计修正：run02执行版return_metrics滑移字段误筛选去程。本analysis及报告从完整fold_slip.json重算返回段；公开helper也修正，直接用保存日志核验。原执行快照/结果不覆盖，不为统计重跑。
+
+全部3轮597个核心文件before=after=当前；模型审计原几何/质量/惯性/被动折痕/反向tendon/机器人/物理/执行器限制保持。仅原jaw mimic等式，没有物体actuator或约束连接；scratch预测及FK测量均验证不改变执行state。3个MP4均解码587帧/58.7秒，阶段PNG与measurements.png已生成。
+
+代码/命令：experiments/single_fold/README.md；run_fold.py / fixture.py。
+复算报告：.venv/bin/python experiments/single_fold/analyze_results.py --run validation/single_fold/run02
+每轮证据：run02/trial00、trial01、trial02 下 result.json（原始）、analysis.json（补充）、trajectory.json.gz、forces.csv.gz、contacts.csv.gz、crease_fixture_torque.csv.gz、fold_slip.json、base_motion.json、video.mp4、阶段PNG、模型/哈希审计。
+完整初始夹具尺寸、间隙、μ及冻结阈值见README与各轮model_audit.json；预检原参数独立复核见preflight/root_audit.json。

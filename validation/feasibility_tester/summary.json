@@ -1,0 +1,361 @@
+{
+  "checkpoint_achieved": false,
+  "attempts": [
+    {
+      "error": null,
+      "max_angle_deg": 0.22365836580063442,
+      "max_continuous_seconds_above15_with_opposing_contacts": 0,
+      "opposing_contact_frames": 0,
+      "max_box_penetration_m_at50Hz": 0.0013658525786951854,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_angle_deg": 0.12135507332265895,
+      "final_contacts": [],
+      "simulation_seconds": 15.599999999986318,
+      "wall_seconds": 15.88613224029541,
+      "scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+      "method": "Execution exclusively FoldingBoxEnv.step motor references. No executed-state, geometry, physics, collision, force, or equality modifications. Initial overhang assumption was incorrect: table world edge \u22120.55m; front wall edge \u22120.52m. Trace sampled at50Hz.",
+      "max_contact": {
+        "geoms": [
+          "dexmate_R_gripper_l1_collision_118",
+          "card_front_corner_right_0"
+        ],
+        "force_N": [
+          24.63441673259377,
+          -1.7761420508394516,
+          2.6602785934631816
+        ],
+        "distance_m": -2.4798535416372678e-05,
+        "position": [
+          -0.48858518252538297,
+          -0.19483244782242093,
+          0.923832385385212
+        ],
+        "time_s": 11.939999999994848,
+        "phase": "hold"
+      },
+      "phases": {
+        "insert": {
+          "angle_deg": -6.285420958896524e-07,
+          "tcp": [
+            -0.5158835090270134,
+            -0.16457356605019297,
+            0.9543089967632086,
+            0.08226201080416651,
+            0.6656853366002112,
+            -0.010799446482874347,
+            0.7416059372534596
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.935753122772561e-06,
+            "orientation_rad": 8.899523584204178e-06
+          },
+          "contacts": []
+        },
+        "close": {
+          "angle_deg": -6.434040126097397e-07,
+          "tcp": [
+            -0.5006172120595009,
+            -0.1551281163101072,
+            0.9624953956706012,
+            0.07985166245141567,
+            0.6551327226338329,
+            0.003028974029882222,
+            0.751276016557465
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.935753122772561e-06,
+            "orientation_rad": 8.899523584204178e-06
+          },
+          "contacts": []
+        },
+        "hold": {
+          "angle_deg": -0.701806323695402,
+          "tcp": [
+            -0.4391090438178207,
+            -0.22205930825015738,
+            0.9532222916606993,
+            0.32816264338052953,
+            0.711801485028607,
+            0.14018295827219115,
+            0.604976581043126
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.3664953922354324e-05,
+            "orientation_rad": 7.917826676866938e-05
+          },
+          "contacts": [
+            {
+              "geoms": [
+                "dexmate_R_gripper_l1_collision_118",
+                "card_front_corner_right_0"
+              ],
+              "force_N": [
+                13.486311453767755,
+                -5.437905334626138,
+                -2.1902320722706214
+              ],
+              "distance_m": -9.898108643908618e-06,
+              "position": [
+                -0.48300289489193937,
+                -0.2199570826824725,
+                0.9240194041435941
+              ]
+            }
+          ]
+        },
+        "release": {
+          "angle_deg": -0.014208653240647814,
+          "tcp": [
+            -0.440671539286732,
+            -0.24997688401778084,
+            0.950354657696727,
+            0.32380002783111533,
+            0.7385266534961153,
+            0.10077814412940041,
+            0.5827312328322821
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.3664953922354324e-05,
+            "orientation_rad": 7.917826676866938e-05
+          },
+          "contacts": [
+            {
+              "geoms": [
+                "dexmate_R_gripper_l1_collision_118",
+                "card_front_corner_right_0"
+              ],
+              "force_N": [
+                17.174549196709634,
+                -3.897503524846682,
+                -1.7007995816339794
+              ],
+              "distance_m": -4.187651769606534e-05,
+              "position": [
+                -0.47988125765783995,
+                -0.243793313345945,
+                0.9239611972029331
+              ]
+            }
+          ]
+        },
+        "retract": {
+          "angle_deg": 0.10953629867356539,
+          "tcp": [
+            -0.48836935432280226,
+            -0.2915777132558773,
+            1.05568841683228,
+            0.4767411664312485,
+            0.6318130757228021,
+            0.16748868607381429,
+            0.5877734577307242
+          ],
+          "ik_scratch_error": {
+            "position_m": 0.01764531314042297,
+            "orientation_rad": 0.08139959038960937
+          },
+          "contacts": []
+        },
+        "settle_after": {
+          "angle_deg": 0.12135507332265895,
+          "tcp": [
+            -0.5150487004252396,
+            -0.2873091534033644,
+            1.0172306733446503,
+            0.4471652786962023,
+            0.6682260551686345,
+            0.1980309601155653,
+            0.5606254467628274
+          ],
+          "ik_scratch_error": {
+            "position_m": 0.017645313264373717,
+            "orientation_rad": 0.08139959062819263
+          },
+          "contacts": []
+        }
+      },
+      "angle_range_deg": [
+        -1.021878154400708,
+        0.22365836580063442
+      ],
+      "time_above15_s": 0.0,
+      "initial_final_base_translation_m": [
+        0.013137966851260119,
+        -0.02551250621376851,
+        0.00039598658476081017
+      ],
+      "attempt": 1
+    },
+    {
+      "error": null,
+      "max_angle_deg": 0.0018318504045023967,
+      "max_continuous_seconds_above15_with_opposing_contacts": 0,
+      "opposing_contact_frames": 0,
+      "max_box_penetration_m_at50Hz": 1.5577289375013525e-05,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_angle_deg": 7.920468056165285e-06,
+      "final_contacts": [],
+      "simulation_seconds": 15.599999999986318,
+      "wall_seconds": 15.261813402175903,
+      "scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+      "method": "Execution exclusively FoldingBoxEnv.step motor references. No executed-state, geometry, physics, collision, force, or equality modifications. Initial overhang assumption was incorrect: table world edge \u22120.55m; front wall edge \u22120.52m. Trace sampled at50Hz.",
+      "max_contact": {
+        "geoms": [
+          "dexmate_R_gripper_l2_collision_121",
+          "card_front_corner_right_0"
+        ],
+        "force_N": [
+          13.515794193522197,
+          -5.02297846271276,
+          -2.179084700478372
+        ],
+        "distance_m": 6.071866902620198e-06,
+        "position": [
+          -0.5074511937394401,
+          -0.2093590363885151,
+          0.9240085616648024
+        ],
+        "time_s": 11.17999999999662,
+        "phase": "hold"
+      },
+      "phases": {
+        "insert": {
+          "angle_deg": -6.285420958896524e-07,
+          "tcp": [
+            -0.5120769143949431,
+            -0.18106980690209193,
+            0.9556774949076585,
+            0.7392800516516446,
+            0.01562213719042698,
+            0.6650668072065778,
+            -0.10443704329208713
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.947309954175663e-06,
+            "orientation_rad": 9.972395713490643e-06
+          },
+          "contacts": []
+        },
+        "close": {
+          "angle_deg": -6.434040126097397e-07,
+          "tcp": [
+            -0.49208906163524113,
+            -0.16862816699636993,
+            0.9657445011520807,
+            0.7514872812494601,
+            -0.0009449184865404423,
+            0.6522506795900547,
+            -0.09917169063629383
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.947309954175663e-06,
+            "orientation_rad": 9.972395713490643e-06
+          },
+          "contacts": []
+        },
+        "hold": {
+          "angle_deg": 7.705743624358406e-06,
+          "tcp": [
+            -0.44578593417189505,
+            -0.26806746034799067,
+            0.9518406214615803,
+            0.5602347961074554,
+            -0.11166161070442582,
+            0.7357059015886804,
+            -0.3638756439951948
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.3744441447938765e-05,
+            "orientation_rad": 7.838802709611394e-05
+          },
+          "contacts": []
+        },
+        "release": {
+          "angle_deg": 8.042253582912368e-06,
+          "tcp": [
+            -0.4414013288193809,
+            -0.28722294580817653,
+            0.9581463820683632,
+            0.558260342308332,
+            -0.07217236458406309,
+            0.7455218478345063,
+            -0.3568384990406052
+          ],
+          "ik_scratch_error": {
+            "position_m": 3.3744441447938765e-05,
+            "orientation_rad": 7.838802709611394e-05
+          },
+          "contacts": []
+        },
+        "retract": {
+          "angle_deg": 7.883685076614174e-06,
+          "tcp": [
+            -0.4972122619321369,
+            -0.35982550669751595,
+            1.0853074522112267,
+            0.5790765847785424,
+            0.000792786590187523,
+            0.6541900043886746,
+            -0.4865235026271473
+          ],
+          "ik_scratch_error": {
+            "position_m": 1.2168642429546698e-05,
+            "orientation_rad": 2.767334833725092e-05
+          },
+          "contacts": []
+        },
+        "settle_after": {
+          "angle_deg": 7.920468056165285e-06,
+          "tcp": [
+            -0.508589584781498,
+            -0.36163914362574884,
+            1.0845090891973659,
+            0.5632317938643584,
+            -0.02549187737031585,
+            0.6510242597085331,
+            -0.5082199561601553
+          ],
+          "ik_scratch_error": {
+            "position_m": 1.2168642429546698e-05,
+            "orientation_rad": 2.767334833725092e-05
+          },
+          "contacts": []
+        }
+      },
+      "angle_range_deg": [
+        -0.012177636055429422,
+        0.0018318504045023967
+      ],
+      "time_above15_s": 0.0,
+      "initial_final_base_translation_m": [
+        0.0023344107364781097,
+        -0.00763486757631422,
+        2.4429911448908825e-05
+      ],
+      "attempt": 2
+    }
+  ],
+  "sampling_Hz": 50,
+  "limitations": [
+    "Contact/penetration/warnings sampled after each20ms control step; substep maxima were not recorded.",
+    "Two wrist rolls were physically attempted. Four tilts and80 random IK seeds were checked only in scratch kinematics.",
+    "Unsuccessful bounded trials do not establish impossibility."
+  ]
+}

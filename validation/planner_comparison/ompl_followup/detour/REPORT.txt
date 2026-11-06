@@ -1,0 +1,16 @@
+Existing-obstacle detour test: PASS, first motor execution attempt.
+
+Reproduce:
+MUJOCO_GL=egl .venv/bin/python validation/planner_comparison/ompl_followup/detour/run_detour.py
+
+Fixed final candidate is embedded in run_detour.py. The bounded deterministic scratch search (seed20261103) tried22 candidates in2.76s, found5 examples, and selected the shortest joint-distance example. Source and full candidate evidence retained. Search need not be rerun to reproduce the test.
+
+Direct joint interpolation was checked only in separate MuJoCo scratch data; it was NEVER executed. At0.0025rad maximum joint spacing, 481 of 615 samples collided. First collision at fraction0.169381107: table_collision / jaw_pad_R_1, penetration0.398595mm. Deepest sampled pair: table_collision / dexmate_R_gripper_base_collision_115, penetration98.401691mm at fraction0.332247557. Full samples/pairs are in run/direct_path_collisions.json. The scratch collision image is explicitly named NOT_EXECUTED.
+
+Real OMPL2.0.1 RRTConnect found an exact alternative path in1.745264s, rejecting398 invalid samples during search. It created59 raw waypoints, then OMPL collision-checked simplification reduced this to5 waypoints; actual simplification time3.321118s. Final path length4.786608rad versus direct2.471419rad. The0.2s simplification request is not a hard runtime ceiling; actual elapsed time reported. No fallback planner.
+
+Independent validation:1596 samples at0.0025rad/joint, followed by shared799-sample0.005rad validation. Motor-only playback used the unchanged shared0.4rad/s references, original physics/controller, and full-model substep collision monitoring. Actual endpoint TCP error0.006525mm; maximum joint error2.31909e-5rad.46,080 observed0.25ms substeps: zero robot contact observations, zero robot penetration/force, zero forbidden contacts and all warning counts zero.
+
+Endpoint TCP[-0.268147,0.157121,0.530351]m is below tabletop. This deliberately tests a route around the existing table; it is not progress toward folding or a task-space approach target. Only one deterministic endpoint/seed was executed. Discrete collision checks honor existing MuJoCo meshes/masks/exclusions and are not a continuous swept-volume guarantee. The physical scene and collision settings were unchanged; only the right arm was planned, with the whole robot retained in validity checks.
+
+Evidence: result.json (all state vectors, source hashes and timing); run/trace.json; run/detour_path.json and.npy; run/detour_planner.json; run/direct_path_collisions.json; stdout_stderr.log; before/after and scratch-collision PNGs. After screenshot inspected. source_snapshot/ preserves exact test/helper/adapter. Existing dependency binary hashes remain in ../../ompl/setup.json. No tracked git changes.

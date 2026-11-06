@@ -1,0 +1,6 @@
+OMPL approach
+Closing moving panel
+FOLD5
+FOLD15
+FOLD_HOLD True {'duration_s': 1.1800000000056343, 'min_angle_deg': 14.115712869136829, 'max_angle_deg': 14.567180555050621, 'max_joint_fk_error_rad': 1.1102230246251565e-16, 'min_loaded_jaw_N': 1.2906403947703122, 'max_moving_fixture_N': 0.0, 'max_relative_slip_m': 0.0006018467333485598, 'max_relative_rotation_rad': 0.011140708906033922, 'max_base_translation_m': 0.000588483033603748, 'max_base_rotation_deg': 0.09903229318678335}
+{"fixture_ready": true, "grasp_success": true, "fold15_success": true, "hold_success": true, "return_success": true, "release_success": true, "error": null, "failure_phase": null, "peak_hand_normal_N": 3.448744212557086, "hand_force_overshoot_N": 0.0}

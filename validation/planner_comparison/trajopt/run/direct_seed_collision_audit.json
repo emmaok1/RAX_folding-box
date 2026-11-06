@@ -1,0 +1,87 @@
+{
+  "sampling": "101points along shared direct jointspace seed (diagnostic only)",
+  "contacts_within_5mm": 10,
+  "min_distance_m": 0.0028502580304974354,
+  "worst_contacts": [
+    {
+      "t": 1.0,
+      "distance_m": 0.0028502580304974354,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.99,
+      "distance_m": 0.0031427502992039816,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.98,
+      "distance_m": 0.0034164765441030073,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.97,
+      "distance_m": 0.0036745837203289652,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.96,
+      "distance_m": 0.003915004872041339,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.9500000000000001,
+      "distance_m": 0.004147537705380561,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.9400000000000001,
+      "distance_m": 0.004369529720872718,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.93,
+      "distance_m": 0.004580505689467737,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.92,
+      "distance_m": 0.0047908469642312015,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    },
+    {
+      "t": 0.91,
+      "distance_m": 0.004998941929610866,
+      "names": [
+        "dexmate_R_arm_l5_collision_101",
+        "dexmate_R_arm_l7_collision_105"
+      ]
+    }
+  ]
+}

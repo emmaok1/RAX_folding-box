@@ -1,0 +1,206 @@
+{
+  "reviewer": "root",
+  "method": "Independent raw actual-state trajectory and per-physics-step force audit; no repeat simulation",
+  "trials": [
+    {
+      "trial": 0,
+      "flags": {
+        "pickup_success": true,
+        "transport_success": true,
+        "return_success": true,
+        "cleanup_success": true,
+        "protocol_completed": true
+      },
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scratch_execution_unchanged": true,
+      "force_peaks_raw_N": {
+        "pickup": 2.9025727455798345,
+        "transport": 2.7829157117291197,
+        "return": 2.7667036426421197,
+        "cleanup": 2.9258224405556015
+      },
+      "transport": {
+        "hold_duration_s": 1.1800000000056343,
+        "hold_y_minmax_mm": [
+          9.85033828071391,
+          10.116495524422287
+        ],
+        "max_abs_xz_drift_mm": [
+          0.12707991771382893,
+          0.05793001569154299
+        ],
+        "max_relative_slip_mm": 0.1433744452166578,
+        "max_relative_rotation_deg": 0.05746725964130613,
+        "max_support_N": 0.0,
+        "min_jaw_group_N": 1.0689978774907574,
+        "hold_max_distance_from_start_mm": 10.116827730118324
+      },
+      "return": {
+        "hold_duration_s": 1.1800000000056343,
+        "hold_y_minmax_mm": [
+          0.2336933070667957,
+          0.4707956243764633
+        ],
+        "max_abs_xz_drift_mm": [
+          0.15613229593536532,
+          0.0383956461009749
+        ],
+        "max_relative_slip_mm": 0.2849319092587226,
+        "max_relative_rotation_deg": 0.11606150469330662,
+        "max_support_N": 0.0,
+        "min_jaw_group_N": 1.070484675297057,
+        "hold_max_distance_from_start_mm": 0.47712209635396596
+      },
+      "cleanup_release": {
+        "max_jaw_N": 0.0,
+        "min_support_N": 0.1347519387913497,
+        "COM_drift_mm": 0.13525504139021086
+      }
+    },
+    {
+      "trial": 1,
+      "flags": {
+        "pickup_success": true,
+        "transport_success": true,
+        "return_success": true,
+        "cleanup_success": true,
+        "protocol_completed": true
+      },
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scratch_execution_unchanged": true,
+      "force_peaks_raw_N": {
+        "pickup": 2.9025727455798345,
+        "transport": 2.7829157117291197,
+        "return": 2.7667036426421197,
+        "cleanup": 2.9258224405556015
+      },
+      "transport": {
+        "hold_duration_s": 1.1800000000056343,
+        "hold_y_minmax_mm": [
+          9.85033828071391,
+          10.116495524422287
+        ],
+        "max_abs_xz_drift_mm": [
+          0.12707991771382893,
+          0.05793001569154299
+        ],
+        "max_relative_slip_mm": 0.1433744452166578,
+        "max_relative_rotation_deg": 0.05746725964130613,
+        "max_support_N": 0.0,
+        "min_jaw_group_N": 1.0689978774907574,
+        "hold_max_distance_from_start_mm": 10.116827730118324
+      },
+      "return": {
+        "hold_duration_s": 1.1800000000056343,
+        "hold_y_minmax_mm": [
+          0.2336933070667957,
+          0.4707956243764633
+        ],
+        "max_abs_xz_drift_mm": [
+          0.15613229593536532,
+          0.0383956461009749
+        ],
+        "max_relative_slip_mm": 0.2849319092587226,
+        "max_relative_rotation_deg": 0.11606150469330662,
+        "max_support_N": 0.0,
+        "min_jaw_group_N": 1.070484675297057,
+        "hold_max_distance_from_start_mm": 0.47712209635396596
+      },
+      "cleanup_release": {
+        "max_jaw_N": 0.0,
+        "min_support_N": 0.1347519387913497,
+        "COM_drift_mm": 0.13525504139021086
+      }
+    },
+    {
+      "trial": 2,
+      "flags": {
+        "pickup_success": true,
+        "transport_success": true,
+        "return_success": true,
+        "cleanup_success": true,
+        "protocol_completed": true
+      },
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scratch_execution_unchanged": true,
+      "force_peaks_raw_N": {
+        "pickup": 2.9025727455798345,
+        "transport": 2.7829157117291197,
+        "return": 2.7667036426421197,
+        "cleanup": 2.9258224405556015
+      },
+      "transport": {
+        "hold_duration_s": 1.1800000000056343,
+        "hold_y_minmax_mm": [
+          9.85033828071391,
+          10.116495524422287
+        ],
+        "max_abs_xz_drift_mm": [
+          0.12707991771382893,
+          0.05793001569154299
+        ],
+        "max_relative_slip_mm": 0.1433744452166578,
+        "max_relative_rotation_deg": 0.05746725964130613,
+        "max_support_N": 0.0,
+        "min_jaw_group_N": 1.0689978774907574,
+        "hold_max_distance_from_start_mm": 10.116827730118324
+      },
+      "return": {
+        "hold_duration_s": 1.1800000000056343,
+        "hold_y_minmax_mm": [
+          0.2336933070667957,
+          0.4707956243764633
+        ],
+        "max_abs_xz_drift_mm": [
+          0.15613229593536532,
+          0.0383956461009749
+        ],
+        "max_relative_slip_mm": 0.2849319092587226,
+        "max_relative_rotation_deg": 0.11606150469330662,
+        "max_support_N": 0.0,
+        "min_jaw_group_N": 1.070484675297057,
+        "hold_max_distance_from_start_mm": 0.47712209635396596
+      },
+      "cleanup_release": {
+        "max_jaw_N": 0.0,
+        "min_support_N": 0.1347519387913497,
+        "COM_drift_mm": 0.13525504139021086
+      }
+    }
+  ],
+  "core_matches_original_baseline": {
+    "environment.py": true,
+    "models/scene.xml": true,
+    "physics.json": true,
+    "robot_config.json": true,
+    "video_rebuild/config.json": true
+  },
+  "scope": "Three fresh fixed-scene runs using identical saved OMPL approach and held-panel world+Y10mm transport"
+}

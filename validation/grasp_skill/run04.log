@@ -1,0 +1,19 @@
+TRIAL 0 0.0
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 38 states (18 start + 20 goal)
+Info:    Solution found in 0.224402 seconds
+Info:    SimpleSetup: Path simplification took 1.045623 seconds and changed from 28 to 6 states
+OMPL approach
+Closing
+Lift
+{"success": true, "error": null, "peak_sum_normal_N": 3.7700191262764657, "hold_metrics": {"duration_s": 1.1800000000056343, "min_com_lift_m": 0.021554819456359287, "max_com_lift_m": 0.022105480572758074, "relative_translation_drift_m": 4.058077436210222e-05, "relative_angle_drift_rad": 0.00025478639569040173, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}, "wall_seconds": 162.07177594400127}
+TRIAL 1 0.002
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 109 states (77 start + 32 goal)
+Info:    Solution found in 0.465868 seconds
+Info:    SimpleSetup: Path simplification took 1.533842 seconds and changed from 38 to 7 states
+OMPL approach
+Closing
+Lift
+{"success": false, "error": "RuntimeError('Monitored abort {\"time_s\": 36.652000000083994, \"phase\": \"hold\", \"sum_normal_N\": 9.466459642432783, \"penetration_m\": 1.2342397763160533e-05, \"unexpected_contacts\": [], \"warning\": [0, 0, 0, 0, 0, 0, 0, 0]}')", "peak_sum_normal_N": 9.466459642432783, "hold_metrics": null, "wall_seconds": 88.71240649399988}
+RESULT /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/validation/grasp_skill/run04 core_unchanged True

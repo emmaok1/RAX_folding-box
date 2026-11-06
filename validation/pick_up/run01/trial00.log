@@ -1,0 +1,14 @@
+OMPL approach
+Closing
+Lift
+PICKUP_SUCCESS /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/validation/pick_up/run01/trial00
+Traceback (most recent call last):
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/grasp_skill/pick_up.py", line 101, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/grasp_skill/pick_up.py", line 78, in main
+    if args.worker:worker(out,path);return
+                   ^^^^^^^^^^^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/grasp_skill/pick_up.py", line 49, in worker
+    from analyze import analysis
+ImportError: cannot import name 'analysis' from 'analyze' (/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/vega_impedance/analyze.py)

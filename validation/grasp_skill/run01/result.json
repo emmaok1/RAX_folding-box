@@ -1,0 +1,202 @@
+{
+  "simplified_scene": true,
+  "trials": [
+    {
+      "simplified_scene": true,
+      "original_whole_box_solved": false,
+      "offset_y_m": 0.0,
+      "success": false,
+      "opposing_contact": false,
+      "lift_10mm": false,
+      "hold_1s": false,
+      "released_supported": false,
+      "force_abort_threshold_N": 5.0,
+      "force_definition": "sum of nonnegative normal forces across both right jaw/card groups; sampled every 0.25ms; threshold is NOT a hard cap",
+      "panel": "unchanged original base panel",
+      "dimensions_m": [
+        0.3,
+        0.22,
+        0.004
+      ],
+      "mass_kg": 0.026400000000000003,
+      "stand_size_m": [
+        0.13,
+        0.15,
+        0.22
+      ],
+      "stand_top_z_m": 1.14,
+      "home_right_rad": [
+        -0.8,
+        -0.28,
+        0,
+        -1.25,
+        0,
+        -0.45,
+        0
+      ],
+      "controller": "baseline joint PD for OMPL; existing fixed RightArmImpedance for grasp/lift/place",
+      "closure": "nonzero position reference at .05 rad/s down to .04, .006 rad/s to .002; then bounded motor torque feedback target2N, max0.18Nm",
+      "checks": {},
+      "error": "RuntimeError('Monitored abort {\"time_s\": 0.00025, \"phase\": \"home_settle\", \"sum_normal_N\": 0.0, \"penetration_m\": 0.0, \"unexpected_contacts\": [{\"geoms\": [\"dexmate_R_gripper_base_collision_115\", \"card_base_0\"], \"force_N\": 27.484907158227976, \"dist_m\": -0.046276457852467145}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_base_collision_115\"], \"force_N\": 10702.67672605924, \"dist_m\": -0.04236393420887708}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l1_collision_118\"], \"force_N\": 837.7209558616423, \"dist_m\": -0.07102126916897683}, {\"geoms\": [\"support_top\", \"jaw_pad_R_1\"], \"force_N\": 1387.4585168499616, \"dist_m\": -0.0077154583361029195}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l2_collision_121\"], \"force_N\": 672.8665629864902, \"dist_m\": -0.0661009998135062}, {\"geoms\": [\"support_top\", \"jaw_pad_R_2\"], \"force_N\": 13231.186458828905, \"dist_m\": -0.020989543246834084}], \"warning\": [0, 0, 0, 0, 0, 0, 0, 0]}')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/experiments/grasp_skill/run.py\", line 69, in run\n    for _ in range(25):self.tick(q=self.e.arms['right']['qcmd'].copy())\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/experiments/grasp_skill/run.py\", line 54, in tick\n    if q is not None:e.step_joint_targets({'right':q},None if opening is None else {'right':opening})\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/environment.py\", line 115, in step_joint_targets\n    return self._advance()\n           ^^^^^^^^^^^^^^^\n  File \"/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/environment.py\", line 126, in _advance\n    mujoco.mj_step(self.model,self.data)\n  File \"/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/experiments/grasp_skill/run.py\", line 47, in observe\n    raise RuntimeError('Monitored abort '+json.dumps(self.last_trip))\nRuntimeError: Monitored abort {\"time_s\": 0.00025, \"phase\": \"home_settle\", \"sum_normal_N\": 0.0, \"penetration_m\": 0.0, \"unexpected_contacts\": [{\"geoms\": [\"dexmate_R_gripper_base_collision_115\", \"card_base_0\"], \"force_N\": 27.484907158227976, \"dist_m\": -0.046276457852467145}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_base_collision_115\"], \"force_N\": 10702.67672605924, \"dist_m\": -0.04236393420887708}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l1_collision_118\"], \"force_N\": 837.7209558616423, \"dist_m\": -0.07102126916897683}, {\"geoms\": [\"support_top\", \"jaw_pad_R_1\"], \"force_N\": 1387.4585168499616, \"dist_m\": -0.0077154583361029195}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l2_collision_121\"], \"force_N\": 672.8665629864902, \"dist_m\": -0.0661009998135062}, {\"geoms\": [\"support_top\", \"jaw_pad_R_2\"], \"force_N\": 13231.186458828905, \"dist_m\": -0.020989543246834084}], \"warning\": [0, 0, 0, 0, 0, 0, 0, 0]}\n",
+      "stopped": {
+        "t": 0.00025,
+        "phase": "home_settle",
+        "tcp": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "target": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "com": [
+          0.0,
+          -0.4,
+          1.1422
+        ],
+        "object_quat": [
+          0.9999998643383408,
+          0.00018811321584356747,
+          0.00048262595862847064,
+          5.485346121774966e-05
+        ],
+        "relative_position": [
+          0.003349265093000214,
+          -0.05169181298310875,
+          -0.07616411283414215
+        ],
+        "relative_rotation": [
+          [
+            -0.1925387630454992,
+            -0.9610547100892568,
+            0.19824900741280765
+          ],
+          [
+            -0.019458478003582858,
+            -0.19825015611912872,
+            -0.9799582864757688
+          ],
+          [
+            0.9810964235785864,
+            -0.1925375802642057,
+            0.019470177896242613
+          ]
+        ],
+        "q": [
+          -0.7998972979727883,
+          -0.2800195256062912,
+          0.00016201424819924556,
+          -1.2496640694828391,
+          -6.487137042181164e-05,
+          -0.44965639095105076,
+          0.0005024364571873562
+        ],
+        "gripper_q": [
+          0.2878711004663949,
+          0.2880217977609502
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0
+      },
+      "abort": {
+        "time_s": 0.00025,
+        "phase": "home_settle",
+        "sum_normal_N": 0.0,
+        "penetration_m": 0.0,
+        "unexpected_contacts": [
+          {
+            "geoms": [
+              "dexmate_R_gripper_base_collision_115",
+              "card_base_0"
+            ],
+            "force_N": 27.484907158227976,
+            "dist_m": -0.046276457852467145
+          },
+          {
+            "geoms": [
+              "support_top",
+              "dexmate_R_gripper_base_collision_115"
+            ],
+            "force_N": 10702.67672605924,
+            "dist_m": -0.04236393420887708
+          },
+          {
+            "geoms": [
+              "support_top",
+              "dexmate_R_gripper_l1_collision_118"
+            ],
+            "force_N": 837.7209558616423,
+            "dist_m": -0.07102126916897683
+          },
+          {
+            "geoms": [
+              "support_top",
+              "jaw_pad_R_1"
+            ],
+            "force_N": 1387.4585168499616,
+            "dist_m": -0.0077154583361029195
+          },
+          {
+            "geoms": [
+              "support_top",
+              "dexmate_R_gripper_l2_collision_121"
+            ],
+            "force_N": 672.8665629864902,
+            "dist_m": -0.0661009998135062
+          },
+          {
+            "geoms": [
+              "support_top",
+              "jaw_pad_R_2"
+            ],
+            "force_N": 13231.186458828905,
+            "dist_m": -0.020989543246834084
+          }
+        ],
+        "warning": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "recovery": {
+        "attempted": true,
+        "complete": false,
+        "error": "RuntimeError('Monitored abort {\"time_s\": 0.0005, \"phase\": \"abort_open\", \"sum_normal_N\": 0.0, \"penetration_m\": 0.0, \"unexpected_contacts\": [{\"geoms\": [\"dexmate_R_gripper_base_collision_115\", \"card_base_0\"], \"force_N\": 24.030662717049353, \"dist_m\": -0.04609543348268324}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_base_collision_115\"], \"force_N\": 10273.949894972988, \"dist_m\": -0.04238769377216384}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l1_collision_118\"], \"force_N\": 832.6360980455665, \"dist_m\": -0.07102341164872689}, {\"geoms\": [\"support_top\", \"jaw_pad_R_1\"], \"force_N\": 1340.3683138953445, \"dist_m\": -0.0076821821218628645}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l2_collision_121\"], \"force_N\": 545.9312830396317, \"dist_m\": -0.06608856823596604}, {\"geoms\": [\"support_top\", \"jaw_pad_R_2\"], \"force_N\": 12703.40548763868, \"dist_m\": -0.020933507908755682}], \"warning\": [0, 0, 0, 0, 0, 0, 0, 0]}')"
+      },
+      "wall_seconds": 1.0324027219976415,
+      "simulation_s": 0.0005,
+      "physics_substeps": 2,
+      "phase_peak_sum_normal_N": {
+        "home_settle": 0.0,
+        "abort_open": 0.0
+      },
+      "peak_sum_normal_N": 0.0,
+      "video_frames": 0,
+      "force_threshold_overshoot_N": 0.0
+    }
+  ],
+  "core_unchanged": true,
+  "hash_file_count": 597
+}

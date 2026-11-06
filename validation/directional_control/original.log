@@ -1,0 +1,5 @@
+original prepare
+original edge touch
+original 10mm push
+original retreat
+{"controller": "original", "protocol_completed": true, "error": null, "blank_translation_mm": [-3.759219320884022, 2.913945328855067, -4.655884122684029e-06], "hand_action_delta_mm": [-9.057949538504694, 1.0640777645862243, 0.5965776119405408], "translation_goal_achieved": false, "peak_sum_normal_N": 0.6287559263929741, "released": true}

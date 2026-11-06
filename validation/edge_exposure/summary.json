@@ -1,0 +1,238 @@
+{
+  "edge_exposure_achieved": false,
+  "grasp_or_fold_executed": false,
+  "trials": [
+    {
+      "trial": "trial1",
+      "nominal_load_N": 4.0,
+      "completed_slide_and_release": true,
+      "error": null,
+      "simulation_s": 40.44000000010208,
+      "substeps": 161760,
+      "base_translation_from_initial_mm": [
+        -0.17191357624174453,
+        0.00021312643804438324,
+        -1.5474810322047006e-06
+      ],
+      "base_yaw_change_deg": -0.003334381648343765,
+      "base_final_roll_pitch_deg": [
+        -1.1500007895079993e-07,
+        -1.3263344050473297e-06
+      ],
+      "base_max_abs_roll_pitch_deg": [
+        0.00010351331664107973,
+        1.9454080704389468e-05
+      ],
+      "actual_tcp_drag_delta_mm": [
+        -71.95668734763971,
+        0.11075746978900791,
+        0.4179521873969305
+      ],
+      "base_drag_delta_mm": [
+        -0.17197371190647015,
+        -0.0030976129428768213,
+        -3.912154633578524e-05
+      ],
+      "drag_normal_N_percentiles_0_50_95_100": [
+        0.0,
+        0.4406993824237233,
+        0.7888714204580805,
+        7.593409284430363
+      ],
+      "drag_mean_normal_N": 0.459751665434326,
+      "drag_fraction_within_3_to_5N": 0.005816666666666667,
+      "drag_tangential_N_percentiles_50_95_100": [
+        0.18423609604120506,
+        0.3607044015953029,
+        1.32234377250431
+      ],
+      "peak_sum_hand_normal_N": 7.593409284430363,
+      "max_card_penetration_mm": 0.07668659677199392,
+      "max_robot_penetration_mm": 0.0,
+      "max_abs_passive_crease_change_deg": 0.0006152432804708892,
+      "final_crease_changes_deg": {
+        "body_front": 2.7121419389509107e-06,
+        "body_back": 2.225077536060558e-06,
+        "side_right": -1.231162354170881e-06,
+        "side_left": 5.837879815164542e-06,
+        "front_corner_right": -6.503119118923806e-07,
+        "front_corner_left": 8.081822448109223e-06,
+        "back_corner_right": -7.922285295922269e-07,
+        "back_corner_left": 1.1190902742136298e-06,
+        "lid": -2.281407871354982e-06,
+        "lid_side_right": -5.485368035212934e-06,
+        "lid_side_left": -3.832679582723405e-06,
+        "lid_front": -4.480329817998967e-06,
+        "locking_tongue": 3.276757528332462e-06
+      },
+      "final_support_N": 1.053897916553118,
+      "final_support_contacts": 17,
+      "final_base_support_contacts": 1,
+      "final_hand_normal_N": 0.0,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forbidden_contact_events": [],
+      "final_geometry": {
+        "front_bounds_min_m": [
+          -0.5201803280634327,
+          -0.14449338834878345,
+          0.9200099616260655
+        ],
+        "front_bounds_max_m": [
+          -0.43016350417428756,
+          0.1445118548309649,
+          0.9240099792667424
+        ],
+        "front_min_x_overhang_m": 0.0,
+        "base_bounds_min_m": [
+          -0.43018064249646915,
+          -0.15000619427446826,
+          0.9200099610571779
+        ],
+        "base_bounds_max_m": [
+          -0.21016318517161425,
+          0.15000662041019658,
+          0.9240099686334073
+        ],
+        "base_vertices_inside_table_xy": true,
+        "table_bounds_world_m": [
+          [
+            -0.55,
+            -0.8,
+            0.86
+          ],
+          [
+            0.25,
+            0.8,
+            0.92
+          ]
+        ]
+      },
+      "grasp_clearance_validated": false
+    },
+    {
+      "trial": "trial2",
+      "nominal_load_N": 4.0,
+      "completed_slide_and_release": false,
+      "error": "RuntimeError('Force/penetration bound exceeded (13.30615524700913, 13.30615524700913, 4.0945927448547304e-07)')",
+      "simulation_s": 36.24050000008203,
+      "substeps": 144962,
+      "base_translation_from_initial_mm": [
+        -0.3600784954005398,
+        0.03510385242848147,
+        -0.004136640969876204
+      ],
+      "base_yaw_change_deg": -0.026864272097483877,
+      "base_final_roll_pitch_deg": [
+        0.0017408746699768098,
+        1.4909512795178101e-05
+      ],
+      "base_max_abs_roll_pitch_deg": [
+        0.0018378231387843993,
+        4.428617074682967e-05
+      ],
+      "actual_tcp_drag_delta_mm": [
+        -13.078390623198654,
+        -0.48221879404038726,
+        1.8706054871612254
+      ],
+      "base_drag_delta_mm": [
+        -0.4171951379289274,
+        -0.08499519976212344,
+        -0.0038758235665348195
+      ],
+      "drag_normal_N_percentiles_0_50_95_100": [
+        0.0,
+        3.468118062727042,
+        3.590683079479247,
+        13.30615524700913
+      ],
+      "drag_mean_normal_N": 3.4833665361212502,
+      "drag_fraction_within_3_to_5N": 0.9984897406520155,
+      "drag_tangential_N_percentiles_50_95_100": [
+        0.8408872468469595,
+        1.4931099111687496,
+        3.4446976031097156
+      ],
+      "peak_sum_hand_normal_N": 13.30615524700913,
+      "max_card_penetration_mm": 0.07668659677199392,
+      "max_robot_penetration_mm": 0.0,
+      "max_abs_passive_crease_change_deg": 0.0010030285471755924,
+      "final_crease_changes_deg": {
+        "body_front": -1.041294256775739e-06,
+        "body_back": -0.0009438704111151964,
+        "side_right": 4.830744816820939e-05,
+        "side_left": 5.463546342457805e-05,
+        "front_corner_right": 4.082312407200473e-05,
+        "front_corner_left": 2.2333090428550896e-05,
+        "back_corner_right": 2.085712386151266e-05,
+        "back_corner_left": -1.5759355810550107e-05,
+        "lid": -0.0008671078670307484,
+        "lid_side_right": 0.00012304959966264497,
+        "lid_side_left": -9.3704780021925e-05,
+        "lid_front": -2.2115911500521245e-05,
+        "locking_tongue": 5.462590346623896e-05
+      },
+      "final_support_N": 14.363449661955176,
+      "final_support_contacts": 17,
+      "final_base_support_contacts": 1,
+      "final_hand_normal_N": 13.30615524700913,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forbidden_contact_events": [],
+      "final_geometry": {
+        "front_bounds_min_m": [
+          -0.5204278544955043,
+          -0.14441330449319578,
+          0.9199995905407247
+        ],
+        "front_bounds_max_m": [
+          -0.430292234115548,
+          0.14462886896690527,
+          0.9240024098005701
+        ],
+        "front_min_x_overhang_m": 0.0,
+        "base_bounds_min_m": [
+          -0.4304304378895334,
+          -0.15001645811465203,
+          0.9200023329776233
+        ],
+        "base_bounds_max_m": [
+          -0.21028968072954446,
+          0.150086673284259,
+          0.9240090957106272
+        ],
+        "base_vertices_inside_table_xy": true,
+        "table_bounds_world_m": [
+          [
+            -0.55,
+            -0.8,
+            0.86
+          ],
+          [
+            0.25,
+            0.8,
+            0.92
+          ]
+        ]
+      },
+      "grasp_clearance_validated": false
+    }
+  ]
+}

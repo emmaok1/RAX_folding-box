@@ -1,0 +1,965 @@
+{
+  "requested_load_N": 4.0,
+  "requested_drag_m": 0.075,
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  },
+  "method": "Real OMPL RRTConnect free-space approach; execution only existing env.step/step_joint_targets. Observational mj_step wrapper monitors every physical substep without modifying state, physics or contact. Motor-reference z adjustment uses measured contact sum to maintain top load. No grasp or fold commanded.",
+  "initial": {
+    "time_s": 0.49999999999997263,
+    "phase": "settle",
+    "tcp": [
+      0.0743633582732556,
+      -0.4216935371916724,
+      1.092363120082859,
+      -0.3964471145891187,
+      0.49654839010349466,
+      -0.49366446845565126,
+      0.5937716515664831
+    ],
+    "target": [
+      0.07436335805883337,
+      -0.4216935369890724,
+      1.0923631198701875,
+      -0.39644711461038995,
+      0.4965483901840249,
+      -0.4936644682955539,
+      0.5937716516180421
+    ],
+    "box_pose": [
+      -0.32000000025864667,
+      -5.850241685532814e-11,
+      0.922009966384356,
+      0.707106781070013,
+      -6.008215192263267e-09,
+      -1.1432329284837246e-09,
+      -0.7071067813030826
+    ],
+    "base_euler_xyz_deg": [
+      -4.0259697791233496e-07,
+      -5.919216835480716e-07,
+      -90.00000001896353
+    ],
+    "hinges_deg": {
+      "body_front": 3.991512716114121e-06,
+      "body_back": -4.898002228039139e-06,
+      "side_right": -5.331035623194999e-05,
+      "side_left": -4.627852385753449e-05,
+      "front_corner_right": -4.926854483943622e-05,
+      "front_corner_left": -5.0442866597216956e-05,
+      "back_corner_right": -1.6322373663727405e-06,
+      "back_corner_left": -8.085494696108931e-07,
+      "lid": 4.366713418717586e-06,
+      "lid_side_right": -5.9573660804189925e-05,
+      "lid_side_left": -2.184357260211027e-05,
+      "lid_front": 6.053215189846724e-07,
+      "locking_tongue": -1.5993343935321707e-06
+    },
+    "hand_sum_normal_N": 0.0
+  },
+  "planner": {
+    "planner": "OMPL RRTConnect",
+    "version": "2.0.1",
+    "label": "approach",
+    "rng_seed_initial": 2026,
+    "joint_dimension": 7,
+    "joint_limits_rad": [
+      [
+        -3.071,
+        3.071
+      ],
+      [
+        -1.553,
+        0.453
+      ],
+      [
+        -3.071,
+        3.071
+      ],
+      [
+        -3.071,
+        0.244
+      ],
+      [
+        -3.071,
+        3.071
+      ],
+      [
+        -1.396,
+        1.396
+      ],
+      [
+        -1.117,
+        1.378
+      ]
+    ],
+    "range_rad": 0.15,
+    "collision_segment_l2_rad": 0.005,
+    "solve_budget_s": 5.0,
+    "setup_s": 0.00018755600467557088,
+    "ompl_import_s": 0.007518502003222238,
+    "solve_s": 0.16508461299963528,
+    "status": "Exact solution",
+    "exact_solution": true,
+    "collision_checks_solve": {
+      "checks": 898,
+      "valid": 894,
+      "invalid": 4
+    },
+    "fallback_used": false,
+    "raw_waypoint_count": 26,
+    "raw_path_l2_rad": 3.735435414557892,
+    "simplification_s": 1.7087509220000356,
+    "waypoint_count": 4,
+    "path_l2_rad": 3.325061408310395,
+    "ompl_path_check": true,
+    "collision_checks_total": {
+      "checks": 11008,
+      "valid": 10937,
+      "invalid": 71
+    },
+    "adapter_total_s": 1.9955803050033865
+  },
+  "first_touch": {
+    "time_s": 16.439999999987485,
+    "phase": "slow_touch",
+    "tcp": [
+      -0.31989629175519935,
+      4.890394107336749e-07,
+      0.9473817277444583,
+      -9.439584885617168e-06,
+      0.9999999893885914,
+      -6.178844908277803e-06,
+      0.00014524301548218815
+    ],
+    "target": [
+      -0.3199002133666463,
+      -4.2614434270876636e-08,
+      0.9472499435466863,
+      -2.489690333859788e-07,
+      0.9999999902212003,
+      -1.2421328299261347e-08,
+      0.00013984826477787544
+    ],
+    "box_pose": [
+      -0.3200000037985758,
+      2.6520254997897794e-08,
+      0.9220099597792569,
+      0.7071067703767373,
+      1.7348230591504404e-09,
+      2.2204062415293643e-09,
+      -0.7071067919963574
+    ],
+    "base_euler_xyz_deg": [
+      -4.059731239844897e-08,
+      3.157286252302679e-07,
+      -90.00000174139771
+    ],
+    "hinges_deg": {
+      "body_front": 1.1116891252621838e-05,
+      "body_back": -2.635350587091354e-06,
+      "side_right": -3.6419066641579745e-05,
+      "side_left": -4.22439442175319e-05,
+      "front_corner_right": -2.707338222647854e-05,
+      "front_corner_left": -4.4436057325890616e-05,
+      "back_corner_right": -7.770073553530134e-07,
+      "back_corner_left": -1.2851027011074393e-06,
+      "lid": 1.770895855187011e-06,
+      "lid_side_right": -4.720614185178267e-05,
+      "lid_side_left": -4.6912511825076165e-05,
+      "lid_front": -8.617257134695996e-06,
+      "locking_tongue": 6.5388287665239334e-06
+    },
+    "hand_sum_normal_N": 0.053317378160440417
+  },
+  "pre_drag": {
+    "time_s": 31.440000000059108,
+    "phase": "load_settle",
+    "tcp": [
+      -0.316957654972942,
+      0.0008733149012453074,
+      0.9476322954106617,
+      -0.002778590679655466,
+      0.9999828186959336,
+      -0.0016996065440670893,
+      0.004873713611329764
+    ],
+    "target": [
+      -0.3199002133666463,
+      -4.2614434270876636e-08,
+      0.9400662167522306,
+      -2.489690333859788e-07,
+      0.9999999902212003,
+      -1.2421328299261347e-08,
+      0.00013984826477787544
+    ],
+    "box_pose": [
+      -0.3199428836161183,
+      0.00012009899368818806,
+      0.9220097055669526,
+      0.7070204613626849,
+      3.148002179626263e-07,
+      -3.708783348854411e-07,
+      -0.7071930904740659
+    ],
+    "base_euler_xyz_deg": [
+      5.5613689769924816e-05,
+      -4.487201554810337e-06,
+      -90.01398753262919
+    ],
+    "hinges_deg": {
+      "body_front": 0.0009201742459760288,
+      "body_back": -1.3650473134016374e-05,
+      "side_right": 4.1180047021014166e-05,
+      "side_left": 4.7995831679946676e-05,
+      "front_corner_right": 3.067245907924847e-05,
+      "front_corner_left": 0.0003627701121341878,
+      "back_corner_right": -5.822073730674927e-06,
+      "back_corner_left": 6.60080391503614e-06,
+      "lid": -4.171853922924982e-05,
+      "lid_side_right": 4.521114396659986e-05,
+      "lid_side_left": 2.554820931241862e-05,
+      "lid_front": -3.972207209053484e-06,
+      "locking_tongue": -1.2859078493403944e-06
+    },
+    "hand_sum_normal_N": 3.4710249993959126
+  },
+  "actual_pre_drag_mean_normal_N": 3.477660162747039,
+  "stopped_state": {
+    "time_s": 36.24050000008203,
+    "phase": "drag",
+    "tcp": [
+      -0.33003604559614064,
+      0.00039109610720492014,
+      0.949502900897823,
+      -0.002986508041244403,
+      0.999827552824878,
+      -0.0014249554292486975,
+      0.018273338062868634
+    ],
+    "target": [
+      -0.3440002133666463,
+      -4.2614434270876636e-08,
+      0.9388265324185329,
+      -2.489690333859788e-07,
+      0.9999999902212003,
+      -1.2421328299261347e-08,
+      0.00013984826477787544
+    ],
+    "box_pose": [
+      -0.3203600787540472,
+      3.510379392606462e-05,
+      0.9220058297433861,
+      0.706940989087986,
+      1.0528203578279978e-05,
+      -1.0349754427418925e-05,
+      -0.7072725342676193
+    ],
+    "base_euler_xyz_deg": [
+      0.0017408746699768098,
+      1.4909512795178101e-05,
+      -90.02686429106102
+    ],
+    "hinges_deg": {
+      "body_front": 2.9502184593383823e-06,
+      "body_back": -0.0009487684133432356,
+      "side_right": -5.0029080637405975e-06,
+      "side_left": 8.356939567043557e-06,
+      "front_corner_right": -8.445420767431485e-06,
+      "front_corner_left": -2.810977616866606e-05,
+      "back_corner_right": 1.922488649513992e-05,
+      "back_corner_left": -1.6567905280161e-05,
+      "lid": -0.0008627411536120308,
+      "lid_side_right": 6.347593885845503e-05,
+      "lid_side_left": -0.00011554835262403528,
+      "lid_front": -2.1510589981536572e-05,
+      "locking_tongue": 5.3026569072706794e-05
+    },
+    "hand_sum_normal_N": 13.30615524700913
+  },
+  "error": "RuntimeError('Force/penetration bound exceeded (13.30615524700913, 13.30615524700913, 4.0945927448547304e-07)')",
+  "physics_substeps_observed": 144962,
+  "phase_peaks": {
+    "settle": {
+      "hand_sum_normal_N": 0.0,
+      "hand_peak_normal_N": 0.0,
+      "hand_sum_tangent_N": 0.0,
+      "card_penetration_m": 7.668659677199393e-05,
+      "robot_penetration_m": 0.0
+    },
+    "ompl_approach": {
+      "hand_sum_normal_N": 0.0,
+      "hand_peak_normal_N": 0.0,
+      "hand_sum_tangent_N": 0.0,
+      "card_penetration_m": 0.0,
+      "robot_penetration_m": 0.0
+    },
+    "near_surface": {
+      "hand_sum_normal_N": 0.0,
+      "hand_peak_normal_N": 0.0,
+      "hand_sum_tangent_N": 0.0,
+      "card_penetration_m": 0.0,
+      "robot_penetration_m": 0.0
+    },
+    "slow_touch": {
+      "hand_sum_normal_N": 0.6185282585776647,
+      "hand_peak_normal_N": 0.6185282585776647,
+      "hand_sum_tangent_N": 0.07162642579178537,
+      "card_penetration_m": 0.0,
+      "robot_penetration_m": 0.0
+    },
+    "load_settle": {
+      "hand_sum_normal_N": 3.500269423275361,
+      "hand_peak_normal_N": 3.500269423275361,
+      "hand_sum_tangent_N": 0.18652768516619136,
+      "card_penetration_m": 0.0,
+      "robot_penetration_m": 0.0
+    },
+    "drag": {
+      "hand_sum_normal_N": 13.30615524700913,
+      "hand_peak_normal_N": 13.30615524700913,
+      "hand_sum_tangent_N": 3.4446976031097156,
+      "card_penetration_m": 2.9251522350876916e-06,
+      "robot_penetration_m": 0.0
+    }
+  },
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "forbidden_contact_events": [],
+  "simulation_seconds": 36.24050000008203,
+  "wall_seconds": 42.59339190099854,
+  "final_geometry": {
+    "front_bounds_min_m": [
+      -0.5204278544955043,
+      -0.14441330449319578,
+      0.9199995905407247
+    ],
+    "front_bounds_max_m": [
+      -0.430292234115548,
+      0.14462886896690527,
+      0.9240024098005701
+    ],
+    "front_min_x_overhang_m": 0.0,
+    "base_bounds_min_m": [
+      -0.4304304378895334,
+      -0.15001645811465203,
+      0.9200023329776233
+    ],
+    "base_bounds_max_m": [
+      -0.21028968072954446,
+      0.150086673284259,
+      0.9240090957106272
+    ],
+    "base_vertices_inside_table_xy": true,
+    "table_bounds_world_m": [
+      [
+        -0.55,
+        -0.8,
+        0.86
+      ],
+      [
+        0.25,
+        0.8,
+        0.92
+      ]
+    ]
+  },
+  "final_table_support": [
+    {
+      "geoms": [
+        "table_collision",
+        "card_base_0"
+      ],
+      "normal_N": 6.008252790384698,
+      "distance_m": 2.3621886032747693e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_body_front_0"
+      ],
+      "normal_N": 0.0,
+      "distance_m": -3.3425566810794e-07
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_body_front_1"
+      ],
+      "normal_N": 0.0,
+      "distance_m": -3.544713165089265e-07
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_body_front_2"
+      ],
+      "normal_N": 1.9140569475981213,
+      "distance_m": 1.7945958795852342e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_body_front_3"
+      ],
+      "normal_N": 0.0,
+      "distance_m": -4.0945927448547304e-07
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_front_corner_right_0"
+      ],
+      "normal_N": 0.020342264278282066,
+      "distance_m": -2.3643894337436855e-07
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_front_corner_left_0"
+      ],
+      "normal_N": 0.0,
+      "distance_m": -1.5591256343979518e-07
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_body_back_0"
+      ],
+      "normal_N": 3.8496870780964225,
+      "distance_m": 9.056488625482677e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_back_corner_right_0"
+      ],
+      "normal_N": 0.09994985678572532,
+      "distance_m": 9.278518904908176e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_back_corner_left_0"
+      ],
+      "normal_N": 0.0764203258266703,
+      "distance_m": 9.17097653285953e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_lid_0"
+      ],
+      "normal_N": 0.2490678001624899,
+      "distance_m": 9.892076545539e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_lid_side_right_0"
+      ],
+      "normal_N": 0.10611901805439089,
+      "distance_m": 9.910749717901674e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_lid_side_left_0"
+      ],
+      "normal_N": 0.029050802601039483,
+      "distance_m": 9.935568981203616e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_lid_front_0"
+      ],
+      "normal_N": 0.03457203519386812,
+      "distance_m": 9.70020105006614e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_locking_tongue_0"
+      ],
+      "normal_N": 0.0021027373737629424,
+      "distance_m": 9.645225708394047e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_side_right_0"
+      ],
+      "normal_N": 0.803626505205288,
+      "distance_m": 2.3621216280732395e-06
+    },
+    {
+      "geoms": [
+        "table_collision",
+        "card_side_left_0"
+      ],
+      "normal_N": 1.1702015003944166,
+      "distance_m": 2.4634368677162045e-06
+    }
+  ],
+  "final_hand_sum_normal_N": 13.30615524700913,
+  "scratch_grasp_candidates": [
+    {
+      "roll_deg": 0,
+      "target_pose": [
+        -0.49036004054472015,
+        0.00011481553932922355,
+        0.9220005490650005,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "ik_residual": {
+        "position_m": 0.05999242969130735,
+        "orientation_rad": 0.117425166610977
+      },
+      "all_hand_geoms_vertices_over_table": [
+        {
+          "geom": "dexmate_R_gripper_l1_collision_118",
+          "min_vertex_height_above_table_m": 0.009107404576578548
+        },
+        {
+          "geom": "jaw_pad_R_1",
+          "min_vertex_height_above_table_m": 0.011655596619775
+        },
+        {
+          "geom": "dexmate_R_gripper_l2_collision_121",
+          "min_vertex_height_above_table_m": -0.07337713643086685
+        },
+        {
+          "geom": "jaw_pad_R_2",
+          "min_vertex_height_above_table_m": -0.06818090490942241
+        }
+      ],
+      "penetrating_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_l2_collision_121"
+          ],
+          "penetration_m": 0.007043505429588452
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_2"
+          ],
+          "penetration_m": 0.006857449180496316
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.024879673855812072
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.04250343966053954
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_17",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.0058872246769700156
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_18",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.005887229387640207
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l8_collision_109"
+          ],
+          "penetration_m": 0.024086356631113585
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_17",
+            "dexmate_R_arm_l8_collision_109"
+          ],
+          "penetration_m": 0.0003928860389628185
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_18",
+            "dexmate_R_arm_l8_collision_109"
+          ],
+          "penetration_m": 0.000392888855406651
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_37",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.0017491885257084228
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_38",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.03090497113985045
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.02066338062301603
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.06818078990814418
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_44",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.012526185235108924
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_45",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.0361778469393103
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_47",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.03042084025235261
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_49",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.05371704988314712
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_50",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.036494868121236465
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_38",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.005343195632261204
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.04268469893229914
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.02197014824157843
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_45",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.0009719269992550339
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_49",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.004063816415311873
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.05010469727341933
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.01571580512544229
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l8_collision_109"
+          ],
+          "penetration_m": 0.021343332414583593
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l8_collision_109"
+          ],
+          "penetration_m": 0.0034745391674176843
+        }
+      ],
+      "note": "Scratch only. Vertex-plane tests complement physical collision detection; neither certifies a feasible full approach."
+    },
+    {
+      "roll_deg": 180,
+      "target_pose": [
+        -0.49036004054472015,
+        0.00011481553932922355,
+        0.9220005490650005,
+        4.329780281177467e-17,
+        0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476
+      ],
+      "ik_residual": {
+        "position_m": 9.04272694024736e-05,
+        "orientation_rad": 0.00020459444600316945
+      },
+      "all_hand_geoms_vertices_over_table": [
+        {
+          "geom": "dexmate_R_gripper_l1_collision_118",
+          "min_vertex_height_above_table_m": -0.051833407144399546
+        },
+        {
+          "geom": "jaw_pad_R_1",
+          "min_vertex_height_above_table_m": -0.03957060844059179
+        },
+        {
+          "geom": "dexmate_R_gripper_l2_collision_121",
+          "min_vertex_height_above_table_m": 0.024342925358836198
+        },
+        {
+          "geom": "jaw_pad_R_2",
+          "min_vertex_height_above_table_m": 0.02936992995391685
+        }
+      ],
+      "penetrating_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_l1_collision_118"
+          ],
+          "penetration_m": 0.04327967344062656
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_1"
+          ],
+          "penetration_m": 0.034606245052655166
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.011202144998094606
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.03769448136550481
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_17",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.003890658269228102
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_18",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.0038906641436348127
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.04315913190896099
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_17",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.004938732992543318
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_18",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.004938736251884684
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.013375128447354232
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_49",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.00014295401013484702
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_50",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.011589462529249356
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_38",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.029873760418193798
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.0422964718431754
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.06361356523762482
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_44",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.006136829803758455
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_45",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.0345633608043362
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_47",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.02496646412319887
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_49",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.04372445936789133
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_50",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.03311762027430487
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.05989319074581984
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.05652379760993107
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.052148701793655536
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.012906399801597754
+        }
+      ],
+      "note": "Scratch only. Vertex-plane tests complement physical collision detection; neither certifies a feasible full approach."
+    }
+  ],
+  "configured_observational_trip_thresholds": {
+    "total_hand_normal_N": 5,
+    "per_contact_normal_N": 5,
+    "card_penetration_m": 0.0005,
+    "forbidden_robot_normal_N": 0.1,
+    "forbidden_robot_penetration_m": 0.0001,
+    "note": "Checked after every0.25ms physics step. A threshold triggers termination after the first exceeding sample; it does not cap forces."
+  },
+  "load_reference_control": {
+    "nominal_N": 4,
+    "z_gain_m_per_N_s": 0.0005,
+    "max_z_step_m_per_20ms": 1e-05,
+    "pre_drag_settle_s": 15
+  }
+}

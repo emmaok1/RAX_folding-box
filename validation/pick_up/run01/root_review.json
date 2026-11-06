@@ -1,0 +1,98 @@
+{
+  "reviewer": "root",
+  "method": "Independent calculations from per-step force CSV and actual trajectory states; no physics reruns",
+  "trials": [
+    {
+      "trial": 0,
+      "pickup_success": true,
+      "cleanup_success": true,
+      "protocol_completed": true,
+      "min_actual_COM_lift_mm": 21.554819456359287,
+      "hold_duration_s": 1.1800000000056343,
+      "max_hold_support_N": 0.0,
+      "min_hold_jaw_group_N": 1.09230561146154,
+      "max_whole_lift_slip_mm": 2.600299745154387,
+      "max_whole_lift_rotation_deg": 0.99376971925298,
+      "raw_pickup_force_peak_N": 2.9025727455798345,
+      "raw_cleanup_force_peak_N": 3.7700191262764657,
+      "pickup_checkpoint_precedes_cleanup": true,
+      "released_jaw_force_max_N": 0.0,
+      "released_support_min_N": 0.14236351968799268,
+      "released_COM_drift_mm": 0.019328437428130483,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "trial": 1,
+      "pickup_success": true,
+      "cleanup_success": true,
+      "protocol_completed": true,
+      "min_actual_COM_lift_mm": 21.554819456359287,
+      "hold_duration_s": 1.1800000000056343,
+      "max_hold_support_N": 0.0,
+      "min_hold_jaw_group_N": 1.09230561146154,
+      "max_whole_lift_slip_mm": 2.600299745154387,
+      "max_whole_lift_rotation_deg": 0.99376971925298,
+      "raw_pickup_force_peak_N": 2.9025727455798345,
+      "raw_cleanup_force_peak_N": 3.7700191262764657,
+      "pickup_checkpoint_precedes_cleanup": true,
+      "released_jaw_force_max_N": 0.0,
+      "released_support_min_N": 0.14236351968799268,
+      "released_COM_drift_mm": 0.019328437428130483,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "trial": 2,
+      "pickup_success": true,
+      "cleanup_success": true,
+      "protocol_completed": true,
+      "min_actual_COM_lift_mm": 21.554819456359287,
+      "hold_duration_s": 1.1800000000056343,
+      "max_hold_support_N": 0.0,
+      "min_hold_jaw_group_N": 1.09230561146154,
+      "max_whole_lift_slip_mm": 2.600299745154387,
+      "max_whole_lift_rotation_deg": 0.99376971925298,
+      "raw_pickup_force_peak_N": 2.9025727455798345,
+      "raw_cleanup_force_peak_N": 3.7700191262764657,
+      "pickup_checkpoint_precedes_cleanup": true,
+      "released_jaw_force_max_N": 0.0,
+      "released_support_min_N": 0.14236351968799268,
+      "released_COM_drift_mm": 0.019328437428130483,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "core_matches_original_baseline": {
+    "environment.py": true,
+    "models/scene.xml": true,
+    "physics.json": true,
+    "robot_config.json": true,
+    "video_rebuild/config.json": true
+  },
+  "scope": "Three fresh fixed-scene repetitions with the same saved OMPL path; no generalization claim"
+}

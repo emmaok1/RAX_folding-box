@@ -1,0 +1,17 @@
+{
+  "pipeline": "TrajOptPipeline",
+  "optimizer": "TrajOpt sequential convex optimization + OSQP",
+  "ompl_used": false,
+  "seed": "pipeline MinLengthTask joint interpolation",
+  "setup_seconds": 2.0194873299988103,
+  "model_alignment": {
+    "samples": 6,
+    "max_transform_abs_error": 6.775653649260249e-11,
+    "active_geoms": 71
+  },
+  "solver_max_time_seconds": 10,
+  "planning_seconds": 11.35534242799622,
+  "successful": false,
+  "message": "TrajOptMotionPlannerTask: Failed to find valid solution: OPT_TIME_LIMIT",
+  "returned_waypoints": 0
+}

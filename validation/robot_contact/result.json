@@ -1,0 +1,65 @@
+{
+  "movement": {
+    "left": {
+      "requested_delta_m": [
+        0,
+        0,
+        0.005
+      ],
+      "measured_delta_m": [
+        -1.9333889242467706e-05,
+        3.354196085880723e-07,
+        0.004990240801209467
+      ],
+      "target_error_m": 2.1659957077171195e-05
+    },
+    "right": {
+      "requested_delta_m": [
+        0,
+        0,
+        0.005
+      ],
+      "measured_delta_m": [
+        -1.9336778671844024e-05,
+        -3.398532896214945e-07,
+        0.004990395569173911
+      ],
+      "target_error_m": 2.1593323068796733e-05
+    }
+  },
+  "contact_confirmed": true,
+  "contact_time_s": 6.760000000002516,
+  "contact_tcp": [
+    -0.3213997357018306,
+    -0.06514635951288006,
+    0.9475873474170244,
+    0.00025657798268782556,
+    0.9999978509737091,
+    5.872342833762589e-05,
+    -0.0020563966690769053
+  ],
+  "contacts": [
+    {
+      "geoms": [
+        "jaw_pad_R_2",
+        "card_base_0"
+      ],
+      "normal_force_N": 0.6104034816555987,
+      "distance_m": 2.504763049749799e-06
+    }
+  ],
+  "released_after_retract": true,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "simulation_time_s": 8.76000000000226,
+  "method": "Existing Cartesian motor-control interface only; no writes to executed qpos/qvel or box state, no external forces, no physics/config changes. Direct scripted commissioning test; no model agent.",
+  "scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e"
+}

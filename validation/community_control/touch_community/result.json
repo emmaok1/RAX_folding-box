@@ -1,0 +1,184 @@
+{
+  "kind": "touch",
+  "route": "community",
+  "result": "pass",
+  "ompl_path_sha256": "2720c69bcb3dae0496b2e7bbd3a4aa5812c4e24b59b875a9431db142d2e75e14",
+  "initial_pad_clearance_m": 0.0013269065990126378,
+  "initial_tcp": [
+    -0.31990246246574217,
+    -0.06500003318272884,
+    0.9487000971451086,
+    1.9017503790075543e-07,
+    0.999999990804097,
+    1.8835349024914905e-07,
+    0.00013561612861590587
+  ],
+  "initial_state_sha256": "3c7022ce774b41cbc3a93283914e51468c01df10068a088149c7c0773abe138a",
+  "first_contact": {
+    "time_s": 16.98124999999007,
+    "normal_N": 0.4796180961828632,
+    "geoms": [
+      "jaw_pad_R_1",
+      "card_base_0"
+    ]
+  },
+  "reaction_delay_s": 0.01875000000008953,
+  "hold_target": [
+    -0.3199017759616542,
+    -0.0650000133592664,
+    0.9473099512962005,
+    -1.5852618970673663e-07,
+    0.9999999905407605,
+    -3.442896795435857e-08,
+    0.00013754436626095946
+  ],
+  "tcp_after_hold": [
+    -0.31989498641868225,
+    -0.06499979956176957,
+    0.9473810598569221,
+    -2.9785054466664523e-06,
+    0.9999999920269373,
+    -3.3424698120398944e-07,
+    0.00012624239528936178
+  ],
+  "released": true,
+  "wall_seconds": 28.821686983996187,
+  "phase_metrics": {
+    "setup": {
+      "peak_normal_N": 0.0,
+      "peak_sum_normal_N": 0.0,
+      "max_penetration_m": 0.0
+    },
+    "ompl_path_replay": {
+      "peak_normal_N": 0.0,
+      "peak_sum_normal_N": 0.0,
+      "max_penetration_m": 0.0
+    },
+    "near_surface": {
+      "peak_normal_N": 0.0,
+      "peak_sum_normal_N": 0.0,
+      "max_penetration_m": 0.0
+    },
+    "descent": {
+      "peak_normal_N": 0.4796180961828632,
+      "peak_sum_normal_N": 0.4796180961828632,
+      "max_penetration_m": 0.0
+    },
+    "contact_hold": {
+      "peak_normal_N": 0.06705379096310446,
+      "peak_sum_normal_N": 0.06705379096310446,
+      "max_penetration_m": 0.0
+    },
+    "retract": {
+      "peak_normal_N": 0.001158614599842293,
+      "peak_sum_normal_N": 0.001158614599842293,
+      "max_penetration_m": 0.0
+    },
+    "released_hold": {
+      "peak_normal_N": 0.0,
+      "peak_sum_normal_N": 0.0,
+      "max_penetration_m": 0.0
+    }
+  },
+  "physics_substeps": 78000,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "simulation_time_s": 19.500000000002096,
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  },
+  "mujoco_version": "3.4.0",
+  "numpy_version": "1.26.4",
+  "controller": {
+    "upstream_class": "GeometricImpedanceController",
+    "controlled_joint_names": [
+      "R_arm_j1",
+      "R_arm_j2",
+      "R_arm_j3",
+      "R_arm_j4",
+      "R_arm_j5",
+      "R_arm_j6",
+      "R_arm_j7"
+    ],
+    "controlled_dofs": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "tool_site": "tcp_R",
+    "torso": "fixed in existing scene",
+    "translation_gain": [
+      900.0,
+      900.0,
+      900.0
+    ],
+    "rotation_gain": [
+      60.0,
+      60.0,
+      60.0
+    ],
+    "damping_gain": [
+      120.0,
+      120.0,
+      120.0,
+      12.0,
+      12.0,
+      12.0
+    ],
+    "posture_gain": 8.0,
+    "posture_damping": 3.0,
+    "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+    "torque_limits_Nm": [
+      [
+        -150.0,
+        150.0
+      ],
+      [
+        -150.0,
+        150.0
+      ],
+      [
+        -80.0,
+        80.0
+      ],
+      [
+        -80.0,
+        80.0
+      ],
+      [
+        -25.0,
+        25.0
+      ],
+      [
+        -25.0,
+        25.0
+      ],
+      [
+        -25.0,
+        25.0
+      ]
+    ],
+    "callback_calls": 21120,
+    "saturated_substeps": 0,
+    "peak_raw_torque_Nm": 18.175060996827057,
+    "peak_applied_torque_Nm": 18.175060996827057
+  },
+  "peak_contact_normal_N": 0.4796180961828632,
+  "max_hand_base_penetration_m": 0.0
+}

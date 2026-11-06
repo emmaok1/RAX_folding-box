@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/luaiabuelsamen/vega_curobo",
+  "commit": "4893257709915524cd7c08b49029548d795a3bcd",
+  "files": {
+    "vega_curobo/control.py": {
+      "local": "vendor/control.py",
+      "sha256": "6209331155c25b6a7bc4f32fbcb6e07cda2eff3eba4db491bf0ead892706dc95"
+    },
+    "LICENSE": {
+      "local": "vendor/LICENSE",
+      "sha256": "35eef96cb439ebaf11246083a48920b079001af6311cc136172b8b9ea34c1179"
+    }
+  },
+  "modifications": "Vendor files unmodified. Adapter and smoke tests are local additions. No cuRobo/GPU dependency imported.",
+  "planning_fixture": {
+    "file": "approach_path.json",
+    "sha256": "2720c69bcb3dae0496b2e7bbd3a4aa5812c4e24b59b875a9431db142d2e75e14",
+    "producer": "Previously recorded OMPL2.0.1 RRTConnect approach; same path replayed for both controllers; independent MuJoCo dense validation on every run. No planner library changes or new GPU dependencies."
+  },
+  "side_push_fixture": {
+    "file": "side_push_fixture.json",
+    "sha256": "f05b0cf65b271b42ab8cfffaad36c8c7c8bb299859c048179973f2b6f2bd355d",
+    "producer": "Recorded previous OMPL2.0.1 side-push approach; independently validate against unchanged scene before each playback."
+  }
+}

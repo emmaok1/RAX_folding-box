@@ -1,0 +1,5 @@
+{"kind": "move5mm", "route": "baseline", "result": "pass", "error": null, "tracking_m": 4.291346134797795e-05, "peak_force_N": 0.0, "wall_seconds": 5.138825268993969}
+{"kind": "move5mm", "route": "community", "result": "pass", "error": null, "tracking_m": 8.635989622028422e-10, "peak_force_N": 0.0, "wall_seconds": 8.384112504005316}
+{"kind": "touch", "route": "baseline", "result": "pass", "error": null, "tracking_m": null, "peak_force_N": 0.6142581629701371, "wall_seconds": 22.554182180996577}
+{"kind": "touch", "route": "community", "result": "pass", "error": null, "tracking_m": null, "peak_force_N": 0.4796180961828632, "wall_seconds": 28.821686983996187}
+COMPARISON pass {'move5mm': True, 'touch': True}

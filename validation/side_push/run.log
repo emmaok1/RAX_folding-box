@@ -1,0 +1,15 @@
+ompl_approach sim 0.5 wall 1.1 tcp [ 0.07436336 -0.42169354  1.09236312] box [-3.20000000e-01 -5.90009166e-11  9.22009966e-01] F 0.0
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 30 states (28 start + 2 goal)
+Info:    Solution found in 0.153511 seconds
+Info:    SimpleSetup: Path simplification took 2.604736 seconds and changed from 28 to 3 states
+slow_edge_touch sim 11.76 wall 15.5 tcp [-0.20507491 -0.2649637   0.9571994 ] box [-3.19999995e-01  1.86275254e-09  9.22009967e-01] F 0.0
+push10mm sim 16.4 wall 20.6 tcp [-0.20723683 -0.26489687  0.9572379 ] box [-3.20000005e-01  7.97358240e-09  9.22009967e-01] F 0.0
+push 200 base_dx_mm -0.022069905187549477 F 0.14924626122124482
+push 400 base_dx_mm -0.2204662106554678 F 0.25259517532389103
+push 600 base_dx_mm -0.35582818332868804 F 0.21931131519025188
+push 800 base_dx_mm -0.39476367005042423 F 0.2340354893170062
+push 1000 base_dx_mm -0.433210719137489 F 0.2209880401817433
+retreat sim 36.4 wall 45.0 tcp [-0.21570791 -0.26481328  0.95924794] box [-3.20433211e-01  2.17906202e-04  9.22009980e-01] F 0.2209880401817433
+released_settle sim 39.4 wall 48.3 tcp [-0.21240071 -0.26503239  0.97173428] box [-3.20435137e-01  2.19198030e-04  9.22009965e-01] F 0.0
+DONE None substeps 165600

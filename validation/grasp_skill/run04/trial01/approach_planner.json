@@ -1,0 +1,63 @@
+{
+  "planner": "OMPL RRTConnect",
+  "version": "2.0.1",
+  "label": "approach",
+  "rng_seed_initial": 2026,
+  "joint_dimension": 7,
+  "joint_limits_rad": [
+    [
+      -3.071,
+      3.071
+    ],
+    [
+      -1.553,
+      0.453
+    ],
+    [
+      -3.071,
+      3.071
+    ],
+    [
+      -3.071,
+      0.244
+    ],
+    [
+      -3.071,
+      3.071
+    ],
+    [
+      -1.396,
+      1.396
+    ],
+    [
+      -1.117,
+      1.378
+    ]
+  ],
+  "range_rad": 0.15,
+  "collision_segment_l2_rad": 0.005,
+  "solve_budget_s": 5.0,
+  "setup_s": 0.00017533599748276174,
+  "ompl_import_s": 0.01327098099864088,
+  "solve_s": 0.46590452599775745,
+  "status": "Exact solution",
+  "exact_solution": true,
+  "collision_checks_solve": {
+    "checks": 3476,
+    "valid": 3335,
+    "invalid": 141
+  },
+  "fallback_used": false,
+  "raw_waypoint_count": 38,
+  "raw_path_l2_rad": 5.402976555640651,
+  "simplification_s": 1.533886181001435,
+  "waypoint_count": 7,
+  "path_l2_rad": 2.1476505235577443,
+  "ompl_path_check": true,
+  "collision_checks_total": {
+    "checks": 15404,
+    "valid": 15207,
+    "invalid": 197
+  },
+  "adapter_total_s": 2.055800158996135
+}

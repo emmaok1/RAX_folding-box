@@ -1,0 +1,41 @@
+approach sim 4.5 wall 4.0 angle -0.0 tcp [-0.5433 -0.35    1.193 ] contacts [] pen 0.0
+lower sim 6.5 wall 5.8 angle -0.0 tcp [-0.5353 -0.225   1.0025] contacts [] pen 0.0
+insert sim 8.5 wall 7.6 angle -0.0 tcp [-0.5159 -0.1646  0.9543] contacts [] pen 0.0
+close sim 9.5 wall 8.7 angle -0.0 tcp [-0.5006 -0.1551  0.9625] contacts [] pen 0.0
+lift_01 sim 9.66 wall 9.0 angle -0.0 tcp [-0.4984 -0.1546  0.9631] contacts [] pen 0.0
+lift_02 sim 9.82 wall 9.2 angle -0.0 tcp [-0.4955 -0.1527  0.9635] contacts [] pen 0.0
+lift_03 sim 9.98 wall 9.5 angle -0.0 tcp [-0.4929 -0.1508  0.9632] contacts [] pen 0.0
+lift_04 sim 10.14 wall 9.7 angle -0.0 tcp [-0.491  -0.15    0.9627] contacts [] pen 0.0
+lift_05 sim 10.3 wall 10.0 angle -0.0 tcp [-0.4889 -0.1494  0.9622] contacts [] pen 0.0
+lift_06 sim 10.46 wall 10.2 angle -0.0 tcp [-0.4868 -0.15    0.9614] contacts [] pen 0.0
+lift_07 sim 10.62 wall 10.4 angle -0.0 tcp [-0.4844 -0.1518  0.9606] contacts [] pen 0.0
+lift_08 sim 10.78 wall 10.7 angle -0.0 tcp [-0.4817 -0.1544  0.9596] contacts [] pen 0.0
+lift_09 sim 10.94 wall 10.9 angle -0.0 tcp [-0.4786 -0.1586  0.9583] contacts [(['dexmate_R_gripper_l1_collision_118', 'card_front_corner_right_0'], 0.128)] pen 0.0
+lift_10 sim 11.1 wall 11.1 angle -0.0 tcp [-0.4749 -0.1634  0.9573] contacts [(['dexmate_R_gripper_l1_collision_118', 'card_front_corner_right_0'], 11.237)] pen 0.0
+hold sim 12.3 wall 12.6 angle -0.7 tcp [-0.4391 -0.2221  0.9532] contacts [(['dexmate_R_gripper_l1_collision_118', 'card_front_corner_right_0'], 13.486)] pen 2.5412097136778655e-05
+release sim 13.1 wall 13.4 angle -0.01 tcp [-0.4407 -0.25    0.9504] contacts [(['dexmate_R_gripper_l1_collision_118', 'card_front_corner_right_0'], 17.175)] pen 4.187651769606534e-05
+retract sim 14.6 wall 14.8 angle 0.11 tcp [-0.4884 -0.2916  1.0557] contacts [] pen 0.0
+settle_after sim 15.6 wall 15.8 angle 0.12 tcp [-0.515  -0.2873  1.0172] contacts [] pen 0.0
+{
+  "error": null,
+  "max_angle_deg": 0.22365836580063442,
+  "max_continuous_seconds_above15_with_opposing_contacts": 0,
+  "opposing_contact_frames": 0,
+  "max_box_penetration_m_at50Hz": 0.0013658525786951854,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "final_angle_deg": 0.12135507332265895,
+  "final_contacts": [],
+  "simulation_seconds": 15.599999999986318,
+  "wall_seconds": 15.88613224029541,
+  "scene_sha256": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+  "method": "Execution exclusively FoldingBoxEnv.step motor references. IK scratch uses existing implementation. No executed state, geometry, physics, collision, force, equality changes. World table edge x=-0.55m; front free edge x=-0.52m. No overhang; original planning assumption was incorrect. Trace sampled at50Hz."
+}

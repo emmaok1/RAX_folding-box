@@ -1,0 +1,81 @@
+单面板电机夹取实验报告
+
+范围：简化的独立纸板面板+真实支座。原桌面整盒任务未解决/未验证。
+面板：原box_base，300×220×4mm，质量26.4g；原质量惯性、材料及接触参数保持。
+支座：130×150×220mm，中心(0,-.65,1.03)m，顶面z=1.14m。机器人从robot_config正常home启动。
+控制：OMPL RRTConnect 2.0.1接近，原关节PD电机执行；接触阶段为原RightArmImpedance固定增益。
+最终控制器闭合分量反馈目标3N，分量上限.30Nm、变化率.05Nm/s；总电机仍含原阻尼和重力补偿并受原±.6Nm限幅。
+接触：两颚/板显式mu=.6，支座/板mu=.4；condim3、solref .004 1等均原样保留。
+安全观察：每0.25ms检查两颚法向力之和；5N触发终止，不是保证永不超出的硬力上限。非预期机器人接触>0.05N或穿透>0.1mm也终止。
+物理保持成功：对向真实颚组承载、COM实际上升>=10mm、脱离支座、保持>=1s，保持窗口和整个抬升相对位移<3mm/转角<.05rad。
+完整成功另要求正常控制放回、张开、退手后支座持续承托和稳定。双新增pad接触仅作策略诊断。
+
+validation/grasp_skill/run01/trial00
+  完整协议success=False；物理脱支撑保持=False；受控放置完成=False
+  两颚峰值法向力=0.000000N；5N阈值超调=0.000000N；非预期接触单点/合计峰值=13231.186/26859.394N
+  pad1/pad2有力接触采样数=0/0
+  MuJoCo warning触发=False（每物理步检查）；正常home碰撞验证=None
+  抬升指标=null
+  保持指标=null
+  错误=RuntimeError('Monitored abort {"time_s": 0.00025, "phase": "home_settle", "sum_normal_N": 0.0, "penetration_m": 0.0, "unexpected_contacts": [{"geoms": ["dexmate_R_gripper_base_collision_115", "card_base_0"], "force_N": 27.484907158227976, "dist_m": -0.046276457852467145}, {"geoms": ["support_top", "dexmate_R_gripper_base_collision_115"], "force_N": 10702.67672605924, "dist_m": -0.04236393420887708}, {"geoms": ["support_top", "dexmate_R_gripper_l1_collision_118"], "force_N": 837.7209558616423, "dist_m": -0.07102126916897683}, {"geoms": ["support_top", "jaw_pad_R_1"], "force_N": 1387.4585168499616, "dist_m": -0.0077154583361029195}, {"geoms": ["support_top", "dexmate_R_gripper_l2_collision_121"], "force_N": 672.8665629864902, "dist_m": -0.0661009998135062}, {"geoms": ["support_top", "jaw_pad_R_2"], "force_N": 13231.186458828905, "dist_m": -0.020989543246834084}], "warning": [0, 0, 0, 0, 0, 0, 0, 0]}')
+
+validation/grasp_skill/run02/trial00
+  完整协议success=False；物理脱支撑保持=False；受控放置完成=False
+  两颚峰值法向力=1.815293N；5N阈值超调=0.000000N；非预期接触单点/合计峰值=0.000/0.000N
+  pad1/pad2有力接触采样数=294/0
+  MuJoCo warning触发=False（每物理步检查）；正常home碰撞验证=True
+  抬升指标={"command_m": 0.025, "max_com_rise_m": 0.008184356347568755, "max_tcp_rise_m": 0.02470684314312388, "max_relative_translation_change_m": 0.016561450718680412, "max_relative_angle_change_deg": 6.97348905181819}
+  保持指标={"duration_s": 1.1800000000056343, "min_com_lift_m": 0.00799086031455909, "max_com_lift_m": 0.008184356347568755, "relative_translation_drift_m": 0.00042606987566976175, "relative_angle_drift_rad": 0.003083944390759104, "opposing_all_samples": true, "max_support_N": 0.15367973499775953}
+  错误=RuntimeError('Retention failed {"duration_s": 1.1800000000056343, "min_com_lift_m": 0.00799086031455909, "max_com_lift_m": 0.008184356347568755, "relative_translation_drift_m": 0.00042606987566976175, "relative_angle_drift_rad": 0.003083944390759104, "opposing_all_samples": true, "max_support_N": 0.15367973499775953}')
+
+validation/grasp_skill/run03/trial00
+  完整协议success=False；物理脱支撑保持=True；受控放置完成=False
+  两颚峰值法向力=2.898820N；5N阈值超调=0.000000N；非预期接触单点/合计峰值=0.000/0.000N
+  pad1/pad2有力接触采样数=294/0
+  MuJoCo warning触发=False（每物理步检查）；正常home碰撞验证=True
+  抬升指标={"command_m": 0.025, "max_com_rise_m": 0.022066158748340392, "max_tcp_rise_m": 0.024664526300997913, "max_relative_translation_change_m": 0.0026202532284049164, "max_relative_angle_change_deg": 1.0008582456658173}
+  保持指标={"duration_s": 1.1800000000056343, "min_com_lift_m": 0.02152764976468835, "max_com_lift_m": 0.022066158748340392, "relative_translation_drift_m": 3.397570072986901e-05, "relative_angle_drift_rad": 0.0002100063417537755, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}
+  错误=RuntimeError('Retention failed {"duration_s": 1.1800000000056343, "min_com_lift_m": 0.02152764976468835, "max_com_lift_m": 0.022066158748340392, "relative_translation_drift_m": 3.397570072986901e-05, "relative_angle_drift_rad": 0.0002100063417537755, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}')
+
+validation/grasp_skill/run04/trial00
+  完整协议success=True；物理脱支撑保持=True；受控放置完成=True
+  两颚峰值法向力=3.770019N；5N阈值超调=0.000000N；非预期接触单点/合计峰值=0.000/0.000N
+  pad1/pad2有力接触采样数=480/0
+  MuJoCo warning触发=False（每物理步检查）；正常home碰撞验证=True
+  抬升指标={"command_m": 0.025, "max_com_rise_m": 0.022105480572758074, "max_tcp_rise_m": 0.024667228698310284, "max_relative_translation_change_m": 0.0026002997451543873, "max_relative_angle_change_deg": 0.9937697192529803}
+  保持指标={"duration_s": 1.1800000000056343, "min_com_lift_m": 0.021554819456359287, "max_com_lift_m": 0.022105480572758074, "relative_translation_drift_m": 4.058077436210222e-05, "relative_angle_drift_rad": 0.00025478639569040173, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}
+  错误=None
+
+validation/grasp_skill/run04/trial01
+  完整协议success=False；物理脱支撑保持=False；受控放置完成=False
+  两颚峰值法向力=9.466460N；5N阈值超调=4.466460N；非预期接触单点/合计峰值=0.000/0.000N
+  pad1/pad2有力接触采样数=234/0
+  MuJoCo warning触发=False（每物理步检查）；正常home碰撞验证=True
+  抬升指标={"command_m": 0.025, "max_com_rise_m": 0.021449070211891463, "max_tcp_rise_m": 0.024090889985198594, "max_relative_translation_change_m": 0.002650197937480039, "max_relative_angle_change_deg": 1.0146046782789346}
+  保持指标=null
+  错误=RuntimeError('Monitored abort {"time_s": 36.652000000083994, "phase": "hold", "sum_normal_N": 9.466459642432783, "penetration_m": 1.2342397763160533e-05, "unexpected_contacts": [], "warning": [0, 0, 0, 0, 0, 0, 0, 0]}')
+
+validation/grasp_skill/run05_minus2/trial00
+  完整协议success=True；物理脱支撑保持=True；受控放置完成=True
+  两颚峰值法向力=4.283400N；5N阈值超调=0.000000N；非预期接触单点/合计峰值=0.000/0.000N
+  pad1/pad2有力接触采样数=483/0
+  MuJoCo warning触发=False（每物理步检查）；正常home碰撞验证=True
+  抬升指标={"command_m": 0.025, "max_com_rise_m": 0.022078826165694343, "max_tcp_rise_m": 0.0246678379333376, "max_relative_translation_change_m": 0.0026076595701233223, "max_relative_angle_change_deg": 0.9961190999997113}
+  保持指标={"duration_s": 1.1800000000056343, "min_com_lift_m": 0.021540586330068168, "max_com_lift_m": 0.022078826165694343, "relative_translation_drift_m": 2.1116511631549694e-05, "relative_angle_drift_rad": 0.00014208256661252017, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}
+  错误=None
+
+最终三条件：run04/trial00零偏移；run04/trial01 +2mm；run05_minus2/trial00 -2mm。这三个条件使用相同控制、几何、阈值；运行路由不同并非调参。
+最终完成条件数=3；完整协议通过数=2。小样本且出现力超阈，不可称鲁棒方案。
+run04 +2mm在36.652s出现单物理步总法向力9.46646N，前0.25ms为2.45823N；5N超调4.46646N，监测触发后下一恢复步降至.98360N。由此不能声称5N硬保证。
+该步pad1与原厂finger1共同承载，pad2未接触，穿透由12.84um降至12.34um。接触切换/力重分配是可能原因，但20ms成对接触日志不足以证明根因。恢复张开、落回支座、退手完成；不是正常受控放置成功。
+历史失败不隐藏：run01为home与最初y=-.4m支座严重相交的无效初始化，0.25ms立即停机，恢复也未完成；修正后在任何步进前验证home碰撞。
+run02为2N闭合反馈结束后不再调力，抬升时纸板旋转并仍受支座辅助，真实保持失败。
+run03采用持续3N反馈，真实脱支撑保持通过；当时错误附加的双pad门槛阻断正常place，保留原success=false和原脚本，不回写历史。
+run04仅去除额外pad门槛并增加physical_hold_1s字段，保留全程3mm/.05rad等物理判据；与run03控制/几何/材料参数无变化。
+接触几何诊断：原厂两颚指体在板近边先承载，抬升后pad1参与，pad2仍无接触。不能称作双新增pad平行夹持；也不能因此否认真实指体承载的物理夹取。
+候选姿态用设计角.012rad的真实pad内面中平面，TCP偏移(-7um,-1.5mm,-1.373mm)；其有限策略不覆盖其他位置/整盒。
+核心文件前后SHA256全一致=True；各运行哈希文件数={"run01": 597, "run02": 597, "run03": 597, "run04": 597, "run05_minus2": 597}
+模型审计见model_audit.json：机器人碰撞几何、夹爪/板惯性、重力/步长/积分器、执行器限值、显式接触对一致；物体只有自由关节，无物体执行器/焊接。
+运行命令见experiments/grasp_skill/README.md。每轮result.json、analysis.json、forces.csv.gz、contacts.csv.gz、trajectory.json.gz、video.mp4、PNG和measurements.png可复查。
+run01因首个物理步即中止没有可播放运动视频，保留初始化/失败图和两步接触证据。其余轮均有视频。
+参考思路：ManiSkill pick_cube的几何定姿与阶段执行；robosuite manipulation_env._check_grasp的对向几何组判定。未安装或复制完整栈，原有阻抗vendor许可/来源保持。

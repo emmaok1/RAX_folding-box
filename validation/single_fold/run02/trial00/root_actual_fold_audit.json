@@ -1,0 +1,45 @@
+{
+  "flags": {
+    "fixture_ready": true,
+    "grasp_success": true,
+    "fold15_success": true,
+    "hold_success": true,
+    "return_success": true,
+    "release_success": true,
+    "protocol_completed": true
+  },
+  "hold_angle_minmax_deg": [
+    14.115712869136829,
+    14.567180555050621
+  ],
+  "hold_s": 1.1800000000056343,
+  "FK_max_error_rad": 1.1102230246251565e-16,
+  "all_FK_measurements_kept_execution_state": true,
+  "hand_force_peak_raw_N": 3.448744212557086,
+  "return_angle_minmax_deg": [
+    -0.10116473149520985,
+    0.38657536048090757
+  ],
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fold_max_slip_mm": 0.6018467333485598,
+  "fold_max_relative_rotation_deg": 0.6383156010995523,
+  "fold_min_jaw_N": 1.2772823149641188,
+  "fold_max_moving_fixture_N": 0.0,
+  "fold_max_base_translation_mm": 0.588483033603748,
+  "fold_max_base_rotation_deg": 0.09903229318678336,
+  "return_max_slip_mm": 0.5042474747672216,
+  "return_max_relative_rotation_deg": 0.43127051834439967,
+  "return_min_jaw_N": 1.2682506497668187,
+  "return_max_moving_fixture_N": 0.0,
+  "return_max_base_translation_mm": 0.5777490179124319,
+  "return_max_base_rotation_deg": 0.06619772668696718
+}

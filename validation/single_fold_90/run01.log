@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/single_fold/run_fold.py", line 200, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/single_fold/run_fold.py", line 192, in main
+    if code:raise RuntimeError('Worker error; inspect '+str(first))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Worker error; inspect /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/validation/single_fold_90/run01/trial00

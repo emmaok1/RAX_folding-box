@@ -1,0 +1,408 @@
+{
+  "table_center_world_m": [
+    -0.15,
+    0.0,
+    0.89
+  ],
+  "table_half_extents_world_m": [
+    0.4,
+    0.8,
+    0.03
+  ],
+  "panels": {
+    "base": {
+      "bounds_min_world_m": [
+        -0.42999999940395406,
+        -0.15000000596046514,
+        0.9201999999050051
+      ],
+      "bounds_max_world_m": [
+        -0.21000000059604595,
+        0.15000000596046514,
+        0.9242000000949949
+      ]
+    },
+    "body_front": {
+      "bounds_min_world_m": [
+        -0.5200000047327717,
+        -0.1445000032046825,
+        0.9201999999050051
+      ],
+      "bounds_max_world_m": [
+        -0.4299999998916266,
+        0.1445000032046825,
+        0.9242000000949949
+      ]
+    },
+    "side_right": {
+      "bounds_min_world_m": [
+        -0.428499996364117,
+        -0.2400000047429842,
+        0.9201999999050051
+      ],
+      "bounds_max_world_m": [
+        -0.211500003635883,
+        -0.15000000116670523,
+        0.9242000000949949
+      ]
+    },
+    "side_left": {
+      "bounds_min_world_m": [
+        -0.428499996364117,
+        0.15000000116670523,
+        0.9201999999050051
+      ],
+      "bounds_max_world_m": [
+        -0.211500003635883,
+        0.2400000047429842,
+        0.9242000000949949
+      ]
+    },
+    "body_back": {
+      "bounds_min_world_m": [
+        -0.2100000017881395,
+        -0.14450000226497714,
+        0.9201999999050051
+      ],
+      "bounds_max_world_m": [
+        -0.11999999821186041,
+        0.14450000226497714,
+        0.9242000000949949
+      ]
+    }
+  },
+  "scratch_candidates": [
+    {
+      "tilt_deg": 0,
+      "pose": [
+        -0.49,
+        -0.1,
+        0.9222,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "ik_error": {
+        "position_m": 9.499354338732808e-05,
+        "orientation_rad": 0.0002133918289068235
+      },
+      "penetrating_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_l2_collision_121"
+          ],
+          "penetration_m": 0.04063445619941776
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_2"
+          ],
+          "penetration_m": 0.030686093337697857
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.020906159090230705
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_17",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.0036768277752281834
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_18",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.0036768341132092357
+        },
+        {
+          "geoms": [
+            "dexmate_lift_link_collision_16",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.004640463408154154
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.009239508603381779
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.03377306455263354
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.021836428151821387
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.011672439209287804
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_39",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.0060682127536401086
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.000954189718746408
+        }
+      ]
+    },
+    {
+      "tilt_deg": 20,
+      "pose": [
+        -0.49,
+        -0.1,
+        0.9222,
+        0.5735764363510462,
+        0.0,
+        0.8191520442889918,
+        0.0
+      ],
+      "ik_error": {
+        "position_m": 8.107284584782819e-05,
+        "orientation_rad": 0.00018177113996009777
+      },
+      "penetrating_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_l2_collision_121"
+          ],
+          "penetration_m": 0.049429758241244286
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_2"
+          ],
+          "penetration_m": 0.0403958375433281
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.0022663072720485538
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.07109192299601472
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.07186813989018011
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.022213741484679493
+        }
+      ]
+    },
+    {
+      "tilt_deg": 40,
+      "pose": [
+        -0.49,
+        -0.1,
+        0.9222,
+        0.42261826174069944,
+        0.0,
+        0.9063077870366499,
+        0.0
+      ],
+      "ik_error": {
+        "position_m": 0.005966107342429772,
+        "orientation_rad": 0.02583066337224331
+      },
+      "penetrating_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_l2_collision_121"
+          ],
+          "penetration_m": 0.046046163680464096
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_2"
+          ],
+          "penetration_m": 0.047713728776574316
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.08420512987884855
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.1005101740329178
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.04192998785317518
+        }
+      ]
+    },
+    {
+      "tilt_deg": 60,
+      "pose": [
+        -0.49,
+        -0.1,
+        0.9222,
+        0.25881904510252074,
+        0.0,
+        0.9659258262890683,
+        0.0
+      ],
+      "ik_error": {
+        "position_m": 0.18280029817157958,
+        "orientation_rad": 0.5359384069727307
+      },
+      "penetrating_contacts": [
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.04097274746131451
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_43",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.014010726683583557
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_46",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.015553807811740369
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.04505308111116116
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_43",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.020560669486909985
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_46",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.022069729618641842
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "penetration_m": 0.04948331654266733
+        },
+        {
+          "geoms": [
+            "dexmate_torso_flip_link_collision_42",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "penetration_m": 0.0011677561449119924
+        },
+        {
+          "geoms": [
+            "dexmate_head_l1_collision_53",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.026727747818896048
+        },
+        {
+          "geoms": [
+            "dexmate_head_l1_collision_53",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.030392297780746234
+        },
+        {
+          "geoms": [
+            "dexmate_head_l2_collision_55",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.03677307406054027
+        },
+        {
+          "geoms": [
+            "dexmate_head_l2_collision_55",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.03336845492839696
+        },
+        {
+          "geoms": [
+            "dexmate_head_l3_collision_60",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "penetration_m": 0.027033760803858612
+        },
+        {
+          "geoms": [
+            "dexmate_head_l3_collision_60",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "penetration_m": 0.02516489805799182
+        }
+      ]
+    }
+  ],
+  "note": "Scratch states only; collision results are not physical penetration measurements. World geometry incorporates table body offset. Flat wall front is fully supported: outer x=\u2212.52 vs table edge x=\u2212.55."
+}

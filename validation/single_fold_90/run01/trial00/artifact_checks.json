@@ -1,0 +1,6 @@
+{
+  "frames": 0,
+  "seconds": 0.0,
+  "video_available": false,
+  "reason": "No simulation was executed; only initial PNG exists. Original worker packaging traceback preserved in trial00.log; postprocessing resumed without rerunning."
+}

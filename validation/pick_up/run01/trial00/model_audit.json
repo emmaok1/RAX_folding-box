@@ -1,0 +1,12 @@
+{
+  "box_base_inertia_unchanged": true,
+  "dexmate_R_gripper_l1_inertia_unchanged": true,
+  "dexmate_R_gripper_l2_inertia_unchanged": true,
+  "robot_geoms_unchanged": true,
+  "actuator_limits_unchanged": true,
+  "physics_options_unchanged": true,
+  "only_original_two_jaw_mimic_equalities": true,
+  "one_free_object_joint": true,
+  "no_object_actuator": true,
+  "panel_contact_pairs_unchanged": true
+}

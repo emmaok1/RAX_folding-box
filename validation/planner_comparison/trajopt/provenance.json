@@ -1,0 +1,26 @@
+{
+  "files_sha256": {
+    "validation/planner_comparison/trajopt/export_model.py": "fdbcbd19c49c68b9fd33e7e8bec425e5f8e079b45f5c188f99d4f32123abe565",
+    "validation/planner_comparison/trajopt/smoke.py": "b1f34c6542f920aa2da41c9cc96b3fa50b6f5ebf92cf7924cbf135e991096c8d",
+    "validation/planner_comparison/trajopt/audit.py": "278ffc17a863b1e1644108438e7e555cf18bc8008b5b08a227fad321f2ca6981",
+    "validation/planner_comparison/trajopt/run.sh": "676d481c606791ddd20554f8b91344aaa8cdfd298d54d7f65de47ac945820f3a",
+    "validation/planner_comparison/trajopt/runtime/libstdc++.so.6": "9ac7e2ec283e4a4a9a1ffdf0a17d688ca90e7f9d020cb8f372af7fa5194618f0",
+    "validation/planner_comparison/common.py": "f69467ea5cf046c33954dbad645b8c5839feef9908a255dd145ade8bed035560",
+    "validation/planner_comparison/protocol.json": "d1c7688d3fbfc3b41b93298a467dad89cc46efa9920ba5f3ce55ae8990f6fea6",
+    "validation/planner_comparison/trajopt/deps/tesseract_robotics/planning/profiles.py": "a745bb33db51b4823c568e3d1efb986f86aa87e5185932dd7484587e30cb2812",
+    "validation/planner_comparison/trajopt/deps/tesseract_robotics/data/task_composer_config/task_composer_plugins.yaml": "4240d9e8ef43ce31bf013cca786241ef24e7e190ae73efcd7f8bb5151a10be7e"
+  },
+  "packages": {
+    "tesseract-robotics-nanobind": "0.35.0.8",
+    "loguru": "0.7.3",
+    "mujoco": "3.4.0",
+    "numpy": "1.26.4"
+  },
+  "runtime_copy_source": "/home/jennyok/miniconda3/envs/mujoco-lab/lib/libstdc++.so.6.0.34",
+  "docs": [
+    "https://tesseract-robotics.github.io/tesseract_nanobind/user-guide/planning/",
+    "https://tesseract-robotics.github.io/tesseract_nanobind/getting-started/installation/"
+  ],
+  "only_task_local_writes": true,
+  "ompl_invoked": false
+}

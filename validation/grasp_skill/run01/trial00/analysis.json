@@ -1,0 +1,26 @@
+{
+  "path": "validation/grasp_skill/run01/trial00",
+  "success": false,
+  "error": "RuntimeError('Monitored abort {\"time_s\": 0.00025, \"phase\": \"home_settle\", \"sum_normal_N\": 0.0, \"penetration_m\": 0.0, \"unexpected_contacts\": [{\"geoms\": [\"dexmate_R_gripper_base_collision_115\", \"card_base_0\"], \"force_N\": 27.484907158227976, \"dist_m\": -0.046276457852467145}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_base_collision_115\"], \"force_N\": 10702.67672605924, \"dist_m\": -0.04236393420887708}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l1_collision_118\"], \"force_N\": 837.7209558616423, \"dist_m\": -0.07102126916897683}, {\"geoms\": [\"support_top\", \"jaw_pad_R_1\"], \"force_N\": 1387.4585168499616, \"dist_m\": -0.0077154583361029195}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l2_collision_121\"], \"force_N\": 672.8665629864902, \"dist_m\": -0.0661009998135062}, {\"geoms\": [\"support_top\", \"jaw_pad_R_2\"], \"force_N\": 13231.186458828905, \"dist_m\": -0.020989543246834084}], \"warning\": [0, 0, 0, 0, 0, 0, 0, 0]}')",
+  "force_abort_N": 5.0,
+  "peak_intended_jaw_sum_N": 0.0,
+  "intended_force_overshoot_N": 0.0,
+  "normal_home_collision_free": null,
+  "recovery": {
+    "attempted": true,
+    "complete": false,
+    "error": "RuntimeError('Monitored abort {\"time_s\": 0.0005, \"phase\": \"abort_open\", \"sum_normal_N\": 0.0, \"penetration_m\": 0.0, \"unexpected_contacts\": [{\"geoms\": [\"dexmate_R_gripper_base_collision_115\", \"card_base_0\"], \"force_N\": 24.030662717049353, \"dist_m\": -0.04609543348268324}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_base_collision_115\"], \"force_N\": 10273.949894972988, \"dist_m\": -0.04238769377216384}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l1_collision_118\"], \"force_N\": 832.6360980455665, \"dist_m\": -0.07102341164872689}, {\"geoms\": [\"support_top\", \"jaw_pad_R_1\"], \"force_N\": 1340.3683138953445, \"dist_m\": -0.0076821821218628645}, {\"geoms\": [\"support_top\", \"dexmate_R_gripper_l2_collision_121\"], \"force_N\": 545.9312830396317, \"dist_m\": -0.06608856823596604}, {\"geoms\": [\"support_top\", \"jaw_pad_R_2\"], \"force_N\": 12703.40548763868, \"dist_m\": -0.020933507908755682}], \"warning\": [0, 0, 0, 0, 0, 0, 0, 0]}')"
+  },
+  "contact_geom_pairs": [],
+  "pad1_contact_samples": 0,
+  "pad2_contact_samples": 0,
+  "simulation_s": 0.0005,
+  "warning_abort_observed": false,
+  "warning_check_every_substep": true,
+  "hold_metrics": null,
+  "peak_unexpected_per_contact_N": 13231.186458828905,
+  "peak_unexpected_total_N": 26859.39412774447,
+  "physical_support_free_hold_verified": false,
+  "opposing_pad_contacts_verified": false,
+  "controlled_place_completed": false
+}

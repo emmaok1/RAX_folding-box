@@ -1,0 +1,110 @@
+{
+  "speed_mm_s": 0.5,
+  "increment_mm_per_20ms": 0.01,
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  },
+  "start_clearance_m": 0.0013269065990126378,
+  "clearance_method": "Minimum actual jaw-pad mesh vertex height above base top plane; footprint verified inside base",
+  "start_tcp": [
+    -0.31990246246574217,
+    -0.06500003318272884,
+    0.9487000971451086,
+    1.9017503790075543e-07,
+    0.999999990804097,
+    1.8835349024914905e-07,
+    0.00013561612861590587
+  ],
+  "start_time_s": 14.219999999989534,
+  "start_executed_state_sha256": "3c7022ce774b41cbc3a93283914e51468c01df10068a088149c7c0773abe138a",
+  "start_target": [
+    -0.3199017759616542,
+    -0.0650000133592664,
+    0.9486999512962005,
+    -1.5852618970673663e-07,
+    0.9999999905407605,
+    -3.442896795435857e-08,
+    0.00013754436626095946
+  ],
+  "first_contact": {
+    "time_s": 17.063999999990465,
+    "normal_force_N": 0.6142581629701371,
+    "sum_normal_N": 0.6142581629701371,
+    "distance_m": 9.907017739368732e-06,
+    "geoms": [
+      "jaw_pad_R_1",
+      "card_base_0"
+    ]
+  },
+  "reaction_time_after_first_contact_s": 0.016000000000076398,
+  "descent_sim_seconds": 2.8600000000010066,
+  "stop_tcp": [
+    -0.31990767619914173,
+    -0.06499804298729682,
+    0.9473814186657867,
+    -4.099194271798304e-06,
+    0.9999999916167905,
+    1.0049851643101346e-06,
+    0.00012941640255761223
+  ],
+  "contact_confirmed": true,
+  "released": true,
+  "result": "pass",
+  "peaks_by_phase": {
+    "setup": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    },
+    "ompl_path_replay": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    },
+    "common_prestage": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    },
+    "common_start_settle": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    },
+    "trial_descent": {
+      "per_contact_normal_N": 0.6142581629701371,
+      "sum_normal_N": 0.6142581629701371,
+      "penetration_m": 0.0
+    },
+    "retract": {
+      "per_contact_normal_N": 0.008035629922812969,
+      "sum_normal_N": 0.008035629922812969,
+      "penetration_m": 0.0
+    },
+    "release_settle": {
+      "per_contact_normal_N": 0.0,
+      "sum_normal_N": 0.0,
+      "penetration_m": 0.0
+    }
+  },
+  "peak_contact_force_N": 0.6142581629701371,
+  "peak_sum_normal_N": 0.6142581629701371,
+  "max_hand_base_penetration_m": 0.0,
+  "physics_substeps_observed": 74320,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "wall_seconds": 19.145513878997008,
+  "simulation_time_s": 18.579999999997703
+}

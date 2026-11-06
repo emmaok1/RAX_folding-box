@@ -1,0 +1,360 @@
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 283 states (182 start + 101 goal)
+Info:    Solution found in 1.745247 seconds
+Info:    SimpleSetup: Path simplification took 3.321074 seconds and changed from 59 to 5 states
+{
+  "test": "existing-table obstacle detour",
+  "result": "pass",
+  "goal_right_rad": [
+    -0.9106779543613794,
+    0.1545691378980807,
+    -1.5337635369644556,
+    -0.009810463668761038,
+    -1.0650163192264723,
+    0.18247461324925096,
+    -0.6942817177811355
+  ],
+  "baseline_executed": false,
+  "planner": "OMPL2.0.1 RRTConnect",
+  "rng_seed": 2026,
+  "start_right_rad": [
+    -0.7999999987137382,
+    -0.280000000004848,
+    -4.280752858787423e-12,
+    -1.2499999984723487,
+    1.3374627500003033e-11,
+    -0.44999999991146694,
+    5.927248139731709e-11
+  ],
+  "goal_tcp_world_wxyz": [
+    -0.2681471446541358,
+    0.15712114121927295,
+    0.5303508168252087,
+    -0.15854843580159933,
+    0.6711519874758872,
+    0.4890053404189105,
+    0.5341265582741769
+  ],
+  "baseline": {
+    "samples": 615,
+    "max_joint_spacing_rad": 0.0025,
+    "collision_samples": 481,
+    "validation_s": 0.21210752899787622,
+    "first_collision": {
+      "index": 104,
+      "fraction": 0.16938110749185667,
+      "q": [
+        -0.8187467534162702,
+        -0.20639219814506854,
+        -0.25979056652522237,
+        -1.0399353215675065,
+        -0.18039364363637142,
+        -0.3428707494738209,
+        -0.11759820621988458
+      ],
+      "contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_1"
+          ],
+          "distance_m": -0.0003985954187280084
+        }
+      ]
+    },
+    "deepest_collision": {
+      "index": 204,
+      "fraction": 0.3322475570032573,
+      "q": [
+        -0.8367724790917819,
+        -0.1356154655875883,
+        -0.5095891881799741,
+        -0.8379500553128505,
+        -0.35384907022266576,
+        -0.23986185482223818,
+        -0.23067340456522786
+      ],
+      "contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_arm_l4_collision_99"
+          ],
+          "distance_m": -0.02926822041631183
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_arm_l5_collision_101"
+          ],
+          "distance_m": -0.054994494873723654
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_arm_l6_collision_103"
+          ],
+          "distance_m": -0.07409527350898415
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_arm_l7_collision_105"
+          ],
+          "distance_m": -0.06551124962774646
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_arm_l8_collision_109"
+          ],
+          "distance_m": -0.059782915968883965
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_base_collision_115"
+          ],
+          "distance_m": -0.09840169118275342
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_l1_collision_118"
+          ],
+          "distance_m": -0.012808548678783338
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_1"
+          ],
+          "distance_m": -0.0008468734265542139
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "dexmate_R_gripper_l2_collision_121"
+          ],
+          "distance_m": -0.04763960023147417
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "jaw_pad_R_2"
+          ],
+          "distance_m": -0.045591329477744524
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l4_collision_99",
+            "card_front_corner_right_0"
+          ],
+          "distance_m": -0.03314861048036668
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l4_collision_99",
+            "card_side_right_0"
+          ],
+          "distance_m": -0.020809058457215972
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l5_collision_101",
+            "card_base_0"
+          ],
+          "distance_m": -0.003932156161193197
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l5_collision_101",
+            "card_side_right_0"
+          ],
+          "distance_m": -0.035018664873824254
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l6_collision_103",
+            "card_base_0"
+          ],
+          "distance_m": -0.0012434780975288811
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l6_collision_103",
+            "card_side_right_0"
+          ],
+          "distance_m": -0.043326269593778374
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l7_collision_105",
+            "card_base_0"
+          ],
+          "distance_m": -0.009122559798354909
+        },
+        {
+          "geoms": [
+            "dexmate_R_arm_l7_collision_105",
+            "card_side_right_0"
+          ],
+          "distance_m": -0.026668896743778484
+        },
+        {
+          "geoms": [
+            "dexmate_R_gripper_base_collision_115",
+            "card_body_back_0"
+          ],
+          "distance_m": -0.012506900870561409
+        },
+        {
+          "geoms": [
+            "dexmate_R_gripper_base_collision_115",
+            "card_back_corner_right_0"
+          ],
+          "distance_m": -0.015296664293195782
+        },
+        {
+          "geoms": [
+            "dexmate_R_gripper_base_collision_115",
+            "card_lid_0"
+          ],
+          "distance_m": -0.02839406308370775
+        },
+        {
+          "geoms": [
+            "dexmate_R_gripper_base_collision_115",
+            "card_lid_side_right_0"
+          ],
+          "distance_m": -0.031722862581921384
+        }
+      ],
+      "minimum_distance_m": -0.09840169118275342
+    }
+  },
+  "execution": {
+    "planner_metadata": {
+      "planner": "OMPL RRTConnect",
+      "version": "2.0.1",
+      "label": "detour",
+      "rng_seed_initial": 2026,
+      "joint_dimension": 7,
+      "joint_limits_rad": [
+        [
+          -3.071,
+          3.071
+        ],
+        [
+          -1.553,
+          0.453
+        ],
+        [
+          -3.071,
+          3.071
+        ],
+        [
+          -3.071,
+          0.244
+        ],
+        [
+          -3.071,
+          3.071
+        ],
+        [
+          -1.396,
+          1.396
+        ],
+        [
+          -1.117,
+          1.378
+        ]
+      ],
+      "range_rad": 0.15,
+      "collision_segment_l2_rad": 0.005,
+      "solve_budget_s": 10.0,
+      "setup_s": 0.0002046590016107075,
+      "ompl_import_s": 0.008290944002510514,
+      "solve_s": 1.7452640859992243,
+      "status": "Exact solution",
+      "exact_solution": true,
+      "collision_checks_solve": {
+        "checks": 9009,
+        "valid": 8611,
+        "invalid": 398
+      },
+      "fallback_used": false,
+      "raw_waypoint_count": 59,
+      "raw_path_l2_rad": 8.559232294213064,
+      "simplification_s": 3.3211178810015554,
+      "waypoint_count": 5,
+      "path_l2_rad": 4.786607560565818,
+      "ompl_path_check": true,
+      "collision_checks_total": {
+        "checks": 27524,
+        "valid": 27060,
+        "invalid": 464
+      },
+      "adapter_total_s": 5.250268427997071,
+      "extra_independent_validation": {
+        "samples": 1596,
+        "max_joint_spacing_rad": 0.0025,
+        "seconds": 0.29705472299974645
+      }
+    },
+    "callback_wall_seconds": 5.5474442190025,
+    "validity_calls": 29122,
+    "path_waypoints": 5,
+    "dense_validation_samples": 799,
+    "dense_validation_seconds": 0.15051186599885114,
+    "path_joint_length_rad": 4.786607560565818,
+    "success": true,
+    "execution_wall_seconds": 11.415387355002167,
+    "actual_final_q": [
+      -0.910679542682445,
+      0.1545676353670084,
+      -1.5337490158670477,
+      -0.009816724506164293,
+      -1.0650099687339494,
+      0.182471481966934,
+      -0.6942585269165286
+    ],
+    "actual_final_tcp": [
+      -0.26814331885150233,
+      0.15711750363841365,
+      0.5303469812758663,
+      -0.15854448163364881,
+      0.6711611096491817,
+      0.48899794633028726,
+      0.5341230389364965
+    ],
+    "final_max_joint_error_rad": 2.3190864606892347e-05,
+    "actual_tcp_error_m": 6.5253504929565965e-06
+  },
+  "metrics": {
+    "robot_contact_observations": 0,
+    "maximum_robot_penetration_m": 0.0,
+    "maximum_robot_contact_normal_force_N": 0.0,
+    "forbidden_contacts_over_shared_limits": 0
+  },
+  "physics_substeps_observed": 46080,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_sha256": {
+    "validation/planner_comparison/ompl_followup/detour/run_detour.py": "146e97b077eb536791e81a7a8fb511dc12b2e8cebde080997ba4acb8956722c5",
+    "validation/planner_comparison/common.py": "f69467ea5cf046c33954dbad645b8c5839feef9908a255dd145ade8bed035560",
+    "validation/planner_comparison/ompl/planner.py": "648487a7ffb943d09800d0760aaaa2cf5f6fea143514148dd4c7398aed9b36eb",
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb"
+  }
+}

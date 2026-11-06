@@ -1,0 +1,70 @@
+{
+  "kind": "move5mm",
+  "route": "baseline",
+  "result": "pass",
+  "initial_tcp": [
+    0.0743633582732556,
+    -0.4216935371916724,
+    1.092363120082859,
+    -0.3964471145891187,
+    0.49654839010349466,
+    -0.49366446845565126,
+    0.5937716515664831
+  ],
+  "initial_state_sha256": "ae0ca9e93e64f8215067f53b33f680795c2bf72f2ac24fbb6bbb1b956624b8c6",
+  "commanded_displacement_m": [
+    0.0,
+    0.0,
+    0.005
+  ],
+  "actual_displacement_m": [
+    1.403732545757208e-07,
+    -4.403460374113877e-08,
+    0.004957086790831067
+  ],
+  "final_tcp_error_m": 4.291346134797795e-05,
+  "wall_seconds": 5.138825268993969,
+  "phase_metrics": {
+    "setup": {
+      "peak_normal_N": 0.0,
+      "peak_sum_normal_N": 0.0,
+      "max_penetration_m": 0.0
+    },
+    "movement": {
+      "peak_normal_N": 0.0,
+      "peak_sum_normal_N": 0.0,
+      "max_penetration_m": 0.0
+    },
+    "hold": {
+      "peak_normal_N": 0.0,
+      "peak_sum_normal_N": 0.0,
+      "max_penetration_m": 0.0
+    }
+  },
+  "physics_substeps": 14000,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "simulation_time_s": 3.49999999999942,
+  "source_sha256": {
+    "environment.py": "a9c08e90c1a679d16900f677d4dbf6db5ce41f9c5c73fffdf8ded9c8e891c602",
+    "models/scene.xml": "a4d3224ec8df5fc2c7a5db85a113f50ac0669fc6a0c41ad6cff7e54fc4460a1e",
+    "physics.json": "bf27f3a9cd53dd0b5b267b22ff7331e0e0302e0b811358e3a57b6d3b690ec425",
+    "robot_config.json": "c194d719f0dbca14bdc6f467084ebb0f6d50bcb3e6928d5fdda96a2b19b224fb",
+    "video_rebuild/config.json": "2d046b2c538b4eeab36d7f84b41153e7b47fe321c259e961c679eb3c4cd3829f"
+  },
+  "mujoco_version": "3.4.0",
+  "numpy_version": "1.26.4",
+  "controller": {
+    "type": "Existing baseline IK/joint PD"
+  },
+  "peak_contact_normal_N": 0.0,
+  "max_hand_base_penetration_m": 0.0
+}

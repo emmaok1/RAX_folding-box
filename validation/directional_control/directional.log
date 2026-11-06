@@ -1,0 +1,5 @@
+directional prepare
+directional edge touch
+directional 10mm push
+directional retreat
+{"controller": "directional", "protocol_completed": true, "error": null, "blank_translation_mm": [-3.812268703005939, 2.7467526252362737, -4.56764670531129e-06], "hand_action_delta_mm": [-8.917408911307934, 0.45275917158499324, 0.3308814349075595], "translation_goal_achieved": false, "peak_sum_normal_N": 0.6257082556998335, "released": true}

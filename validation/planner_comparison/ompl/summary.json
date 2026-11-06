@@ -1,0 +1,63 @@
+{
+  "result": "pass",
+  "upward": {
+    "solve_s": 0.012953197001479566,
+    "planner_callback_s": 0.07843782700365409,
+    "measured_upward_mm": 4.991813883158391,
+    "tcp_error_mm": 0.02106047191570902
+  },
+  "approach": {
+    "solve_s": 0.13746079400152666,
+    "simplification_s": 1.8817668709962163,
+    "planner_callback_s": 2.1349440409976523,
+    "tcp_error_mm": 0.11861633031720242,
+    "independent_dense_samples": 436
+  },
+  "contact": {
+    "confirmed": true,
+    "first_contact": {
+      "stage": "contact_descent",
+      "time_s": 13.59974999999098,
+      "geoms": [
+        "jaw_pad_R_2",
+        "card_base_0"
+      ],
+      "normal_force_N": 4.967499606421157,
+      "distance_m": 9.008358665461755e-06
+    },
+    "tcp_at_stop": [
+      -0.32003971646774165,
+      -0.06499796978604762,
+      0.9473742284583566,
+      8.67286226421481e-07,
+      0.9999999976477928,
+      3.388428559597534e-05,
+      -5.962815869556194e-05
+    ],
+    "released": true
+  },
+  "peak_normal_force_N": 4.967499606421157,
+  "max_robot_base_penetration_m": 0.0,
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "physics_substeps_observed": 70640,
+  "limitations": [
+    "One fixed seed and one start/goal per stage; smoke integration, not a timing benchmark.",
+    "Geometric plans check discretized snapshots, not continuous collision or kinodynamic feasibility proof. Shared execution monitors physical collisions each 0.25ms step.",
+    "Collision checking honors the existing MuJoCo collision masks/exclusions and collision meshes; visual-only geometry is not collision geometry.",
+    "Only seven right-arm joints planned; left arm, grippers, torso remain in full MuJoCo validity and execution checks.",
+    "Contact stage uses the shared Cartesian IK controller, not OMPL contact planning.",
+    "Peak4.9675N is close to the5N shared abort limit; no claim of broadly safe contact-force regulation.",
+    "Actual force-bearing contact occurs at positive9um separation inside configured contact margin; no geometric penetration was observed.",
+    "No full folding, grasping or locking tested.",
+    "All robot-run planner validity samples were valid and final two-waypoint paths were direct joint interpolations; this does not test obstacle-detour superiority."
+  ]
+}

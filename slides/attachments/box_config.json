@@ -1,0 +1,26 @@
+{
+  "design": "Video-inspired connected-lid tuck box, reconstructed independently",
+  "status": "Engineering approximation of visible structure, not recovered manufacturer dieline",
+  "base_width_m": 0.3,
+  "base_depth_m": 0.22,
+  "wall_height_m": 0.09,
+  "thickness_m": 0.004,
+  "basis_weight_g_m2": 400,
+  "layer_clearance_m": 0.0015,
+  "corner_flap_width_m": 0.065,
+  "lid_side_flap_width_m": 0.045,
+  "lid_front_flap_depth_m": 0.05,
+  "tongue_width_m": 0.05,
+  "tongue_length_m": 0.01,
+  "slot_width_m": 0.054,
+  "slot_height_m": 0.007,
+  "root_yaw_rad": -1.5707963267948966,
+  "note": "Video-inspired connected-lid box. All box joints start flat. No grasp aids, automatic folding, snapping or hidden attachments.",
+  "root_xy_m": [
+    -0.32,
+    0.0
+  ],
+  "auto_table_height": true,
+  "table_clearance_m": 0.0002,
+  "initial_angles_deg": {}
+}

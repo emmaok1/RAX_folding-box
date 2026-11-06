@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/home/jennyok/rax-fireworks/rax/.local-runtime/envs/dexjoco/lib/python3.11/site-packages/imageio_ffmpeg/_io.py", line 164, in count_frames_and_secs
+    out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, **_popen_kwargs())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jennyok/rax-fireworks/rax/.local-runtime/envs/dexjoco/lib/python3.11/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jennyok/rax-fireworks/rax/.local-runtime/envs/dexjoco/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/jennyok/rax-fireworks/rax/.local-runtime/envs/dexjoco/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2', '-i', '/home/jennyok/00伯克利/0_科研/\u200cEmbodied_Minds_Harvard/RAX/折纸盒/validation/single_fold_90/run01/trial00/video.mp4', '-map', '0:v:0', '-vf', 'null', '-f', 'null', '-']' returned non-zero exit status 254.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/single_fold/run_fold.py", line 200, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/experiments/single_fold/run_fold.py", line 179, in main
+    r=FoldTrial(out,args.path,args.stages).run();frames,seconds=imageio_ffmpeg.count_frames_and_secs(str(out/'video.mp4'));(out/'artifact_checks.json').write_text(json.dumps({'frames':frames,'seconds':seconds,'frame_count_matches':frames==r['video_frames']},indent=2));print(json.dumps({k:r.get(k) for k in ['fixture_ready','grasp_success','fold15_success','hold_success','return_success','release_success','error','failure_phase','peak_hand_normal_N','hand_force_overshoot_N']},ensure_ascii=False),flush=True);return
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jennyok/rax-fireworks/rax/.local-runtime/envs/dexjoco/lib/python3.11/site-packages/imageio_ffmpeg/_io.py", line 167, in count_frames_and_secs
+    raise RuntimeError(
+RuntimeError: FFMPEG call failed with 254:
+ffmpeg version n9.0.2-17-g2a571b6068-20260930 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-ffbuild-linux-gnu- --arch=x86_64 --target-os=linux --enable-gpl --enable-version3 --disable-debug --enable-iconv --enable-zlib --enable-libxml2 --enable-libsoxr --enable-openssl --enable-libvmaf --enable-libxcb --enable-xlib --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-vulkan --enable-libdav1d --enable-libvorbis --enable-librav1e --enable-librsvg --enable-libpulse --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-opencl --enable-amf --enable-libaom --enable-avisynth --enable-chromaprint --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribb24 --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librubberband --disable-schannel --enable-sdl2 --enable-libsnappy --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --enable-libdrm --enable-vaapi --enable-libvidstab --enable-libvvenc --disable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs='-lgomp -ldl' --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-ffbuild-linux-gnu-gcc --cxx=x86_64-ffbuild-linux-gnu-g++ --ar=x86_64-ffbuild-linux-gnu-gcc-ar --ranlib=x86_64-ffbuild-linux-gnu-gcc-ranlib --nm=x86_64-ffbuild-linux-gnu-gcc-nm --extra-version=20260930
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[in#0 @ 0x5f21096d7c80] Error opening input: No such file or directory
+Error opening input file /home/jennyok/00伯克利/0_科研/‌Embodied_Minds_Harvard/RAX/折纸盒/validation/single_fold_90/run01/trial00/video.mp4.
+Error opening input files: No such file or directory
+

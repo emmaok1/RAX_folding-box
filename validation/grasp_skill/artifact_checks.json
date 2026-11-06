@@ -1,0 +1,32 @@
+[
+  {
+    "trial": "run04/trial00",
+    "video_exists": true,
+    "video_size_bytes": 1086355,
+    "decoded_frames": 517,
+    "video_seconds": 51.7,
+    "logged_frames": 517,
+    "frame_count_matches": true,
+    "image_count": 7
+  },
+  {
+    "trial": "run04/trial01",
+    "video_exists": true,
+    "video_size_bytes": 870456,
+    "decoded_frames": 426,
+    "video_seconds": 42.6,
+    "logged_frames": 426,
+    "frame_count_matches": true,
+    "image_count": 9
+  },
+  {
+    "trial": "run05_minus2/trial00",
+    "video_exists": true,
+    "video_size_bytes": 1099800,
+    "decoded_frames": 522,
+    "video_seconds": 52.2,
+    "logged_frames": 522,
+    "frame_count_matches": true,
+    "image_count": 7
+  }
+]

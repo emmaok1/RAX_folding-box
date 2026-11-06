@@ -1,0 +1,13 @@
+{
+  "reason": "First physics trial passed pickup and cleanup, but postprocessing imported wrong legacy analyze module. Fixed explicit file-path import; no physics rerun.",
+  "physical_skill_source_verified": [
+    "run.py",
+    "scene.py",
+    "probe.py"
+  ],
+  "core_and_path_verified": true,
+  "preserved_error_logs": [
+    "trial00.log",
+    "../run01.log"
+  ]
+}

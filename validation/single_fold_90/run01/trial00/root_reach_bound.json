@@ -1,0 +1,92 @@
+{
+  "read_only": true,
+  "method": "Triangle-inequality upper bound from consecutive joint-anchor distances; not a complete reachability proof when bound not exceeded",
+  "joint_anchor_segment_lengths_m": [
+    0.08521244040631634,
+    0.1699304563637725,
+    0.1350699448434033,
+    0.20258825237411965,
+    0.08260780834763744,
+    0.07916192266487722
+  ],
+  "joint1_anchor_m": [
+    -0.8566500000004673,
+    -0.16946014773001444,
+    1.17582
+  ],
+  "joint7_relative_to_TCP_in_TCP_coordinates_m": [
+    1.1754760095987462e-07,
+    -0.032000733714337426,
+    -0.3584697975411281
+  ],
+  "nominal_goals": [
+    {
+      "angle_deg": 0,
+      "required_joint7_to_joint1_distance_m": 0.5782610350147742,
+      "simple_link_length_upper_bound_m": 0.7545708250001265,
+      "exceeds_simple_upper_bound": false,
+      "still_exceeds_with_full_pose_tolerance": false
+    },
+    {
+      "angle_deg": 15,
+      "required_joint7_to_joint1_distance_m": 0.5916584645757692,
+      "simple_link_length_upper_bound_m": 0.7545708250001265,
+      "exceeds_simple_upper_bound": false,
+      "still_exceeds_with_full_pose_tolerance": false
+    },
+    {
+      "angle_deg": 30,
+      "required_joint7_to_joint1_distance_m": 0.6417943936032326,
+      "simple_link_length_upper_bound_m": 0.7545708250001265,
+      "exceeds_simple_upper_bound": false,
+      "still_exceeds_with_full_pose_tolerance": false
+    },
+    {
+      "angle_deg": 31.5,
+      "required_joint7_to_joint1_distance_m": 0.6484497173574667,
+      "simple_link_length_upper_bound_m": 0.7545708250001265,
+      "exceeds_simple_upper_bound": false,
+      "still_exceeds_with_full_pose_tolerance": false
+    },
+    {
+      "angle_deg": 32,
+      "required_joint7_to_joint1_distance_m": 0.6507242991929318,
+      "simple_link_length_upper_bound_m": 0.7545708250001265,
+      "exceeds_simple_upper_bound": false,
+      "still_exceeds_with_full_pose_tolerance": false
+    },
+    {
+      "angle_deg": 60,
+      "required_joint7_to_joint1_distance_m": 0.8089274399859255,
+      "simple_link_length_upper_bound_m": 0.7545708250001265,
+      "exceeds_simple_upper_bound": true,
+      "still_exceeds_with_full_pose_tolerance": true
+    },
+    {
+      "angle_deg": 90,
+      "required_joint7_to_joint1_distance_m": 0.9984030189051131,
+      "simple_link_length_upper_bound_m": 0.7545708250001265,
+      "exceeds_simple_upper_bound": true,
+      "still_exceeds_with_full_pose_tolerance": true
+    }
+  ],
+  "fixed_geometry_checks_at_home_and_two_IK_poses": [
+    {
+      "max_segment_length_variation_m": 9.71445146547012e-17,
+      "joint7_TCP_fixed_offset_variation_m": 1.149545227444346e-16,
+      "joint1_anchor_variation_m": 0.0
+    },
+    {
+      "max_segment_length_variation_m": 6.938893903907228e-17,
+      "joint7_TCP_fixed_offset_variation_m": 2.0445695323621396e-16,
+      "joint1_anchor_variation_m": 0.0
+    },
+    {
+      "max_segment_length_variation_m": 5.551115123125783e-17,
+      "joint7_TCP_fixed_offset_variation_m": 8.672423373280724e-17,
+      "joint1_anchor_variation_m": 0.0
+    }
+  ],
+  "fixed_geometry_verified": true,
+  "wrist_position_change_allowed_by_pose_tolerances_bound_m": 0.0013796855607425469
+}

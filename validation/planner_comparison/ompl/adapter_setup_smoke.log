@@ -1,0 +1,5 @@
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 40 states (14 start + 26 goal)
+Info:    Solution found in 0.005998 seconds
+Info:    SimpleSetup: Path simplification took 0.004184 seconds and changed from 12 to 8 states
+PASS {'planner': 'OMPL RRTConnect', 'version': '2.0.1', 'label': 'adapter_obstacle_smoke', 'rng_seed_initial': 2026, 'joint_dimension': 7, 'joint_limits_rad': [[-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0]], 'range_rad': 0.15, 'collision_segment_l2_rad': 0.005, 'solve_budget_s': 5.0, 'setup_s': 0.00025922799977706745, 'ompl_import_s': 0.012678463994234335, 'solve_s': 0.006021083994710352, 'status': 'Exact solution', 'exact_solution': True, 'collision_checks_solve': {'checks': 1226, 'valid': 1172, 'invalid': 54}, 'fallback_used': False, 'raw_waypoint_count': 12, 'raw_path_l2_rad': 1.6150438073416669, 'simplification_s': 0.0041910639993147925, 'waypoint_count': 8, 'path_l2_rad': 1.0581455405161122, 'ompl_path_check': True, 'collision_checks_total': {'checks': 4247, 'valid': 4142, 'invalid': 105}, 'adapter_total_s': 0.010999760001141112}

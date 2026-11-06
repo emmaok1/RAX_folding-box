@@ -1,0 +1,31 @@
+10mm水平搬移任务报告
+
+{'pickup_success': 3, 'transport_success': 3, 'return_success': 3, 'cleanup_success': 3, 'protocol_completed': 3}
+每轮正常home与相同零偏移面板/支座，复用并重新验证已通过的OMPL接近路径。
+夹起成功后，在当前阻抗控制内沿世界+Y命令10mm/5s，保持60个20ms步，再返回10mm/5s，保持后正常放置/张开/退手。
+成功阈值在首轮前固定：实际COM的Y位移9–11mm，保持>=1s，无支撑且两颚承载；X/Z各漂移<=2mm；全搬移相对位姿变化<3mm/.05rad。返回COM误差<=2mm。
+搬移参考为pickup保持结束时真实COM及物体/工具相对位姿，不把前段夹起的2.6mm偏移重新计为搬移滑移。
+原3N力反馈覆盖所有新阶段，参数、几何、材料及5N/8mm/.10rad在线终止阈值均未改变。
+scratch路径用当前物体/手关系预测携物位姿，1mm采样检查IK与碰撞；这种预测只发生在scratch，不是执行中的附件约束。
+
+试验1: {'pickup_success': True, 'transport_success': True, 'return_success': True, 'cleanup_success': True, 'protocol_completed': True}
+搬移: {"hold_duration_s": 1.1800000000056343, "hold_y_min_m": 0.00985033828071391, "hold_y_max_m": 0.010116495524422287, "hold_final_com_delta_m": [7.997393691194592e-05, 0.010116495524422287, -1.8049782539719672e-05], "hold_final_tcp_delta_m": [-1.169358283759081e-06, 0.00999974402796, 1.3666983147420098e-06], "max_abs_x_drift_m": 0.00012707991771382891, "max_abs_z_drift_m": 5.793001569154299e-05, "max_relative_translation_m": 0.0001433744452166578, "max_relative_rotation_rad": 0.0010029928928392477, "max_support_N": 0.0, "min_loaded_jaw_N": 1.0689978774907574, "hold_max_return_error_m": 0.010116827730118324, "sample_count": 310}
+返回: {"hold_duration_s": 1.1800000000056343, "hold_y_min_m": 0.0002336933070667957, "hold_y_max_m": 0.0004707956243764633, "hold_final_com_delta_m": [0.0001561322959353653, 0.00023863456733497213, -1.6566699923226125e-05], "hold_final_tcp_delta_m": [1.087165027724435e-06, 1.4215621724211758e-07, -7.800009773628602e-07], "max_abs_x_drift_m": 0.0001561322959353653, "max_abs_z_drift_m": 3.83956461009749e-05, "max_relative_translation_m": 0.00028493190925872255, "max_relative_rotation_rad": 0.0020256553917170524, "max_support_N": 0.0, "min_loaded_jaw_N": 1.070484675297057, "hold_max_return_error_m": 0.00047712209635396595, "sample_count": 310}
+峰值N: {'pickup': 2.9025727455798345, 'cleanup': 2.9258224405556015, 'recovery': 0.0, 'transport': 2.7829157117291197, 'return': 2.7667036426421197}；5N超调0.0N；warning[0, 0, 0, 0, 0, 0, 0, 0]
+失败阶段: None；错误: None
+
+试验2: {'pickup_success': True, 'transport_success': True, 'return_success': True, 'cleanup_success': True, 'protocol_completed': True}
+搬移: {"hold_duration_s": 1.1800000000056343, "hold_y_min_m": 0.00985033828071391, "hold_y_max_m": 0.010116495524422287, "hold_final_com_delta_m": [7.997393691194592e-05, 0.010116495524422287, -1.8049782539719672e-05], "hold_final_tcp_delta_m": [-1.169358283759081e-06, 0.00999974402796, 1.3666983147420098e-06], "max_abs_x_drift_m": 0.00012707991771382891, "max_abs_z_drift_m": 5.793001569154299e-05, "max_relative_translation_m": 0.0001433744452166578, "max_relative_rotation_rad": 0.0010029928928392477, "max_support_N": 0.0, "min_loaded_jaw_N": 1.0689978774907574, "hold_max_return_error_m": 0.010116827730118324, "sample_count": 310}
+返回: {"hold_duration_s": 1.1800000000056343, "hold_y_min_m": 0.0002336933070667957, "hold_y_max_m": 0.0004707956243764633, "hold_final_com_delta_m": [0.0001561322959353653, 0.00023863456733497213, -1.6566699923226125e-05], "hold_final_tcp_delta_m": [1.087165027724435e-06, 1.4215621724211758e-07, -7.800009773628602e-07], "max_abs_x_drift_m": 0.0001561322959353653, "max_abs_z_drift_m": 3.83956461009749e-05, "max_relative_translation_m": 0.00028493190925872255, "max_relative_rotation_rad": 0.0020256553917170524, "max_support_N": 0.0, "min_loaded_jaw_N": 1.070484675297057, "hold_max_return_error_m": 0.00047712209635396595, "sample_count": 310}
+峰值N: {'pickup': 2.9025727455798345, 'cleanup': 2.9258224405556015, 'recovery': 0.0, 'transport': 2.7829157117291197, 'return': 2.7667036426421197}；5N超调0.0N；warning[0, 0, 0, 0, 0, 0, 0, 0]
+失败阶段: None；错误: None
+
+试验3: {'pickup_success': True, 'transport_success': True, 'return_success': True, 'cleanup_success': True, 'protocol_completed': True}
+搬移: {"hold_duration_s": 1.1800000000056343, "hold_y_min_m": 0.00985033828071391, "hold_y_max_m": 0.010116495524422287, "hold_final_com_delta_m": [7.997393691194592e-05, 0.010116495524422287, -1.8049782539719672e-05], "hold_final_tcp_delta_m": [-1.169358283759081e-06, 0.00999974402796, 1.3666983147420098e-06], "max_abs_x_drift_m": 0.00012707991771382891, "max_abs_z_drift_m": 5.793001569154299e-05, "max_relative_translation_m": 0.0001433744452166578, "max_relative_rotation_rad": 0.0010029928928392477, "max_support_N": 0.0, "min_loaded_jaw_N": 1.0689978774907574, "hold_max_return_error_m": 0.010116827730118324, "sample_count": 310}
+返回: {"hold_duration_s": 1.1800000000056343, "hold_y_min_m": 0.0002336933070667957, "hold_y_max_m": 0.0004707956243764633, "hold_final_com_delta_m": [0.0001561322959353653, 0.00023863456733497213, -1.6566699923226125e-05], "hold_final_tcp_delta_m": [1.087165027724435e-06, 1.4215621724211758e-07, -7.800009773628602e-07], "max_abs_x_drift_m": 0.0001561322959353653, "max_abs_z_drift_m": 3.83956461009749e-05, "max_relative_translation_m": 0.00028493190925872255, "max_relative_rotation_rad": 0.0020256553917170524, "max_support_N": 0.0, "min_loaded_jaw_N": 1.070484675297057, "hold_max_return_error_m": 0.00047712209635396595, "sample_count": 310}
+峰值N: {'pickup': 2.9025727455798345, 'cleanup': 2.9258224405556015, 'recovery': 0.0, 'transport': 2.7829157117291197, 'return': 2.7667036426421197}；5N超调0.0N；warning[0, 0, 0, 0, 0, 0, 0, 0]
+失败阶段: None；错误: None
+
+核心597文件前后哈希一致=True。
+每轮的pickup/transport/return检查点、raw trajectory/forces/contact日志、transport_trace、阶段PNG和MP4均在trial目录；模型审计和视频解码检验沿用独立任务工具。
+固定场景有界测试，不能外推一般鲁棒性；5N是监测终止阈值，不是硬力上限。

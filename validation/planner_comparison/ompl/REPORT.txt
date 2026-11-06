@@ -1,0 +1,14 @@
+OMPL + MuJoCo shared smoke: PASS
+
+Reproduce:
+MUJOCO_GL=egl .venv/bin/python validation/planner_comparison/ompl/run_smoke.py
+
+Real OMPL2.0.1 RRTConnect, seven right-arm joint variables, existing MuJoCo3.4.0 collision geometry. Task-local published wheel; no root environment/core edits. Fixed initial RNG seed2026, full joint limits,0.15rad extension range,0.005rad maximum L2 validation segment,10s search budget. Only exact planner solutions accepted. OMPL shortcutting reduced both successful paths to two waypoints; these straight final paths came from valid actual planner solutions and validated simplification, not a fallback.
+
+Upward target5mm: actual Z4.991814mm, total TCP error0.021060mm. Search12.953ms; full callback78.438ms. Endpoint joint error9.35e-6rad.
+Approach: actual TCP error0.118616mm. Search137.461ms; shortcutting1.881767s; full callback2.134944s. Independent dense path validation436samples. The simplification call requested0.2s but overran while finishing its operation; actual time is reported.
+Actual contact: jaw_pad_R_2 / card_base_0 at4.967500N normal force; positive9.008um distance lies within the pre-existing contact margin. Peak close to5N abort limit. No robot/base penetration observed. Successful retract and release.70,640physics substeps monitored, all MuJoCo warning counters zero.
+
+Evidence: run/result.json, run/trace.json, run/*_path.json and .npy, run/*_planner.json, smoke_stdout_stderr.log, five rendered PNGs. Core/shared/adapter source hashes are in result.json; setup.json contains package binary hashes. source_snapshot preserves the exact adapter and shared protocol used. Contact and retracted screenshots visually inspected. No tracked git changes.
+
+Scope: all planner validity checks in this robot run were valid, and both final two-waypoint paths show direct joint interpolation was already clear. This does not test obstacle-detour superiority. Contact force is near the abort threshold and does not establish sub-newton or gentle force regulation. Single-seed integration smoke; discrete geometric collision checking with existing MuJoCo masks/exclusions, not continuous swept collision proof or a planner benchmark. Physical playback checked contacts after every0.25ms simulation step. Left arm, grippers and torso remain in whole-model collision checks. Contact descent and retraction use the shared existing Cartesian controller, not OMPL contact planning. No full fold/grasp/lock claim. Initial toy API probe showed nanobind shutdown lifetime warnings; the final adapter and physics run exited cleanly with none.

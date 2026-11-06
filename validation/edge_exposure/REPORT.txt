@@ -1,0 +1,19 @@
+EDGE EXPOSURE NOT ACHIEVED. Two motor-only contact trials; no grasp/fold executed.
+
+Both used a real OMPL RRTConnect free-space approach to a centered top-contact pose, slow final contact, and z motor-reference adjustment toward nominal4 N summed hand/card normal load. Only existing FoldingBoxEnv.step and step_joint_targets moved the robot. All contact forces, penetrations and warnings were observed after every0.25 ms physics substep. No core, planner-library, geometry, collision, force, or executed-state modifications.
+
+Trial1 (load_4p0):75 mm commanded drag; actual hand travel71.96 mm, blank travel0.172 mm during drag. Final initial-relative base displacement[-0.1719,+0.00021,-0.000002] mm. The conservative feedback failed to achieve4 N: mean drag load0.460 N, median0.441 N,95th percentile0.789 N. Brief impacts nevertheless reached7.593 N during drag and5.001 N during retreat. Configured observational trip thresholds were12 N total/8 N per contact; these were emergency limits, not target loads. Retreat and release completed; final hand force0 N and table support1.054 N.
+
+Trial2: faster reference feedback and longer15-second load settling yielded sustained drag load: mean3.483 N, median3.468 N,95th percentile3.591 N;99.85% of drag substeps were within3–5 N. After24.1 mm commanded movement, actual hand travel was13.08 mm and blank travel0.417 mm from its predrag state. Final initial-relative blank displacement[-0.3601,+0.0351,-0.00414] mm. A13.306 N first-exceeding impact triggered the5 N total-force trip at36.2405 simulated seconds. The5 N threshold is NOT a force cap. Execution stopped immediately; NO retreat/release was performed or claimed. Final state remains in contact; table support14.363 N includes the hand load. State preserved in trial2/final_state.npz.
+
+Neither run exposes the front edge. Table near edge x=-0.55 m; final front minimum x=-0.520180 m /-0.520428 m, leaving29.820 /29.572 mm inside the tabletop. Both bases remain entirely within tabletop XY bounds and have measured base/table support. Final yaw changes were-0.00333 /-0.02686 degrees; maximum observed roll/pitch remained below0.00184 degrees. Maximum passive crease changes were0.000615 /0.001003 degrees: effectively flat, not a folding maneuver.
+
+Both runs: zero MuJoCo warnings, no observed forbidden robot/table/self contact, finite state. Maximum cardboard penetration76.7 micrometers occurred during initial reset settling; contact-phase penetration in trial2 was at most2.925 micrometers, and trial1 contact phases had none. Maximum measured robot penetration0. Maxima include all physics substeps through trial1 retreat and trial2 trip.
+
+Scratch horizontal-grasp checks inspect all right gripper vendor collision meshes plus custom pads, table-plane clearance and robot/table/torso/left-arm collision pairs in the final scene. Candidate IK residuals are substantial and the edge remains unexposed; NO feasible grasp or full approach is certified. Scratch states were never executed.
+
+Conclusion: the tested top-contact drag mostly slips; increasing sustained load did not expose the edge and introduced an impact trip. This bounded negative result does not establish impossibility. Stop here for user review; no further motion, grasp or fold.
+
+Reproduce trial1: MUJOCO_GL=egl .venv/bin/python validation/edge_exposure/attempt1.py
+Reproduce trial2: MUJOCO_GL=egl .venv/bin/python validation/edge_exposure/reproduce.py --tag trial2_rerun
+Both reuse the task-local OMPL installation; no dependency copies. Evidence: summary.json, measurements.png, each run's result.json, compressed substep_forces.csv.gz and state_trace.json.gz, before/after images. Core source SHA256 values are recorded per result and match prior baseline. Git tracked working tree remains clean.

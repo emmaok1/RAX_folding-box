@@ -1,0 +1,17 @@
+Matched slow-contact experiment: all three runs completed.
+
+Same motor-only OMPL-path replay, common near-surface prestage and settled executed start. Only final descent speed/increment varies. Same20ms command updates/first-touch detection rule and retreat; forces monitored every0.25ms physics substep. No gains, physics, geometry, planner library, or force-response logic changed. Single deterministic trial at each speed.
+
+Speed(mm/s) | Target increment(mm/20ms) | Peak normal force(N) | Reduction vs5mm/s
+5 | 0.1 | 4.842451 | 0.00%
+1 | 0.02 | 0.839294 | 82.67%
+0.5 | 0.01 | 0.614258 | 87.32%
+
+All three begin from exactly identical qpos/qvel/ctrl (hash verified), with actual pad/base clearance1.326907mm.
+Peak measurements include descent and retreat, sampled at each0.25ms physics step. Max per-contact and summed normal peaks coincide in these runs.
+All detected contact and released; no measured hand/base penetration, unexpected robot contacts, or MuJoCo warnings.
+Single deterministic trial at each speed; this does not establish reliable force regulation across grasps or geometries.
+Existing OMPL-produced free-space path replayed identically. No planner library, robot controller gains, geometry or physics files changed.
+Reproduce from repo root: MUJOCO_GL=egl .venv/bin/python validation/slow_contact/test.py
+Force traces: speed_*/force_trace.csv.gz; per-run motor traces and before/contact/retracted PNGs retained.
+setup_check_failed/ contains preliminary aborted setup checks (no contact): a vendor mesh distance query returned intermittent zero distances. Final clearance check uses actual pad vertex heights in the base frame and verifies pad footprint lies within the base. Preliminary aborted checks excluded from comparison.

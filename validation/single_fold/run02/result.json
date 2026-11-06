@@ -1,0 +1,4378 @@
+{
+  "task": "fixture_assisted_single_fold",
+  "trials": [
+    {
+      "task": "single_fold",
+      "protocol_completed": true,
+      "failure_phase": null,
+      "simplified_scene": true,
+      "original_whole_box_solved": false,
+      "offset_y_m": 0.0,
+      "success": true,
+      "force_abort_threshold_N": 5.0,
+      "force_definition": "sum of nonnegative normal forces across both right jaw/card groups; sampled every 0.25ms; threshold is NOT a hard cap",
+      "panel": "box_side_left",
+      "dimensions_m": [
+        0.09,
+        0.217,
+        0.004
+      ],
+      "mass_kg": 0.007786400000000001,
+      "stand_size_m": [
+        0.299,
+        0.24,
+        0.22
+      ],
+      "stand_top_z_m": 1.14,
+      "stand_center_m": [
+        0.0905,
+        -0.65,
+        1.03
+      ],
+      "home_right_rad": [
+        -0.8,
+        -0.28,
+        0,
+        -1.25,
+        0,
+        -0.45,
+        0
+      ],
+      "controller": "Original joint PD for OMPL; unchanged RightArmImpedance for passive-crease arc",
+      "closure": "nonzero position reference at .05 rad/s down to .04, .006 rad/s to .002; then bounded motor torque feedback target3N, max0.30Nm; feedback continues through lift/hold, torque slew0.05Nm/s",
+      "checks": {},
+      "fixture_ready": true,
+      "grasp_success": true,
+      "fold15_success": true,
+      "hold_success": true,
+      "return_success": true,
+      "release_success": true,
+      "base_mass_kg": 0.026400000000000003,
+      "fixture_role": "Free base retained solely by lower stand, cap and side/far stops through original table/card contact law; moving panel free of fixture.",
+      "thresholds": {
+        "fold_target_deg": 15.0,
+        "angle_bounds_deg": [
+          13.0,
+          17.0
+        ],
+        "hold_s": 1.0,
+        "base_translation_m": 0.002,
+        "base_rotation_deg": 1.0,
+        "relative_slip_m": 0.003,
+        "relative_angle_rad": 0.05,
+        "slip_abort_m": 0.008,
+        "angle_abort_rad": 0.1,
+        "hand_force_abort_N": 5.0,
+        "return_angle_bounds_deg": [
+          -2.0,
+          2.0
+        ]
+      },
+      "arc_speed_deg_s": 2.0,
+      "model_audit": {
+        "box_base_inertial_exact": true,
+        "box_base_geom_exact": true,
+        "box_side_left_inertial_exact": true,
+        "box_side_left_geom_exact": true,
+        "crease_attributes_exact": true,
+        "reverse_tendon_exact": true,
+        "original_crease_attributes": {
+          "name": "crease_side_left",
+          "type": "hinge",
+          "axis": "0 1 0",
+          "pos": "0 0 0.002",
+          "range": "-0.12 1.78",
+          "damping": "0.00434",
+          "stiffness": "0.00021700000000000002",
+          "springref": "0",
+          "frictionloss": "0.0217",
+          "armature": "1e-08",
+          "solreffriction": "0.002 1",
+          "solimpfriction": "0.999 0.9999 1e-05 0.5 2"
+        },
+        "original_reverse_tendon": "<fixed name=\"passive_reverse_side_left\" stiffness=\"0.032333\" springlength=\"0 10\" limited=\"false\">\n      <joint joint=\"crease_side_left\" coef=\"1\" />\n    </fixed>\n    ",
+        "compiled_pair_inertia_exact": true,
+        "robot_geom_exact": true,
+        "physics_exact": true,
+        "actuator_limits_exact": true,
+        "no_object_actuator": true,
+        "equality_count": 2,
+        "object_joints": [
+          "box_free",
+          "crease_side_left"
+        ],
+        "fixture_geometry": [
+          {
+            "name": "support_top",
+            "center_m": [
+              0.0905,
+              -0.65,
+              1.03
+            ],
+            "size_m": [
+              0.299,
+              0.24,
+              0.22
+            ]
+          },
+          {
+            "name": "fixture_cap",
+            "center_m": [
+              0.105,
+              -0.65,
+              1.1493
+            ],
+            "size_m": [
+              0.27,
+              0.2364,
+              0.01
+            ]
+          },
+          {
+            "name": "fixture_y_minus",
+            "center_m": [
+              0.0905,
+              -0.7642,
+              1.14715
+            ],
+            "size_m": [
+              0.299,
+              0.008,
+              0.0143
+            ]
+          },
+          {
+            "name": "fixture_y_plus",
+            "center_m": [
+              0.0905,
+              -0.5358,
+              1.14715
+            ],
+            "size_m": [
+              0.299,
+              0.008,
+              0.0143
+            ]
+          },
+          {
+            "name": "fixture_far_stop",
+            "center_m": [
+              0.2442,
+              -0.65,
+              1.14715
+            ],
+            "size_m": [
+              0.008,
+              0.2364,
+              0.0143
+            ]
+          }
+        ],
+        "declared_initial_clearances_m": {
+          "bottom": 0.0002,
+          "cap": 0.0001,
+          "lateral_each": 0.0002,
+          "far_stop": 0.0002,
+          "stand_left_of_base_crease_gap": 0.001,
+          "cap_from_crease": 0.03
+        },
+        "base_center_m": [
+          0.09,
+          -0.65,
+          1.1422
+        ],
+        "hinge_world_initial_m": [
+          -0.06,
+          -0.65,
+          1.1442
+        ],
+        "axis_world_initial": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "fk_method": "Dedicated MjData, mj_kinematics on SAME current live qpos; execution state hash checked before/after",
+      "initial_state": {
+        "t": 0.0,
+        "phase": "home_settle",
+        "tcp": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "target": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "com": [
+          -0.10486081715000001,
+          -0.65,
+          1.1422
+        ],
+        "object_quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_position": [
+          0.2638027146413157,
+          -8.884204937557177e-05,
+          -0.1309082904474838
+        ],
+        "relative_rotation": [
+          [
+            -0.1925387630454992,
+            -0.9610547100892568,
+            0.19824900741280765
+          ],
+          [
+            -0.019458478003582858,
+            -0.19825015611912872,
+            -0.9799582864757688
+          ],
+          [
+            0.9810964235785864,
+            -0.1925375802642057,
+            0.019470177896242613
+          ]
+        ],
+        "q": [
+          -0.8,
+          -0.28,
+          0.0,
+          -1.25,
+          0.0,
+          -0.45,
+          0.0
+        ],
+        "gripper_q": [
+          0.288,
+          0.288
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.06,
+          -0.65,
+          1.1422
+        ],
+        "base_position": [
+          0.09,
+          -0.65,
+          1.1422
+        ],
+        "base_rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crease_rad": 0.0,
+        "crease_fk_cached_rad": 0.0,
+        "crease_fk_rad": 0.0,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.0,
+        "moving_fixture_force_N": 0.0
+      },
+      "initial_execution_state_sha256": "76ce910e5216aa45433cbfa540361220b8129199bb113b32733d7ab23386569a",
+      "settled_state": {
+        "t": 0.9999999999999176,
+        "phase": "fixture_settle",
+        "tcp": [
+          0.07436335806195604,
+          -0.42169353699415224,
+          1.092363119892725,
+          -0.3964471146154368,
+          0.49654839017619246,
+          -0.4936644682921953,
+          0.593771651624015
+        ],
+        "target": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "com": [
+          -0.10485098185061496,
+          -0.6499924161016871,
+          1.1415767187613035
+        ],
+        "object_quat": [
+          0.9999999426744538,
+          1.1716434526935165e-06,
+          -0.0003380176852027214,
+          -1.984341595945547e-05
+        ],
+        "relative_position": [
+          0.2636699675290803,
+          0.0005202526931938484,
+          -0.13091223665495028
+        ],
+        "relative_rotation": [
+          [
+            -0.19236655360398738,
+            -0.9610618832162541,
+            0.198381364254186
+          ],
+          [
+            -0.02011309182240146,
+            -0.19825323766025874,
+            -0.9799444460246557
+          ],
+          [
+            0.9811170024986158,
+            -0.1924985984002294,
+            0.01880736616539759
+          ]
+        ],
+        "q": [
+          -0.799999999967911,
+          -0.2800000000039848,
+          3.2448351930303496e-12,
+          -1.249999999984451,
+          7.906110709711085e-14,
+          -0.4499999999940916,
+          3.8136560367522314e-12
+        ],
+        "gripper_q": [
+          0.286542338233294,
+          0.2865405828641785
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.05999017498717489,
+          -0.649994196520828,
+          1.1416070462566177
+        ],
+        "base_position": [
+          0.09000849644194762,
+          -0.650000149377918,
+          1.1416088179210007
+        ],
+        "base_rotation": [
+          [
+            0.9999999991427214,
+            3.96860375714261e-05,
+            -1.1814235299064488e-05
+          ],
+          [
+            -3.968606541117382e-05,
+            0.9999999992097325,
+            -2.3562327636201776e-06
+          ],
+          [
+            1.1814141780186093e-05,
+            2.356701622115091e-06,
+            0.9999999999274364
+          ]
+        ],
+        "crease_rad": -0.0006644070623579332,
+        "crease_fk_cached_rad": -0.0006642211948679485,
+        "crease_fk_rad": -0.0006644070623579333,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.6881648824623195,
+        "moving_fixture_force_N": 0.0
+      },
+      "settle_position_span_m": [
+        4.320441724561808e-06,
+        7.422310227545026e-07,
+        0.000375889251028827
+      ],
+      "grasp_target": [
+        -0.13661712167797416,
+        -0.6514911553965312,
+        1.1415622402317738,
+        1.3202936956303918e-05,
+        0.7068677260538972,
+        -1.485989101736873e-05,
+        0.7073457552486327
+      ],
+      "ik": {
+        "pre": {
+          "position_m": 1.4852448600089099e-05,
+          "orientation_rad": 6.0915501389674274e-05
+        },
+        "grasp": {
+          "position_m": 3.6858272351402314e-05,
+          "orientation_rad": 0.00012292156447491032
+        }
+      },
+      "planner": {
+        "reused": "validation/single_fold/run01/trial00/approach_path.npy",
+        "sha256": "d94a7eee43f9b99631187249d958a3ee777498bb4776a2252808e5b5422c288a"
+      },
+      "path_dense_samples": 272,
+      "postclosure": {
+        "t": 31.540000000059585,
+        "phase": "grasp_settle",
+        "tcp": [
+          -0.13667160917004598,
+          -0.6514903794700312,
+          1.1413886833259559,
+          1.4625212553576187e-05,
+          0.7068622524538356,
+          -1.1798877707025477e-05,
+          0.7073512251369752
+        ],
+        "target": [
+          -0.13661712167797416,
+          -0.6514911553965312,
+          1.1415622402317738,
+          1.3202936956303918e-05,
+          0.7068677260538972,
+          -1.485989101736873e-05,
+          0.7073457552486327
+        ],
+        "com": [
+          -0.10478312266907933,
+          -0.6501727337660361,
+          1.1416505807995814
+        ],
+        "object_quat": [
+          0.999995327050053,
+          -2.707854039207125e-06,
+          -0.0030570776396121467,
+          -1.2125609690117445e-05
+        ],
+        "relative_position": [
+          0.00023985143371365957,
+          -0.001318836354268049,
+          0.03188861072186569
+        ],
+        "relative_rotation": [
+          [
+            0.005422626456241065,
+            -1.348363516172889e-06,
+            0.9999852974521666
+          ],
+          [
+            -1.311107884279966e-05,
+            -0.9999999999132341,
+            -1.2772858124088247e-06
+          ],
+          [
+            0.9999852973671244,
+            -1.3103959832697262e-05,
+            -0.005422626473449091
+          ]
+        ],
+        "q": [
+          -1.3906378624740956,
+          -1.2348277823261573,
+          0.2652611716526761,
+          -1.1678584127162137,
+          -0.3642165847217354,
+          0.46639661446124125,
+          0.2898599255963955
+        ],
+        "gripper_q": [
+          0.015940992784921188,
+          0.01596648605909184
+        ],
+        "gripper_command": 0.0,
+        "effort_scale": 0.7439989428319095,
+        "jaw_forces_N": [
+          1.5004376792330867,
+          1.3604033829666065
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.059923144045874725,
+          -0.6501738209477441,
+          1.1419248655228105
+        ],
+        "base_position": [
+          0.09006431180580084,
+          -0.6501774609186661,
+          1.1419012780212459
+        ],
+        "base_rotation": [
+          [
+            0.9999999873808698,
+            2.426766229556976e-05,
+            0.0001570010850385083
+          ],
+          [
+            -2.4268500624479855e-05,
+            0.9999999996912741,
+            5.3377347970080964e-06
+          ],
+          [
+            -0.00015700095545569253,
+            -5.3415449105808275e-06,
+            0.9999999876610837
+          ]
+        ],
+        "crease_rad": -0.0062708928723430825,
+        "crease_fk_cached_rad": -0.006271165824186888,
+        "crease_fk_rad": -0.0062708928723430825,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.11648545279389572,
+        "moving_fixture_force_N": 0.0
+      },
+      "arc_reference": {
+        "axis": [
+          2.426766229556976e-05,
+          0.9999999996912742,
+          -5.3415449105808275e-06
+        ],
+        "anchor": [
+          -0.05993537229915955,
+          -0.6501738099681028,
+          1.1439248281398864
+        ],
+        "angle": -0.0062708928723430825,
+        "tcp": [
+          -0.13667160917004598,
+          -0.6514903794700312,
+          1.1413886833259559,
+          1.4625212553576187e-05,
+          0.7068622524538356,
+          -1.1798877707025477e-05,
+          0.7073512251369752
+        ]
+      },
+      "arc_prediction": {
+        "prediction_only": true,
+        "passed": true,
+        "samples": [
+          {
+            "predicted_angle_rad": -0.0062708928723430825,
+            "ik": {
+              "position_m": 6.604110407648283e-09,
+              "orientation_rad": 2.9062060562764728e-08
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.002664783150039999,
+            "ik": {
+              "position_m": 3.2501994068472577e-05,
+              "orientation_rad": 4.57028159080759e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.01160045917242308,
+            "ik": {
+              "position_m": 3.5396760458200023e-05,
+              "orientation_rad": 4.804139485004053e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.02053613519480616,
+            "ik": {
+              "position_m": 3.75782079353426e-05,
+              "orientation_rad": 5.232850067872537e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.029471811217189243,
+            "ik": {
+              "position_m": 3.9976649993362355e-05,
+              "orientation_rad": 5.841024879669524e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.03840748723957233,
+            "ik": {
+              "position_m": 4.262119936564434e-05,
+              "orientation_rad": 6.603910925825083e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.04734316326195541,
+            "ik": {
+              "position_m": 4.54977681672036e-05,
+              "orientation_rad": 7.49310386453687e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.05627883928433849,
+            "ik": {
+              "position_m": 4.858523804413142e-05,
+              "orientation_rad": 8.485743800230629e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06521451530672157,
+            "ik": {
+              "position_m": 5.185667762879299e-05,
+              "orientation_rad": 9.564473441568423e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.07415019132910465,
+            "ik": {
+              "position_m": 5.527824454113429e-05,
+              "orientation_rad": 0.00010715714478882252
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.08308586735148774,
+            "ik": {
+              "position_m": 5.880785019450791e-05,
+              "orientation_rad": 0.0001192794025690969
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0920215433738708,
+            "ik": {
+              "position_m": 6.239390573958534e-05,
+              "orientation_rad": 0.00013190281186122648
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10095721939625389,
+            "ik": {
+              "position_m": 6.5974431182382e-05,
+              "orientation_rad": 0.000144914707874693
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10989289541863698,
+            "ik": {
+              "position_m": 6.94769050579696e-05,
+              "orientation_rad": 0.00015819086345551442
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.11882857144102005,
+            "ik": {
+              "position_m": 7.281934219434721e-05,
+              "orientation_rad": 0.00017159060999282828
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.12776424746340315,
+            "ik": {
+              "position_m": 7.591317366356846e-05,
+              "orientation_rad": 0.00018495479335459454
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.13669992348578622,
+            "ik": {
+              "position_m": 7.866850984470915e-05,
+              "orientation_rad": 0.00019810693879361091
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1456355995081693,
+            "ik": {
+              "position_m": 8.100221239415338e-05,
+              "orientation_rad": 0.0002108580441447608
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1545712755305524,
+            "ik": {
+              "position_m": 8.284878675207689e-05,
+              "orientation_rad": 0.0002230151774970775
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.16350695155293546,
+            "ik": {
+              "position_m": 8.417335472595761e-05,
+              "orientation_rad": 0.00023439348251166943
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.17244262757531856,
+            "ik": {
+              "position_m": 8.498487960869695e-05,
+              "orientation_rad": 0.0002448303466421981
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.18137830359770163,
+            "ik": {
+              "position_m": 8.534656771749344e-05,
+              "orientation_rad": 0.0002541995759397333
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1903139796200847,
+            "ik": {
+              "position_m": 8.537939284870837e-05,
+              "orientation_rad": 0.000262422813838671
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1992496556424678,
+            "ik": {
+              "position_m": 8.525470369276337e-05,
+              "orientation_rad": 0.000269475551533151
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.20818533166485087,
+            "ik": {
+              "position_m": 8.51737244717648e-05,
+              "orientation_rad": 0.0002753861242708696
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.21712100768723394,
+            "ik": {
+              "position_m": 8.53358734522517e-05,
+              "orientation_rad": 0.000280227870030226
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.22605668370961704,
+            "ik": {
+              "position_m": 8.590324980983858e-05,
+              "orientation_rad": 0.00028410649642692654
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2349923597320001,
+            "ik": {
+              "position_m": 8.697243988388174e-05,
+              "orientation_rad": 0.00028714585852338963
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.24392803575438318,
+            "ik": {
+              "position_m": 8.856344798609917e-05,
+              "orientation_rad": 0.0002894753141212384
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2528637117767663,
+            "ik": {
+              "position_m": 9.062850887455846e-05,
+              "orientation_rad": 0.0002912207312380431
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2617993877991494,
+            "ik": {
+              "position_m": 9.307504707649362e-05,
+              "orientation_rad": 0.00029249970746212663
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2617993877991494,
+            "ik": {
+              "position_m": 9.307504707649362e-05,
+              "orientation_rad": 0.00029249970746212663
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.25307274153917775,
+            "ik": {
+              "position_m": 5.2774196615599974e-05,
+              "orientation_rad": 0.0002637143302470129
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.24434609527920612,
+            "ik": {
+              "position_m": 6.046419015089858e-05,
+              "orientation_rad": 0.00031144316078006424
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.23561944901923446,
+            "ik": {
+              "position_m": 5.877646294796017e-05,
+              "orientation_rad": 0.0003039222923138887
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.22689280275926282,
+            "ik": {
+              "position_m": 5.665286016670997e-05,
+              "orientation_rad": 0.00029135190314152437
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.21816615649929116,
+            "ik": {
+              "position_m": 5.501586344875305e-05,
+              "orientation_rad": 0.00027765064318086843
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2094395102393195,
+            "ik": {
+              "position_m": 5.4033848380016353e-05,
+              "orientation_rad": 0.00026321566413163263
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.20071286397934787,
+            "ik": {
+              "position_m": 5.373266241902877e-05,
+              "orientation_rad": 0.00024822747788270596
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.19198621771937624,
+            "ik": {
+              "position_m": 5.402415531987674e-05,
+              "orientation_rad": 0.00023289488340721347
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.18325957145940458,
+            "ik": {
+              "position_m": 5.4722649751928316e-05,
+              "orientation_rad": 0.0002174607827048666
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.17453292519943292,
+            "ik": {
+              "position_m": 5.5586113835321885e-05,
+              "orientation_rad": 0.00020218489586035183
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1658062789394613,
+            "ik": {
+              "position_m": 5.6366262560135785e-05,
+              "orientation_rad": 0.00018732253976828028
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.15707963267948963,
+            "ik": {
+              "position_m": 5.6849841582319394e-05,
+              "orientation_rad": 0.00017310424701508562
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.148352986419518,
+            "ik": {
+              "position_m": 5.6882894463055213e-05,
+              "orientation_rad": 0.00015971966067734593
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.13962634015954634,
+            "ik": {
+              "position_m": 5.6378473984026136e-05,
+              "orientation_rad": 0.00014730792548541539
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1308996938995747,
+            "ik": {
+              "position_m": 5.531226967103036e-05,
+              "orientation_rad": 0.00013595516248197996
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.12217304763960304,
+            "ik": {
+              "position_m": 5.371126966493816e-05,
+              "orientation_rad": 0.0001256980844325058
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.11344640137963138,
+            "ik": {
+              "position_m": 5.163975555034003e-05,
+              "orientation_rad": 0.00011653183581269024
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10471975511965975,
+            "ik": {
+              "position_m": 4.918568745369481e-05,
+              "orientation_rad": 0.00010841987425008288
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.09599310885968809,
+            "ik": {
+              "position_m": 4.644930740746723e-05,
+              "orientation_rad": 0.00010130401467020913
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.08726646259971646,
+            "ik": {
+              "position_m": 4.3534761845398264e-05,
+              "orientation_rad": 9.51133575661413e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0785398163397448,
+            "ik": {
+              "position_m": 4.054479658208716e-05,
+              "orientation_rad": 8.977145652645151e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06981317007977317,
+            "ik": {
+              "position_m": 3.757809841312541e-05,
+              "orientation_rad": 8.52015834738592e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06108652381980151,
+            "ik": {
+              "position_m": 3.4728565794351946e-05,
+              "orientation_rad": 8.133026709476709e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.05235987755982985,
+            "ik": {
+              "position_m": 3.2085571398949574e-05,
+              "orientation_rad": 7.808942843503493e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.043633231299858216,
+            "ik": {
+              "position_m": 2.9734037043616137e-05,
+              "orientation_rad": 7.541746781747957e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.034906585039886556,
+            "ik": {
+              "position_m": 2.77529041584269e-05,
+              "orientation_rad": 7.32596211179669e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.026179938779914924,
+            "ik": {
+              "position_m": 2.6210657890944747e-05,
+              "orientation_rad": 7.156784055846264e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.017453292519943264,
+            "ik": {
+              "position_m": 2.515757655692948e-05,
+              "orientation_rad": 7.03003898247843e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.008726646259971604,
+            "ik": {
+              "position_m": 2.4616706231425052e-05,
+              "orientation_rad": 6.942128718186409e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0,
+            "ik": {
+              "position_m": 2.457803828205621e-05,
+              "orientation_rad": 6.88996866976011e-05
+            },
+            "bad": []
+          }
+        ],
+        "execution_state_unchanged": true,
+        "state_sha_before": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202",
+        "state_sha_after": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202"
+      },
+      "checkpoint5": {
+        "t": 34.62000000007429,
+        "phase": "checkpoint5",
+        "tcp": [
+          -0.13666866331045802,
+          -0.6514696092050171,
+          1.1483525399750616,
+          3.037613394640814e-05,
+          0.7391413753351412,
+          -2.6614330204788313e-05,
+          0.6735503141092308
+        ],
+        "target": [
+          -0.13657304140118806,
+          -0.6514903435186882,
+          1.1485670096199228,
+          1.4535508720432901e-05,
+          0.7391591529604294,
+          -1.2081272761365316e-05,
+          0.6735308057079368
+        ],
+        "com": [
+          -0.10477168123817762,
+          -0.6501568426653498,
+          1.1459365003695854
+        ],
+        "object_quat": [
+          0.9991902423241097,
+          1.1635553794968774e-06,
+          0.04023502904033993,
+          -4.561858881101657e-05
+        ],
+        "relative_position": [
+          0.0005499293968510891,
+          -0.001315348560492471,
+          0.031983519263914115
+        ],
+        "relative_rotation": [
+          [
+            0.012300960257094248,
+            8.69215142789647e-06,
+            0.9999243402884034
+          ],
+          [
+            1.033846934898711e-05,
+            -0.9999999999098724,
+            8.565626399355019e-06
+          ],
+          [
+            0.9999243402727368,
+            1.0232321713462234e-05,
+            -0.012300960345849364
+          ]
+        ],
+        "q": [
+          -1.3113383676763757,
+          -1.2910824991644971,
+          0.22302486145471484,
+          -1.166780797269391,
+          -0.30353013581756344,
+          0.4488294149605477,
+          0.4488834048046624
+        ],
+        "gripper_q": [
+          0.01592562587542911,
+          0.01595057404785754
+        ],
+        "gripper_command": 0.0,
+        "effort_scale": 0.7499999999999999,
+        "jaw_forces_N": [
+          1.585186946678314,
+          1.3020636721302419
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.06005611082104387,
+          -0.6501609281249953,
+          1.142329470990012
+        ],
+        "base_position": [
+          0.09010241258367677,
+          -0.650174631361048,
+          1.142158342252081
+        ],
+        "base_rotation": [
+          [
+            0.9999993933666937,
+            9.125692898609532e-05,
+            0.001097696869025038
+          ],
+          [
+            -9.125835118172617e-05,
+            0.9999999958351804,
+            1.2455308772030893e-06
+          ],
+          [
+            -0.0010976967507900063,
+            -1.3457041279871442e-06,
+            0.999999397529834
+          ]
+        ],
+        "crease_rad": 0.07939506938457623,
+        "crease_fk_cached_rad": 0.07939408855741638,
+        "crease_fk_rad": 0.07939506938457622,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.08726646259971647,
+        "fixture_base_force_N": 0.37748737382957454,
+        "moving_fixture_force_N": 0.0
+      },
+      "fold_metrics": {
+        "duration_s": 1.1800000000056343,
+        "min_angle_deg": 14.115712869136829,
+        "max_angle_deg": 14.567180555050621,
+        "max_joint_fk_error_rad": 1.1102230246251565e-16,
+        "min_loaded_jaw_N": 1.2906403947703122,
+        "max_moving_fixture_N": 0.0,
+        "max_relative_slip_m": 0.0006018467333485598,
+        "max_relative_rotation_rad": 0.011140708906033922,
+        "max_base_translation_m": 0.000588483033603748,
+        "max_base_rotation_deg": 0.09903229318678335
+      },
+      "return_metrics": {
+        "duration_s": 1.1800000000056343,
+        "min_angle_deg": -0.10116473149520985,
+        "max_angle_deg": 0.38657536048090757,
+        "max_joint_fk_error_rad": 1.734723475976807e-18,
+        "min_loaded_jaw_N": 1.3093665248436002,
+        "max_moving_fixture_N": 0.0,
+        "max_relative_slip_m": 0.0006018467333485598,
+        "max_relative_rotation_rad": 0.011140708906033922,
+        "max_base_translation_m": 0.000588483033603748,
+        "max_base_rotation_deg": 0.09903229318678335
+      },
+      "final": {
+        "t": 58.720000000189366,
+        "phase": "released_settle",
+        "tcp": [
+          -0.1916169937400734,
+          -0.6514891526092565,
+          1.1415252492465706,
+          1.3090632354828548e-05,
+          0.7068679966864455,
+          -1.4603267304957868e-05,
+          0.7073454848063081
+        ],
+        "target": [
+          -0.19161710906650536,
+          -0.6514889725773368,
+          1.1415250582910903,
+          1.3202936956303918e-05,
+          0.7068677260538972,
+          -1.485989101736873e-05,
+          0.7073457552486327
+        ],
+        "com": [
+          -0.1047164642940262,
+          -0.6499948314373736,
+          1.1411558993078668
+        ],
+        "object_quat": [
+          0.9999934039714028,
+          -4.896194010665656e-06,
+          -0.00362174978564419,
+          -0.00027371190009318276
+        ],
+        "relative_position": [
+          -0.00042803436737727675,
+          -0.0014977237797061903,
+          0.08690020162925584
+        ],
+        "relative_rotation": [
+          [
+            0.0065682016235462624,
+            -1.0305335008910221e-05,
+            0.9999784290779639
+          ],
+          [
+            0.000508205801785932,
+            -0.9999998707703488,
+            -1.3643626155137446e-05
+          ],
+          [
+            0.9999782999917023,
+            0.0005082844534056665,
+            -0.006568195537508832
+          ]
+        ],
+        "q": [
+          -1.8272956494394672,
+          -1.2203908192571382,
+          0.6587595641872724,
+          -1.3361233888576283,
+          -0.30421225918480677,
+          0.4364533986938012,
+          0.30019118898455593
+        ],
+        "gripper_q": [
+          0.28053446348995115,
+          0.2805255979153538
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.05985683075090301,
+          -0.650019387563378,
+          1.1414808465945256
+        ],
+        "base_position": [
+          0.09012863446789043,
+          -0.6501014979820563,
+          1.1414788903064585
+        ],
+        "base_rotation": [
+          [
+            0.9999998500655422,
+            0.0005474556549425419,
+            1.2696406272880913e-05
+          ],
+          [
+            -0.0005474557540367669,
+            0.9999998501156458,
+            7.80274184870858e-06
+          ],
+          [
+            -1.2692132714739128e-05,
+            -7.80969139947839e-06,
+            0.9999999998889592
+          ]
+        ],
+        "crease_rad": -0.007256374907739418,
+        "crease_fk_cached_rad": -0.007256209948834591,
+        "crease_fk_rad": -0.007256374907739418,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.2421810852643129,
+        "moving_fixture_force_N": 0.0
+      },
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase_peak_hand_normal_N": {
+        "fixture_settle": 0.0,
+        "ompl_approach": 0.0,
+        "insert": 0.0,
+        "close_position": 0.9292946837771404,
+        "close_force": 2.80077049614209,
+        "grasp_settle": 2.8850588697033857,
+        "fold5": 2.8914201224859895,
+        "checkpoint5": 2.896684559045198,
+        "fold15": 3.1369200732086395,
+        "fold_hold": 3.0299035881684193,
+        "fold_return": 3.448744212557086,
+        "return_hold": 2.958253370978869,
+        "release": 0.9492298262090051,
+        "retreat": 0.0,
+        "released_settle": 0.0
+      },
+      "peak_hand_normal_N": 3.448744212557086,
+      "hand_force_overshoot_N": 0.0,
+      "peak_fixture_base_normal_N": 4.717200028178863,
+      "peak_unexpected_robot_contact_N": 0.0,
+      "simulation_s": 58.720000000189366,
+      "physics_substeps": 234880,
+      "video_frames": 587,
+      "wall_seconds": 106.33556195499841,
+      "controller_metadata": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 199680,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 15.435567066009531,
+        "peak_applied_torque_Nm": 15.435567066009531
+      },
+      "core_unchanged": true,
+      "core_hash_file_count": 597
+    },
+    {
+      "task": "single_fold",
+      "protocol_completed": true,
+      "failure_phase": null,
+      "simplified_scene": true,
+      "original_whole_box_solved": false,
+      "offset_y_m": 0.0,
+      "success": true,
+      "force_abort_threshold_N": 5.0,
+      "force_definition": "sum of nonnegative normal forces across both right jaw/card groups; sampled every 0.25ms; threshold is NOT a hard cap",
+      "panel": "box_side_left",
+      "dimensions_m": [
+        0.09,
+        0.217,
+        0.004
+      ],
+      "mass_kg": 0.007786400000000001,
+      "stand_size_m": [
+        0.299,
+        0.24,
+        0.22
+      ],
+      "stand_top_z_m": 1.14,
+      "stand_center_m": [
+        0.0905,
+        -0.65,
+        1.03
+      ],
+      "home_right_rad": [
+        -0.8,
+        -0.28,
+        0,
+        -1.25,
+        0,
+        -0.45,
+        0
+      ],
+      "controller": "Original joint PD for OMPL; unchanged RightArmImpedance for passive-crease arc",
+      "closure": "nonzero position reference at .05 rad/s down to .04, .006 rad/s to .002; then bounded motor torque feedback target3N, max0.30Nm; feedback continues through lift/hold, torque slew0.05Nm/s",
+      "checks": {},
+      "fixture_ready": true,
+      "grasp_success": true,
+      "fold15_success": true,
+      "hold_success": true,
+      "return_success": true,
+      "release_success": true,
+      "base_mass_kg": 0.026400000000000003,
+      "fixture_role": "Free base retained solely by lower stand, cap and side/far stops through original table/card contact law; moving panel free of fixture.",
+      "thresholds": {
+        "fold_target_deg": 15.0,
+        "angle_bounds_deg": [
+          13.0,
+          17.0
+        ],
+        "hold_s": 1.0,
+        "base_translation_m": 0.002,
+        "base_rotation_deg": 1.0,
+        "relative_slip_m": 0.003,
+        "relative_angle_rad": 0.05,
+        "slip_abort_m": 0.008,
+        "angle_abort_rad": 0.1,
+        "hand_force_abort_N": 5.0,
+        "return_angle_bounds_deg": [
+          -2.0,
+          2.0
+        ]
+      },
+      "arc_speed_deg_s": 2.0,
+      "model_audit": {
+        "box_base_inertial_exact": true,
+        "box_base_geom_exact": true,
+        "box_side_left_inertial_exact": true,
+        "box_side_left_geom_exact": true,
+        "crease_attributes_exact": true,
+        "reverse_tendon_exact": true,
+        "original_crease_attributes": {
+          "name": "crease_side_left",
+          "type": "hinge",
+          "axis": "0 1 0",
+          "pos": "0 0 0.002",
+          "range": "-0.12 1.78",
+          "damping": "0.00434",
+          "stiffness": "0.00021700000000000002",
+          "springref": "0",
+          "frictionloss": "0.0217",
+          "armature": "1e-08",
+          "solreffriction": "0.002 1",
+          "solimpfriction": "0.999 0.9999 1e-05 0.5 2"
+        },
+        "original_reverse_tendon": "<fixed name=\"passive_reverse_side_left\" stiffness=\"0.032333\" springlength=\"0 10\" limited=\"false\">\n      <joint joint=\"crease_side_left\" coef=\"1\" />\n    </fixed>\n    ",
+        "compiled_pair_inertia_exact": true,
+        "robot_geom_exact": true,
+        "physics_exact": true,
+        "actuator_limits_exact": true,
+        "no_object_actuator": true,
+        "equality_count": 2,
+        "object_joints": [
+          "box_free",
+          "crease_side_left"
+        ],
+        "fixture_geometry": [
+          {
+            "name": "support_top",
+            "center_m": [
+              0.0905,
+              -0.65,
+              1.03
+            ],
+            "size_m": [
+              0.299,
+              0.24,
+              0.22
+            ]
+          },
+          {
+            "name": "fixture_cap",
+            "center_m": [
+              0.105,
+              -0.65,
+              1.1493
+            ],
+            "size_m": [
+              0.27,
+              0.2364,
+              0.01
+            ]
+          },
+          {
+            "name": "fixture_y_minus",
+            "center_m": [
+              0.0905,
+              -0.7642,
+              1.14715
+            ],
+            "size_m": [
+              0.299,
+              0.008,
+              0.0143
+            ]
+          },
+          {
+            "name": "fixture_y_plus",
+            "center_m": [
+              0.0905,
+              -0.5358,
+              1.14715
+            ],
+            "size_m": [
+              0.299,
+              0.008,
+              0.0143
+            ]
+          },
+          {
+            "name": "fixture_far_stop",
+            "center_m": [
+              0.2442,
+              -0.65,
+              1.14715
+            ],
+            "size_m": [
+              0.008,
+              0.2364,
+              0.0143
+            ]
+          }
+        ],
+        "declared_initial_clearances_m": {
+          "bottom": 0.0002,
+          "cap": 0.0001,
+          "lateral_each": 0.0002,
+          "far_stop": 0.0002,
+          "stand_left_of_base_crease_gap": 0.001,
+          "cap_from_crease": 0.03
+        },
+        "base_center_m": [
+          0.09,
+          -0.65,
+          1.1422
+        ],
+        "hinge_world_initial_m": [
+          -0.06,
+          -0.65,
+          1.1442
+        ],
+        "axis_world_initial": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "fk_method": "Dedicated MjData, mj_kinematics on SAME current live qpos; execution state hash checked before/after",
+      "initial_state": {
+        "t": 0.0,
+        "phase": "home_settle",
+        "tcp": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "target": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "com": [
+          -0.10486081715000001,
+          -0.65,
+          1.1422
+        ],
+        "object_quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_position": [
+          0.2638027146413157,
+          -8.884204937557177e-05,
+          -0.1309082904474838
+        ],
+        "relative_rotation": [
+          [
+            -0.1925387630454992,
+            -0.9610547100892568,
+            0.19824900741280765
+          ],
+          [
+            -0.019458478003582858,
+            -0.19825015611912872,
+            -0.9799582864757688
+          ],
+          [
+            0.9810964235785864,
+            -0.1925375802642057,
+            0.019470177896242613
+          ]
+        ],
+        "q": [
+          -0.8,
+          -0.28,
+          0.0,
+          -1.25,
+          0.0,
+          -0.45,
+          0.0
+        ],
+        "gripper_q": [
+          0.288,
+          0.288
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.06,
+          -0.65,
+          1.1422
+        ],
+        "base_position": [
+          0.09,
+          -0.65,
+          1.1422
+        ],
+        "base_rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crease_rad": 0.0,
+        "crease_fk_cached_rad": 0.0,
+        "crease_fk_rad": 0.0,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.0,
+        "moving_fixture_force_N": 0.0
+      },
+      "initial_execution_state_sha256": "76ce910e5216aa45433cbfa540361220b8129199bb113b32733d7ab23386569a",
+      "settled_state": {
+        "t": 0.9999999999999176,
+        "phase": "fixture_settle",
+        "tcp": [
+          0.07436335806195604,
+          -0.42169353699415224,
+          1.092363119892725,
+          -0.3964471146154368,
+          0.49654839017619246,
+          -0.4936644682921953,
+          0.593771651624015
+        ],
+        "target": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "com": [
+          -0.10485098185061496,
+          -0.6499924161016871,
+          1.1415767187613035
+        ],
+        "object_quat": [
+          0.9999999426744538,
+          1.1716434526935165e-06,
+          -0.0003380176852027214,
+          -1.984341595945547e-05
+        ],
+        "relative_position": [
+          0.2636699675290803,
+          0.0005202526931938484,
+          -0.13091223665495028
+        ],
+        "relative_rotation": [
+          [
+            -0.19236655360398738,
+            -0.9610618832162541,
+            0.198381364254186
+          ],
+          [
+            -0.02011309182240146,
+            -0.19825323766025874,
+            -0.9799444460246557
+          ],
+          [
+            0.9811170024986158,
+            -0.1924985984002294,
+            0.01880736616539759
+          ]
+        ],
+        "q": [
+          -0.799999999967911,
+          -0.2800000000039848,
+          3.2448351930303496e-12,
+          -1.249999999984451,
+          7.906110709711085e-14,
+          -0.4499999999940916,
+          3.8136560367522314e-12
+        ],
+        "gripper_q": [
+          0.286542338233294,
+          0.2865405828641785
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.05999017498717489,
+          -0.649994196520828,
+          1.1416070462566177
+        ],
+        "base_position": [
+          0.09000849644194762,
+          -0.650000149377918,
+          1.1416088179210007
+        ],
+        "base_rotation": [
+          [
+            0.9999999991427214,
+            3.96860375714261e-05,
+            -1.1814235299064488e-05
+          ],
+          [
+            -3.968606541117382e-05,
+            0.9999999992097325,
+            -2.3562327636201776e-06
+          ],
+          [
+            1.1814141780186093e-05,
+            2.356701622115091e-06,
+            0.9999999999274364
+          ]
+        ],
+        "crease_rad": -0.0006644070623579332,
+        "crease_fk_cached_rad": -0.0006642211948679485,
+        "crease_fk_rad": -0.0006644070623579333,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.6881648824623195,
+        "moving_fixture_force_N": 0.0
+      },
+      "settle_position_span_m": [
+        4.320441724561808e-06,
+        7.422310227545026e-07,
+        0.000375889251028827
+      ],
+      "grasp_target": [
+        -0.13661712167797416,
+        -0.6514911553965312,
+        1.1415622402317738,
+        1.3202936956303918e-05,
+        0.7068677260538972,
+        -1.485989101736873e-05,
+        0.7073457552486327
+      ],
+      "ik": {
+        "pre": {
+          "position_m": 1.4852448600089099e-05,
+          "orientation_rad": 6.0915501389674274e-05
+        },
+        "grasp": {
+          "position_m": 3.6858272351402314e-05,
+          "orientation_rad": 0.00012292156447491032
+        }
+      },
+      "planner": {
+        "reused": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/validation/single_fold/run02/trial00/approach_path.npy",
+        "sha256": "d94a7eee43f9b99631187249d958a3ee777498bb4776a2252808e5b5422c288a"
+      },
+      "path_dense_samples": 272,
+      "postclosure": {
+        "t": 31.540000000059585,
+        "phase": "grasp_settle",
+        "tcp": [
+          -0.13667160917004598,
+          -0.6514903794700312,
+          1.1413886833259559,
+          1.4625212553576187e-05,
+          0.7068622524538356,
+          -1.1798877707025477e-05,
+          0.7073512251369752
+        ],
+        "target": [
+          -0.13661712167797416,
+          -0.6514911553965312,
+          1.1415622402317738,
+          1.3202936956303918e-05,
+          0.7068677260538972,
+          -1.485989101736873e-05,
+          0.7073457552486327
+        ],
+        "com": [
+          -0.10478312266907933,
+          -0.6501727337660361,
+          1.1416505807995814
+        ],
+        "object_quat": [
+          0.999995327050053,
+          -2.707854039207125e-06,
+          -0.0030570776396121467,
+          -1.2125609690117445e-05
+        ],
+        "relative_position": [
+          0.00023985143371365957,
+          -0.001318836354268049,
+          0.03188861072186569
+        ],
+        "relative_rotation": [
+          [
+            0.005422626456241065,
+            -1.348363516172889e-06,
+            0.9999852974521666
+          ],
+          [
+            -1.311107884279966e-05,
+            -0.9999999999132341,
+            -1.2772858124088247e-06
+          ],
+          [
+            0.9999852973671244,
+            -1.3103959832697262e-05,
+            -0.005422626473449091
+          ]
+        ],
+        "q": [
+          -1.3906378624740956,
+          -1.2348277823261573,
+          0.2652611716526761,
+          -1.1678584127162137,
+          -0.3642165847217354,
+          0.46639661446124125,
+          0.2898599255963955
+        ],
+        "gripper_q": [
+          0.015940992784921188,
+          0.01596648605909184
+        ],
+        "gripper_command": 0.0,
+        "effort_scale": 0.7439989428319095,
+        "jaw_forces_N": [
+          1.5004376792330867,
+          1.3604033829666065
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.059923144045874725,
+          -0.6501738209477441,
+          1.1419248655228105
+        ],
+        "base_position": [
+          0.09006431180580084,
+          -0.6501774609186661,
+          1.1419012780212459
+        ],
+        "base_rotation": [
+          [
+            0.9999999873808698,
+            2.426766229556976e-05,
+            0.0001570010850385083
+          ],
+          [
+            -2.4268500624479855e-05,
+            0.9999999996912741,
+            5.3377347970080964e-06
+          ],
+          [
+            -0.00015700095545569253,
+            -5.3415449105808275e-06,
+            0.9999999876610837
+          ]
+        ],
+        "crease_rad": -0.0062708928723430825,
+        "crease_fk_cached_rad": -0.006271165824186888,
+        "crease_fk_rad": -0.0062708928723430825,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.11648545279389572,
+        "moving_fixture_force_N": 0.0
+      },
+      "arc_reference": {
+        "axis": [
+          2.426766229556976e-05,
+          0.9999999996912742,
+          -5.3415449105808275e-06
+        ],
+        "anchor": [
+          -0.05993537229915955,
+          -0.6501738099681028,
+          1.1439248281398864
+        ],
+        "angle": -0.0062708928723430825,
+        "tcp": [
+          -0.13667160917004598,
+          -0.6514903794700312,
+          1.1413886833259559,
+          1.4625212553576187e-05,
+          0.7068622524538356,
+          -1.1798877707025477e-05,
+          0.7073512251369752
+        ]
+      },
+      "arc_prediction": {
+        "prediction_only": true,
+        "passed": true,
+        "samples": [
+          {
+            "predicted_angle_rad": -0.0062708928723430825,
+            "ik": {
+              "position_m": 6.604110407648283e-09,
+              "orientation_rad": 2.9062060562764728e-08
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.002664783150039999,
+            "ik": {
+              "position_m": 3.2501994068472577e-05,
+              "orientation_rad": 4.57028159080759e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.01160045917242308,
+            "ik": {
+              "position_m": 3.5396760458200023e-05,
+              "orientation_rad": 4.804139485004053e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.02053613519480616,
+            "ik": {
+              "position_m": 3.75782079353426e-05,
+              "orientation_rad": 5.232850067872537e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.029471811217189243,
+            "ik": {
+              "position_m": 3.9976649993362355e-05,
+              "orientation_rad": 5.841024879669524e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.03840748723957233,
+            "ik": {
+              "position_m": 4.262119936564434e-05,
+              "orientation_rad": 6.603910925825083e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.04734316326195541,
+            "ik": {
+              "position_m": 4.54977681672036e-05,
+              "orientation_rad": 7.49310386453687e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.05627883928433849,
+            "ik": {
+              "position_m": 4.858523804413142e-05,
+              "orientation_rad": 8.485743800230629e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06521451530672157,
+            "ik": {
+              "position_m": 5.185667762879299e-05,
+              "orientation_rad": 9.564473441568423e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.07415019132910465,
+            "ik": {
+              "position_m": 5.527824454113429e-05,
+              "orientation_rad": 0.00010715714478882252
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.08308586735148774,
+            "ik": {
+              "position_m": 5.880785019450791e-05,
+              "orientation_rad": 0.0001192794025690969
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0920215433738708,
+            "ik": {
+              "position_m": 6.239390573958534e-05,
+              "orientation_rad": 0.00013190281186122648
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10095721939625389,
+            "ik": {
+              "position_m": 6.5974431182382e-05,
+              "orientation_rad": 0.000144914707874693
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10989289541863698,
+            "ik": {
+              "position_m": 6.94769050579696e-05,
+              "orientation_rad": 0.00015819086345551442
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.11882857144102005,
+            "ik": {
+              "position_m": 7.281934219434721e-05,
+              "orientation_rad": 0.00017159060999282828
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.12776424746340315,
+            "ik": {
+              "position_m": 7.591317366356846e-05,
+              "orientation_rad": 0.00018495479335459454
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.13669992348578622,
+            "ik": {
+              "position_m": 7.866850984470915e-05,
+              "orientation_rad": 0.00019810693879361091
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1456355995081693,
+            "ik": {
+              "position_m": 8.100221239415338e-05,
+              "orientation_rad": 0.0002108580441447608
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1545712755305524,
+            "ik": {
+              "position_m": 8.284878675207689e-05,
+              "orientation_rad": 0.0002230151774970775
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.16350695155293546,
+            "ik": {
+              "position_m": 8.417335472595761e-05,
+              "orientation_rad": 0.00023439348251166943
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.17244262757531856,
+            "ik": {
+              "position_m": 8.498487960869695e-05,
+              "orientation_rad": 0.0002448303466421981
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.18137830359770163,
+            "ik": {
+              "position_m": 8.534656771749344e-05,
+              "orientation_rad": 0.0002541995759397333
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1903139796200847,
+            "ik": {
+              "position_m": 8.537939284870837e-05,
+              "orientation_rad": 0.000262422813838671
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1992496556424678,
+            "ik": {
+              "position_m": 8.525470369276337e-05,
+              "orientation_rad": 0.000269475551533151
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.20818533166485087,
+            "ik": {
+              "position_m": 8.51737244717648e-05,
+              "orientation_rad": 0.0002753861242708696
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.21712100768723394,
+            "ik": {
+              "position_m": 8.53358734522517e-05,
+              "orientation_rad": 0.000280227870030226
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.22605668370961704,
+            "ik": {
+              "position_m": 8.590324980983858e-05,
+              "orientation_rad": 0.00028410649642692654
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2349923597320001,
+            "ik": {
+              "position_m": 8.697243988388174e-05,
+              "orientation_rad": 0.00028714585852338963
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.24392803575438318,
+            "ik": {
+              "position_m": 8.856344798609917e-05,
+              "orientation_rad": 0.0002894753141212384
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2528637117767663,
+            "ik": {
+              "position_m": 9.062850887455846e-05,
+              "orientation_rad": 0.0002912207312380431
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2617993877991494,
+            "ik": {
+              "position_m": 9.307504707649362e-05,
+              "orientation_rad": 0.00029249970746212663
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2617993877991494,
+            "ik": {
+              "position_m": 9.307504707649362e-05,
+              "orientation_rad": 0.00029249970746212663
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.25307274153917775,
+            "ik": {
+              "position_m": 5.2774196615599974e-05,
+              "orientation_rad": 0.0002637143302470129
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.24434609527920612,
+            "ik": {
+              "position_m": 6.046419015089858e-05,
+              "orientation_rad": 0.00031144316078006424
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.23561944901923446,
+            "ik": {
+              "position_m": 5.877646294796017e-05,
+              "orientation_rad": 0.0003039222923138887
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.22689280275926282,
+            "ik": {
+              "position_m": 5.665286016670997e-05,
+              "orientation_rad": 0.00029135190314152437
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.21816615649929116,
+            "ik": {
+              "position_m": 5.501586344875305e-05,
+              "orientation_rad": 0.00027765064318086843
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2094395102393195,
+            "ik": {
+              "position_m": 5.4033848380016353e-05,
+              "orientation_rad": 0.00026321566413163263
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.20071286397934787,
+            "ik": {
+              "position_m": 5.373266241902877e-05,
+              "orientation_rad": 0.00024822747788270596
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.19198621771937624,
+            "ik": {
+              "position_m": 5.402415531987674e-05,
+              "orientation_rad": 0.00023289488340721347
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.18325957145940458,
+            "ik": {
+              "position_m": 5.4722649751928316e-05,
+              "orientation_rad": 0.0002174607827048666
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.17453292519943292,
+            "ik": {
+              "position_m": 5.5586113835321885e-05,
+              "orientation_rad": 0.00020218489586035183
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1658062789394613,
+            "ik": {
+              "position_m": 5.6366262560135785e-05,
+              "orientation_rad": 0.00018732253976828028
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.15707963267948963,
+            "ik": {
+              "position_m": 5.6849841582319394e-05,
+              "orientation_rad": 0.00017310424701508562
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.148352986419518,
+            "ik": {
+              "position_m": 5.6882894463055213e-05,
+              "orientation_rad": 0.00015971966067734593
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.13962634015954634,
+            "ik": {
+              "position_m": 5.6378473984026136e-05,
+              "orientation_rad": 0.00014730792548541539
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1308996938995747,
+            "ik": {
+              "position_m": 5.531226967103036e-05,
+              "orientation_rad": 0.00013595516248197996
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.12217304763960304,
+            "ik": {
+              "position_m": 5.371126966493816e-05,
+              "orientation_rad": 0.0001256980844325058
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.11344640137963138,
+            "ik": {
+              "position_m": 5.163975555034003e-05,
+              "orientation_rad": 0.00011653183581269024
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10471975511965975,
+            "ik": {
+              "position_m": 4.918568745369481e-05,
+              "orientation_rad": 0.00010841987425008288
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.09599310885968809,
+            "ik": {
+              "position_m": 4.644930740746723e-05,
+              "orientation_rad": 0.00010130401467020913
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.08726646259971646,
+            "ik": {
+              "position_m": 4.3534761845398264e-05,
+              "orientation_rad": 9.51133575661413e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0785398163397448,
+            "ik": {
+              "position_m": 4.054479658208716e-05,
+              "orientation_rad": 8.977145652645151e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06981317007977317,
+            "ik": {
+              "position_m": 3.757809841312541e-05,
+              "orientation_rad": 8.52015834738592e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06108652381980151,
+            "ik": {
+              "position_m": 3.4728565794351946e-05,
+              "orientation_rad": 8.133026709476709e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.05235987755982985,
+            "ik": {
+              "position_m": 3.2085571398949574e-05,
+              "orientation_rad": 7.808942843503493e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.043633231299858216,
+            "ik": {
+              "position_m": 2.9734037043616137e-05,
+              "orientation_rad": 7.541746781747957e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.034906585039886556,
+            "ik": {
+              "position_m": 2.77529041584269e-05,
+              "orientation_rad": 7.32596211179669e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.026179938779914924,
+            "ik": {
+              "position_m": 2.6210657890944747e-05,
+              "orientation_rad": 7.156784055846264e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.017453292519943264,
+            "ik": {
+              "position_m": 2.515757655692948e-05,
+              "orientation_rad": 7.03003898247843e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.008726646259971604,
+            "ik": {
+              "position_m": 2.4616706231425052e-05,
+              "orientation_rad": 6.942128718186409e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0,
+            "ik": {
+              "position_m": 2.457803828205621e-05,
+              "orientation_rad": 6.88996866976011e-05
+            },
+            "bad": []
+          }
+        ],
+        "execution_state_unchanged": true,
+        "state_sha_before": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202",
+        "state_sha_after": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202"
+      },
+      "checkpoint5": {
+        "t": 34.62000000007429,
+        "phase": "checkpoint5",
+        "tcp": [
+          -0.13666866331045802,
+          -0.6514696092050171,
+          1.1483525399750616,
+          3.037613394640814e-05,
+          0.7391413753351412,
+          -2.6614330204788313e-05,
+          0.6735503141092308
+        ],
+        "target": [
+          -0.13657304140118806,
+          -0.6514903435186882,
+          1.1485670096199228,
+          1.4535508720432901e-05,
+          0.7391591529604294,
+          -1.2081272761365316e-05,
+          0.6735308057079368
+        ],
+        "com": [
+          -0.10477168123817762,
+          -0.6501568426653498,
+          1.1459365003695854
+        ],
+        "object_quat": [
+          0.9991902423241097,
+          1.1635553794968774e-06,
+          0.04023502904033993,
+          -4.561858881101657e-05
+        ],
+        "relative_position": [
+          0.0005499293968510891,
+          -0.001315348560492471,
+          0.031983519263914115
+        ],
+        "relative_rotation": [
+          [
+            0.012300960257094248,
+            8.69215142789647e-06,
+            0.9999243402884034
+          ],
+          [
+            1.033846934898711e-05,
+            -0.9999999999098724,
+            8.565626399355019e-06
+          ],
+          [
+            0.9999243402727368,
+            1.0232321713462234e-05,
+            -0.012300960345849364
+          ]
+        ],
+        "q": [
+          -1.3113383676763757,
+          -1.2910824991644971,
+          0.22302486145471484,
+          -1.166780797269391,
+          -0.30353013581756344,
+          0.4488294149605477,
+          0.4488834048046624
+        ],
+        "gripper_q": [
+          0.01592562587542911,
+          0.01595057404785754
+        ],
+        "gripper_command": 0.0,
+        "effort_scale": 0.7499999999999999,
+        "jaw_forces_N": [
+          1.585186946678314,
+          1.3020636721302419
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.06005611082104387,
+          -0.6501609281249953,
+          1.142329470990012
+        ],
+        "base_position": [
+          0.09010241258367677,
+          -0.650174631361048,
+          1.142158342252081
+        ],
+        "base_rotation": [
+          [
+            0.9999993933666937,
+            9.125692898609532e-05,
+            0.001097696869025038
+          ],
+          [
+            -9.125835118172617e-05,
+            0.9999999958351804,
+            1.2455308772030893e-06
+          ],
+          [
+            -0.0010976967507900063,
+            -1.3457041279871442e-06,
+            0.999999397529834
+          ]
+        ],
+        "crease_rad": 0.07939506938457623,
+        "crease_fk_cached_rad": 0.07939408855741638,
+        "crease_fk_rad": 0.07939506938457622,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.08726646259971647,
+        "fixture_base_force_N": 0.37748737382957454,
+        "moving_fixture_force_N": 0.0
+      },
+      "fold_metrics": {
+        "duration_s": 1.1800000000056343,
+        "min_angle_deg": 14.115712869136829,
+        "max_angle_deg": 14.567180555050621,
+        "max_joint_fk_error_rad": 1.1102230246251565e-16,
+        "min_loaded_jaw_N": 1.2906403947703122,
+        "max_moving_fixture_N": 0.0,
+        "max_relative_slip_m": 0.0006018467333485598,
+        "max_relative_rotation_rad": 0.011140708906033922,
+        "max_base_translation_m": 0.000588483033603748,
+        "max_base_rotation_deg": 0.09903229318678335
+      },
+      "return_metrics": {
+        "duration_s": 1.1800000000056343,
+        "min_angle_deg": -0.10116473149520985,
+        "max_angle_deg": 0.38657536048090757,
+        "max_joint_fk_error_rad": 1.734723475976807e-18,
+        "min_loaded_jaw_N": 1.3093665248436002,
+        "max_moving_fixture_N": 0.0,
+        "max_relative_slip_m": 0.0006018467333485598,
+        "max_relative_rotation_rad": 0.011140708906033922,
+        "max_base_translation_m": 0.000588483033603748,
+        "max_base_rotation_deg": 0.09903229318678335
+      },
+      "final": {
+        "t": 58.720000000189366,
+        "phase": "released_settle",
+        "tcp": [
+          -0.1916169937400734,
+          -0.6514891526092565,
+          1.1415252492465706,
+          1.3090632354828548e-05,
+          0.7068679966864455,
+          -1.4603267304957868e-05,
+          0.7073454848063081
+        ],
+        "target": [
+          -0.19161710906650536,
+          -0.6514889725773368,
+          1.1415250582910903,
+          1.3202936956303918e-05,
+          0.7068677260538972,
+          -1.485989101736873e-05,
+          0.7073457552486327
+        ],
+        "com": [
+          -0.1047164642940262,
+          -0.6499948314373736,
+          1.1411558993078668
+        ],
+        "object_quat": [
+          0.9999934039714028,
+          -4.896194010665656e-06,
+          -0.00362174978564419,
+          -0.00027371190009318276
+        ],
+        "relative_position": [
+          -0.00042803436737727675,
+          -0.0014977237797061903,
+          0.08690020162925584
+        ],
+        "relative_rotation": [
+          [
+            0.0065682016235462624,
+            -1.0305335008910221e-05,
+            0.9999784290779639
+          ],
+          [
+            0.000508205801785932,
+            -0.9999998707703488,
+            -1.3643626155137446e-05
+          ],
+          [
+            0.9999782999917023,
+            0.0005082844534056665,
+            -0.006568195537508832
+          ]
+        ],
+        "q": [
+          -1.8272956494394672,
+          -1.2203908192571382,
+          0.6587595641872724,
+          -1.3361233888576283,
+          -0.30421225918480677,
+          0.4364533986938012,
+          0.30019118898455593
+        ],
+        "gripper_q": [
+          0.28053446348995115,
+          0.2805255979153538
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.05985683075090301,
+          -0.650019387563378,
+          1.1414808465945256
+        ],
+        "base_position": [
+          0.09012863446789043,
+          -0.6501014979820563,
+          1.1414788903064585
+        ],
+        "base_rotation": [
+          [
+            0.9999998500655422,
+            0.0005474556549425419,
+            1.2696406272880913e-05
+          ],
+          [
+            -0.0005474557540367669,
+            0.9999998501156458,
+            7.80274184870858e-06
+          ],
+          [
+            -1.2692132714739128e-05,
+            -7.80969139947839e-06,
+            0.9999999998889592
+          ]
+        ],
+        "crease_rad": -0.007256374907739418,
+        "crease_fk_cached_rad": -0.007256209948834591,
+        "crease_fk_rad": -0.007256374907739418,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.2421810852643129,
+        "moving_fixture_force_N": 0.0
+      },
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase_peak_hand_normal_N": {
+        "fixture_settle": 0.0,
+        "ompl_approach": 0.0,
+        "insert": 0.0,
+        "close_position": 0.9292946837771404,
+        "close_force": 2.80077049614209,
+        "grasp_settle": 2.8850588697033857,
+        "fold5": 2.8914201224859895,
+        "checkpoint5": 2.896684559045198,
+        "fold15": 3.1369200732086395,
+        "fold_hold": 3.0299035881684193,
+        "fold_return": 3.448744212557086,
+        "return_hold": 2.958253370978869,
+        "release": 0.9492298262090051,
+        "retreat": 0.0,
+        "released_settle": 0.0
+      },
+      "peak_hand_normal_N": 3.448744212557086,
+      "hand_force_overshoot_N": 0.0,
+      "peak_fixture_base_normal_N": 4.717200028178863,
+      "peak_unexpected_robot_contact_N": 0.0,
+      "simulation_s": 58.720000000189366,
+      "physics_substeps": 234880,
+      "video_frames": 587,
+      "wall_seconds": 132.09299124000245,
+      "controller_metadata": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 199680,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 15.435567066009531,
+        "peak_applied_torque_Nm": 15.435567066009531
+      },
+      "core_unchanged": true,
+      "core_hash_file_count": 597
+    },
+    {
+      "task": "single_fold",
+      "protocol_completed": true,
+      "failure_phase": null,
+      "simplified_scene": true,
+      "original_whole_box_solved": false,
+      "offset_y_m": 0.0,
+      "success": true,
+      "force_abort_threshold_N": 5.0,
+      "force_definition": "sum of nonnegative normal forces across both right jaw/card groups; sampled every 0.25ms; threshold is NOT a hard cap",
+      "panel": "box_side_left",
+      "dimensions_m": [
+        0.09,
+        0.217,
+        0.004
+      ],
+      "mass_kg": 0.007786400000000001,
+      "stand_size_m": [
+        0.299,
+        0.24,
+        0.22
+      ],
+      "stand_top_z_m": 1.14,
+      "stand_center_m": [
+        0.0905,
+        -0.65,
+        1.03
+      ],
+      "home_right_rad": [
+        -0.8,
+        -0.28,
+        0,
+        -1.25,
+        0,
+        -0.45,
+        0
+      ],
+      "controller": "Original joint PD for OMPL; unchanged RightArmImpedance for passive-crease arc",
+      "closure": "nonzero position reference at .05 rad/s down to .04, .006 rad/s to .002; then bounded motor torque feedback target3N, max0.30Nm; feedback continues through lift/hold, torque slew0.05Nm/s",
+      "checks": {},
+      "fixture_ready": true,
+      "grasp_success": true,
+      "fold15_success": true,
+      "hold_success": true,
+      "return_success": true,
+      "release_success": true,
+      "base_mass_kg": 0.026400000000000003,
+      "fixture_role": "Free base retained solely by lower stand, cap and side/far stops through original table/card contact law; moving panel free of fixture.",
+      "thresholds": {
+        "fold_target_deg": 15.0,
+        "angle_bounds_deg": [
+          13.0,
+          17.0
+        ],
+        "hold_s": 1.0,
+        "base_translation_m": 0.002,
+        "base_rotation_deg": 1.0,
+        "relative_slip_m": 0.003,
+        "relative_angle_rad": 0.05,
+        "slip_abort_m": 0.008,
+        "angle_abort_rad": 0.1,
+        "hand_force_abort_N": 5.0,
+        "return_angle_bounds_deg": [
+          -2.0,
+          2.0
+        ]
+      },
+      "arc_speed_deg_s": 2.0,
+      "model_audit": {
+        "box_base_inertial_exact": true,
+        "box_base_geom_exact": true,
+        "box_side_left_inertial_exact": true,
+        "box_side_left_geom_exact": true,
+        "crease_attributes_exact": true,
+        "reverse_tendon_exact": true,
+        "original_crease_attributes": {
+          "name": "crease_side_left",
+          "type": "hinge",
+          "axis": "0 1 0",
+          "pos": "0 0 0.002",
+          "range": "-0.12 1.78",
+          "damping": "0.00434",
+          "stiffness": "0.00021700000000000002",
+          "springref": "0",
+          "frictionloss": "0.0217",
+          "armature": "1e-08",
+          "solreffriction": "0.002 1",
+          "solimpfriction": "0.999 0.9999 1e-05 0.5 2"
+        },
+        "original_reverse_tendon": "<fixed name=\"passive_reverse_side_left\" stiffness=\"0.032333\" springlength=\"0 10\" limited=\"false\">\n      <joint joint=\"crease_side_left\" coef=\"1\" />\n    </fixed>\n    ",
+        "compiled_pair_inertia_exact": true,
+        "robot_geom_exact": true,
+        "physics_exact": true,
+        "actuator_limits_exact": true,
+        "no_object_actuator": true,
+        "equality_count": 2,
+        "object_joints": [
+          "box_free",
+          "crease_side_left"
+        ],
+        "fixture_geometry": [
+          {
+            "name": "support_top",
+            "center_m": [
+              0.0905,
+              -0.65,
+              1.03
+            ],
+            "size_m": [
+              0.299,
+              0.24,
+              0.22
+            ]
+          },
+          {
+            "name": "fixture_cap",
+            "center_m": [
+              0.105,
+              -0.65,
+              1.1493
+            ],
+            "size_m": [
+              0.27,
+              0.2364,
+              0.01
+            ]
+          },
+          {
+            "name": "fixture_y_minus",
+            "center_m": [
+              0.0905,
+              -0.7642,
+              1.14715
+            ],
+            "size_m": [
+              0.299,
+              0.008,
+              0.0143
+            ]
+          },
+          {
+            "name": "fixture_y_plus",
+            "center_m": [
+              0.0905,
+              -0.5358,
+              1.14715
+            ],
+            "size_m": [
+              0.299,
+              0.008,
+              0.0143
+            ]
+          },
+          {
+            "name": "fixture_far_stop",
+            "center_m": [
+              0.2442,
+              -0.65,
+              1.14715
+            ],
+            "size_m": [
+              0.008,
+              0.2364,
+              0.0143
+            ]
+          }
+        ],
+        "declared_initial_clearances_m": {
+          "bottom": 0.0002,
+          "cap": 0.0001,
+          "lateral_each": 0.0002,
+          "far_stop": 0.0002,
+          "stand_left_of_base_crease_gap": 0.001,
+          "cap_from_crease": 0.03
+        },
+        "base_center_m": [
+          0.09,
+          -0.65,
+          1.1422
+        ],
+        "hinge_world_initial_m": [
+          -0.06,
+          -0.65,
+          1.1442
+        ],
+        "axis_world_initial": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "fk_method": "Dedicated MjData, mj_kinematics on SAME current live qpos; execution state hash checked before/after",
+      "initial_state": {
+        "t": 0.0,
+        "phase": "home_settle",
+        "tcp": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "target": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "com": [
+          -0.10486081715000001,
+          -0.65,
+          1.1422
+        ],
+        "object_quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_position": [
+          0.2638027146413157,
+          -8.884204937557177e-05,
+          -0.1309082904474838
+        ],
+        "relative_rotation": [
+          [
+            -0.1925387630454992,
+            -0.9610547100892568,
+            0.19824900741280765
+          ],
+          [
+            -0.019458478003582858,
+            -0.19825015611912872,
+            -0.9799582864757688
+          ],
+          [
+            0.9810964235785864,
+            -0.1925375802642057,
+            0.019470177896242613
+          ]
+        ],
+        "q": [
+          -0.8,
+          -0.28,
+          0.0,
+          -1.25,
+          0.0,
+          -0.45,
+          0.0
+        ],
+        "gripper_q": [
+          0.288,
+          0.288
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.06,
+          -0.65,
+          1.1422
+        ],
+        "base_position": [
+          0.09,
+          -0.65,
+          1.1422
+        ],
+        "base_rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crease_rad": 0.0,
+        "crease_fk_cached_rad": 0.0,
+        "crease_fk_rad": 0.0,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.0,
+        "moving_fixture_force_N": 0.0
+      },
+      "initial_execution_state_sha256": "76ce910e5216aa45433cbfa540361220b8129199bb113b32733d7ab23386569a",
+      "settled_state": {
+        "t": 0.9999999999999176,
+        "phase": "fixture_settle",
+        "tcp": [
+          0.07436335806195604,
+          -0.42169353699415224,
+          1.092363119892725,
+          -0.3964471146154368,
+          0.49654839017619246,
+          -0.4936644682921953,
+          0.593771651624015
+        ],
+        "target": [
+          0.07436335805883337,
+          -0.4216935369890724,
+          1.0923631198701875,
+          -0.39644711461038995,
+          0.4965483901840249,
+          -0.4936644682955539,
+          0.5937716516180421
+        ],
+        "com": [
+          -0.10485098185061496,
+          -0.6499924161016871,
+          1.1415767187613035
+        ],
+        "object_quat": [
+          0.9999999426744538,
+          1.1716434526935165e-06,
+          -0.0003380176852027214,
+          -1.984341595945547e-05
+        ],
+        "relative_position": [
+          0.2636699675290803,
+          0.0005202526931938484,
+          -0.13091223665495028
+        ],
+        "relative_rotation": [
+          [
+            -0.19236655360398738,
+            -0.9610618832162541,
+            0.198381364254186
+          ],
+          [
+            -0.02011309182240146,
+            -0.19825323766025874,
+            -0.9799444460246557
+          ],
+          [
+            0.9811170024986158,
+            -0.1924985984002294,
+            0.01880736616539759
+          ]
+        ],
+        "q": [
+          -0.799999999967911,
+          -0.2800000000039848,
+          3.2448351930303496e-12,
+          -1.249999999984451,
+          7.906110709711085e-14,
+          -0.4499999999940916,
+          3.8136560367522314e-12
+        ],
+        "gripper_q": [
+          0.286542338233294,
+          0.2865405828641785
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.05999017498717489,
+          -0.649994196520828,
+          1.1416070462566177
+        ],
+        "base_position": [
+          0.09000849644194762,
+          -0.650000149377918,
+          1.1416088179210007
+        ],
+        "base_rotation": [
+          [
+            0.9999999991427214,
+            3.96860375714261e-05,
+            -1.1814235299064488e-05
+          ],
+          [
+            -3.968606541117382e-05,
+            0.9999999992097325,
+            -2.3562327636201776e-06
+          ],
+          [
+            1.1814141780186093e-05,
+            2.356701622115091e-06,
+            0.9999999999274364
+          ]
+        ],
+        "crease_rad": -0.0006644070623579332,
+        "crease_fk_cached_rad": -0.0006642211948679485,
+        "crease_fk_rad": -0.0006644070623579333,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.6881648824623195,
+        "moving_fixture_force_N": 0.0
+      },
+      "settle_position_span_m": [
+        4.320441724561808e-06,
+        7.422310227545026e-07,
+        0.000375889251028827
+      ],
+      "grasp_target": [
+        -0.13661712167797416,
+        -0.6514911553965312,
+        1.1415622402317738,
+        1.3202936956303918e-05,
+        0.7068677260538972,
+        -1.485989101736873e-05,
+        0.7073457552486327
+      ],
+      "ik": {
+        "pre": {
+          "position_m": 1.4852448600089099e-05,
+          "orientation_rad": 6.0915501389674274e-05
+        },
+        "grasp": {
+          "position_m": 3.6858272351402314e-05,
+          "orientation_rad": 0.00012292156447491032
+        }
+      },
+      "planner": {
+        "reused": "/home/jennyok/00\u4f2f\u514b\u5229/0_\u79d1\u7814/\u200cEmbodied_Minds_Harvard/RAX/\u6298\u7eb8\u76d2/validation/single_fold/run02/trial00/approach_path.npy",
+        "sha256": "d94a7eee43f9b99631187249d958a3ee777498bb4776a2252808e5b5422c288a"
+      },
+      "path_dense_samples": 272,
+      "postclosure": {
+        "t": 31.540000000059585,
+        "phase": "grasp_settle",
+        "tcp": [
+          -0.13667160917004598,
+          -0.6514903794700312,
+          1.1413886833259559,
+          1.4625212553576187e-05,
+          0.7068622524538356,
+          -1.1798877707025477e-05,
+          0.7073512251369752
+        ],
+        "target": [
+          -0.13661712167797416,
+          -0.6514911553965312,
+          1.1415622402317738,
+          1.3202936956303918e-05,
+          0.7068677260538972,
+          -1.485989101736873e-05,
+          0.7073457552486327
+        ],
+        "com": [
+          -0.10478312266907933,
+          -0.6501727337660361,
+          1.1416505807995814
+        ],
+        "object_quat": [
+          0.999995327050053,
+          -2.707854039207125e-06,
+          -0.0030570776396121467,
+          -1.2125609690117445e-05
+        ],
+        "relative_position": [
+          0.00023985143371365957,
+          -0.001318836354268049,
+          0.03188861072186569
+        ],
+        "relative_rotation": [
+          [
+            0.005422626456241065,
+            -1.348363516172889e-06,
+            0.9999852974521666
+          ],
+          [
+            -1.311107884279966e-05,
+            -0.9999999999132341,
+            -1.2772858124088247e-06
+          ],
+          [
+            0.9999852973671244,
+            -1.3103959832697262e-05,
+            -0.005422626473449091
+          ]
+        ],
+        "q": [
+          -1.3906378624740956,
+          -1.2348277823261573,
+          0.2652611716526761,
+          -1.1678584127162137,
+          -0.3642165847217354,
+          0.46639661446124125,
+          0.2898599255963955
+        ],
+        "gripper_q": [
+          0.015940992784921188,
+          0.01596648605909184
+        ],
+        "gripper_command": 0.0,
+        "effort_scale": 0.7439989428319095,
+        "jaw_forces_N": [
+          1.5004376792330867,
+          1.3604033829666065
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.059923144045874725,
+          -0.6501738209477441,
+          1.1419248655228105
+        ],
+        "base_position": [
+          0.09006431180580084,
+          -0.6501774609186661,
+          1.1419012780212459
+        ],
+        "base_rotation": [
+          [
+            0.9999999873808698,
+            2.426766229556976e-05,
+            0.0001570010850385083
+          ],
+          [
+            -2.4268500624479855e-05,
+            0.9999999996912741,
+            5.3377347970080964e-06
+          ],
+          [
+            -0.00015700095545569253,
+            -5.3415449105808275e-06,
+            0.9999999876610837
+          ]
+        ],
+        "crease_rad": -0.0062708928723430825,
+        "crease_fk_cached_rad": -0.006271165824186888,
+        "crease_fk_rad": -0.0062708928723430825,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.11648545279389572,
+        "moving_fixture_force_N": 0.0
+      },
+      "arc_reference": {
+        "axis": [
+          2.426766229556976e-05,
+          0.9999999996912742,
+          -5.3415449105808275e-06
+        ],
+        "anchor": [
+          -0.05993537229915955,
+          -0.6501738099681028,
+          1.1439248281398864
+        ],
+        "angle": -0.0062708928723430825,
+        "tcp": [
+          -0.13667160917004598,
+          -0.6514903794700312,
+          1.1413886833259559,
+          1.4625212553576187e-05,
+          0.7068622524538356,
+          -1.1798877707025477e-05,
+          0.7073512251369752
+        ]
+      },
+      "arc_prediction": {
+        "prediction_only": true,
+        "passed": true,
+        "samples": [
+          {
+            "predicted_angle_rad": -0.0062708928723430825,
+            "ik": {
+              "position_m": 6.604110407648283e-09,
+              "orientation_rad": 2.9062060562764728e-08
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.002664783150039999,
+            "ik": {
+              "position_m": 3.2501994068472577e-05,
+              "orientation_rad": 4.57028159080759e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.01160045917242308,
+            "ik": {
+              "position_m": 3.5396760458200023e-05,
+              "orientation_rad": 4.804139485004053e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.02053613519480616,
+            "ik": {
+              "position_m": 3.75782079353426e-05,
+              "orientation_rad": 5.232850067872537e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.029471811217189243,
+            "ik": {
+              "position_m": 3.9976649993362355e-05,
+              "orientation_rad": 5.841024879669524e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.03840748723957233,
+            "ik": {
+              "position_m": 4.262119936564434e-05,
+              "orientation_rad": 6.603910925825083e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.04734316326195541,
+            "ik": {
+              "position_m": 4.54977681672036e-05,
+              "orientation_rad": 7.49310386453687e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.05627883928433849,
+            "ik": {
+              "position_m": 4.858523804413142e-05,
+              "orientation_rad": 8.485743800230629e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06521451530672157,
+            "ik": {
+              "position_m": 5.185667762879299e-05,
+              "orientation_rad": 9.564473441568423e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.07415019132910465,
+            "ik": {
+              "position_m": 5.527824454113429e-05,
+              "orientation_rad": 0.00010715714478882252
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.08308586735148774,
+            "ik": {
+              "position_m": 5.880785019450791e-05,
+              "orientation_rad": 0.0001192794025690969
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0920215433738708,
+            "ik": {
+              "position_m": 6.239390573958534e-05,
+              "orientation_rad": 0.00013190281186122648
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10095721939625389,
+            "ik": {
+              "position_m": 6.5974431182382e-05,
+              "orientation_rad": 0.000144914707874693
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10989289541863698,
+            "ik": {
+              "position_m": 6.94769050579696e-05,
+              "orientation_rad": 0.00015819086345551442
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.11882857144102005,
+            "ik": {
+              "position_m": 7.281934219434721e-05,
+              "orientation_rad": 0.00017159060999282828
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.12776424746340315,
+            "ik": {
+              "position_m": 7.591317366356846e-05,
+              "orientation_rad": 0.00018495479335459454
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.13669992348578622,
+            "ik": {
+              "position_m": 7.866850984470915e-05,
+              "orientation_rad": 0.00019810693879361091
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1456355995081693,
+            "ik": {
+              "position_m": 8.100221239415338e-05,
+              "orientation_rad": 0.0002108580441447608
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1545712755305524,
+            "ik": {
+              "position_m": 8.284878675207689e-05,
+              "orientation_rad": 0.0002230151774970775
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.16350695155293546,
+            "ik": {
+              "position_m": 8.417335472595761e-05,
+              "orientation_rad": 0.00023439348251166943
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.17244262757531856,
+            "ik": {
+              "position_m": 8.498487960869695e-05,
+              "orientation_rad": 0.0002448303466421981
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.18137830359770163,
+            "ik": {
+              "position_m": 8.534656771749344e-05,
+              "orientation_rad": 0.0002541995759397333
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1903139796200847,
+            "ik": {
+              "position_m": 8.537939284870837e-05,
+              "orientation_rad": 0.000262422813838671
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1992496556424678,
+            "ik": {
+              "position_m": 8.525470369276337e-05,
+              "orientation_rad": 0.000269475551533151
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.20818533166485087,
+            "ik": {
+              "position_m": 8.51737244717648e-05,
+              "orientation_rad": 0.0002753861242708696
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.21712100768723394,
+            "ik": {
+              "position_m": 8.53358734522517e-05,
+              "orientation_rad": 0.000280227870030226
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.22605668370961704,
+            "ik": {
+              "position_m": 8.590324980983858e-05,
+              "orientation_rad": 0.00028410649642692654
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2349923597320001,
+            "ik": {
+              "position_m": 8.697243988388174e-05,
+              "orientation_rad": 0.00028714585852338963
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.24392803575438318,
+            "ik": {
+              "position_m": 8.856344798609917e-05,
+              "orientation_rad": 0.0002894753141212384
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2528637117767663,
+            "ik": {
+              "position_m": 9.062850887455846e-05,
+              "orientation_rad": 0.0002912207312380431
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2617993877991494,
+            "ik": {
+              "position_m": 9.307504707649362e-05,
+              "orientation_rad": 0.00029249970746212663
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2617993877991494,
+            "ik": {
+              "position_m": 9.307504707649362e-05,
+              "orientation_rad": 0.00029249970746212663
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.25307274153917775,
+            "ik": {
+              "position_m": 5.2774196615599974e-05,
+              "orientation_rad": 0.0002637143302470129
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.24434609527920612,
+            "ik": {
+              "position_m": 6.046419015089858e-05,
+              "orientation_rad": 0.00031144316078006424
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.23561944901923446,
+            "ik": {
+              "position_m": 5.877646294796017e-05,
+              "orientation_rad": 0.0003039222923138887
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.22689280275926282,
+            "ik": {
+              "position_m": 5.665286016670997e-05,
+              "orientation_rad": 0.00029135190314152437
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.21816615649929116,
+            "ik": {
+              "position_m": 5.501586344875305e-05,
+              "orientation_rad": 0.00027765064318086843
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.2094395102393195,
+            "ik": {
+              "position_m": 5.4033848380016353e-05,
+              "orientation_rad": 0.00026321566413163263
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.20071286397934787,
+            "ik": {
+              "position_m": 5.373266241902877e-05,
+              "orientation_rad": 0.00024822747788270596
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.19198621771937624,
+            "ik": {
+              "position_m": 5.402415531987674e-05,
+              "orientation_rad": 0.00023289488340721347
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.18325957145940458,
+            "ik": {
+              "position_m": 5.4722649751928316e-05,
+              "orientation_rad": 0.0002174607827048666
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.17453292519943292,
+            "ik": {
+              "position_m": 5.5586113835321885e-05,
+              "orientation_rad": 0.00020218489586035183
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1658062789394613,
+            "ik": {
+              "position_m": 5.6366262560135785e-05,
+              "orientation_rad": 0.00018732253976828028
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.15707963267948963,
+            "ik": {
+              "position_m": 5.6849841582319394e-05,
+              "orientation_rad": 0.00017310424701508562
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.148352986419518,
+            "ik": {
+              "position_m": 5.6882894463055213e-05,
+              "orientation_rad": 0.00015971966067734593
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.13962634015954634,
+            "ik": {
+              "position_m": 5.6378473984026136e-05,
+              "orientation_rad": 0.00014730792548541539
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.1308996938995747,
+            "ik": {
+              "position_m": 5.531226967103036e-05,
+              "orientation_rad": 0.00013595516248197996
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.12217304763960304,
+            "ik": {
+              "position_m": 5.371126966493816e-05,
+              "orientation_rad": 0.0001256980844325058
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.11344640137963138,
+            "ik": {
+              "position_m": 5.163975555034003e-05,
+              "orientation_rad": 0.00011653183581269024
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.10471975511965975,
+            "ik": {
+              "position_m": 4.918568745369481e-05,
+              "orientation_rad": 0.00010841987425008288
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.09599310885968809,
+            "ik": {
+              "position_m": 4.644930740746723e-05,
+              "orientation_rad": 0.00010130401467020913
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.08726646259971646,
+            "ik": {
+              "position_m": 4.3534761845398264e-05,
+              "orientation_rad": 9.51133575661413e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0785398163397448,
+            "ik": {
+              "position_m": 4.054479658208716e-05,
+              "orientation_rad": 8.977145652645151e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06981317007977317,
+            "ik": {
+              "position_m": 3.757809841312541e-05,
+              "orientation_rad": 8.52015834738592e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.06108652381980151,
+            "ik": {
+              "position_m": 3.4728565794351946e-05,
+              "orientation_rad": 8.133026709476709e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.05235987755982985,
+            "ik": {
+              "position_m": 3.2085571398949574e-05,
+              "orientation_rad": 7.808942843503493e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.043633231299858216,
+            "ik": {
+              "position_m": 2.9734037043616137e-05,
+              "orientation_rad": 7.541746781747957e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.034906585039886556,
+            "ik": {
+              "position_m": 2.77529041584269e-05,
+              "orientation_rad": 7.32596211179669e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.026179938779914924,
+            "ik": {
+              "position_m": 2.6210657890944747e-05,
+              "orientation_rad": 7.156784055846264e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.017453292519943264,
+            "ik": {
+              "position_m": 2.515757655692948e-05,
+              "orientation_rad": 7.03003898247843e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.008726646259971604,
+            "ik": {
+              "position_m": 2.4616706231425052e-05,
+              "orientation_rad": 6.942128718186409e-05
+            },
+            "bad": []
+          },
+          {
+            "predicted_angle_rad": 0.0,
+            "ik": {
+              "position_m": 2.457803828205621e-05,
+              "orientation_rad": 6.88996866976011e-05
+            },
+            "bad": []
+          }
+        ],
+        "execution_state_unchanged": true,
+        "state_sha_before": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202",
+        "state_sha_after": "1fd43fd5c8db4070b488aa92c7da28351b9b64d32c0ef823b1bd73a22c7ee202"
+      },
+      "checkpoint5": {
+        "t": 34.62000000007429,
+        "phase": "checkpoint5",
+        "tcp": [
+          -0.13666866331045802,
+          -0.6514696092050171,
+          1.1483525399750616,
+          3.037613394640814e-05,
+          0.7391413753351412,
+          -2.6614330204788313e-05,
+          0.6735503141092308
+        ],
+        "target": [
+          -0.13657304140118806,
+          -0.6514903435186882,
+          1.1485670096199228,
+          1.4535508720432901e-05,
+          0.7391591529604294,
+          -1.2081272761365316e-05,
+          0.6735308057079368
+        ],
+        "com": [
+          -0.10477168123817762,
+          -0.6501568426653498,
+          1.1459365003695854
+        ],
+        "object_quat": [
+          0.9991902423241097,
+          1.1635553794968774e-06,
+          0.04023502904033993,
+          -4.561858881101657e-05
+        ],
+        "relative_position": [
+          0.0005499293968510891,
+          -0.001315348560492471,
+          0.031983519263914115
+        ],
+        "relative_rotation": [
+          [
+            0.012300960257094248,
+            8.69215142789647e-06,
+            0.9999243402884034
+          ],
+          [
+            1.033846934898711e-05,
+            -0.9999999999098724,
+            8.565626399355019e-06
+          ],
+          [
+            0.9999243402727368,
+            1.0232321713462234e-05,
+            -0.012300960345849364
+          ]
+        ],
+        "q": [
+          -1.3113383676763757,
+          -1.2910824991644971,
+          0.22302486145471484,
+          -1.166780797269391,
+          -0.30353013581756344,
+          0.4488294149605477,
+          0.4488834048046624
+        ],
+        "gripper_q": [
+          0.01592562587542911,
+          0.01595057404785754
+        ],
+        "gripper_command": 0.0,
+        "effort_scale": 0.7499999999999999,
+        "jaw_forces_N": [
+          1.585186946678314,
+          1.3020636721302419
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.06005611082104387,
+          -0.6501609281249953,
+          1.142329470990012
+        ],
+        "base_position": [
+          0.09010241258367677,
+          -0.650174631361048,
+          1.142158342252081
+        ],
+        "base_rotation": [
+          [
+            0.9999993933666937,
+            9.125692898609532e-05,
+            0.001097696869025038
+          ],
+          [
+            -9.125835118172617e-05,
+            0.9999999958351804,
+            1.2455308772030893e-06
+          ],
+          [
+            -0.0010976967507900063,
+            -1.3457041279871442e-06,
+            0.999999397529834
+          ]
+        ],
+        "crease_rad": 0.07939506938457623,
+        "crease_fk_cached_rad": 0.07939408855741638,
+        "crease_fk_rad": 0.07939506938457622,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.08726646259971647,
+        "fixture_base_force_N": 0.37748737382957454,
+        "moving_fixture_force_N": 0.0
+      },
+      "fold_metrics": {
+        "duration_s": 1.1800000000056343,
+        "min_angle_deg": 14.115712869136829,
+        "max_angle_deg": 14.567180555050621,
+        "max_joint_fk_error_rad": 1.1102230246251565e-16,
+        "min_loaded_jaw_N": 1.2906403947703122,
+        "max_moving_fixture_N": 0.0,
+        "max_relative_slip_m": 0.0006018467333485598,
+        "max_relative_rotation_rad": 0.011140708906033922,
+        "max_base_translation_m": 0.000588483033603748,
+        "max_base_rotation_deg": 0.09903229318678335
+      },
+      "return_metrics": {
+        "duration_s": 1.1800000000056343,
+        "min_angle_deg": -0.10116473149520985,
+        "max_angle_deg": 0.38657536048090757,
+        "max_joint_fk_error_rad": 1.734723475976807e-18,
+        "min_loaded_jaw_N": 1.3093665248436002,
+        "max_moving_fixture_N": 0.0,
+        "max_relative_slip_m": 0.0006018467333485598,
+        "max_relative_rotation_rad": 0.011140708906033922,
+        "max_base_translation_m": 0.000588483033603748,
+        "max_base_rotation_deg": 0.09903229318678335
+      },
+      "final": {
+        "t": 58.720000000189366,
+        "phase": "released_settle",
+        "tcp": [
+          -0.1916169937400734,
+          -0.6514891526092565,
+          1.1415252492465706,
+          1.3090632354828548e-05,
+          0.7068679966864455,
+          -1.4603267304957868e-05,
+          0.7073454848063081
+        ],
+        "target": [
+          -0.19161710906650536,
+          -0.6514889725773368,
+          1.1415250582910903,
+          1.3202936956303918e-05,
+          0.7068677260538972,
+          -1.485989101736873e-05,
+          0.7073457552486327
+        ],
+        "com": [
+          -0.1047164642940262,
+          -0.6499948314373736,
+          1.1411558993078668
+        ],
+        "object_quat": [
+          0.9999934039714028,
+          -4.896194010665656e-06,
+          -0.00362174978564419,
+          -0.00027371190009318276
+        ],
+        "relative_position": [
+          -0.00042803436737727675,
+          -0.0014977237797061903,
+          0.08690020162925584
+        ],
+        "relative_rotation": [
+          [
+            0.0065682016235462624,
+            -1.0305335008910221e-05,
+            0.9999784290779639
+          ],
+          [
+            0.000508205801785932,
+            -0.9999998707703488,
+            -1.3643626155137446e-05
+          ],
+          [
+            0.9999782999917023,
+            0.0005082844534056665,
+            -0.006568195537508832
+          ]
+        ],
+        "q": [
+          -1.8272956494394672,
+          -1.2203908192571382,
+          0.6587595641872724,
+          -1.3361233888576283,
+          -0.30421225918480677,
+          0.4364533986938012,
+          0.30019118898455593
+        ],
+        "gripper_q": [
+          0.28053446348995115,
+          0.2805255979153538
+        ],
+        "gripper_command": 0.3,
+        "effort_scale": 1.0,
+        "jaw_forces_N": [
+          0.0,
+          0.0
+        ],
+        "pad_forces_N": [
+          0.0,
+          0.0
+        ],
+        "support_force_N": 0.0,
+        "moving_position": [
+          -0.05985683075090301,
+          -0.650019387563378,
+          1.1414808465945256
+        ],
+        "base_position": [
+          0.09012863446789043,
+          -0.6501014979820563,
+          1.1414788903064585
+        ],
+        "base_rotation": [
+          [
+            0.9999998500655422,
+            0.0005474556549425419,
+            1.2696406272880913e-05
+          ],
+          [
+            -0.0005474557540367669,
+            0.9999998501156458,
+            7.80274184870858e-06
+          ],
+          [
+            -1.2692132714739128e-05,
+            -7.80969139947839e-06,
+            0.9999999998889592
+          ]
+        ],
+        "crease_rad": -0.007256374907739418,
+        "crease_fk_cached_rad": -0.007256209948834591,
+        "crease_fk_rad": -0.007256374907739418,
+        "fk_execution_state_unchanged": true,
+        "commanded_crease_rad": 0.0,
+        "fixture_base_force_N": 0.2421810852643129,
+        "moving_fixture_force_N": 0.0
+      },
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase_peak_hand_normal_N": {
+        "fixture_settle": 0.0,
+        "ompl_approach": 0.0,
+        "insert": 0.0,
+        "close_position": 0.9292946837771404,
+        "close_force": 2.80077049614209,
+        "grasp_settle": 2.8850588697033857,
+        "fold5": 2.8914201224859895,
+        "checkpoint5": 2.896684559045198,
+        "fold15": 3.1369200732086395,
+        "fold_hold": 3.0299035881684193,
+        "fold_return": 3.448744212557086,
+        "return_hold": 2.958253370978869,
+        "release": 0.9492298262090051,
+        "retreat": 0.0,
+        "released_settle": 0.0
+      },
+      "peak_hand_normal_N": 3.448744212557086,
+      "hand_force_overshoot_N": 0.0,
+      "peak_fixture_base_normal_N": 4.717200028178863,
+      "peak_unexpected_robot_contact_N": 0.0,
+      "simulation_s": 58.720000000189366,
+      "physics_substeps": 234880,
+      "video_frames": 587,
+      "wall_seconds": 131.91534821600362,
+      "controller_metadata": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 199680,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 15.435567066009531,
+        "peak_applied_torque_Nm": 15.435567066009531
+      },
+      "core_unchanged": true,
+      "core_hash_file_count": 597
+    }
+  ],
+  "passed": {
+    "fixture_ready": 3,
+    "grasp_success": 3,
+    "fold15_success": 3,
+    "hold_success": 3,
+    "return_success": 3,
+    "release_success": 3,
+    "protocol_completed": 3
+  },
+  "original_whole_box_solved": false,
+  "core_unchanged": true
+}

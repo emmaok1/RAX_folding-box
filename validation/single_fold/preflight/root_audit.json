@@ -1,0 +1,21 @@
+{
+  "reviewer": "root",
+  "checks": {
+    "crease_range_identical": true,
+    "crease_stiffness_identical": true,
+    "crease_frictionloss_identical": true,
+    "crease_damping_identical": true,
+    "crease_armature_identical": true,
+    "only_original_two_joint_equalities": true,
+    "one_free_body": true,
+    "no_object_actuator": true,
+    "initial_no_penetration": true,
+    "all_card_contact_pairs_original_or_table_equivalent": true,
+    "box_base_mass_inertia_identical": true,
+    "box_side_left_mass_inertia_identical": true
+  },
+  "body_base_parent": "world",
+  "actual_initial_crease_rad": 0.0,
+  "initial_contact_count": 0,
+  "note": "Read-only compilation/FK audit; no physical steps executed"
+}

@@ -1,0 +1,19 @@
+ompl_approach sim 0.5 wall 1.1 base [-0.32    -0.       0.92201] tcp [ 0.07436 -0.42169  1.09236] load 0.0
+Info:    RRTConnect: Starting planning with 1 states already in datastructure
+Info:    RRTConnect: Created 31 states (15 start + 16 goal)
+Info:    Solution found in 0.168578 seconds
+Info:    SimpleSetup: Path simplification took 1.761276 seconds and changed from 26 to 4 states
+near_surface sim 7.28 wall 10.0 base [-0.32     0.       0.92201] tcp [-0.31988  0.       0.98   ] load 0.0
+slow_touch sim 13.54 wall 16.5 base [-0.32     0.       0.92201] tcp [-0.32005 -0.       0.94928] load 0.0
+load_settle sim 16.44 wall 19.5 base [-0.32     0.       0.92201] tcp [-0.3199   0.       0.94738] load 0.053
+drag sim 20.44 wall 24.1 base [-0.32     0.       0.92201] tcp [-3.1975e-01  2.0000e-05  9.4739e-01] load 0.186
+drag 100 base_dx -6.2860578577961235e-06 load 0.0 angle [-5.647525203481369e-08, 1.5802161139968227e-06, -90.00043348092328]
+drag 200 base_dx -1.8204095629692496e-05 load 0.25729980456734214 angle [-4.3255660712316106e-07, 2.5641411111463977e-06, -90.00054497262173]
+drag 300 base_dx -3.407180949199784e-05 load 0.39533296527402834 angle [-6.483115440507974e-09, 3.0777049702290625e-06, -90.00073409287322]
+drag 400 base_dx -5.421647501291371e-05 load 0.47353492514988993 angle [5.595780632146452e-07, 3.5887621196672974e-06, -90.00103414611017]
+drag 500 base_dx -7.909688231105827e-05 load 0.5619155200941869 angle [1.1710896990455989e-06, 6.909065119557987e-06, -90.00150209195333]
+drag 600 base_dx -0.0001097729276896553 load 0.6308275213953036 angle [3.488743687321407e-06, 6.6540601150283136e-06, -90.00214220583591]
+drag 700 base_dx -0.00014824111620487246 load 0.7300478789984889 angle [1.5053283688333109e-05, 7.626401532027998e-06, -90.00292194318064]
+unload sim 35.44 wall 41.4 base [-0.32017  0.       0.92201] tcp [-3.9171e-01  1.3000e-04  9.4781e-01] load 0.768
+release_settle sim 38.44 wall 44.5 base [-0.32017  0.       0.92201] tcp [-3.9463e-01  1.0000e-05  9.6992e-01] load 0.0
+RESULT {"error": null, "final_geometry": {"front_bounds_min_m": [-0.5201803280634327, -0.14449338834878345, 0.9200099616260655], "front_bounds_max_m": [-0.43016350417428756, 0.1445118548309649, 0.9240099792667424], "front_min_x_overhang_m": 0.0, "base_bounds_min_m": [-0.43018064249646915, -0.15000619427446826, 0.9200099610571779], "base_bounds_max_m": [-0.21016318517161425, 0.15000662041019658, 0.9240099686334073], "base_vertices_inside_table_xy": true, "table_bounds_world_m": [[-0.55, -0.8, 0.86], [0.25, 0.8, 0.92]]}, "substeps": 161760, "wall_seconds": 46.60496998099552}

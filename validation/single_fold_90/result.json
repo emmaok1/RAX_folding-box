@@ -1,0 +1,435 @@
+{
+  "scope": "原夹具/被动折痕，同抓姿30→60→90°分阶段物理任务；先整弧预检。",
+  "trials": [
+    {
+      "trial": "validation/single_fold_90/run01/trial00",
+      "stage_results": [
+        {
+          "target_deg": 30.0,
+          "status": "not_executed",
+          "actual_angle_deg": null,
+          "hold_success": false
+        },
+        {
+          "target_deg": 60.0,
+          "status": "not_executed",
+          "actual_angle_deg": null,
+          "hold_success": false
+        },
+        {
+          "target_deg": 90.0,
+          "status": "not_executed",
+          "actual_angle_deg": null,
+          "hold_success": false
+        }
+      ],
+      "physics_substeps": 0,
+      "simulation_s": 0.0,
+      "failure_phase": "nominal_arc_precheck",
+      "error": "RuntimeError('Predicted arc rejected {\"predicted_angle_rad\": 0.5585053606381855, \"predicted_angle_deg\": 32.0, \"target\": [-0.1260394257529856, -0.6515, 1.1831159106128317, 0.0, 0.8746197071393957, 0.0, 0.4848096202463371], \"q\": [0.2799277232739745, -1.045463695667452, -1.0724268142433744, -0.34912685204035876, -0.32785754496417935, 0.7225970683522905, 1.055634459504935], \"ik\": {\"position_m\": 0.00042959890282832946, \"orientation_rad\": 0.002465680396676195}, \"joint_limits_ok\": true, \"bad\": []}')",
+      "fixture_ready": false,
+      "grasp_success": false,
+      "staged_success": false,
+      "return_success": false,
+      "release_success": false,
+      "protocol_completed": false,
+      "recovery": {
+        "attempted": false,
+        "complete": false,
+        "error": "RuntimeError('No physical execution started; recovery unnecessary')"
+      },
+      "core_file_count": 597,
+      "core_unchanged": true,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "force_measurements_available": false,
+      "hand_force_peak_N": null,
+      "fixture_force_peak_N": null,
+      "video": {
+        "frames": 0,
+        "seconds": 0.0,
+        "video_available": false,
+        "reason": "No simulation was executed; only initial PNG exists. Original worker packaging traceback preserved in trial00.log; postprocessing resumed without rerunning."
+      },
+      "planning_state_unchanged": true,
+      "prediction_only_failure": true,
+      "last_checked_prediction": {
+        "predicted_angle_rad": 0.5585053606381855,
+        "predicted_angle_deg": 32.0,
+        "target": [
+          -0.1260394257529856,
+          -0.6515,
+          1.1831159106128317,
+          0.0,
+          0.8746197071393957,
+          0.0,
+          0.4848096202463371
+        ],
+        "q": [
+          0.2799277232739745,
+          -1.045463695667452,
+          -1.0724268142433744,
+          -0.34912685204035876,
+          -0.32785754496417935,
+          0.7225970683522905,
+          1.055634459504935
+        ],
+        "ik": {
+          "position_m": 0.00042959890282832946,
+          "orientation_rad": 0.002465680396676195
+        },
+        "joint_limits_ok": true,
+        "bad": []
+      },
+      "last_passed_prediction": {
+        "predicted_angle_rad": 0.5497787143782138,
+        "predicted_angle_deg": 31.5,
+        "target": [
+          -0.12637651224942342,
+          -0.6515,
+          1.182538133421075,
+          0.0,
+          0.8724960070727972,
+          0.0,
+          0.488621241496955
+        ],
+        "q": [
+          0.13779410276990856,
+          -1.0176447752621607,
+          -0.6235113251079143,
+          -0.39908302657299916,
+          -0.6081592022803242,
+          0.7269905996799185,
+          1.1229445442962516
+        ],
+        "ik": {
+          "position_m": 9.288754697176108e-05,
+          "orientation_rad": 0.0005149949864668187
+        },
+        "joint_limits_ok": true,
+        "bad": []
+      },
+      "same_seed_diagnosis": {
+        "prediction_only": true,
+        "target_angle_deg": 32,
+        "checks": [
+          {
+            "additional_iterations": 100,
+            "q": [
+              0.3355486907220263,
+              -1.0618936304835804,
+              -1.2726953932824434,
+              -0.3570922202134963,
+              -0.19248079678645874,
+              0.7135628805477771,
+              1.0280031555639284
+            ],
+            "error": {
+              "position_m": 0.0003758917674693094,
+              "orientation_rad": 0.0021579221794712456
+            },
+            "minimum_joint_margin_rad": 0.3499968444360715
+          },
+          {
+            "additional_iterations": 500,
+            "q": [
+              0.38272050858123075,
+              -1.0687524249338258,
+              -1.4277236917546712,
+              -0.36007875502493425,
+              -0.09243361982482856,
+              0.7098284596220702,
+              1.0052939259272224
+            ],
+            "error": {
+              "position_m": 0.00036199118996879556,
+              "orientation_rad": 0.0020781427058037846
+            },
+            "minimum_joint_margin_rad": 0.37270607407277745
+          },
+          {
+            "additional_iterations": 2000,
+            "q": [
+              0.3834747025580326,
+              -1.068816830575777,
+              -1.430145279173629,
+              -0.3601010240963862,
+              -0.09089125990700722,
+              0.7097934705901063,
+              1.0049333455357845
+            ],
+            "error": {
+              "position_m": 0.00036198757909390556,
+              "orientation_rad": 0.002078123954645283
+            },
+            "minimum_joint_margin_rad": 0.3730666544642154
+          }
+        ],
+        "execution_state_unchanged": true,
+        "limits": [
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -1.553,
+            0.453
+          ],
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -3.071,
+            0.244
+          ],
+          [
+            -3.071,
+            3.071
+          ],
+          [
+            -1.396,
+            1.396
+          ],
+          [
+            -1.117,
+            1.378
+          ]
+        ]
+      },
+      "alternative_seed_diagnosis": {
+        "prediction_only": true,
+        "target": {
+          "predicted_angle_rad": 0.5585053606381855,
+          "predicted_angle_deg": 32.0,
+          "target": [
+            -0.1260394257529856,
+            -0.6515,
+            1.1831159106128317,
+            0.0,
+            0.8746197071393957,
+            0.0,
+            0.4848096202463371
+          ],
+          "q": [
+            0.2799277232739745,
+            -1.045463695667452,
+            -1.0724268142433744,
+            -0.34912685204035876,
+            -0.32785754496417935,
+            0.7225970683522905,
+            1.055634459504935
+          ],
+          "ik": {
+            "position_m": 0.00042959890282832946,
+            "orientation_rad": 0.002465680396676195
+          },
+          "joint_limits_ok": true,
+          "bad": []
+        },
+        "previous_passed": {
+          "predicted_angle_rad": 0.5497787143782138,
+          "predicted_angle_deg": 31.5,
+          "target": [
+            -0.12637651224942342,
+            -0.6515,
+            1.182538133421075,
+            0.0,
+            0.8724960070727972,
+            0.0,
+            0.488621241496955
+          ],
+          "q": [
+            0.13779410276990856,
+            -1.0176447752621607,
+            -0.6235113251079143,
+            -0.39908302657299916,
+            -0.6081592022803242,
+            0.7269905996799185,
+            1.1229445442962516
+          ],
+          "ik": {
+            "position_m": 9.288754697176108e-05,
+            "orientation_rad": 0.0005149949864668187
+          },
+          "joint_limits_ok": true,
+          "bad": []
+        },
+        "attempts": [
+          {
+            "seed_name": "normal_home",
+            "seed": [
+              -0.8,
+              -0.28,
+              0.0,
+              -1.25,
+              0.0,
+              -0.45,
+              0.0
+            ],
+            "seed_geometry": {
+              "bad_contacts": [],
+              "minimum_joint_margin_rad": 0.7330000000000001,
+              "weighted_jacobian_singular_values": [
+                1.3048329805511871,
+                1.0563921507712555,
+                0.33325202953805094,
+                0.1507713714601232,
+                0.14316552448610365,
+                0.08577876734914756
+              ]
+            },
+            "iterations": 500,
+            "q": [
+              0.37963178321647084,
+              -1.0684743973149047,
+              -1.4177934444643534,
+              -0.35997940430895053,
+              -0.09876320340514783,
+              0.7099795011575625,
+              1.0067711207202146
+            ],
+            "error": {
+              "position_m": 0.0003620764254637229,
+              "orientation_rad": 0.0020786251013208664
+            },
+            "bad_contacts": [],
+            "minimum_joint_margin_rad": 0.3712288792797853,
+            "weighted_jacobian_singular_values": [
+              1.193919057724989,
+              0.8574403636035711,
+              0.2709676009190261,
+              0.21314209523456593,
+              0.1395747805345267,
+              2.0111399799719597e-05
+            ],
+            "accepted": false
+          },
+          {
+            "seed_name": "previous_plus",
+            "seed": [
+              0.13779410276990856,
+              -1.0176447752621607,
+              -0.4235113251079143,
+              -0.39908302657299916,
+              -0.8081592022803241,
+              0.7269905996799185,
+              1.1229445442962516
+            ],
+            "seed_geometry": {
+              "bad_contacts": [],
+              "minimum_joint_margin_rad": 0.2550554557037483,
+              "weighted_jacobian_singular_values": [
+                1.1434772409358032,
+                0.8705562469103857,
+                0.3372154844445306,
+                0.21892411906803821,
+                0.13501807113416606,
+                0.005327988588047317
+              ]
+            },
+            "iterations": 500,
+            "q": [
+              0.377883402606199,
+              -1.068306817297528,
+              -1.412162733981774,
+              -0.3599173450558213,
+              -0.10235583189249184,
+              0.7100705440249233,
+              1.0076076583341647
+            ],
+            "error": {
+              "position_m": 0.00036217495589129374,
+              "orientation_rad": 0.002079187604252343
+            },
+            "bad_contacts": [],
+            "minimum_joint_margin_rad": 0.37039234166583523,
+            "weighted_jacobian_singular_values": [
+              1.1939048527795018,
+              0.8571652346548889,
+              0.2712615159416927,
+              0.21312020922336325,
+              0.13955846519354345,
+              2.924244944148276e-05
+            ],
+            "accepted": false
+          },
+          {
+            "seed_name": "previous_minus",
+            "seed": [
+              0.13779410276990856,
+              -1.0176447752621607,
+              -0.8235113251079142,
+              -0.39908302657299916,
+              -0.40815920228032415,
+              0.7269905996799185,
+              1.1229445442962516
+            ],
+            "seed_geometry": {
+              "bad_contacts": [],
+              "minimum_joint_margin_rad": 0.2550554557037483,
+              "weighted_jacobian_singular_values": [
+                1.1694610522899522,
+                0.8596596919692756,
+                0.3171828007081304,
+                0.21442003996619502,
+                0.136951335179566,
+                0.003725219170960358
+              ]
+            },
+            "iterations": 500,
+            "q": [
+              0.38060755858784445,
+              -1.0685647126039406,
+              -1.4209328594076722,
+              -0.3600122081631303,
+              -0.09676127214554445,
+              0.7099304359867221,
+              1.0063043662864506
+            ],
+            "error": {
+              "position_m": 0.0003620372506613298,
+              "orientation_rad": 0.0020784021971860145
+            },
+            "bad_contacts": [],
+            "minimum_joint_margin_rad": 0.3716956337135493,
+            "weighted_jacobian_singular_values": [
+              1.1939255431620548,
+              0.8575944361259983,
+              0.2708051327945372,
+              0.21315545322688723,
+              0.13958363486330877,
+              1.5009994807749831e-05
+            ],
+            "accepted": false
+          }
+        ],
+        "execution_state_unchanged": true,
+        "state_sha_before": "76ce910e5216aa45433cbfa540361220b8129199bb113b32733d7ab23386569a",
+        "state_sha_after": "76ce910e5216aa45433cbfa540361220b8129199bb113b32733d7ab23386569a",
+        "conclusion": "Local bounded IK evaluation only; not proof of global unreachability."
+      }
+    }
+  ],
+  "physical_staged_successes": 0,
+  "core_unchanged": true,
+  "global_unreachable_claim": false,
+  "no_physics_or_threshold_tuning": true,
+  "root_geometric_reach_audit": {
+    "path": "run01/root_review.json",
+    "fixed_geometry_verified": true,
+    "shoulder_to_wrist_upper_bound_m": 0.7545708250001265,
+    "required_at_60deg_m": 0.8089274399859255,
+    "required_at_90deg_m": 0.9984030189051131,
+    "applies_to": "current fixed fixture placement, grasp orientation and nominal arc; not all folding strategies",
+    "physical_steps_added": 0
+  }
+}

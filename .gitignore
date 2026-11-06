@@ -5,5 +5,4 @@ __pycache__/
 .env.*
 *.key
 *.pem
-validation/*
-!validation/baseline.json
+slides/attachments/scene_bundle.zip

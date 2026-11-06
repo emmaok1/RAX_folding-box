@@ -1,0 +1,133 @@
+{
+  "path": "validation/grasp_skill/run04/trial01",
+  "success": false,
+  "error": "RuntimeError('Monitored abort {\"time_s\": 36.652000000083994, \"phase\": \"hold\", \"sum_normal_N\": 9.466459642432783, \"penetration_m\": 1.2342397763160533e-05, \"unexpected_contacts\": [], \"warning\": [0, 0, 0, 0, 0, 0, 0, 0]}')",
+  "force_abort_N": 5.0,
+  "peak_intended_jaw_sum_N": 9.466459642432783,
+  "intended_force_overshoot_N": 4.466459642432783,
+  "normal_home_collision_free": true,
+  "recovery": {
+    "attempted": true,
+    "complete": true,
+    "final": {
+      "t": 42.65200000011264,
+      "phase": "abort_retract",
+      "tcp": [
+        -0.19003240569181484,
+        -0.6495372992273665,
+        1.1427503750874999,
+        -0.00013531336753502826,
+        0.7068675711046245,
+        -0.00017493981250593651,
+        0.7073458757969847
+      ],
+      "target": [
+        -0.1916252298864907,
+        -0.6495000579593311,
+        1.141861647611273,
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "com": [
+        0.000917361759162754,
+        -0.6466831187468143,
+        1.1418946418267086
+      ],
+      "object_quat": [
+        0.999993946181378,
+        5.408714354211126e-06,
+        4.679357859235661e-06,
+        0.00347959041319319
+      ],
+      "relative_position": [
+        -0.0009861507710370431,
+        -0.002864477256843709,
+        0.19094898426520482
+      ],
+      "relative_rotation": [
+        [
+          -0.0006876153555561171,
+          -0.00042586789765791796,
+          0.9999996729107741
+        ],
+        [
+          -0.0070150393192389545,
+          -0.9999753015635329,
+          -0.0004306811690136131
+        ],
+        [
+          0.9999751578956704,
+          -0.007015333167680342,
+          0.0006846108924850487
+        ]
+      ],
+      "q": [
+        -1.8097624591942827,
+        -1.2123183114787095,
+        0.6530731003727102,
+        -1.3447411858644753,
+        -0.3112599931952251,
+        0.4306618262077556,
+        0.31179776751880106
+      ],
+      "gripper_q": [
+        0.28053557478880026,
+        0.2805267376678308
+      ],
+      "gripper_command": 0.3,
+      "effort_scale": 1.0,
+      "jaw_forces_N": [
+        0.0,
+        0.0
+      ],
+      "pad_forces_N": [
+        0.0,
+        0.0
+      ],
+      "support_force_N": 0.2132029556622695
+    }
+  },
+  "contact_geom_pairs": [
+    [
+      "dexmate_R_gripper_l1_collision_118",
+      "card_base_0"
+    ],
+    [
+      "dexmate_R_gripper_l2_collision_121",
+      "card_base_0"
+    ],
+    [
+      "jaw_pad_R_1",
+      "card_base_0"
+    ]
+  ],
+  "pad1_contact_samples": 234,
+  "pad2_contact_samples": 0,
+  "simulation_s": 42.65200000011264,
+  "warning_abort_observed": false,
+  "warning_check_every_substep": true,
+  "hold_metrics": null,
+  "peak_unexpected_per_contact_N": 0.0,
+  "peak_unexpected_total_N": 0,
+  "measured_lift": {
+    "command_m": 0.025,
+    "max_com_rise_m": 0.021449070211891463,
+    "max_tcp_rise_m": 0.024090889985198594,
+    "max_relative_translation_change_m": 0.002650197937480039,
+    "max_relative_angle_change_deg": 1.0146046782789346
+  },
+  "last_1s_approximately": {
+    "n_samples": 50,
+    "phases": [
+      "abort_retract"
+    ],
+    "peak_jaw_force_N": 0.0,
+    "min_support_N": 0.14761056028994818,
+    "com_displacement_m": 3.443085194934259e-05
+  },
+  "physical_support_free_hold_verified": false,
+  "opposing_pad_contacts_verified": false,
+  "controlled_place_completed": false
+}

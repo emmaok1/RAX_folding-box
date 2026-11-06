@@ -1,0 +1,292 @@
+{
+  "rows": [
+    {
+      "task": "move5mm",
+      "controller": "baseline",
+      "status": "pass",
+      "movement_m": [
+        1.403732545757208e-07,
+        -4.403460374113877e-08,
+        0.004957086790831067
+      ],
+      "final_position_error_m": 4.291346134797795e-05,
+      "peak_contact_normal_N": 0.0,
+      "max_penetration_m": 0.0,
+      "released": null,
+      "wall_seconds": 5.138825268993969,
+      "tracking": {
+        "hold": {
+          "mean_error_m": 5.3689791677801e-05,
+          "max_error_m": 0.00019957408982097813,
+          "last_error_m": 4.291346134797795e-05
+        },
+        "movement": {
+          "mean_error_m": 0.0005415740955318207,
+          "max_error_m": 0.0010873388841415776,
+          "last_error_m": 0.00015909927935380818
+        }
+      },
+      "controller_details": {
+        "type": "Existing baseline IK/joint PD"
+      }
+    },
+    {
+      "task": "move5mm",
+      "controller": "community",
+      "status": "pass",
+      "movement_m": [
+        2.8691374276412773e-10,
+        8.012912555699359e-10,
+        0.004999999853657844
+      ],
+      "final_position_error_m": 8.635989622028422e-10,
+      "peak_contact_normal_N": 0.0,
+      "max_penetration_m": 0.0,
+      "released": null,
+      "wall_seconds": 8.384112504005316,
+      "tracking": {
+        "hold": {
+          "mean_error_m": 1.2160066480916147e-05,
+          "max_error_m": 0.00019399604841776631,
+          "last_error_m": 8.635989622028422e-10
+        },
+        "movement": {
+          "mean_error_m": 0.0006123900304709324,
+          "max_error_m": 0.0011015602713736487,
+          "last_error_m": 0.00023257545957983518
+        }
+      },
+      "controller_details": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 12000,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 19.874935924738686,
+        "peak_applied_torque_Nm": 19.874935924738686
+      }
+    },
+    {
+      "task": "touch",
+      "controller": "baseline",
+      "status": "pass",
+      "movement_m": null,
+      "final_position_error_m": null,
+      "peak_contact_normal_N": 0.6142581629701371,
+      "max_penetration_m": 0.0,
+      "released": true,
+      "wall_seconds": 22.554182180996577,
+      "tracking": {
+        "contact_hold": {
+          "mean_error_m": 0.00011578580153910816,
+          "max_error_m": 0.00011669498978748966,
+          "last_error_m": 0.00011669498978748966
+        },
+        "descent": {
+          "mean_error_m": 0.0001000966902963281,
+          "max_error_m": 0.00011164080638628633,
+          "last_error_m": 0.00011164080638628633
+        },
+        "released_hold": {
+          "mean_error_m": 0.00028355118066018163,
+          "max_error_m": 0.0009958164140676101,
+          "last_error_m": 4.56895201285086e-05
+        },
+        "retract": {
+          "mean_error_m": 0.0010835578652762616,
+          "max_error_m": 0.0011896523568429968,
+          "last_error_m": 0.001181289985564536
+        }
+      },
+      "controller_details": {
+        "type": "Existing baseline IK/joint PD"
+      }
+    },
+    {
+      "task": "touch",
+      "controller": "community",
+      "status": "pass",
+      "movement_m": null,
+      "final_position_error_m": null,
+      "peak_contact_normal_N": 0.4796180961828632,
+      "max_penetration_m": 0.0,
+      "released": true,
+      "wall_seconds": 28.821686983996187,
+      "tracking": {
+        "contact_hold": {
+          "mean_error_m": 7.171776684263792e-05,
+          "max_error_m": 7.249566725136782e-05,
+          "last_error_m": 7.143228269508383e-05
+        },
+        "descent": {
+          "mean_error_m": 6.128596029325749e-05,
+          "max_error_m": 7.256821799599863e-05,
+          "last_error_m": 7.256821799599863e-05
+        },
+        "released_hold": {
+          "mean_error_m": 0.0002765626104814435,
+          "max_error_m": 0.001086243568958265,
+          "last_error_m": 2.1612208192237873e-05
+        },
+        "retract": {
+          "mean_error_m": 0.0011270337577561215,
+          "max_error_m": 0.001274836942630339,
+          "last_error_m": 0.001274836942630339
+        }
+      },
+      "controller_details": {
+        "upstream_class": "GeometricImpedanceController",
+        "controlled_joint_names": [
+          "R_arm_j1",
+          "R_arm_j2",
+          "R_arm_j3",
+          "R_arm_j4",
+          "R_arm_j5",
+          "R_arm_j6",
+          "R_arm_j7"
+        ],
+        "controlled_dofs": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "tool_site": "tcp_R",
+        "torso": "fixed in existing scene",
+        "translation_gain": [
+          900.0,
+          900.0,
+          900.0
+        ],
+        "rotation_gain": [
+          60.0,
+          60.0,
+          60.0
+        ],
+        "damping_gain": [
+          120.0,
+          120.0,
+          120.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "posture_gain": 8.0,
+        "posture_damping": 3.0,
+        "reference_policy": "Fixed activation posture;20ms pose setpoints, zero desired twist/acceleration",
+        "torque_limits_Nm": [
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -150.0,
+            150.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ],
+          [
+            -25.0,
+            25.0
+          ]
+        ],
+        "callback_calls": 21120,
+        "saturated_substeps": 0,
+        "peak_raw_torque_Nm": 18.175060996827057,
+        "peak_applied_torque_Nm": 18.175060996827057
+      }
+    }
+  ],
+  "matched_initial_states": {
+    "move5mm": true,
+    "touch": true
+  },
+  "observed_peak_force_reduction_fraction": 0.21919133501823662,
+  "conclusion": "Pinned CPU control module integrates and passes these movement/contact smokes. This does not establish better pushing, grasping, force regulation, or realtime performance."
+}

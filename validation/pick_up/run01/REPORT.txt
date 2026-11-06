@@ -1,0 +1,38 @@
+pick_up 固定场景任务报告
+
+夹起保持：3/3；正常清理：3/3；完整协议：3/3。
+
+条件：原300×220×4mm、26.4g base面板；支座中心(0,-.65,1.03)m，顶面1.14m。每轮新建MuJoCo环境，从原robot_config正常home开始，零偏移。
+复用已通过的run04/trial00 OMPL RRTConnect路径；每轮验证起终点和密集全机器人碰撞样本，不重新规划。
+夹起成功在实际抬升和保持完成时立即单独保存，再运行受控放置/张开/退手清理。清理失败不能抹掉已成立的夹起结果。
+成功判据：实际COM上升>=10mm、支座力<.01N、对向真实颚组各>.05N、持续>=1s；整个抬升和保持相对位移<3mm、转角<.05rad。
+监测终止：总颚法向力>5N、滑移>8mm或转角>.10rad；5N不是硬力上限，报告实际峰值和超调。
+控制参数沿用此前成功版本：目标3N，闭合力矩分量.02–.30Nm、变化率.05Nm/s，原阻尼/重力补偿及原电机±.6Nm限制不变。
+双新增pad接触仅诊断；原厂指体是未修改的真实承载接触，允许按两颚组判断。
+
+试验1：pickup_success=True；cleanup_success=True；protocol_completed=True；outcome=pickup_and_cleanup_succeeded
+  夹起/清理/恢复峰值N：{'pickup': 2.9025727455798345, 'cleanup': 3.7700191262764657, 'recovery': 0.0}；总5N超调=0.000000N；失败阶段=None
+  保持：{"duration_s": 1.1800000000056343, "min_com_lift_m": 0.021554819456359287, "max_com_lift_m": 0.022105480572758074, "relative_translation_drift_m": 4.058077436210222e-05, "relative_angle_drift_rad": 0.00025478639569040173, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}
+  全程滑移：{"abort_translation_m": 0.008, "abort_angle_rad": 0.1, "success_translation_m": 0.003, "success_angle_rad": 0.05, "max_translation_m": 0.0026002997451543873, "max_angle_rad": 0.01734455360758419}
+  warning=[0, 0, 0, 0, 0, 0, 0, 0]；非预期接触峰值=0.0N
+  证据：validation/pick_up/run01/trial00/result.json、pickup_checkpoint.json、trajectory.json.gz、forces.csv.gz、contacts.csv.gz、video.mp4、阶段PNG。
+
+试验2：pickup_success=True；cleanup_success=True；protocol_completed=True；outcome=pickup_and_cleanup_succeeded
+  夹起/清理/恢复峰值N：{'pickup': 2.9025727455798345, 'cleanup': 3.7700191262764657, 'recovery': 0.0}；总5N超调=0.000000N；失败阶段=None
+  保持：{"duration_s": 1.1800000000056343, "min_com_lift_m": 0.021554819456359287, "max_com_lift_m": 0.022105480572758074, "relative_translation_drift_m": 4.058077436210222e-05, "relative_angle_drift_rad": 0.00025478639569040173, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}
+  全程滑移：{"abort_translation_m": 0.008, "abort_angle_rad": 0.1, "success_translation_m": 0.003, "success_angle_rad": 0.05, "max_translation_m": 0.0026002997451543873, "max_angle_rad": 0.01734455360758419}
+  warning=[0, 0, 0, 0, 0, 0, 0, 0]；非预期接触峰值=0.0N
+  证据：validation/pick_up/run01/trial01/result.json、pickup_checkpoint.json、trajectory.json.gz、forces.csv.gz、contacts.csv.gz、video.mp4、阶段PNG。
+
+试验3：pickup_success=True；cleanup_success=True；protocol_completed=True；outcome=pickup_and_cleanup_succeeded
+  夹起/清理/恢复峰值N：{'pickup': 2.9025727455798345, 'cleanup': 3.7700191262764657, 'recovery': 0.0}；总5N超调=0.000000N；失败阶段=None
+  保持：{"duration_s": 1.1800000000056343, "min_com_lift_m": 0.021554819456359287, "max_com_lift_m": 0.022105480572758074, "relative_translation_drift_m": 4.058077436210222e-05, "relative_angle_drift_rad": 0.00025478639569040173, "opposing_pads_all_samples": false, "opposing_all_samples": true, "max_support_N": 0.0}
+  全程滑移：{"abort_translation_m": 0.008, "abort_angle_rad": 0.1, "success_translation_m": 0.003, "success_angle_rad": 0.05, "max_translation_m": 0.0026002997451543873, "max_angle_rad": 0.01734455360758419}
+  warning=[0, 0, 0, 0, 0, 0, 0, 0]；非预期接触峰值=0.0N
+  证据：validation/pick_up/run01/trial02/result.json、pickup_checkpoint.json、trajectory.json.gz、forces.csv.gz、contacts.csv.gz、video.mp4、阶段PNG。
+
+初始执行状态一致=True；静置后状态一致=True；路径一致=True。
+核心597个文件SHA256前后一致=True；全部模型不变量验证通过=True。
+三次同条件重复仅验证该固定场景；不能外推到其他位置或称一般鲁棒性。5N为0.25ms监测终止阈值，不是硬力保证。
+先前偏移试验及其失败记录仍保留在validation/grasp_skill；本任务未复测偏移，也未修改其证据。
+打包后处理曾因同名analyze模块导入冲突退出；首轮物理结果已成功保存。修复为绝对路径导入，验证原技能/场景/路径/核心哈希后只补做后处理和尚未执行的两轮。首轮没有重跑，错误日志保留。

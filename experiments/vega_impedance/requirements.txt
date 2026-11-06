@@ -1,0 +1,2 @@
+# Screenshot export only; controller itself needs existing NumPy and MuJoCo.
+Pillow==13.0.0
